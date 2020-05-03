@@ -9,12 +9,12 @@
             this.progressSink = null;
             
             this.options = {
-                onlyLastFrames: 100,
-                framesPerSecond: 10,
-                selector: "#main",
+                onlyLastFrames: 50
+                framesPerSecond: 5
+                selector: "#gifcanvas",
                 cores: 8,
                 ratio: 1,
-                quality: "Medium",
+                quality: "Low",
                 base_url: "",
                 fixedWidth: "",
                 period: "Offline"
