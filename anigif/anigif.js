@@ -182,7 +182,7 @@
             //set dimensions
             newCanvas.width = oldCanvas.width;
             newCanvas.height = oldCanvas.height;
-        
+        debugger;
             //apply the old canvas to the new one
             context.drawImage(oldCanvas, 0, 0);
         
@@ -283,6 +283,7 @@
                 else img.src = canvas.toDataURL("image/jpeg", 0.1);
                 
                 img.onload = function() {
+			debugger;
                     context2.drawImage(img, 0, 0, canvas.width, canvas.height, 0, 0, canvas2.width, canvas2.height)    
                     cba(null, canvas2)
                 }
