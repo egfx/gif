@@ -1,6 +1,3 @@
-
-
-
 (function(window, document) {
     
     "use strict";
@@ -102,12 +99,33 @@
                         })
            }
            else
-            window.html2canvas( [ self.el ], {
-                    onrendered: function(canvas) {
-                        self.resizeImage(canvas, self.options.ratio, function(err, canvas_small) {
-                            cba(null, canvas_small);    
-                        })
+            domtoimage.toBlob(self.el)
+                .then(function (blobFrame) {
+                    
+                    if(!document.getElementById('someCanvasId')){
+                      var canvas = document.createElement('canvas');
+                      canvas.id = 'someCanvasId';
                     }
+
+                    HTMLCanvasElement.prototype.renderImage = function(blob, cb){
+                      
+                      var ctx = this.getContext('2d');
+                      var img = new Image();
+
+                      img.onload = function(){
+                        ctx.drawImage(img, 0, 0)
+                      }
+
+                      img.src = URL.createObjectURL(blob);
+                      cb();
+                    };
+
+                    canvas.renderImage(blobFrame, function(){
+                        self.resizeImage(canvas, self.options.ratio, function(err, canvas_small) {
+                            cba(null, canvas_small);
+                        });
+                    });
+                    
             });
            },
         
@@ -213,16 +231,36 @@
             document.body.appendChild(this.frames[i]);
             this.replaceSvgWithCanvas(this.frames[i]);
         
-            window.html2canvas( [ self.frames[i] ], {
-                onrendered: function(canvas) {
-                    handleImage(canvas);
-                    self.frames[i].parentElement.removeChild(self.frames[i]);
-                }
-                });    
+            domtoimage.toBlob(self.frames[i])
+                .then(function (blobFrame) {
+                    
+                    if(!document.getElementById('otherCanvasId')){
+                      var canvas = document.createElement('canvas');
+                      canvas.id = 'otherCanvasId';
+                    }
+
+                    HTMLCanvasElement.prototype.renderImage = function(blob, cb){
+                      
+                      var ctx = this.getContext('2d');
+                      var img = new Image();
+
+                      img.onload = function(){
+                        ctx.drawImage(img, 0, 0)
+                      }
+
+                      img.src = URL.createObjectURL(blob);
+                      cb();
+                    };
+
+                    canvas.renderImage(blobFrame, function(){
+                       handleImage(canvas);
+                       self.frames[i].parentElement.removeChild(self.frames[i]);
+                       
+                       //cleanup
+                       canvas.remove();
+                    });
+            });   
           }
-            
-            
-            
         },
         
        resizeImage: function(canvas, ratio, cba) {
@@ -285,7 +323,7 @@
         composeAnimatedGif: function(cba) {
             var self = this
             //console.log("starting gif composition")
-            var encoder = new window.GIFEncoder_WebWorker({base_url: self.options.base_url+"jsgif/"});
+            var encoder = new window.GIFEncoder_WebWorker({base_url: "https://cdn.jsdelivr.net/gh/egfx/GifW00t@4ddc25b53e6b8008431253a12436f6075b7cf366/anigif/jsgif2/"});
             encoder.setRepeat(0); //auto-loop
             encoder.setDelay(1000/this.options.framesPerSecond);
             encoder.setThreads(this.options.cores)
