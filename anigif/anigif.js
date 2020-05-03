@@ -16,7 +16,7 @@
                 ratio: 1,
                 quality: "Low",
                 base_url: "",
-                //fixedWidth: "",
+                fixedWidth: "",
                 period: "Offline"
             };
             
@@ -103,8 +103,8 @@
                 .then(function (blobFrame) {
                     
                     if(!document.getElementById('someCanvasId')){
-                      var canvas = document.createElement('canvas');
-                      canvas.id = 'someCanvasId';
+                      var domcanvas = document.createElement('canvas');
+                      domcanvas.id = 'someCanvasId';
                     }
 
                     HTMLCanvasElement.prototype.renderImage = function(blob, cb){
@@ -120,8 +120,8 @@
                       cb();
                     };
 
-                    canvas.renderImage(blobFrame, function(){
-                        self.resizeImage(canvas, self.options.ratio, function(err, canvas_small) {
+                    domcanvas.renderImage(blobFrame, function(){
+                        self.resizeImage(domcanvas, self.options.ratio, function(err, canvas_small) {
                             cba(null, canvas_small);
                         });
                     });
@@ -235,8 +235,8 @@
                 .then(function (blobFrame) {
                     
                     if(!document.getElementById('otherCanvasId')){
-                      var canvas = document.createElement('canvas');
-                      canvas.id = 'otherCanvasId';
+                      var domcanvas2 = document.createElement('canvas');
+                      domcanvas2.id = 'otherCanvasId';
                     }
 
                     HTMLCanvasElement.prototype.renderImage = function(blob, cb){
@@ -252,7 +252,7 @@
                       cb();
                     };
 
-                    canvas.renderImage(blobFrame, function(){
+                    domcanvas2.renderImage(blobFrame, function(){
                        handleImage(canvas);
                        self.frames[i].parentElement.removeChild(self.frames[i]);
                        
