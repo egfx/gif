@@ -8,18 +8,6 @@
             
             this.progressSink = null;
             
-            this.options = {
-                onlyLastFrames: 50
-                framesPerSecond: 5
-                selector: "#gifcanvas",
-                cores: 8,
-                ratio: 1,
-                quality: "Low",
-                base_url: "",
-                fixedWidth: "",
-                period: "Offline"
-            };
-            
             this.init()    
             
         },
