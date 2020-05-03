@@ -13,11 +13,11 @@
                 framesPerSecond: 10,
                 selector: "#main",
                 cores: 8,
-                ratio: 1,
+                ratio: 0.5,
                 quality: "Medium",
                 base_url: "",
                 fixedWidth: "",
-                period: "Online"
+                period: "Offline"
             };
             
             this.init()    
