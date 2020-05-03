@@ -16,7 +16,7 @@
                 ratio: 1,
                 quality: "Low",
                 base_url: "",
-                fixedWidth: "",
+                //fixedWidth: "",
                 period: "Offline"
             };
             
