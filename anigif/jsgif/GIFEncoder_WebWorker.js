@@ -35,11 +35,8 @@ GIFEncoder_WebWorker = function(options) {
         var encoder = new window.GIFEncoder();
         encoder.setRepeat(this.repeat); //auto-loop
         encoder.setDelay(this.delay);
-        encoder.setTransparent(000000);
         encoder.start();
-        encoder.setTransparent(000000);
          for (var i=0; i<this.frames.length; i++) {
-            encoder.setTransparent(000000);
             encoder.addFrame(this.frames[i]);
         }
         encoder.finish();
@@ -67,7 +64,6 @@ GIFEncoder_WebWorker = function(options) {
         for (var j=0; j<this.frames.length; j++) {
             
             var curr = this.frames[j]
-            curr.globalAlpha = 0.4;
             var imdata = curr.getImageData(0,0,curr.canvas.width, curr.canvas.height)
             var len = curr.canvas.width * curr.canvas.height * 4;
             
