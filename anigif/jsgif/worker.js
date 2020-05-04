@@ -21,7 +21,6 @@ onmessage = function (evt) {
     
     encoder.setSize(msg.width, msg.height);
     //encoder.addFrame(imageData, true);
-    encoder.setTransparent(000000);
     encoder.addFrame(new Uint8ClampedArray(msg.imageData), true);
     if(msg.frame_length == msg.frame_index+1){
       encoder.finish()
