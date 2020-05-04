@@ -99,7 +99,7 @@
                         })
            }
            else
-            domtoimage.toBlob(self.el, {bgcolor: '#ffffff00'})
+            domtoimage.toBlob(self.el, {bgcolor: '#ffffff00', style: {background-color: 'transparent'}})
                 .then(function (blobFrame) {
                     
                     if(!document.getElementById('someCanvasId')){
@@ -235,7 +235,7 @@
             document.body.appendChild(this.frames[i]);
             this.replaceSvgWithCanvas(this.frames[i]);
         
-            domtoimage.toBlob(self.frames[i], {bgcolor: '#ffffff00'})
+	    domtoimage.toBlob(self.frames[i], {bgcolor: '#ffffff00', style: {background-color: 'transparent'}})
                 .then(function (blobFrame) {
                     
                     if(!document.getElementById('otherCanvasId')){
