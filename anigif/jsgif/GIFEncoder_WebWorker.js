@@ -33,11 +33,11 @@ GIFEncoder_WebWorker = function(options) {
     
     var finish_sync = exports.finish_sync = function finish_sync(cba) {
         var encoder = new window.GIFEncoder();
-        encoder.setTransparent(0);
         encoder.setRepeat(this.repeat); //auto-loop
         encoder.setDelay(this.delay);
         encoder.start();
          for (var i=0; i<this.frames.length; i++) {
+            encoder.setTransparent(0);
             encoder.addFrame(this.frames[i]);
         }
         encoder.finish();
