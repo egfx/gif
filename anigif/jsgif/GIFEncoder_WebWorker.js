@@ -35,9 +35,11 @@ GIFEncoder_WebWorker = function(options) {
         var encoder = new window.GIFEncoder();
         encoder.setRepeat(this.repeat); //auto-loop
         encoder.setDelay(this.delay);
+        encoder.setTransparent(000000);
         encoder.start();
+        encoder.setTransparent(000000);
          for (var i=0; i<this.frames.length; i++) {
-            encoder.setTransparent(0);
+            encoder.setTransparent(000000);
             encoder.addFrame(this.frames[i]);
         }
         encoder.finish();
