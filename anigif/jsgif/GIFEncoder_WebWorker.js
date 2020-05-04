@@ -23,7 +23,6 @@ GIFEncoder_WebWorker = function(options) {
     }
     
     var addFrame = exports.addFrame = function addFrame(im/*BitmapData*/, is_imageData)/*Boolean*/ {
-        im.fillStyle = 'rbga(255,255,255,0)'
         this.frames.push(im)
         return true;
     }
