@@ -112,6 +112,7 @@
                       var ctx = this.getContext('2d');
 		      ctx.canvas.width = self.el.offsetWidth;
 		      ctx.canvas.height = self.el.offsetHeight;
+		      ctx.fillStyle = "#ffffff00";
 			    
                       var img = new Image();
 
@@ -247,6 +248,7 @@
                       var ctx = this.getContext('2d');
 		      ctx.canvas.width = self.el.offsetWidth;
 		      ctx.canvas.height = self.el.offsetHeight;
+		      ctx.fillStyle = "#ffffff00";
 			    
                       var img = new Image();
 
