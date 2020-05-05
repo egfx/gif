@@ -8,8 +8,6 @@ onmessage = function (evt) {
     
     var msg = evt.data;
     //var imageData = msg.imageData.split(',').map(Number)
-    console.log(msg);
-    debugger;
     var encoder = new GIFEncoder(); //create a new GIFEncoder for every new job
     encoder.setRepeat(msg.repeat)
     encoder.setDelay(msg.delay)
