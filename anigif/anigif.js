@@ -41,7 +41,7 @@
         },
         
         log: function(str) {
-            //console.log(str);
+            console.log(str);
             //this._log += str + "\r\n";
         },
         
