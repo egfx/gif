@@ -40,7 +40,6 @@ GIFEncoder_WebWorker = function(options) {
             console.log(this.frames[i]);
             encoder.addFrame(this.frames[i]);
         }
-        encoder.setTransparent(111111);
         encoder.finish();
         cba(null, encoder.stream().getData())
     }
