@@ -336,7 +336,7 @@
             encoder.start();
              for (var i=0; i<this.images.length; i++) {
                 var context = this.images[i].getContext('2d');
-                
+                context.fillStyle = "#ffffff";
                 encoder.addFrame(context);
             }
             
@@ -345,7 +345,6 @@
             }
             
             var done = function(err, data){
-		console.log(data);
                 self.log("final: ");
                 //this.img = 'data:image/gif;base64,' + window.encode64(encoder.stream().getData())
                 
