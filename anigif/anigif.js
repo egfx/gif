@@ -345,6 +345,7 @@
             }
             
             var done = function(err, data){
+		console.log(data);
                 self.log("final: ");
                 //this.img = 'data:image/gif;base64,' + window.encode64(encoder.stream().getData())
                 
@@ -355,7 +356,6 @@
             }
             
             self.progress("composed 0/" + self.images.length)
-	    encoder.setTransparent(000000);
             encoder.finish_async({singleComplete: singleComplete, done: done});
             
         }
