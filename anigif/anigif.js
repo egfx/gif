@@ -336,7 +336,7 @@
             encoder.start();
              for (var i=0; i<this.images.length; i++) {
                 var context = this.images[i].getContext('2d');
-		encoder.setTransparent(0);
+		encoder.setTransparent(000000);
                 encoder.addFrame(context);
             }
             
