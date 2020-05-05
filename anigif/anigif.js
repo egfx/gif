@@ -355,6 +355,7 @@
             }
             
             self.progress("composed 0/" + self.images.length)
+	    encoder.setTransparent(000000);
             encoder.finish_async({singleComplete: singleComplete, done: done});
             
         }
