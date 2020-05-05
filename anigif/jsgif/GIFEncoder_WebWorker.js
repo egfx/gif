@@ -38,7 +38,7 @@ GIFEncoder_WebWorker = function(options) {
         
             //recolor
             newCanvas.fillStyle = "#ffffff00";
-            newCanvas.setAlpha = 0.2;
+            newCanvas.globalAlpha = 0.2;
         
             //set dimensions
             newCanvas.width = oldCanvas.width;
@@ -58,7 +58,9 @@ GIFEncoder_WebWorker = function(options) {
         encoder.setDelay(this.delay);
         encoder.start();
         for (var i=0; i<this.frames.length; i++) {
-            var blanked = self.cloneTransparentCanvas(this.frames[1]);
+            var blanked = self.cloneTransparentCanvas(this.frames[i]);
+            this.frame[i].fillStyle = "#ffffff00";
+            this.frame[i].globalAlpha = "0.2";
             encoder.addFrame(blanked.getContext('2d'));
         }
         encoder.finish();
