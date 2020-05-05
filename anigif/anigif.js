@@ -185,10 +185,6 @@
             //set dimensions
             newCanvas.width = oldCanvas.width;
             newCanvas.height = oldCanvas.height;
-	       
-	    //test
-	    newCanvas.fillStyle = "#ffffff00";
-	    newCanvas.globalAlpha = 0.2;
 
             //apply the old canvas to the new one
             context.drawImage(oldCanvas, 0, 0);
