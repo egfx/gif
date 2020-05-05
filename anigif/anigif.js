@@ -220,9 +220,6 @@
 
             var handleImage = function(canvas) {
                 self.resizeImage(canvas, self.options.ratio, function(err, canvas_small) {
-			    var ecanv = canvas_small.getContext('2d');
-			    ecanv.fillStyle = "#ffffff00";
-			    ecanv.globalAlpha = 0.2;
                             self.progress("rendered " + ++self.renderedFrames + "/" + self.frames.length)
                             self.images.push(canvas_small);
                             cbx()
