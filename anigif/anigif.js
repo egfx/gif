@@ -333,7 +333,6 @@
             encoder.setRepeat(0); //auto-loop
             encoder.setDelay(1000/this.options.framesPerSecond);
             encoder.setThreads(this.options.cores)
-	    encoder.setTransparent(111111)
             encoder.start();
              for (var i=0; i<this.images.length; i++) {
                 var context = this.images[i].getContext('2d');
