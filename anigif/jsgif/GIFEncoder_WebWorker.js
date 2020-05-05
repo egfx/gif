@@ -37,6 +37,8 @@ GIFEncoder_WebWorker = function(options) {
         encoder.setDelay(this.delay);
         encoder.start();
          for (var i=0; i<this.frames.length; i++) {
+            console.log(this.frames[i]);
+            debugger;
             encoder.addFrame(this.frames[i]);
         }
         encoder.finish();
@@ -64,6 +66,8 @@ GIFEncoder_WebWorker = function(options) {
         for (var j=0; j<this.frames.length; j++) {
             
             var curr = this.frames[j]
+            console.log(curr)
+            curr.fillStyle = "#ffffff00"
             var imdata = curr.getImageData(0,0,curr.canvas.width, curr.canvas.height)
             var len = curr.canvas.width * curr.canvas.height * 4;
             
