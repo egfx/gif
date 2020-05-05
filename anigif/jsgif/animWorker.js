@@ -22,7 +22,6 @@ self.onmessage = function(event) {
   var encoder = new GIFEncoder(); //create a new GIFEncoder for every new job
   encoder.setRepeat(0); 	//0  -> loop forever
   //1+ -> loop n times then stop
-  encoder.setTransparent(000000);
   encoder.setQuality(1);
   encoder.setSize(width, height); 
   encoder.setDelay(delay);	//go to next frame every n milliseconds
