@@ -31,26 +31,6 @@ GIFEncoder_WebWorker = function(options) {
          return true;       
     }
     
-    var cloneTransparentCanvas = exports.cloneTransparentCanvas = function cloneCanvas(oldCanvas) {
-            //create a new canvas
-            var newCanvas = document.createElement('canvas');
-            var context = newCanvas.getContext('2d');
-        
-            //recolor
-            newCanvas.fillStyle = "#ffffff00";
-            newCanvas.globalAlpha = 0.2;
-        
-            //set dimensions
-            newCanvas.width = oldCanvas.width;
-            newCanvas.height = oldCanvas.height;
-        
-            //apply the old canvas to the new one
-            context.drawImage(oldCanvas, 0, 0);
-        
-            //return the new canvas
-            return newCanvas;
-   }
-    
     var finish_sync = exports.finish_sync = function finish_sync(cba) {
         var self = this;
         var encoder = new window.GIFEncoder();
@@ -58,10 +38,7 @@ GIFEncoder_WebWorker = function(options) {
         encoder.setDelay(this.delay);
         encoder.start();
         for (var i=0; i<this.frames.length; i++) {
-            var blanked = self.cloneTransparentCanvas(this.frames[i]);
-            this.frame[i].fillStyle = "#ffffff00";
-            this.frame[i].globalAlpha = "0.2";
-            encoder.addFrame(blanked.getContext('2d'));
+            encoder.addFrame(this.frames[i]);
         }
         encoder.finish();
         cba(null, encoder.stream().getData())
