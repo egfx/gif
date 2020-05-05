@@ -36,10 +36,11 @@ GIFEncoder_WebWorker = function(options) {
         encoder.setRepeat(this.repeat); //auto-loop
         encoder.setDelay(this.delay);
         encoder.start();
-         for (var i=0; i<this.frames.length; i++) {
+        for (var i=0; i<this.frames.length; i++) {
             console.log(this.frames[i]);
             encoder.addFrame(this.frames[i]);
         }
+        encoder.setTransparent(111111);
         encoder.finish();
         cba(null, encoder.stream().getData())
     }
