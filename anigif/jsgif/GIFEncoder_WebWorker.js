@@ -63,8 +63,7 @@ GIFEncoder_WebWorker = function(options) {
       
         
         for (var j=0; j<this.frames.length; j++) {
-            this.frames[j].fillStyle = "#ffffff00";
-            this.frames[j].globalAlpha = 0.2;
+            
             var curr = this.frames[j]
             var imdata = curr.getImageData(0,0,curr.canvas.width, curr.canvas.height)
             var len = curr.canvas.width * curr.canvas.height * 4;
