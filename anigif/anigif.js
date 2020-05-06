@@ -237,10 +237,10 @@
 	    domtoimage.toBlob(self.frames[i])
                 .then(function (blobFrame) {
                     
-                    if(!document.getElementById('otherCanvasId')){
+                    /*if(!document.getElementById('otherCanvasId')){
                       var domcanvas2 = document.createElement('canvas');
                       domcanvas2.id = 'otherCanvasId';
-                    }
+                    }*/
 
                     HTMLCanvasElement.prototype.renderImage = function(blob, cb){
                       
