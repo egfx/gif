@@ -99,7 +99,7 @@
                         })
            }
            else
-            domtoimage.toBlob(self.el, {style: {background: '#ffffff00'}})
+            domtoimage.toBlob(self.el)
                 .then(function (blobFrame) {
                     
                     if(!document.getElementById('someCanvasId')){
@@ -234,7 +234,7 @@
             document.body.appendChild(this.frames[i]);
             this.replaceSvgWithCanvas(this.frames[i]);
         
-	    domtoimage.toBlob(self.frames[i], {style: {background: '#ffffff00'}})
+	    domtoimage.toBlob(self.frames[i])
                 .then(function (blobFrame) {
                     
                     if(!document.getElementById('otherCanvasId')){
