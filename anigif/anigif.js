@@ -263,7 +263,7 @@
                        self.frames[i].parentElement.removeChild(self.frames[i]);
                        
                        //cleanup
-                       canvas.remove();
+                       //canvas.remove();
                     });
             });   
           }
