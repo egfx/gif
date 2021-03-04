@@ -234,7 +234,7 @@
             document.body.appendChild(this.frames[i]);
             this.replaceSvgWithCanvas(this.frames[i]);
         
-	    domtoimage.toBlob(self.frames[i])
+	        domtoimage.toBlob(self.frames[i])
                 .then(function (blobFrame) {
                     
                     /*if(!document.getElementById('otherCanvasId')){
@@ -255,16 +255,17 @@
                       }
 
                       img.src = URL.createObjectURL(blob);
+                      console.log(img.src);
                       cb();
                     };
 
-                    domcanvas2.renderImage(blobFrame, function(){
+                    /*domcanvas2.renderImage(blobFrame, function(){
                        handleImage(canvas);
                        self.frames[i].parentElement.removeChild(self.frames[i]);
                        
                        //cleanup
                        //canvas.remove();
-                    });
+                    });*/
             });   
           }
         },
