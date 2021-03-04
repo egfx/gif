@@ -21,7 +21,7 @@
             };
             
             this.init()    
-            
+            js
         },
         
         init: function() {
@@ -275,15 +275,15 @@
         composeAnimatedGif: function(cba) {
             var self = this
             //console.log("starting gif composition")
-            var encoder = new window.GIFEncoder_WebWorker({base_url: "https://cdn.jsdelivr.net/gh/egfx/GifW00t@4ddc25b53e6b8008431253a12436f6075b7cf366/anigif/jsgif2/"});
+            var encoder = new window.GIFEncoder_WebWorker({base_url: "https://cdn.jsdelivr.net/gh/antimatter15/jsgif@master/"});
             encoder.setRepeat(0); //auto-loop
             encoder.setDelay(1000/this.options.framesPerSecond);
             encoder.setThreads(this.options.cores)
+	    encoder.setTransparent(0xFFFFFF)
             encoder.start();
              for (var i=0; i<this.images.length; i++) {
                 var context = this.images[i].getContext('2d');
                 encoder.addFrame(context);
-		encoder.setTransparent(0xFFFFFF)
             }
             
             var singleComplete = function() {
