@@ -255,7 +255,6 @@
                       }
 
                       img.src = URL.createObjectURL(blob);
-                      console.log(img.src);
                       cb();
                     };
 
@@ -285,6 +284,7 @@
                 var img = new Image();
                 if (self.options.quality=="High")
                     img.src = canvas.toDataURL("image/png");
+                    console.log('%c ', 'font-size:400px; background:url(' + img.src + ') no-repeat;background-size:contain;');
                 else if (self.options.quality=="Medium")
                     img.src = canvas.toDataURL("image/jpeg", 0.9);
                 else img.src = canvas.toDataURL("image/jpeg", 0.1);
