@@ -1,9 +1,8 @@
-function loadHtml2CanvasLibrary() {
-    /*!
-     * html2canvas 1.0.0-rc.5 <https://html2canvas.hertzen.com>
-     * Copyright (c) 2020 Niklas von Hertzen <https://hertzen.com>
-     * Released under MIT License
-     */
+/*!
+ * html2canvas 1.0.0-rc.5 <https://html2canvas.hertzen.com>
+ * Copyright (c) 2020 Niklas von Hertzen <https://hertzen.com>
+ * Released under MIT License
+ */
     (function (global, factory) {
         typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
             typeof define === 'function' && define.amd ? define(factory) :
@@ -7072,6 +7071,4 @@ function loadHtml2CanvasLibrary() {
 
         return html2canvas;
 
-    }));
-
-}
+}));
