@@ -99,8 +99,8 @@
                         })
            }
            else
-            domtoimage.toBlob(self.el)
-                .then(function (blobFrame) {
+            domtoimage.toPng(self.el)
+                .then(function (pngFrame) {
                     
                     if(!document.getElementById('someCanvasId')){
                       var domcanvas = document.createElement('canvas');
@@ -123,7 +123,7 @@
                       cb();
                     };
 
-                    domcanvas.renderImage(blobFrame, function(){
+                    domcanvas.renderImage(pngFrame, function(){
                         self.resizeImage(domcanvas, self.options.ratio, function(err, canvas_small) {
                             cba(null, canvas_small);
                         });
@@ -234,8 +234,8 @@
             document.body.appendChild(this.frames[i]);
             this.replaceSvgWithCanvas(this.frames[i]);
         
-	    domtoimage.toBlob(self.frames[i])
-                .then(function (blobFrame) {
+	    domtoimage.toPng(self.frames[i])
+                .then(function (pngFrame) {
                     
                     /*if(!document.getElementById('otherCanvasId')){
                       var domcanvas2 = document.createElement('canvas');
@@ -258,7 +258,7 @@
                       cb();
                     };
 
-                    domcanvas2.renderImage(blobFrame, function(){
+                    domcanvas2.renderImage(pngFrame, function(){
                        handleImage(canvas);
                        self.frames[i].parentElement.removeChild(self.frames[i]);
                        
