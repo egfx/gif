@@ -99,8 +99,8 @@
                         })
            }
            else
-            domtoimage.toPng(self.el)
-                .then(function (pngFrame) {
+            domtoimage.toBlob(self.el)
+                .then(function (blobFrame) {
                     
                     if(!document.getElementById('someCanvasId')){
                       var domcanvas = document.createElement('canvas');
@@ -110,8 +110,8 @@
                     HTMLCanvasElement.prototype.renderImage = function(blob, cb){
                       
                       var ctx = this.getContext('2d');
-		      ctx.canvas.width = self.el.offsetWidth;
-		      ctx.canvas.height = self.el.offsetHeight;
+        		      ctx.canvas.width = self.el.offsetWidth;
+        		      ctx.canvas.height = self.el.offsetHeight;
 			    
                       var img = new Image();
 
@@ -119,12 +119,11 @@
                         ctx.drawImage(img, 0, 0)
                       }
 
-                      //img.src = URL.createObjectURL(blob);
-                      img.src = pngFrame;
-		      cb();
+                      img.src = URL.createObjectURL(blob);
+		              cb();
                     };
 
-                    domcanvas.renderImage(pngFrame, function(){
+                    domcanvas.renderImage(blobFrame, function(){
                         self.resizeImage(domcanvas, self.options.ratio, function(err, canvas_small) {
                             cba(null, canvas_small);
                         });
@@ -235,8 +234,8 @@
             document.body.appendChild(this.frames[i]);
             this.replaceSvgWithCanvas(this.frames[i]);
         
-	    domtoimage.toPng(self.frames[i])
-                .then(function (pngFrame) {
+	    domtoimage.toBlob(self.frames[i])
+                .then(function (blobFrame) {
                     
                     /*if(!document.getElementById('otherCanvasId')){
                       var domcanvas2 = document.createElement('canvas');
@@ -246,8 +245,8 @@
                     HTMLCanvasElement.prototype.renderImage = function(blob, cb){
                       
                       var ctx = this.getContext('2d');
-		      ctx.canvas.width = self.el.offsetWidth;
-		      ctx.canvas.height = self.el.offsetHeight;
+        		      ctx.canvas.width = self.el.offsetWidth;
+        		      ctx.canvas.height = self.el.offsetHeight;
 			    
                       var img = new Image();
 
@@ -259,7 +258,7 @@
                       cb();
                     };
 
-                    domcanvas2.renderImage(pngFrame, function(){
+                    domcanvas2.renderImage(blobFrame, function(){
                        handleImage(canvas);
                        self.frames[i].parentElement.removeChild(self.frames[i]);
                        
