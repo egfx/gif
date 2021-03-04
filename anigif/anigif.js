@@ -1,4 +1,3 @@
-loadHtml2CanvasLibrary();
 (function(window, document) {
     
     "use strict";
