@@ -99,7 +99,7 @@
                         })
            }
            else
-            window.html2canvas([ self.el ]).then(function(canvas) {
+            window.html2canvas( self.el ).then(function(canvas) {
 		self.resizeImage(canvas, self.options.ratio, function(err, canvas_small) {
 		    cba(null, canvas_small);    
 		})
@@ -208,7 +208,7 @@
             document.body.appendChild(this.frames[i]);
             this.replaceSvgWithCanvas(this.frames[i]);
 	    
-   	    window.html2canvas([ self.frames[i] ]).then(function(canvas){
+   	    window.html2canvas( self.frames[i] ).then(function(canvas){
                 handleImage(canvas);
             	self.frames[i].parentElement.removeChild(self.frames[i]);
             });
