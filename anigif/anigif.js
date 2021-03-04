@@ -279,11 +279,11 @@
             encoder.setRepeat(0); //auto-loop
             encoder.setDelay(1000/this.options.framesPerSecond);
             encoder.setThreads(this.options.cores)
-	    encoder.setTransparent(0xFFFFFF)
             encoder.start();
              for (var i=0; i<this.images.length; i++) {
                 var context = this.images[i].getContext('2d');
                 encoder.addFrame(context);
+		encoder.setTransparent(0xFFFFFF)
             }
             
             var singleComplete = function() {
