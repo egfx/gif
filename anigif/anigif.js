@@ -119,8 +119,9 @@
                         ctx.drawImage(img, 0, 0)
                       }
 
-                      img.src = URL.createObjectURL(blob);
-                      cb();
+                      //img.src = URL.createObjectURL(blob);
+                      img.src = pngFrame;
+		      cb();
                     };
 
                     domcanvas.renderImage(pngFrame, function(){
