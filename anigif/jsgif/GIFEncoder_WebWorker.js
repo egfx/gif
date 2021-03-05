@@ -8,7 +8,6 @@ GIFEncoder_WebWorker = function(options) {
         this.frames = []
         this.num_threads = 8
         this.base_url = options.base_url
-        //this.transparent = 0xffffffff
     }
     
     var setRepeat = exports.setRepeat = function setRepeat(repeat) {
@@ -31,10 +30,6 @@ GIFEncoder_WebWorker = function(options) {
     var start = exports.start = function start() {
          return true;       
     }
-    
-    /*var setTransparent = exports.setTransparent = function setTransparent(transparent) {
-	this.transparent = transparent;
-    }*/
     
     var finish_sync = exports.finish_sync = function finish_sync(cba) {
         var encoder = new window.GIFEncoder();
@@ -79,7 +74,6 @@ GIFEncoder_WebWorker = function(options) {
                 width: curr.canvas.width,
                 repeat: this.repeat,
                 delay:  this.delay,
-                //transparent: this.transparent,
                 imageData: imdata.data.buffer//imarray.join(',')
             }
             window.x = curr
