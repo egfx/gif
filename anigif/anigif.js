@@ -295,7 +295,7 @@
                 //this.img = 'data:image/gif;base64,' + window.encode64(encoder.stream().getData())
                 
                 //self.img64 = 'data:image/gif;base64,' + window.encode64(data)
-                console.log(data);
+                //console.log(data);
                 self.img = window.getObjURL(data, "image/gif")
                 self.log(self.img);
                 cba(null)
