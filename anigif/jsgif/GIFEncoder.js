@@ -341,28 +341,7 @@
 		    palSize = 7;
 		    // get closest match to transparent color if specified
 		    if (transparent != null) {
-			      transIndex = findClosest(transparent);
-
-			      /*var r = colorTab[transIndex*3];
-			      var g = colorTab[transIndex*3+1];
-			      var b = colorTab[transIndex*3+2];
-			      var trans_indices = [];
-
-			      for (var i = colorTab.length - 1; i >= 0; i--) {
-			      	var index = i / 3;
-			      	if (!usedEntry[index]){
-			      		continue;
-			      	}
-			      	if (colorTab[i] == r && colorTab[i+1] == g && colorTab[i+2] == b) {
-			      		trans_indices.push(index);
-			      	}
-			      };
-
-			      for (var i = indexedPixels.length - 1; i >= 0; i--) {
-			      	if (trans_indices.indexOf(indexedPixels[i]) >= 0) {
-			      		indexedPixels[i] = transIndex;
-			      	}
-			      };*/
+		      transIndex = findClosest(transparent);
 		    }
 		}
 		
