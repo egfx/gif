@@ -275,10 +275,11 @@
         composeAnimatedGif: function(cba) {
             var self = this
             //console.log("starting gif composition")
-            var encoder = new window.GIFEncoder_WebWorker({base_url: "https://cdn.jsdelivr.net/gh/egfx/anirecord@a818ca2292b45ee14682d5f4bfb8685087d86c82/anigif/jsgif/"});
+            var encoder = new window.GIFEncoder_WebWorker({base_url: "https://cdn.jsdelivr.net/gh/egfx/anirecord@latest/anigif/jsgif/"});
 	    encoder.setRepeat(0); //auto-loop
             encoder.setDelay(1000/this.options.framesPerSecond);
             encoder.setThreads(this.options.cores);
+	    encoder.setTransparent(0xffffff);
             encoder.start();
              for (var i=0; i<this.images.length; i++) {
                 var context = this.images[i].getContext('2d');
