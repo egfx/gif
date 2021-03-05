@@ -281,7 +281,7 @@
             encoder.setThreads(this.options.cores)
 	    encoder.setTransparent(0xffffffff)
             encoder.start();
-             for (let i=0; i<this.images.length; i++) {
+             for (var i=0; i<this.images.length; i++) {
                 var context = this.images[i].getContext('2d');
 		encoder.setTransparent(0xffffffff)
                 encoder.addFrame(context);
