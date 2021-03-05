@@ -45,7 +45,7 @@
             //this._log += str + "\r\n";
         },
         
-        startRecord: function()
+        startRecord: function(){
             
             this.init();
             
