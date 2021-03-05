@@ -21,7 +21,7 @@
             };
             
             this.init()    
-            js
+
         },
         
         init: function() {
