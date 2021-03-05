@@ -275,7 +275,7 @@
         composeAnimatedGif: function(cba) {
             var self = this
             console.log("starting gif composition")
-            var encoder = new window.GIFEncoder_WebWorker({base_url: "https://cdn.jsdelivr.net/gh/egfx/anirecord/jsgif@master/"});
+            var encoder = new window.GIFEncoder_WebWorker({base_url: "https://cdn.jsdelivr.net/gh/egfx/anirecord/jsgif@1c67bcdac7ffef81537e929776eeb5536e35aec8/"});
             encoder.setTransparent();
 	    encoder.setRepeat(0); //auto-loop
             encoder.setDelay(1000/this.options.framesPerSecond);
