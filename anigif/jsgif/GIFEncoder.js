@@ -343,7 +343,7 @@
 		    if (transparent != null) {
 			      transIndex = findClosest(transparent);
 
-			      var r = colorTab[transIndex*3];
+			      /*var r = colorTab[transIndex*3];
 			      var g = colorTab[transIndex*3+1];
 			      var b = colorTab[transIndex*3+2];
 			      var trans_indices = [];
@@ -362,7 +362,7 @@
 			      	if (trans_indices.indexOf(indexedPixels[i]) >= 0) {
 			      		indexedPixels[i] = transIndex;
 			      	}
-			      };
+			      };*/
 		    }
 		}
 		
