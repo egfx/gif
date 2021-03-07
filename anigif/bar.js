@@ -185,7 +185,6 @@ window.anigif_bar = {
             var self = this;
             window.anigif.stopRecord(function() {
                 
-                
                 var end = new Date().getTime();
             	var time = end - start;
             	console.log("duration: " + time)
@@ -194,6 +193,8 @@ window.anigif_bar = {
             	
                 document.body.style.cursor = "default";
                 self.setEnabled({record: true, stop: false, play: true, config: true})
+                
+                postMessage("stop");
             })
         },
         
