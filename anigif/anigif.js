@@ -55,6 +55,7 @@
             }
             this.canvasOnly = this.el.tagName=="CANVAS"
             console.log("canvas only: " + this.canvasOnly)
+	    window.postMessage({ type: "anirecord", key: "start" }, "*");
             this.recordFrame();
         },
         
