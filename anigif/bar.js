@@ -194,7 +194,7 @@ window.anigif_bar = {
                 document.body.style.cursor = "default";
                 self.setEnabled({record: true, stop: false, play: true, config: true})
                 
-                postMessage("stop");
+                window.postMessage({ type: "anirecord", key: "stop" }, "*");
             })
         },
         
