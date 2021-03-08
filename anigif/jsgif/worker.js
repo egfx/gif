@@ -6,6 +6,8 @@ importScripts(base_url + 'GIFEncoder.js', base_url + 'LZWEncoder.js', base_url +
 
 onmessage = function (evt) {
     
+    debugger;
+    
     var msg = evt.data;
     //var imageData = msg.imageData.split(',').map(Number)
     var encoder = new GIFEncoder(); //create a new GIFEncoder for every new job
