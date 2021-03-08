@@ -8,7 +8,7 @@ GIFEncoder_WebWorker = function(options) {
         this.frames = []
         this.num_threads = 8
         this.base_url = options.base_url
-        this.transparent = 0xffffffff
+        this.transparent = 0x00000000
     }
     
     var setRepeat = exports.setRepeat = function setRepeat(repeat) {
@@ -40,7 +40,7 @@ GIFEncoder_WebWorker = function(options) {
         var encoder = new window.GIFEncoder();
         encoder.setRepeat(this.repeat); //auto-loop
         encoder.setDelay(this.delay);
-	encoder.setTransparent(0x000000);
+	encoder.setTransparent(0x00000000);
         encoder.start();
          for (var i=0; i<this.frames.length; i++) {
             encoder.addFrame(this.frames[i]);
