@@ -279,12 +279,11 @@
             var encoder = new window.GIFEncoder_WebWorker({base_url: "https://cdn.jsdelivr.net/gh/egfx/anirecord@9cb13ebf17947ff6af8c4b484e147b422e6a08b5/anigif/jsgif/"});
 	    encoder.setRepeat(0); //auto-loop
             encoder.setDelay(1000/this.options.framesPerSecond);
-            encoder.setThreads(this.options.cores);
+            encoder.setThreads(window.navigator.hardwareConcurrency);
 	    encoder.setTransparent(0x00000000);
             encoder.start();
             for (var i=0; i<this.images.length; i++) {
                 var context = this.images[i].getContext('2d');
-		context.fillStyle = 'rgb(0,0,0)';
                 encoder.addFrame(context);
             }
             
