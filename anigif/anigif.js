@@ -280,11 +280,11 @@
 	    encoder.setRepeat(0); //auto-loop
             encoder.setDelay(1000/this.options.framesPerSecond);
             encoder.setThreads(this.options.cores);
-	    encoder.setTransparent(0x00FF00);
+	    encoder.setTransparent(0xFFFFFF);
             encoder.start();
             for (var i=0; i<this.images.length; i++) {
                 var context = this.images[i].getContext('2d');
-		console.log(context.canvas.height, context.canvas.width);
+		context.fillStyle = 'rgba(0,0,0,0)';
                 encoder.addFrame(context);
             }
             
