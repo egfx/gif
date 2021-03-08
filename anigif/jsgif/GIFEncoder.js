@@ -349,7 +349,7 @@
 			    var trans_indices = [];
 			    for (var i=0; i<colorTab.length; i+=3)
 			    {
-				var index = i / 3;
+				var index = Math.floor(i / 3);
 				if (!usedEntry[index]) continue;
 				if (colorTab[i] == r && colorTab[i+1] == g && colorTab[i+2] == b)
 				    trans_indices.push(index);
