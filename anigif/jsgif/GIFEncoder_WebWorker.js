@@ -33,13 +33,14 @@ GIFEncoder_WebWorker = function(options) {
     }
     
     var setTransparent = exports.setTransparent = function setTransparent(transparent) {
-		this.transparent = transparent;
-	}
+	this.transparent = transparent;
+    }
     
     var finish_sync = exports.finish_sync = function finish_sync(cba) {
         var encoder = new window.GIFEncoder();
         encoder.setRepeat(this.repeat); //auto-loop
         encoder.setDelay(this.delay);
+	encoder.setTransparent(0x000000);
         encoder.start();
          for (var i=0; i<this.frames.length; i++) {
             encoder.addFrame(this.frames[i]);
