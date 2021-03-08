@@ -12,7 +12,7 @@
                 onlyLastFrames: 50,
                 framesPerSecond: 5,
                 selector: "#gifcanvas",
-                cores: 8,
+                cores: 2,
                 ratio: 1,
                 quality: "Low",
                 base_url: "",
