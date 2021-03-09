@@ -1,0 +1,4464 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta content="chrome=1" http-equiv="X-UA-Compatible" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="Record GIF Animations" />
+  <title>Record Gif Animations Using Chrome - GIF.COM.AI</title>
+  <link href="https://gif.com.ai" rel="canonical" />
+  <link href="static/assets/libs/css/reset.css" />
+  <link href="static/assets/libs/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="static/assets/libs/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="static/assets/libs/css/material.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/gh/peachananr/onepage-scroll/jquery.onepage-scroll.min.js"></script>-->
+<script>
+  var matched, browser;
+
+jQuery.uaMatch = function( ua ) {
+    ua = ua.toLowerCase();
+
+    var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
+        /(webkit)[ \/]([\w.]+)/.exec( ua ) ||
+        /(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
+        /(msie) ([\w.]+)/.exec( ua ) ||
+        ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec( ua ) ||
+        [];
+
+    return {
+        browser: match[ 1 ] || "",
+        version: match[ 2 ] || "0"
+    };
+};
+
+matched = jQuery.uaMatch( navigator.userAgent );
+browser = {};
+
+if ( matched.browser ) {
+    browser[ matched.browser ] = true;
+    browser.version = matched.version;
+}
+
+// Chrome is Webkit, but Webkit is also Safari.
+if ( browser.chrome ) {
+    browser.webkit = true;
+} else if ( browser.webkit ) {
+    browser.safari = true;
+}
+
+jQuery.browser = browser;
+</script>
+
+  <style>
+    @import "https://fonts.googleapis.com/css?family=Raleway:300,400,500,900,700,300|Work+Sans:400,600|Montserrat:300,400,700|Nunito|Rajdhani|Fira+Sans:800";
+      html, body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", 
+Helvetica, Arial, sans-serif;
+        min-height: 100vh !important;
+        color: #57585c;
+        color: var(--color-text);
+        background-color: #fff;
+        height: 100vh !important;
+        overflow: hidden !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-image: -webkit-repeating-radial-gradient(center 
+center, rgba(0, 0, 0, 0.012), rgba(0, 0, 0, 0.05) 1px, transparent 1px, 
+transparent 100%);
+        background-size: 8px 8px;
+        position: fixed;
+      }
+      .demo-1 {
+        --color-text: #000;
+        --color-bg: #fff;
+        --color-content-bg: #fff;
+        --color-link: #000;
+        --color-link-hover: #4bb3e7;
+        --color-info: #000;
+        --color-form-alt: #909090;
+        --color-form-button-bg: #000;
+        --color-form-button: #fff;
+        --color-demo: #fff;
+        --color-demo-hover: #fff;
+        --color-github: #fff;
+        --color-github-hover: #fff;
+      }
+      .js article.render {
+        opacity: 1;
+      }
+      /* Page Loader */
+      .js .loading::before {
+        content: '';
+        position: fixed;
+        z-index: 100000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-bg);
+      }
+      
+      .js .loading::after {
+        content: '';
+        position: fixed;
+        z-index: 100000;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        margin: -30px 0 0 -30px;
+        pointer-events: none;
+        border-radius: 50%;
+        opacity: 0.4;
+        background: var(--color-link);
+        animation: loaderAnim 0.7s linear infinite alternate forwards;
+      }
+      
+      @keyframes loaderAnim {
+        to {
+          opacity: 1;
+          transform: scale3d(0.5,0.5,1);
+        }
+      }
+      
+      a {
+        text-decoration: none;
+        color: var(--color-link);
+        outline: none;
+      }
+      
+      a:hover,
+      a:focus {
+        color: var(--color-link-hover);
+        outline: none;
+        text-decoration: none;
+      }
+      
+      .hidden {
+        position: absolute;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+      }
+      
+      /* Icons */
+      .icon {
+        display: block;
+        width: 2em;
+        height: 2em;
+        margin: 0 auto;
+        fill: currentColor;
+      }
+
+      /* top header links */
+      #topheader {
+        margin: 0;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 800;
+        position: absolute;
+        z-index: 9999999;
+        right: 0;
+        top: 5;
+      }
+
+      #topheader .container {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      #topheader::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      #topheader .logo {
+        float: left;
+        padding: 10px 0;
+      }
+
+      #topheader nav {
+        float: right;
+        border: none;
+      }
+
+      #topheader nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      #topheader nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+        position: relative;
+      }
+
+      #topheader nav a {
+        color: aliceblue;
+        text-decoration: overline;
+        text-transform: uppercase;
+        font-size: 14pt;
+        text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+        /*color: #444;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;*/
+      }
+
+      #topheader nav a:hover {
+        color: #000;
+      }
+
+      #topheader nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: #444;
+        position: absolute;
+        top: 0;
+        width: 0%;
+        -webkit-transition: all ease-in-out 250ms;
+        transition: all ease-in-out 250ms;
+      }
+
+      #topheader nav a:hover::before {
+        width: 100%;
+      }
+      /* end top header links */
+      
+      header {
+        position: absolute !important;
+        /*bottom: 555px;
+        background: white;*/
+      }
+      
+      main {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .content {
+        position: relative;
+        /*min-height: 100vh;*/
+      }
+      
+      .content--main {
+        grid-template-columns: 50% 50%;
+      }
+      
+      .content--full {
+        width: 100vw;
+      }
+      
+      .content--side {
+        background: var(--color-content-bg);
+        width: 25vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        /*padding: 5vmin;*/
+      }
+      
+      .side--bg {
+        background-image: url(https://i.imgur.com/JScxptJ.gif);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 3vmin;
+      }
+      
+      .content--side + .content--side {
+        justify-content: space-between;
+        width: 75vw;
+      }
+      
+      /* Header */
+      .codrops-header {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+        align-self: start;
+        grid-area: header;
+        justify-self: start;
+        margin: 0 0 1rem 0;
+      }
+
+      .codrops-header * {
+        vertical-align: super;
+      }
+      
+      .codrops-header__title {
+        text-align: end;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+      }
+
+      .ai__title {
+        text-decoration: none;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        padding-left: 38%;
+        display: block;
+        font-family: Inconsolata, monospace;
+        /*font-size: 1.5vw;*/
+        font-weight: 700;
+        margin-bottom: 50px;
+        padding-top: 5px;
+      }
+      
+      .info {
+        flex: none;
+        width: 100%;
+        margin: 1rem 0;
+        color: #333;
+      }
+      
+      .github {
+        display: block;
+        position: fixed;
+        margin: 0 0 0 auto;
+        right: 25px;
+        bottom: 25px;
+        color: darkmagenta;
+      }
+      
+      .github:hover,
+      .github:focus {
+        color: var(--color-github-hover);
+      }
+      
+      .demos {
+        position: relative;
+        display: block;
+        text-align: right;
+        margin: 0 0 0 auto;
+      }
+      
+      .demo {
+        font-weight: bold;
+        color: var(--color-demo);
+      }
+      
+      .demo:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+      
+      .demo:hover,
+      .demo:focus {
+        color: var(--color-demo-hover);
+      }
+      
+      .demo span {
+        white-space: nowrap;
+        text-transform: lowercase;
+        pointer-events: none;
+      }
+      
+      a.demo--current {
+        pointer-events: none;
+        text-decoration: none;
+      }
+      /* Top Navigation Style */
+      .codrops-links {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 0 1em 0 0;
+        text-align: center;
+        white-space: nowrap;
+      }
+      
+      .codrops-icon {
+        display: inline-block;
+      }
+      
+      .codrops-icon:first-child {
+        margin-right: 0.5rem;
+      }
+      
+      .canvas-wrap {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+      canvas {
+        image-rendering: optimizeSpeed;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -o-crisp-edges;
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .form {
+        margin: auto 0 0 0;
+        position: relative;
+      }
+      
+      .form__title {
+        font-size: 1.5rem;
+        margin: 0 0 3rem;
+      }
+      
+      .form__item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+      }
+      
+      .form__item:not(:last-child) {
+        margin: 0 0 1.5rem;
+      }
+      
+      .form__item--actions {
+        color: var(--color-form-alt);
+        margin-top: 3rem;
+        font-size: 0.8rem;
+        grid-template-columns: 3fr 1fr;
+      }
+      
+      .form__label {
+        font-weight: bold;
+      }
+      
+      .form__input {
+        padding: 1rem;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-weight: bold;
+      }
+      
+      .form__input-wrap {
+        position: relative;
+      }
+      
+      .form__input:focus {
+        border-color: #000;
+        outline: none;
+      }
+      
+      .form__password-strength {
+        position: absolute;
+        font-size: 0.75rem;
+      }
+      
+      .form__link {
+        font-weight: bold;
+        white-space: nowrap;
+      }
+      
+      .form__button {
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 1rem;
+        border: 0;
+        background: var(--color-form-button-bg);
+        color: var(--color-form-button);
+      }
+      
+      .form__button:focus {
+        outline: none;
+      }
+      
+      .demo-2 main {
+        flex-direction: row-reverse;
+      }
+      
+      .demo-2 .github,
+      .demo-2 .demos {
+        margin: 0 auto 0 0;
+      }
+      
+      /*.pater__img {
+        position: relative;
+        display: none;
+        /*width: 170px;*/
+        width: 10em;
+        grid-area: 2 / 1 / 3 / 2;
+        display: flex;
+      }*/
+      
+      nav, scroll-container {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      nav {
+        width: 339px;
+        padding: 5px;
+        border: 1px solid black;
+      }
+      
+      scroll-container {
+        display: block;
+        width: 350px;
+        height: 200px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      scroll-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 5em;
+      }
+      
+      /* Parallax */
+      .MainContainer h1 {
+        text-align: center;
+        font-size: 48px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #222;
+      }
+      .MainContainer .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 120px;
+        margin: auto;
+        position: relative;
+        /*background-color: #2c3e50;*/
+        z-index: 7;
+      }
+      .MainContainer .menu li {
+        float: left;
+        width: 25%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .MainContainer .menu a {
+        color: #444;
+        display: -webkit-box;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
+        text-decoration: none;
+        position: relative;
+        font-size: 18px;
+        z-index: 9;
+      }
+      .MainContainer .menu a:hover {
+        color: #fff;
+      }
+      .MainContainer a.active {
+        /*background-color: rgba(124,234,32,0.3);*/
+        /*background-color: #e74c3c;*/
+        /*background-color: rgba(195, 81, 65, 0.3);*/
+        color: #444;
+        pointer-events: none;
+      }
+      .MainContainer li.slider {
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        /*background-color: #e74c3c;*/
+        z-index: 8;
+        -webkit-transition: left 0.4s, background-color 0.4s;
+        transition: left 0.4s, background-color 0.4s;
+      }
+      .MainContainer .menu li:nth-child(1):hover ~ .slider,
+      .MainContainer .menu li:nth-child(1):focus ~ .slider,
+      .MainContainer .menu li:nth-child(1):active ~ .slider {
+        left: 0;
+        background-color: #3498db;
+      }
+      .MainContainer .menu li:nth-child(2):hover ~ .slider,
+      .MainContainer .menu li:nth-child(2):focus ~ .slider,
+      .MainContainer .menu li:nth-child(2):active ~ .slider {
+        left: 25%;
+        background-color: #9b59b6;
+      }
+      .MainContainer .menu li:nth-child(3):hover ~ .slider,
+      .MainContainer .menu li:nth-child(3):focus ~ .slider,
+      .MainContainer .menu li:nth-child(3):active ~ .slider {
+        left: 50%;
+        background-color: #e67e22;
+      }
+      .MainContainer .menu li:nth-child(4):hover ~ .slider,
+      .MainContainer .menu li:nth-child(4):focus ~ .slider,
+      .MainContainer .menu li:nth-child(4):active ~ .slider {
+        left: 75%;
+        background-color: #16a085;
+      }
+      .MainContainer {
+        perspective: 1px;
+        transform-style: preserve-3d;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+      }
+      .verticalWidth100 {
+        height: 100vw;
+      }
+      .verticalHeight100 {
+        height: 100vh;
+      }
+      .verticalHeight {
+        height: 80vh;
+      }
+      .ContentContainer {
+        position: relative;
+        display: block;
+        z-index: 1;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transition: -webkit-transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .Content {
+        /*margin: 0 auto;*/
+        /*padding: 75px 0;*/
+      }
+      .ParallaxContainer {
+        display: flex;
+        flex: 1 0 auto;
+        position: relative;
+        z-index: -1;
+        height: 110vh;
+        justify-content: center;
+        align-items: center;
+        /*transform: translateZ(-1px) scale(3);*/
+        width: 100%;
+      }
+      .ParallaxContainer2 {
+        display: flex;
+        flex: 1 0 auto;
+        position: relative;
+        z-index: -1;
+        height: 10vh;
+        transform: translateZ(-1px) scale(2);
+      }
+      
+      .Content {
+        perspective: 1px;
+        transform-style: preserve-3d;
+        /*height: 100%;*/
+        overflow-y: hidden;
+        overflow-x: hidden;
+        font-family: Nunito;
+        /*padding-left: 5em;
+        padding-right: 5em;*/
+      }
+      
+      /*.Content h1 {
+        font-size: 250%
+      }*/
+      
+      .Content p {
+        font-size: 115%;
+        line-height: 160%;
+        color: #333;
+      }
+      
+      .Content .slide {
+        position: relative;
+        padding: 5vh 20%;
+        /*min-height: 100vh;*/
+        /*width: 100vw;*/
+        box-sizing: border-box;
+        transform-style: inherit;
+      }
+      
+      .Content img {
+        position: absolute;
+        /*top: 12em;
+        top: 50%;
+        left: 35%;
+        width: 320px;
+        height: 240px;
+        transform: translateZ(.25px) scale(.75) translateX(-94%) 
+        translateY(-100%) rotate(2deg);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+        background: rgba(240,230,220, .7);*/
+      }
+      
+      /*.Content img:last-of-type {
+        transform: translateZ(.4px) scale(.6) translateX(-104%) 
+        translateY(-40%) rotate(-5deg);
+      }*/
+      
+      .Content .slide:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /*box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);*/
+      }
+      
+      .Content .title {
+        /*padding: 5%;*/
+        border-radius: 5px;
+      }
+      
+      .Content .imglabel {
+        z-index: 9999999999;
+        color: black;
+        text-align: left;
+        margin-top: 160px;
+        padding-left: 2px;
+      }
+      
+      .Content #title h1 {
+        transform: translateZ(.25px) scale(.75);
+        transform-origin: 50% 100%;
+      }
+      
+      .Content #slide1:before {
+        transform: translateZ(-1px) scale(2);
+      }
+      
+      .text-muted {
+        color: #777 !important;
+      }
+
+      .text-semi-bold {
+        color: #333 !important;
+      }
+      
+      #slide1 {
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-color: white;
+      }
+      
+      #slide2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 3fr;
+        grid-row-gap: 0px;
+        grid-column-gap: 20px;
+        z-index: 2;
+        padding-top: 75px;
+        color: #333;
+      }
+      
+      .step1 {
+        grid-area: 1 / 1 / 1 / 3;
+        height: auto;
+        background-image: url(static/assets/images/slide1.png);
+        background-position-x: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 400px;
+      }
+
+      .step1b {
+        grid-area: 1 / 2 / 1 / 4;
+        height: auto;
+        padding-left: 35%;
+        padding-bottom: 100px;
+      }
+      
+      .step2 {
+        grid-area: 2 / 1 / 2 / 4;
+        background-image: url(static/assets/images/previewbg-slide2.jpg);
+        /*background-position-x: left;*/
+        background-repeat: no-repeat;
+        background-size: initial;
+      }
+
+      /*.step2b {
+        grid-area: 3 / 1 / 2 / 1;
+        height: auto;
+        padding-left: 25%;
+        margin-top: -50px;
+        padding-bottom: 150px;
+      }*/
+      
+      .step3 {
+        grid-area: 5 / 1 / 5 / 3;
+        background-image: url(static/assets/images/slide3.jpg);
+        background-size: initial;
+        background-position-x: right;
+        height: 350px;
+        background-position-y: -150px;
+        background-repeat: no-repeat;
+      }
+
+      /*.step3b {
+        grid-area: 3 / 2 / 5 / 2;
+        height: auto;
+        padding-left: 25%;
+        margin-top: -200px;
+      }*/
+
+      /*.step1b > iframe, .step2b > iframe, .step3b > iframe {
+        max-width: fit-content;
+      }*/
+      
+      #slide2 p {
+        color: slategray;
+        font-size: large;
+        line-height: 130% !important;
+      }
+      
+      .Content #slide3:before {
+        background-image: url("");
+        transform: translateZ(-1px) scale(2);
+      }
+      
+      .Content #slide4 {
+        background: #222;
+      }
+      
+      .dotted-bg {
+        background: -webkit-repeating-radial-gradient(center center, 
+rgba(0, 0, 0, 0.012), rgba(0, 0, 0, 0.05) 1px, transparent 1px, 
+transparent 100%);
+      }
+      
+      .surf-bg {
+        background-image:url(static/assets/images/about-bg.png);
+        background-position: left; 
+        background-repeat: round;
+        background-repeat-y: no-repeat; 
+        background-origin: content-box;
+        background-position-y: top;
+        padding-top: 1rem;
+        scroll-behavior: smooth;
+        z-index: 99;
+      }
+      
+      .intro {
+        /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, 
+sans-serif;*/
+        text-align: left;
+        font-weight: 300;
+        color: rgba(55, 55, 55, 1);
+        line-height: 1.5em;
+        letter-spacing: 0.1em !important;
+      }
+      
+      .segoe {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", 
+Helvetica, Arial, sans-serif;
+      }
+      
+      .flipmeH {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: 'FlipH';
+      }
+      
+      .flipmeV {
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: 'FlipV';
+      }
+      
+      .chromeBtn {
+        /*width: 285px;*/
+        max-width: 90%;
+        min-width: 275px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 12px;
+        z-index: 99999999;
+        box-shadow: inset 0 0 100px #ecf3fb;
+      }
+
+      .mobile .chromeBtn {
+        width: 100% !important;
+      }
+
+      .bookmarkbutton img{
+        height: 20px;
+        width: 20px;
+        bottom: 5px;
+        left: 5px;
+      }
+
+      .bookmarkbutton {
+          background-color: #222;
+          background-image: -webkit-linear-gradient(hsla(0,0%,100%,.15), 
+hsla(0,0%,0%,0));
+          background-image: -moz-linear-gradient(hsla(0,0%,100%,.15), 
+hsla(0,0%,0%,0));
+          background-image: -ms-linear-gradient(hsla(0,0%,100%,.15), 
+hsla(0,0%,0%,0));
+          background-image: -o-linear-gradient(hsla(0,0%,100%,.15), 
+hsla(0,0%,0%,0));
+          background-image: linear-gradient(hsla(0,0%,100%,.15), 
+hsla(0,0%,0%,0));
+          border: 1px solid #111;
+          color: #c6c6c6;
+          cursor: move;
+          display: inline-block;
+          font: bold 14px/10px sans-serif;
+          margin: 20px;
+          /*padding: 10px 15px;*/
+          padding: 10px 15px 10px 30px;
+          position: relative;
+          text-decoration: none;
+          text-shadow: 0 -1px 1px hsla(0,0%,0%,.8);
+          -webkit-border-radius: 3px;
+             -moz-border-radius: 3px;
+                  border-radius: 3px;
+          -webkit-box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
+                              inset 0 1px 0 hsla(0,0%,100%,.2);
+             -moz-box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
+                              inset 0 1px 0 hsla(0,0%,100%,.2);
+                  box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
+                              inset 0 1px 0 hsla(0,0%,100%,.2);
+      }
+      .bookmarkbutton:hover,
+      .bookmarkbutton:focus {
+          background-color: #242424;
+          color: #f6f6f6;
+          -webkit-box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
+                              inset 0 1px 0 hsla(0,0%,100%,.2);
+             -moz-box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
+                              inset 0 1px 0 hsla(0,0%,100%,.2);
+                  box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
+                              inset 0 1px 0 hsla(0,0%,100%,.2);
+      }
+      .bookmarkbutton:after {
+          background-image: -webkit-linear-gradient(left, 
+hsla(0,0%,0%,0), hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
+          background-image: -moz-linear-gradient(left, hsla(0,0%,0%,0), 
+hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
+          background-image: -ms-linear-gradient(left, hsla(0,0%,0%,0), 
+hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
+          background-image: -o-linear-gradient(left, hsla(0,0%,0%,0), 
+hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
+          background-image: linear-gradient(left, hsla(0,0%,0%,0), 
+hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
+          background-position: 50% 0%;
+          background-size: 200% 200%;
+          content: '';
+          display: none;
+          height: 1px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+      }
+      .bookmarkbutton:hover:after,
+      .bookmarkbutton:focus:after {
+          display: block;
+      }
+      .bookmarkbutton:before {
+          background: #363636;
+          bottom: -8px;
+          content: '';
+          left: -8px;
+          position: absolute;
+          right: -8px;
+          top: -8px;
+          z-index: -1;
+          -webkit-border-radius: 6px;
+             -moz-border-radius: 6px;
+                  border-radius: 6px;
+          -webkit-box-shadow: 0 1px 1px hsla(0,0%,100%,.3),
+                              inset 0 1px 1px hsla(0,0%,0%,.4),
+                              inset 0 0 5px hsla(0,0%,0%,.2);
+             -moz-box-shadow: 0 1px 1px hsla(0,0%,100%,.3),
+                              inset 0 1px 1px hsla(0,0%,0%,.4),
+                              inset 0 0 5px hsla(0,0%,0%,.2);
+                  box-shadow: 0 1px 1px hsla(0,0%,100%,.3),
+                              inset 0 1px 1px hsla(0,0%,0%,.4),
+                              inset 0 0 5px hsla(0,0%,0%,.2);
+      }
+      .bookmarkbutton:active {
+          background-color: #202020;
+          color: #b6b6b6;
+          padding: 11px 15px 9px;
+          -webkit-box-shadow: 0 1px 0 hsla(0,0%,100%,.1),
+                              inset 0 1px 4px hsla(0,0%,0%,.8);
+             -moz-box-shadow: 0 1px 0 hsla(0,0%,100%,.1),
+                              inset 0 1px 4px hsla(0,0%,0%,.8);
+                  box-shadow: 0 1px 0 hsla(0,0%,100%,.1),
+                              inset 0 1px 4px hsla(0,0%,0%,.8);
+      }
+      .bookmarkbutton:active:after {
+          display: block;
+          left: 1px;
+          opacity: .5;
+          right: 1px;
+          top: 31px;
+      }
+      
+      .bookmarkContainer {
+          background: #5c7cb180;
+          color: aliceblue;
+          border-radius: 18px;
+          background: azure;
+          padding-right: 1em;
+      }
+      
+      @media screen and (max-width: 45em) {
+        article {
+          overflow: auto;
+        }
+        .content {
+          height: auto;
+          min-height: 0;
+        }
+        .content--side {
+          width: 100vw;
+        }
+        .content--fixed {
+          position: relative;
+          z-index: 1000;
+          display: block;
+          padding: 0.85em;
+        }
+        .content--side + .content--side {
+          width: 100vw;
+          height: 100vw;
+        }
+      }
+      #myTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myTopBtn:hover {
+        background-color: #555;
+      }
+      .header, .footer {
+        color: #66312f;
+        padding: 30px;
+        text-align: center;
+      }
+      .header a, .footer a {
+        color: #66312f;
+      }
+      .header h1, .footer h1 {
+        font-size: 16pt;
+        font-weight: 300;
+      }
+      .header i.fa, .footer i.fa {
+        font-size: 16pt;
+      }
+      .header .bounce, .footer .bounce {
+        -webkit-animation-name: bounce;
+        animation-name: bounce;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+      }
+      .header .animated, .footer .animated {
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+      @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -webkit-transform: translateY(0);
+        }
+        40% {
+          -webkit-transform: translateY(-20px);
+        }
+        60% {
+          -webkit-transform: translateY(-10px);
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+      .Return a {
+        z-index: 999999999;
+        position: relative;
+        color: #afd33d;
+        text-decoration: none;
+        font-weight: 700;
+        border: 2px solid #afd33d;
+        text-transform: uppercase;
+        padding: 5px 50px;
+        box-shadow: inset 0 0 0 0 rgba(175, 211, 61, 0.2);
+        overflow: hidden;
+      }
+      .Return a:hover {
+        cursor: pointer;
+        box-shadow: inset 0 -2em 0 0 rgba(175, 211, 61, 0.2);
+      }
+      .topright {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .logo {
+        background: url(static/assets/images/gifcomlogo.png);
+        background-repeat: repeat;
+        background-size: contain;
+        width: 15vh;
+        height: 15vh;
+        position: absolute;
+        border-radius:50%;
+        margin-top: 100%;
+        transform: translate(50%);
+      }
+      .love {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: scaleY(-1) !important;
+        -o-transform: scaleY(-1) !important;
+        -webkit-transform: scaleY(-1) !important;
+        transform: scaleY(-1) !important;
+        filter: FlipV !important;
+        -ms-filter: 'FlipV' !important;
+      }
+      .love:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background-color: #E91E63;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+      }
+      .love:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background-color: #fff;
+        width: 135px;
+        height: 135px;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+      }
+      /*.mobile .fa-heart {
+        top: 10%;
+        left: 50%;
+      }*/
+      .desktop .fa-heart {
+        top: 50%;
+        left: 50%;
+      }
+      .fa-heart {
+        position: absolute;
+        color: #E91E63;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+        z-index: 99;
+      }
+      .fa-heart:before {
+        opacity: 0;
+        -webkit-animation: small-heart 5s infinite linear;
+                animation: small-heart 5s infinite linear;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+      }
+      .fa-heart:after {
+        content: '\f004';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+        -webkit-animation: big-heart 5s infinite linear;
+                animation: big-heart 5s infinite linear;
+      }
+      .withlove {
+        text-align: center;
+        padding: 0.1em;
+        -moz-transform: scaleY(-1) !important;
+        -o-transform: scaleY(-1) !important;
+        -webkit-transform: scaleY(-1) !important;
+        transform: scaleY(-1) !important;
+        filter: FlipV !important;
+        -ms-filter: 'FlipV' !important;
+      }
+      /* Smartphones (portrait and landscape) ----------- */
+      @media only screen (max-width : 480px) {
+        .fb-like-iframe.fb_iframe_widget {
+          display: none !important;
+        }
+      }
+      /*@-webkit-keyframes outer-circle {
+        2% {
+          opacity: 1;
+        }
+        9% {
+          width: 200px;
+          height: 200px;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+        }
+        12% {
+          width: 190px;
+          height: 190px;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+          opacity: 0;
+        }
+        100% {
+          width: 190px;
+          height: 190px;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+          opacity: 0;
+        }
+      }
+      
+      @keyframes outer-circle {
+        2% {
+          opacity: 1;
+        }
+        9% {
+          width: 200px;
+          height: 200px;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+        }
+        12% {
+          width: 190px;
+          height: 190px;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+          opacity: 0;
+        }
+        100% {
+          width: 190px;
+          height: 190px;
+          -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+          opacity: 0;
+        }
+      }*/
+      @-webkit-keyframes big-heart {
+        0% {
+          font-size: 0;
+          opacity: .6;
+        }
+        3% {
+          font-size: 0;
+          opacity: .6;
+        }
+        13% {
+          font-size: 133.3333333333px;
+          opacity: 0;
+        }
+        100% {
+          font-size: 133.3333333333px;
+          opacity: 0;
+        }
+      }
+      @keyframes big-heart {
+        0% {
+          font-size: 0;
+          opacity: .6;
+        }
+        3% {
+          font-size: 0;
+          opacity: .6;
+        }
+        13% {
+          font-size: 133.3333333333px;
+          opacity: 0;
+        }
+        100% {
+          font-size: 133.3333333333px;
+          opacity: 0;
+        }
+      }
+      @-webkit-keyframes small-heart {
+        0% {
+          font-size: 0;
+          opacity: 0;
+        }
+        10% {
+          font-size: 50px;
+          opacity: 1;
+        }
+        15% {
+          font-size: 28.5714285714px;
+        }
+        20% {
+          font-size: 40px;
+        }
+        25% {
+          font-size: 28.5714285714px;
+        }
+        30% {
+          font-size: 33.3333333333px;
+        }
+        35% {
+          font-size: 28.5714285714px;
+        }
+        60% {
+          font-size: 28.5714285714px;
+        }
+        65% {
+          font-size: 40px;
+        }
+        70% {
+          font-size: 28.5714285714px;
+        }
+        75% {
+          font-size: 33.3333333333px;
+        }
+        80% {
+          color: #E91E63;
+          font-size: 28.5714285714px;
+        }
+        100% {
+          font-size: 28.5714285714px;
+          color: #999;
+          opacity: 1;
+        }
+      }
+      @keyframes small-heart {
+        0% {
+          font-size: 0;
+          opacity: 0;
+        }
+        10% {
+          font-size: 50px;
+          opacity: 1;
+        }
+        15% {
+          font-size: 28.5714285714px;
+        }
+        20% {
+          font-size: 40px;
+        }
+        25% {
+          font-size: 28.5714285714px;
+        }
+        30% {
+          font-size: 33.3333333333px;
+        }
+        35% {
+          font-size: 28.5714285714px;
+        }
+        60% {
+          font-size: 28.5714285714px;
+        }
+        65% {
+          font-size: 40px;
+        }
+        70% {
+          font-size: 28.5714285714px;
+        }
+        75% {
+          font-size: 33.3333333333px;
+        }
+        80% {
+          color: #E91E63;
+          font-size: 28.5714285714px;
+        }
+        100% {
+          font-size: 28.5714285714px;
+          color: #999;
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes to-grey {
+        0% {
+          color: #E91E63;
+        }
+        100% {
+          color: #e8e8e8;
+        }
+      }
+      @keyframes to-grey {
+        0% {
+          color: #E91E63;
+        }
+        100% {
+          color: #e8e8e8;
+        }
+      }
+      div.sticky {
+        position: relative;
+        top: 0;
+        padding: 15px;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+      }
+      .sticky a {
+        display: inline-block;
+      }
+      .bottomFooter {
+        display: block;
+        height: 180px;
+        /*bottom: 0px;*/
+        width: 100%;
+        background: white;
+      }
+      .dreamtext {
+        text-shadow: rgb(255, 255, 255) 0px 0px 1px, rgb(255, 255, 255) 0px 0px 20px, rgb(255, 255, 255) 0px 0px 3px, rgb(0, 255, 255) 0px 0px 4px, rgb(0, 255, 255) 0px 0px 7px, rgb(0, 255, 255) 0px 0px 8px, rgb(0, 255, 255) 0px 0px 10px;
+        /*text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px, rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px, rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px, rgb(0, 255, 255) 0px 0px 100px;*/
+        color: azure;
+        font: 700 42px/1.3 'Inconsolata', monospace;
+        font-size: xx-large;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 20px #2d9da9;
+        }
+        to {
+          text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+        }
+      }
+
+      #features {
+        border-radius: 44px;
+        width: 100%;
+        padding-bottom: 2.5vh;
+       /* background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.012), rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 100%);
+        background-size: 6px 6px;*/
+      }
+      /*#extension {
+        margin-left: 2.5vw;
+        margin-top: 5vh;
+      }*/
+      /* bullet points features */
+      #bulletpoints {
+        font-family: "Lato", sans-serif;
+      }
+
+      #bulletpoints h1,#bulletpoints h2,#bulletpoints h3 {
+        font-family: "Roboto", sans-serif;
+      }
+
+      #bulletpoints .c-schedule-table {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1em;
+      }
+      @media only screen and (min-width: 992px) {
+        #bulletpoints .c-schedule-table {
+          display: flex;
+          flex-direction: row;
+          max-width: 70%;
+        }
+      }
+        #bulletpoints .c-schedule-table ul {
+          margin: 0;
+          padding: 0 2em;
+      }
+      @media only screen and (min-width: 992px) {
+        #bulletpoints .c-schedule-table ul {
+          max-width: 50%;
+          flex-shrink: 0;
+        }
+      }
+      #bulletpoints .c-schedule-table li {
+        position: relative;
+        list-style: none;
+        font-weight: bold;
+      }
+      #bulletpoints .c-schedule-table li:before {
+        content: "";
+        width: 0.7em;
+        height: 0.7em;
+        background-color: tomato;
+        border-radius: 50%;
+        position: absolute;
+        top: 0.3em;
+        left: -1.8em;
+        z-index: 2;
+      }
+      #bulletpoints .c-schedule-table li:after {
+        content: "";
+        width: 2px;
+        height: 100%;
+        background-color: #efefef;
+        position: absolute;
+        top: 0.5em;
+        left: -1.54em;
+      }
+      #bulletpoints .c-schedule-table li p {
+        font-weight: normal;
+        margin: 0;
+        padding: 0.5em 0 1.5em 0;
+      }
+      .abutton {
+        position: sticky;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background: #f72359;
+        padding: 1em 2em;
+        border: none;
+        color: white;
+        font-size: 1.2em;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        border-radius: 100px;
+        text-decoration: none;
+      }
+      .abutton span {
+        position: relative;
+        pointer-events: none;
+      }
+      .abutton::before {
+        --size: 0;
+        content: '';
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        background: radial-gradient(circle closest-side, #4405f7, transparent);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        transition: width .2s ease, height .2s ease;
+      }
+      .abutton:hover::before {
+        --size: 400px;
+      }
+      .abutton i {
+        position: absolute;
+        font-size: x-large;
+        top: 15px;
+        left: 40px;
+      }
+      .gifcomlogo {
+        /*background-image: url(/static/images/gifcomai-logo.svg);*/
+        background-size: contain;
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 0;
+        border-right: dotted;
+        border-left: dotted;
+        background-position: center;
+        border-color: whitesmoke;
+      }
+      .gifcomlogo:before {
+          content: "❤ made in Los Angeles";
+          width: 100%;
+          height: 22px;
+          border-radius: 11px;
+          /*background-color: #529600;*/
+          left: calc(50% - 11px);
+          position: relative;
+          display: none;
+          top: 0;
+      }
+      /* Demo Portal */
+      #home-splash-screen .plan-icon {
+        padding-left: 4px;
+        cursor: pointer;
+        float: left;
+        text-align: center;
+      }
+
+      #home-splash-screen-mobile .plan-icon {
+        padding-left: 4px;
+        cursor: pointer;
+        float: left;
+        text-align: center;
+      }
+
+      #home-splash-screen {
+        font-family: 'Inconsolata', sans-serif;
+        line-height: 1.7;
+        font-size: 18px;
+        /*padding-bottom: 100px;*/
+        z-index: 2 !important;
+        width: 100%;
+        text-align: center;
+        padding-top: 200px;
+      }
+
+      #home-splash-screen-mobile {
+        font-family: 'Inconsolata', sans-serif;
+        line-height: 1.7;
+        font-size: 12pt;
+        /*padding-bottom: 100px;*/
+        z-index: 2 !important;
+        width: 100%;
+        text-align: center;
+      }
+      
+      #home-splash-screen * {
+        box-sizing: border-box;
+        text-align: center;
+        vertical-align: -webkit-baseline-middle;
+      }
+      
+      #home-splash-screen strong {
+        font-weight: 700;
+        font-size: 75%;
+      }
+      
+      #home-splash-screen .maindiv {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+        /*padding: 2em;*/
+        text-align: center;
+      }
+
+      #home-splash-screen .maindiv title, #home-splash-screen main h3, #home-splash-screen main p {
+        flex: 100%;
+        max-width: 600px;
+      }
+      #home-splash-screen .title {
+        font-weight: 400;
+        font: 700 40px/1.3 'Inconsolata', monospace;
+      }
+      #home-splash-screen .maindiv h3 {
+        font: 700 32px/1.3 'Inconsolata', monospace;
+        margin: 2em 0 1.8em;
+      }
+      
+      #home-splash-screen a {
+        color: #1572b6;
+        text-decoration: none;
+      }
+      #home-splash-screen a:hover {
+        text-decoration: underline;
+      }
+      
+      #home-splash-screen code {
+        display: inline-block;
+        padding: 1px 7px;
+        background: #f1f1f1;
+        border-radius: 5px;
+      }
+
+      #home-splash-screen-mobile code {
+        display: inline-block;
+        padding: 1px 7px;
+        background: #f1f1f1;
+        border-radius: 5px;
+        font-size: 65% !important;
+      }
+      /*#home-splash-screen p {
+        margin-bottom: 1.5em;
+      }*/
+
+      .demo-btn {
+        align-items:flex-start;
+        background-color:rgb(255, 65, 54);
+        background-image:linear-gradient(rgb(242, 23, 36), rgb(203, 11, 23));
+        border-color:rgb(138, 43, 226);
+        border-radius:4px;
+        border-bottom-style:solid;
+        border-bottom-width:1px;
+        border-left-style:solid;
+        border-left-width:1px;
+        border-right-style:solid;
+        border-right-width:1px;
+        border-top-style:solid;
+        border-top-width:1px;
+        box-sizing:border-box;
+        color:rgb(255, 255, 255);
+        cursor:pointer;
+        display:inline-block;
+        font-family:Verdana, Geneva, sans-serif;
+        font-size:21px;
+        font-weight:700;
+        height:61px;
+        letter-spacing:normal;
+        line-height:31.5px;
+        padding-bottom:14px;
+        padding-left:24px;
+        padding-right:24px;
+        padding-top:14px;
+        text-align:center;
+        text-indent:0px;
+        text-rendering:auto;
+        text-shadow:rgba(0, 0, 0, 0.25) 0px -1px 0px;
+        user-select:none;
+        vertical-align:middle;
+        width:270.969px;
+        word-spacing:0px;
+      }
+
+      .demo-btn:hover {
+        border-color:rgb(138, 43, 226);
+        outline: -webkit-focus-ring-color auto 1px;
+      }
+      /* End Demo Portal */
+
+      /* Start imgur gallery */
+      .imgur-wrapper2 {
+        /*background: #222;*/
+        font-family: "Fira Sans", sans-serif;
+        padding-right: 2rem;
+        background-image: linear-gradient(#fff, transparent, #fff);
+        width: 100%;
+      }
+
+      .imgur-wrapper2 * {
+        box-sizing: border-box;
+      }
+
+      .imgur-wrapper2 .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: hidden;
+        max-width: 1400px;
+        min-width: max-content;
+        /*max-width: 1000px;*/
+        margin: auto;
+        padding-left: 40px;
+      }
+      .gallery__strip {
+        min-height: 100vh;
+      }
+      .gallery__strip__wrapper {
+        flex: 0 0 100%;
+        justify-content: flex-end;
+        /*background: #222;*/
+        /*border-right: 2px solid #333;
+        border-left: 2px solid #333;*/
+
+        position: relative;
+      }
+
+      @media (min-width: 500px) {
+        .gallery__strip__wrapper {
+          flex: 0 0 50%;
+        }
+      }
+      @media (min-width: 950px) {
+        .imgur-wrapper2 .gallery {
+          height: 100vh;
+        }
+        .gallery__strip.one {
+          animation: 60s move-it ease alternate infinite 5s;
+          transform: translateY(2%);
+        }
+        .gallery__strip.three {
+          animation: 70s move-it ease alternate infinite 6s;
+          transform: translateY(2%);
+        }
+        .gallery__strip.two {
+          animation: 58s move-it-2 ease alternate infinite 5s;
+          transform: translateY(-50%);
+        }
+        .gallery__strip.four {
+          animation: 65s move-it-2 ease alternate infinite 5.5s;
+          transform: translateY(-50%);
+        }
+        .gallery__strip:hover {
+          animation-play-state: paused;
+        }
+        .gallery__strip__wrapper {
+          flex: 0 0 25%;
+        }
+      }
+      @media (min-height: 800px) and (max-height: 1200px) {
+        .surf-bg {
+          padding-top: 6rem !important;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 22rem !important;
+        }
+      }
+      @media (min-height: 900px) and (max-width: 1600px) {
+        .surf-bg {
+          padding-top: 3rem !important;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 22rem !important;
+        }
+      }
+      @media (min-height: 1000px) and (max-height: 1200px) and (max-width: 1700px) {
+        .surf-bg {
+          padding-top: 12rem !important;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 22rem !important;
+        }
+      }
+      @media (min-height: 800px) and (max-height: 1200px) and (max-width: 1300px) {
+        .surf-bg {
+          padding-top: 22rem !important;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 22rem !important;
+        }
+      }
+      @media (min-height: 1200px) and (max-height: 1600px) {
+        .surf-bg {
+          padding-top: 9rem !important;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 32rem !important;
+        }
+      }
+      @media (min-height: 1200px) and (max-height: 1600px) and (max-width: 1600px) {
+        .surf-bg {
+          padding-top: 24rem !important;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 32rem !important;
+        }
+      }
+      @media (min-height: 2100px) and (min-width: 3200px) {
+        .surf-bg {
+          padding-top: 20rem !important;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 42rem !important;
+          font-size: 62pt !important;
+        }
+      }
+      /*@media (min-height: 1200px) and (max-height: 1400px) {
+        .surf-bg {
+          padding-top:0rem !important;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 34rem !important;
+        }
+      }
+      @media (max-width: 1400px) and (min-height: 1100px) {
+        .surf-bg {
+          padding-top: 70rem;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 42rem !important;
+        }
+      }
+      @media (max-width: 1500px) and (min-height: 1000px) {
+        .surf-bg {
+          padding-top: 60rem;
+          background-position-y: -450px;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 42rem !important;
+        }
+      }
+      @media (max-width: 1500px) and (max-height: 900px){
+        .surf-bg {
+          padding-top: 18rem;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 36rem !important;
+        }
+      }*/
+      @media (max-width: 1200px){
+        .imgur-wrapper2 .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          overflow: hidden;
+          max-width: 1000px;
+          /*max-width: 1000px;*/
+          margin: auto;
+          padding-left: 40px;
+        }
+      }
+      .imgur-wrapper2 .photo {
+        position: relative;
+        text-align: right;
+        padding-bottom: 3rem;
+      }
+      .imgur-wrapper2 .photo__image img {
+        width: 90%;
+        transform: translateX(30%);
+        transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+      }
+      .imgur-wrapper2 .photo__name {
+        text-transform: uppercase;
+        font-size: 40px;
+        letter-spacing: 2px;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        margin-top: -25px;
+        transition: 0.4s ease-in-out 0.4s;
+        position: relative;
+        width: 100%;
+      }
+      .imgur-wrapper2 .photo:hover .photo__image img {
+        transform: translateX(0%);
+      }
+      .imgur-wrapper2 .photo:hover .photo__name {
+        color: #fff;
+      }
+
+      @keyframes move-it {
+        0%,
+       90%,
+       100% {
+          transform: translateY(2%);
+        }
+        45% {
+          transform: translateY(-50%);
+        }
+      }
+      @keyframes move-it-2 {
+        0%,
+       90%,
+       100% {
+          transform: translateY(-50%);
+        }
+        45% {
+          transform: translateY(5%);
+        }
+      }
+
+      /* End imgur gallery */
+
+      .imgur-wrapper {
+        overflow: scroll; 
+        height: 65vh;
+        width: 100vw;
+        /*width: 35vw;*/
+        margin: 0 auto; 
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1), 0 -4px 2px -2px rgba(0, 0, 0, 0.1);
+      }
+      .imgur-wrapper::-webkit-scrollbar {
+        width: 0 !important
+      }
+      .imgur-wrapper {
+        overflow: -moz-scrollbars-none;
+      }
+      .imgur-wrapper {
+        -ms-overflow-style: none;
+      }
+      .imgur-container {
+        display: flex;
+        flex-flow: column wrap;
+        max-height: 1700px;
+        /*max-height: 2800px;*/
+        margin: 0 auto;
+        width: 100vw;
+        /*display: flex;
+        flex-flow: column wrap;
+        max-height: 1800px;
+        margin: 0 auto;
+        width: 650px;*/
+        /*grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(277px,1fr));*/
+      }
+      .imgur-container div {
+        transform: translateY(0px);
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /*-webkit-box-shadow: 0px 0px 59px -39px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 59px -39px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 59px -39px rgba(0, 0, 0, 0.75);*/
+      }
+      .imgur-container div:hover {
+        animation: hover 0.5s ease;
+        transform: translateY(-20px);
+        cursor: pointer;
+      }
+      /*.imgur-container div:hover:nth-child(odd) {
+        -webkit-box-shadow: 0px 0px 90px -39px rgba(180, 94, 94, 0.75);
+        -moz-box-shadow: 0px 0px 90px -39px (180, 94, 94, 0.75);
+        box-shadow: 0px 0px 90px -39px (180, 94, 94, 0.75);
+      }
+      .imgur-container div:hover:nth-child(even) {
+        -webkit-box-shadow: 0px 0px 90px -39px rgba(40, 101, 233, 0.75);
+        -moz-box-shadow: 0px 0px 90px -39px (40, 101, 233, 0.75);
+        box-shadow: 0px 0px 90px -39px (40, 101, 233, 0.75);
+      }*/
+      .imgur-wrapper2 .long-img {
+        min-width: 125px;
+        height: 80%;
+        object-fit: cover;
+        background-size: cover;
+      }
+      .imgur-wrapper2 .small-img {
+        min-width: 75px;
+        height: 70%;
+        object-fit: cover;
+        background-size: cover;
+      }
+      .imgur-wrapper2 div .long-img {
+        margin: auto;
+      }
+      .imgur-wrapper2 div .small-img {
+        margin: auto;
+      }
+
+      .imgur-wrapper2 .div1 > iframe, 
+      .imgur-wrapper2 .div2 > iframe, 
+      .imgur-wrapper2 .div3 > iframe, 
+      .imgur-wrapper2 .div4 > iframe, 
+      .imgur-wrapper2 .div5 > iframe,
+      .imgur-wrapper2 .div6 > iframe,
+      .imgur-wrapper2 .div7 > iframe,
+      .imgur-wrapper2 .div8 > iframe,
+      .imgur-wrapper2 .div9 > iframe,
+      .imgur-wrapper2 .div10 > iframe,
+      .imgur-wrapper2 .div11 > iframe,
+      .imgur-wrapper2 .div12 > iframe,
+      .imgur-wrapper2 .div13 > iframe,
+      .imgur-wrapper2 .div14 > iframe,
+      .imgur-wrapper2 .div15 > iframe,
+      .imgur-wrapper2 .div16 > iframe,
+      .imgur-wrapper2 .div17 > iframe,
+      .imgur-wrapper2 .div18 > iframe,
+      .imgur-wrapper2 .div19 > iframe,
+      .imgur-wrapper2 .div20 > iframe
+       {
+        max-width: fit-content;
+        margin: 0 auto;
+        z-index: 99;
+        position: relative;
+      }
+
+      /* End imgur gallery */
+
+      /* Start Price Plans */
+      #priceplans {
+        /*background-color:#ebf5fc;*/
+        padding-top: 35px;
+        padding-bottom: 75px;
+        font-family: 'Rajdhani', sans-serif;
+        text-align: center;
+      }
+
+      #priceplans .btn-primary {
+        color: #fff;
+        background-color: firebrick;
+        border-color: darkred;
+        font-weight: bolder;
+      }
+      /*#priceplans .box-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 6px;
+        background: #ebf5fc;
+        box-shadow: -2px -2px 5px white, 3px 3px 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid #c3f9f3;
+      }*/
+
+      /*#priceplans .box-container:hover {
+        box-shadow: inset -2px -2px 5px white, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+      }*/
+
+      .{
+        -webkit-animation: rotate-center 4s linear infinite both;
+                animation: rotate-center 4s linear infinite both; 
+      }
+
+      #priceplans .icon-set-box {
+          margin: auto;
+          text-align: center;
+          border: 1px solid #cac8c8;
+          padding: 15px;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          width: 230px;
+          background-position-x: center;
+          background-position-y: 35px;
+          height: 225px;
+          background-size: auto;
+          overflow: hidden;
+          box-shadow: inset -2px -2px 5px white, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+          /*margin: auto;
+          text-align: center;
+          border: 1px solid #cac8c8;
+          padding: 15px;
+          border-radius: 50%;
+          overflow: hidden;
+          background-color: rgba(255, 255, 255, 0.5098039215686274);
+          box-shadow: inset -2px -2px 5px white, inset 3px 3px 5px rgba(0, 0, 0, 0.1);*/
+      }
+
+      .fakePlanContainer .bronze {
+        background: url(https://gif.com.ai/static/images/planthumbs/Gold-ring2.jpg) no-repeat center, white;
+      }
+
+      .fakePlanContainer .silver {
+        background: url(https://gif.com.ai/static/images/planthumbs/Silver-ring2.jpg) no-repeat center, white;
+      }
+
+      .realPlanContainer .bronze {
+        background: url(https://gif.com.ai/static/images/planthumbs/Bronze-ring.jpg) no-repeat center, white;
+      }
+
+      .realPlanContainer .silver {
+        background: url(https://gif.com.ai/static/images/planthumbs/Silver-ring.jpg) no-repeat center, white;
+      }
+
+      #priceplans .bronze:before {
+        content: 'Most Basic';
+        position: absolute;
+        color: #424242;
+        display: block;
+        background-color: #3bbdee;
+        text-align: center;
+        right: 75px;
+        top: -10px;
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        font-size: .88em;
+        font-weight: bold;
+        padding-top: 22px;
+        line-height: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        transition: all 0.5s ease;
+      }
+
+      #priceplans .silver:before {
+        content: 'Most Popular';
+        position: absolute;
+        color: #424242;
+        display: block;
+        background-color: #3bbdee;
+        text-align: center;
+        right: 75px;
+        top: -10px;
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        font-size: .88em;
+        font-weight: bold;
+        padding-top: 22px;
+        line-height: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        transition: all 0.5s ease;
+      }
+
+      #priceplans .gold:before {
+        content: 'Most Value';
+        position: absolute;
+        color: #424242;
+        display: block;
+        background-color: #3bbdee;
+        text-align: center;
+        right: 75px;
+        top: -10px;
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        font-size: .88em;
+        font-weight: bold;
+        padding-top: 22px;
+        line-height: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        transition: all 0.5s ease;
+      }
+
+      .fakePlanContainer .gold {
+        /*background: url(https://gif.com.ai/static/images/planthumbs/Goldplus-ring2.jpg) no-repeat center, white;*/
+        background: url(https://gif.com.ai/static/images/planthumbs/Goldplus-ring2.jpg) no-repeat center, white;
+      }
+
+      .realPlanContainer .gold {
+        /*background: url(https://gif.com.ai/static/images/planthumbs/Goldplus-ring2.jpg) no-repeat center, white;*/
+        background: url(https://gif.com.ai/static/images/planthumbs/Gold-ring.jpg) no-repeat center, white;
+      }
+
+      #priceplans .goldplus {
+        background: url(https://gif.com.ai/static/images/planthumbs/Goldplus-ring2.jpg) no-repeat center, white;
+      }
+
+      #priceplans .box-container .heading-main {
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: #6b6aa0;
+        font-size: 18px;
+      }
+
+      #priceplans .box-container .subheading-box {
+        text-align: center;
+        font-size: 18px;
+        color: #635f82;
+      }
+
+      #priceplans .heading-name {
+        color: #99a9b5;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+
+      #priceplans .capsule {
+        /*border: 1px solid #dfe5e8;*/
+        border-top-left-radius: 55px;
+        border-top-right-radius: 55px;
+        border-bottom-right-radius: 55px;
+        border-bottom-left-radius: 55px;
+      }
+
+      #priceplans .tag {
+           border-top-left-radius: 500px;
+          border-top-right-radius: 500px;
+      }
+
+      #priceplans .NAUTILUS {
+        border-top-left-radius: 500px;
+        border-top-right-radius: 500px;
+        border-bottom-right-radius: 500px;
+        border-bottom-left-radius: 500px;
+      }
+
+      /**
+       * ----------------------------------------
+       * animation rotate-center
+       * ----------------------------------------
+       */
+      @-webkit-keyframes rotate-center {
+        0% {
+          -webkit-transform: rotate(0);
+                  transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+      }
+      @keyframes rotate-center {
+        0% {
+          -webkit-transform: rotate(0);
+                  transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+      }
+
+      /* End Price Plans */
+
+      .makegiflabel {
+        padding-bottom: 45px;
+        font-size: x-large !important;
+        box-sizing: border-box;
+        text-align: center;
+        vertical-align: -webkit-baseline-middle;
+      }
+
+      /* Bottom Right Coin */
+
+      .coinwrapper {
+        cursor: pointer;
+        position: fixed !important;
+        bottom: 24px !important;
+        right: 24px !important;
+        z-index: 999999999 !important;
+      }
+
+      .coin p.copy {
+        width: 390px;
+        margin: 0 auto;
+        text-align: right;
+        font-size: .8em;
+      }
+      
+      .coin a { 
+        color: #fff;
+        text-decoration: none;
+        z-index: 9999999 !important;
+      }
+      
+      .coin a:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+      
+      .coin h1 {
+        font-weight: 200;
+        position: absolute;
+        background: #80BCA3;
+        border-bottom: 1px solid #447963;
+        color: #fff;
+        top: 0px;
+        width: 380px;
+        left: 0px;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+        border-radius: 4px 4px 0px 0px; 
+      }
+      
+      .coin p {
+        font-family: georgia;
+        font-style: italic;
+        position: absolute;
+        font-size: 28px;
+        z-index: 700;
+        top: 11px;
+        left: 16px;
+      }
+
+      .ffcoin p {
+        top: 25px !important;
+      }
+      
+      .coin.bronze p {
+        color: rgba(223,182,103,1);
+      }
+      .coin.silver p {
+        color: rgba(160,160,160,1);
+      }
+      .coin.gold p {
+        color: rgba(242,215,50,1);
+      }
+      
+      .coin {
+        content: "";
+        width: 52px; 
+        height: 52px;
+        display: inline-block;
+        position: fixed;
+        bottom: 22px;
+        right: 22px;
+        /*margin-top: -8px;
+        margin-right: 8px;*/
+        border-radius: 50px;
+        z-index: 500;
+        box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, .1);
+      }
+      
+      .coin:after {
+        content: "";
+        width: 42px; 
+        height: 42px;
+        display: block;
+        top: 4px;
+        left: 4px;
+        position: absolute;
+        border-radius: 50px;
+        z-index: 600;
+      }
+      
+      .coin:before{
+        content: "";
+        width: 50px; 
+        height: 50px;
+        display: block;
+        position: absolute;
+        border-radius: 50px;
+        z-index: 500;
+      }
+      
+      .bronze{
+        background: linear-gradient(45deg,  rgba(223,182,103,1) 0%,rgba(249,243,232,1) 56%,rgba(231,192,116,1) 96%); 
+      }
+      
+      .bronze:before{
+        background: linear-gradient(135deg,  #d19c35 0%,#f7e6c5 50%,#e8b558 100%);
+        border: 1px solid #e6b86a;
+      }
+      
+      .bronze:after{
+        background: linear-gradient(45deg,  rgba(223,182,103,1) 0%,rgba(249,243,232,1) 56%,rgba(231,192,116,1) 96%);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(209,156,53,0.3);
+        border-right: 1px solid rgba(209,156,53,0.5);
+        box-shadow: inset 0px 0px 2px 2px rgba(153, 106, 26, .05);
+      }
+      
+      .bronze:hover:after{
+        background: linear-gradient(45deg,  rgba(223,182,103,1) 0%,rgba(249,243,232,1) 41%,rgba(231,192,116,1) 96%);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(209,156,53,0.3);
+        border-right: 1px solid rgba(209,156,53,0.5);
+        box-shadow: inset 0px 0px 2px 2px rgba(153, 106, 26, .05);
+      }
+      
+      .silver{
+        background: linear-gradient(45deg,  rgba(160,160,160,1) 0%,rgba(232,232,232,1) 56%);
+      }
+      
+      .silver:before{
+        background: linear-gradient(45deg,  rgba(181,181,181,1) 0%,rgba(252,252,252,1) 56%,rgba(232,232,232,1) 96%);
+        border: 1px solid rgba(181,181,181,1);
+      }
+       
+      .silver:after{
+        background: linear-gradient(45deg,  rgba(181,181,181,1) 0%,rgba(252,252,252,1) 56%,rgba(232,232,232,1) 96%);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(160,160,160,0.3);
+        border-right: 1px solid rgba(160,160,160,0.5);
+        box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+      }
+      
+      .silver:hover:after{
+        background: linear-gradient(45deg,  rgba(181,181,181,1) 0%,rgba(252,252,252,1) 38%,rgba(232,232,232,1) 96%);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(160,160,160,0.3);
+        border-right: 1px solid rgba(160,160,160,0.5);
+        box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+      }
+      
+      .gold{
+        background: linear-gradient(45deg,  rgba(242,215,12,1) 0%,rgba(255,255,255,1) 56%,rgba(252,235,0,1) 96%);
+      }
+      
+      .gold:before{
+        background: linear-gradient(45deg,  rgba(242,215,12,1) 0%,rgba(255,255,255,1) 56%,rgba(252,235,0,1) 96%);
+        border: 1px solid rgba(242,215,12,1);
+      }
+       
+      .gold:after{
+        background: linear-gradient(45deg,  rgba(242,215,12,1) 0%,rgba(255,255,255,1) 56%,rgba(252,235,0,1) 96%);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(242,215,12,0.3);
+        border-right: 1px solid rgba(242,215,12,0.3);
+        box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+      }
+      
+      .gold:hover:after{
+        background: linear-gradient(45deg,  rgba(242,215,12,1) 3%,rgba(255,255,255,1) 39%,rgba(252,235,0,1) 100%);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(242,215,12,0.3);
+        border-right: 1px solid rgba(242,215,12,0.3);
+        box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+      }
+
+      .rosegold{
+        background: linear-gradient(45deg, rgba(183, 110, 121, 1) 0%,rgba(255,255,255,1) 56%,rgba(183, 110, 121, 1) 96%);
+      }
+      
+      .rosegold:before{
+        background: linear-gradient(45deg, rgba(183, 110, 121, 1) 0%,rgba(255,255,255,0.6) 56%,rgba(183, 110, 121, 1) 96%);
+        border: 1px solid rgba(242,215,12,1);
+      }
+       
+      .rosegold:after{
+        background: linear-gradient(45deg, rgba(183, 110, 121, 1) 0%,rgba(255,255,255,0.6) 56%,rgba(183, 110, 121, 0.6) 96%);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(183, 110, 121, 1);
+        border-right: 1px solid rgba(183, 110, 121, 1);
+        box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+      }
+      
+      .rosegold:hover:after{
+        background: linear-gradient(45deg, rgba(183, 110, 121, 1) 3%,rgba(255,255,255,0.6) 39%,rgba(183, 110, 121, 1) 100%);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(183, 110, 121, 1);
+        border-right: 1px solid rgba(183, 110, 121, 1);
+        box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+      }
+
+      #hardcoded-badge {
+        position:relative;
+      }
+
+      #hardcoded-badge:after {
+        content:"100";
+
+        position:absolute;
+        top:-15px;
+        right:-18px;
+
+        font-size:11px;
+        font-family:"Roboto","Helvetica","Arial",sans-serif;
+        font-weight:600;
+
+        text-align:center;
+        line-height:23px;
+
+        background:#ff4081;
+        color:white;
+
+        width:22px;
+        height:22px;           
+
+        border-radius:50%;
+        /* box-shadow:1px 2px 5px #888; */
+      }
+
+      /* Class or Id doesn't matter */
+      .dynamic-badge {
+        position:relative;
+      }
+
+      .dynamic-badge[data-badge]:after {
+        content:attr(data-badge);
+
+        position:absolute;
+        right:-18px;
+        top: -1em;
+
+        font-size:11px;
+        font-family:"Roboto","Helvetica","Arial",sans-serif;
+        font-weight:600;
+
+        text-align:center;
+        line-height:32px;
+
+        background:#ff4081;
+        color:white;
+
+        width:30px;
+        height:30px;
+
+        border-radius:50%;
+        /* box-shadow:1px 2px 5px #888; */
+      }
+
+      .ffcoin .dynamic-badge[data-badge]:after {
+        top: 0px !important;
+      }
+
+      /* 3 prong button */
+      .coin .coinwrapper {
+        position: fixed;
+        z-index: 10;
+        bottom: 22px;
+        right: 22px;
+        width: 40px;
+        height: 40px;
+      }
+
+      .coin .bg_links {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*background-color: rgba(255, 255, 255, 0.15);*/
+        border-radius: 100%;
+        /*backdrop-filter: blur(5px);*/
+        position: absolute;
+      }
+
+      .coin .social {
+        opacity: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .coin .social .icon {
+        width: 100%;
+        height: 100%;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        display: flex;
+        transition: all 0.2s ease, background-color 0.4s ease;
+        opacity: 0;
+        border-radius: 100%;
+      }
+
+      .coin .social.gold {
+        transition: all 0.8s ease;
+      }
+
+      .coin .social.gold .icon {
+        background-image: url(https://rafaelalucas91.github.io/assets/codepen/silver.svg);
+      }
+
+      .coin .social.silver {
+        transition: all 0.3s ease;
+      }
+
+      .coin .social.silver .icon {
+        content: "$99.00"
+      }
+
+      .coin .social.bronze {
+        transition: all 0.8s ease;
+      }
+
+      .coin .social.bronze .icon {
+        background-image: url(https://rafaelalucas91.github.io/assets/codepen/gold.svg);
+      }
+
+      .coinwrapper:hover {
+        width: 105px;
+        height: 105px;
+        transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+      }
+
+      .coin:hover .social {
+        opacity: 1;
+      }
+
+      .coin:hover .social .icon {
+        opacity: 0.9;
+      }
+
+      .coin:hover .social:hover {
+        background-size: 28px;
+      }
+
+      .coin:hover .social:hover .icon {
+        background-size: 65%;
+        opacity: 1;
+      }
+
+      .social.gold {
+        right: 0;
+        bottom: calc(100% - 40px);
+        transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+      }
+
+      .coin:hover .social.gold .icon:hover {
+        background-color: #698fb7;
+      }
+
+      .social.silver {
+        bottom: 45%;
+        right: 45%;
+        transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+      }
+
+      .coin:hover .social.silver .icon:hover {
+        background-color: #ea4c89;
+      }
+
+      .social.bronze {
+        bottom: 0;
+        right: calc(100% - 40px);
+        transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+      }
+
+      .coin:hover .social.bronze .icon:hover {
+        background-color: #0077b5;
+      }
+      
+      .coin .content {
+        width: 100%;
+        height: 100vh;
+        background-color: #171f30;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .coin-more {
+        color: royalblue;
+        /*text-decoration: overline;*/
+        font-weight: normal;
+      }
+
+      /* End Bottom Right Coin */
+
+
+      #home-splash-screen .plan-icon {
+        padding-left: 4px;
+        cursor: pointer;
+        float: left;
+        text-align: center;
+    }
+
+    #home-splash-screen {
+        background: #fff;
+        font-family: 'Inconsolata', sans-serif;
+        line-height: 1.7;
+        font-size: 18px;
+    }
+
+    #home-splash-screen * {
+        box-sizing: border-box;
+        text-align: center;
+        vertical-align: -webkit-baseline-middle;
+    }
+
+    #home-splash-screen strong {
+        font-weight: 700;
+    }
+
+    #home-splash-screen main {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+        padding: 2em;
+        text-align: center;
+    }
+
+    #home-splash-screen article {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home-splash-screen main title,
+    #home-splash-screen main h3,
+    #home-splash-screen main p {
+        flex: 100%;
+        max-width: 600px;
+    }
+
+    #home-splash-screen main .title {
+        font-weight: 400;
+        font: 700 40px/1.3 'Inconsolata', monospace;
+    }
+
+    #home-splash-screen main h3 {
+        font: 700 24px/1.3 'Inconsolata', monospace;
+        margin: .5em 0 1.8em;
+    }
+
+    #home-splash-screen a {
+        color: #1572b6;
+        text-decoration: none;
+    }
+
+    #home-splash-screen .head {
+        position: fixed;
+        animation: 50s headpopping infinite;
+        top: 0;
+        left: 0;
+        transform: translateY(-50vh) rotate(180deg);
+        display: none;
+    }
+
+    @keyframes headpopping {
+        3%,
+        8% {
+            transform: translateY(-50vh) rotate(180deg);
+        }
+        6% {
+            transform: translateY(0) rotate(180deg);
+        }
+        10% {
+            transform: translateY(-50vh) translateX(110vw) rotate(270deg);
+        }
+        12%,
+        20% {
+            transform: translateY(50vh) translateX(110vw) rotate(270deg);
+        }
+        15% {
+            transform: translateY(50vh) translateX(80vw) rotate(270deg);
+        }
+        22% {
+            transform: translateY(50vh) translateX(110vw) rotate(0);
+        }
+        24% {
+            transform: translateY(110vh) translateX(110vw) rotate(0);
+        }
+        26%,
+        30% {
+            transform: translateY(110vh) translateX(70vw) rotate(0);
+        }
+        28% {
+            transform: translateY(80vh) translateX(70vw) rotate(0);
+        }
+        32% {
+            transform: translateY(110vh) translateX(70vw) rotate(90deg);
+        }
+        34% {
+            transform: translateY(110vh) translateX(-50vw) rotate(90deg);
+        }
+        36%,
+        40% {
+            transform: translateY(30vh) translateX(-50vw) rotate(90deg);
+        }
+        38% {
+            transform: translateY(30vh) translateX(0) rotate(90deg);
+        }
+        42% {
+            transform: translateY(-45vh) translateX(-50vw) rotate(230deg);
+        }
+        44%,
+        48% {
+            transform: translateY(-45vh) translateX(100vw) rotate(230deg);
+        }
+        46% {
+            transform: translateY(-3vh) translateX(85vw) rotate(230deg);
+        }
+        50% {
+            transform: translateY(-45vh) translateX(100vw) rotate(180deg);
+        }
+        52%,
+        56% {
+            transform: translateY(-45vh) translateX(50vw) rotate(180deg);
+        }
+        54% {
+            transform: translateY(0) translateX(50vw) rotate(180deg);
+        }
+        58% {
+            transform: translateY(-45vh) translateX(-50vw) rotate(0);
+        }
+        60% {
+            transform: translateY(115vh) translateX(-50vw) rotate(0);
+        }
+        62%,
+        65% {
+            transform: translateY(75vh) translateX(0) rotate(0);
+        }
+        72% {
+            transform: translateY(85vh) translateX(53vw) rotate(0);
+        }
+        74% {
+            transform: translateY(110vh) translateX(53vw) rotate(0);
+        }
+        76% {
+            transform: translateY(110vh) translateX(53vw) rotate(90deg);
+        }
+        78% {
+            transform: translateY(110vh) translateX(-50vw) rotate(90deg);
+        }
+        80%,
+        88% {
+            transform: translateY(15vh) translateX(-50vw) rotate(90deg);
+        }
+        82% {
+            transform: translateY(15vh) translateX(0) rotate(90deg);
+        }
+        83% {
+            transform: translateY(15vh) translateX(0) rotate(98deg);
+        }
+        84% {
+            transform: translateY(15vh) translateX(0) rotate(83deg);
+        }
+        85% {
+            transform: translateY(15vh) translateX(0) rotate(92deg);
+        }
+        86% {
+            transform: translateY(15vh) translateX(0) rotate(87deg);
+        }
+        90% {
+            transform: translateY(15vh) translateX(-50vw) rotate(180deg);
+        }
+        92% {
+            transform: translateY(-50vh) translateX(-50vw) rotate(180deg);
+        }
+        94% {
+            transform: translateY(-50vh) translateX(0) rotate(180deg);
+        }
+    }
+
+    #home-splash-screen code {
+        display: inline-block;
+        padding: 1px 7px;
+        background: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    #home-splash-screen p {
+        margin-bottom: 1.5em;
+    }
+
+    #home-splash-screen .btn-disabled {
+        color: grey;
+        pointer-events: none;
+        opacity: 0.45;
+    }
+
+    /* grid */
+
+    #home-select-screen {
+        background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.012), rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 100%);
+        background-size: 6px 6px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #home-select-screen .red {
+        border: 5px solid red;
+    }
+
+    .dw {
+        -webkit-animation: fade 2s;
+        animation: fade 2s;
+    }
+
+    .dw {
+        box-sizing: border-box;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
+        column-gap: 0;
+        position: relative;
+    }
+
+    .dw * {
+        box-sizing: border-box;
+    }
+
+    .dw__fcs-crtn {
+        background-color: #000;
+        bottom: 0;
+        display: none;
+        left: 0;
+        opacity: 0.75;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    @media (min-width: 768px) {
+        .dw {
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 4;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .dw {
+            -webkit-column-count: 5;
+            -moz-column-count: 5;
+            column-count: 5;
+        }
+    }
+
+    @media (min-width: 1500px) {
+        .dw {
+            -webkit-column-count: 6;
+            -moz-column-count: 6;
+            column-count: 6;
+        }
+    }
+
+    .dw-pnl {
+        margin: 0;
+        padding: 5px;
+    }
+
+    .dw-pnl--fcs {
+        position: relative;
+    }
+
+    .dw-pnl--fcs:hover {
+        z-index: 3;
+    }
+
+    .dw-pnl--fcs:hover~.dw__fcs-crtn {
+        display: block;
+    }
+
+    .dw-pnl--pls {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+        -webkit-transition: -webkit-transform 0.25s ease 0s;
+        transition: -webkit-transform 0.25s ease 0s;
+        transition: transform 0.25s ease 0s;
+        transition: transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s;
+    }
+
+    .dw-pnl--pls:hover {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+
+    .dw-pnl__cntnt {
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 20px;
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .dw-pnl {
+            -webkit-column-break-inside: avoid;
+            -moz-column-break-inside: avoid;
+            break-inside: avoid;
+        }
+    }
+
+    .dw-flp {
+        -webkit-perspective: 1000;
+        perspective: 1000;
+    }
+
+    .dw-flp:hover .dw-flp__cntnt {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
+    .dw-flp--sm {
+        height: 200px;
+    }
+
+    .dw-flp--md {
+        height: 300px;
+    }
+
+    .dw-flp--lg {
+        height: 400px;
+    }
+
+    .dw-flp__pnl {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        height: 100%;
+        left: 0;
+        overflow: visible;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .dw-flp__pnl--frnt {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        z-index: 2;
+    }
+
+    .dw-flp__pnl--bck {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
+    .dw-flp__cntnt {
+        height: 100%;
+        overflow: visible;
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: 0.25s;
+        transition: 0.25s;
+    }
+
+    .dw-clstr {
+        display: -webkit-box;
+        display: flex;
+        padding: 0;
+    }
+
+    @media (max-width: 430px) {
+        .dw-clstr--vrt {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+        }
+    }
+
+    .dw-clstr--hrz {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+
+    .dw-clstr__sgmnt {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 1;
+        flex: 1 1 auto;
+    }
+
+    .dw-clstr__sgmnt--rw {
+        display: -webkit-box;
+        display: flex;
+    }
+
+    @media (max-width: 430px) {
+        .dw-clstr__sgmnt--rw {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+        }
+    }
+
+    .dw-clstr__sgmnt--clmn {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+
+    @media (min-width: 430px) {
+        .dw-clstr__sgmnt--hlf {
+            flex-basis: 50%;
+        }
+        .dw-clstr__sgmnt--qrt {
+            flex-basis: 25%;
+        }
+    }
+
+    /**
+  * Theming
+*/
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .tx--left {
+        text-align: left;
+    }
+
+    .tx--right {
+        text-align: right;
+    }
+
+    .tx--center {
+        text-align: center;
+    }
+
+    /**
+* Colors
+*/
+
+    .bd--black {
+        border: 4px solid #000;
+    }
+
+    .bg--black {
+        background-color: #000;
+    }
+
+    .tx--black {
+        color: #000;
+    }
+
+    .bd--red {
+        border: 4px solid #e74c3c;
+    }
+
+    .bg--red {
+        background-color: #e74c3c;
+    }
+
+    .tx--red {
+        color: #e74c3c;
+    }
+
+    .bd--blue {
+        border: 4px solid #1e8bc3;
+    }
+
+    .bg--blue {
+        background-color: #1e8bc3;
+    }
+
+    .tx--blue {
+        color: #1e8bc3;
+    }
+
+    .bd--green {
+        border: 4px solid #26a65b;
+    }
+
+    .bg--green {
+        background-color: #26a65b;
+    }
+
+    .tx--green {
+        color: #26a65b;
+    }
+
+    .bd--grey {
+        border: 4px solid #6c7a89;
+    }
+
+    .bg--grey {
+        background-color: #6c7a89;
+    }
+
+    .tx--grey {
+        color: #6c7a89;
+    }
+
+    .bd--purple {
+        border: 4px solid #8e44ad;
+    }
+
+    .bg--purple {
+        background-color: #8e44ad;
+    }
+
+    .tx--purple {
+        color: #8e44ad;
+    }
+
+    .bd--white {
+        border: 4px solid #ecf0f1;
+    }
+
+    .bg--white {
+        background-color: #ecf0f1;
+    }
+
+    .tx--white {
+        color: #ecf0f1;
+    }
+
+    /**
+* Images
+*/
+
+    #home-select-screen img {
+        max-height: 300px;
+        cursor: pointer;
+    }
+
+    img.dw-pnl__cntnt,
+    img.dw-flp__pnl {
+        padding: 0;
+    }
+
+    img.dw-flp__pnl {
+        max-height: 100%;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .hideit {
+      display: none !important;
+    }
+
+    /* Dodge Toggle */
+    @charset "UTF-8";
+    .emoji-toggle {
+      position: relative;
+      width: 60px;
+      margin: 40px auto;
+    }
+    .emoji-toggle .welle {
+      display: block;
+      background: #eee;
+      height: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .emoji-toggle .toggle {
+      opacity: 0;
+      border: 0;
+      outline: none;
+      height: 100%;
+      width: 100%;
+      background: transparent;
+      position: absolute;
+      cursor: pointer;
+      z-index: 100;
+    }
+    .emoji-toggle .toggle ~ .emoji:before {
+      content: "\01F431";
+      position: absolute;
+      left: 0;
+      font-size: 40px;
+      transition: 0.2s;
+    }
+    .emoji-toggle .toggle:checked ~ .emoji:before {
+      left: 100%;
+      margin-left: -1em;
+    }
+    .emoji-toggle .toggle ~ label {
+      white-space: nowrap;
+    }
+    .emoji-toggle .toggle ~ label:before {
+      position: absolute;
+      right: 100%;
+      margin-right: 5px;
+      top: 0;
+    }
+    .emoji-toggle .toggle ~ label:after {
+      position: absolute;
+      left: 100%;
+      margin-left: 5px;
+      top: 0;
+    }
+
+    .emoji-happy .toggle ~ .emoji:before {
+      /*content: "😄"*/
+      content: " ";
+      background: url('https://dogeseed.com/doge.2214a63a.svg');
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 50px;
+      height: 50px;
+      margin-top: -20px;
+      display: inline-block;
+    }
+
+    .emoji-happy .toggle:checked ~ .emoji:before {
+      /*content: "😠";
+      background: none;
+      margin-top: 0px;*/
+      /*https://www.svgrepo.com/show/191455/wolf.svg*/
+      content: " ";
+      background: url('https://www.svgrepo.com/show/191455/wolf.svg');
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 45px;
+      height: 45px;
+      margin-top: -15px;
+      display: inline-block;
+    }
+    .emoji-happy .toggle ~ label:before {
+      content: "Doge Coin";
+    }
+    .emoji-happy .toggle ~ label:after {
+      content: "Real Money";
+    }
+
+    .emoji-travel .toggle ~ .emoji:before {
+      content: "✈";
+    }
+    .emoji-travel .toggle:checked ~ .emoji:before {
+      content: "🚃";
+    }
+    .emoji-travel .toggle ~ label:before {
+      content: "Plane";
+    }
+    .emoji-travel .toggle ~ label:after {
+      content: "Train";
+    }
+
+    .emoji-food .toggle ~ .emoji:before {
+      content: "🍔";
+    }
+    .emoji-food .toggle:checked ~ .emoji:before {
+      content: "🍕";
+    }
+    .emoji-food .toggle ~ label:before {
+      content: "Burger";
+    }
+    .emoji-food .toggle ~ label:after {
+      content: "Pizza";
+    }
+
+    .emoji-vote .toggle ~ .emoji:before {
+      content: "👍";
+    }
+    .emoji-vote .toggle:checked ~ .emoji:before {
+      content: "👎";
+    }
+    .emoji-vote .toggle ~ label:before {
+      content: "Thumbs Up";
+    }
+    .emoji-vote .toggle ~ label:after {
+      content: "Thumbs Down";
+    }
+
+    .emoji-love .toggle ~ .emoji:before {
+      content: "💘";
+    }
+    .emoji-love .toggle:checked ~ .emoji:before {
+      content: "💔";
+    }
+    .emoji-love .toggle ~ label:before {
+      content: "Loves Me";
+    }
+    .emoji-love .toggle ~ label:after {
+      content: "Loves Me Not";
+    }
+    /* End Doge Toggle */
+    </style>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new 
+      Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-122389563-1', 'auto');
+      ga('send', 'pageview');
+</script>
+<body>
+<script>
+
+   function ajax_get(url, callback) {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          console.log('responseText:' + xmlhttp.responseText);
+          try {
+            var data = JSON.parse(xmlhttp.responseText);
+          } catch (err) {
+            console.log(err.message + " in " + xmlhttp.responseText);
+            return;
+          }
+          callback(data);
+        }
+      };
+
+      xmlhttp.open("GET", url, true);
+      xmlhttp.send();
+    }
+
+    ajax_get('https://api.thecatapi.com/v1/images/search?mime_types=gif', function(data) {
+      window.catgif = {
+        'id': data[0]['id'],
+        'url': data[0]['url']
+      }
+    });
+
+    function post(path, params, method) {
+        method = method || "post"; // Set method to post by default if not specified.
+
+        // The rest of this code assumes you are not using a library.
+        // It can be made less wordy if you use one.
+        var form = document.createElement("form");
+        form.setAttribute("method", method);
+        form.setAttribute("action", path);
+        form.setAttribute("target", "_self");
+
+        for(var key in params) {
+            if(params.hasOwnProperty(key)) {
+                var hiddenField = document.createElement("input");
+                hiddenField.setAttribute("type", "hidden");
+                hiddenField.setAttribute("name", key);
+                hiddenField.setAttribute("value", params[key]);
+
+                form.appendChild(hiddenField);
+             }
+        }
+
+        document.body.appendChild(form);
+        form.submit();
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const myTk = urlParams.get('t');
+
+    /*if(window.localStorage.getItem('tk') > 0 && !myTk){
+     post('https://gif.com.ai/post/');
+    }*/
+    /*if(location.hash == '#/post?activate'){
+      if(!window.localStorage.getItem('tk')){
+        window.localStorage.setItem('tk', 100);
+      }
+      execPost();
+    }*/
+</script>
+<div id="xpull_container" class="sticky mobile" style="padding-bottom:0;">
+  <a href="https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje"><img title="Get gif.com.ai on Chrome!" class="chromeBtn" src="static/assets/images/chrome-btn.png" /></a>
+</div>
+<div class="header desktop" id="top" 
+style="position:absolute;bottom:1.1em;width:calc(100% + 30vw);margin:0 auto;display:none;">
+  <h1>scroll down</h1><i class="fa fa-angle-down animated bounce"></i> 
+</div> <svg class="hidden">
+  <symbol id="icon-arrow" viewbox="0 0 24 24">
+    <title>arrow</title>
+    <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 
+3.1,12 9,18 10.2,16.8 "></polygon>
+  </symbol>
+  <symbol id="icon-drop" viewbox="0 0 24 24">
+    <title>drop</title>
+    <path 
+d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"></path>
+    <path 
+d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"></path>
+  </symbol>
+  <svg id="icon-github" viewbox="0 0 33 33">
+    <title>github</title>
+    <path d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 
+13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 
+0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 
+1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 
+1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 
+0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 
+1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 
+4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 
+4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 
+8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 
+.436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 
+0-8.997-7.294-16.29-16.291-16.29"></path>
+  </svg> </svg> <main id="othdiv">
+  <!-- <div class="coin silver desktop" onclick="location.href='https://gif.com.ai/plan?type=silver';">
+    <p>$</p>
+    <div class="coinwrapper">
+      <a href="https://gif.com.ai/plan?type=bronze" class="bg_links social bronze" title="Bronze Pack"></a>
+      <a href="https://gif.com.ai/plan?type=silver" class="bg_links social silver" title="Silver Pack"></a>
+      <a href="https://gif.com.ai/plan?type=gold" class="bg_links social gold" title="Gold Pack"></a>
+      <span class="icon"></span>
+    </div>
+  </div> -->
+  <div class="content content--side side--bg" id="lefthalf">
+  <!--<button onClick="javascript:ga('send', 'event', 'Homepage', 'click', 'Clicked Make A Gif button');return execPost();" style="z-index:9999999;color:azure;font-weight:900;background: orangered;float: right;" class="mdl-layout__tab is-active"><i aria-hidden="true" style="vertical-align: sub;" class="fa fa-2x fa-magic"></i> DEMO A GIF</button>-->
+    <header class="codrops-header">
+      <figure>
+        <!-- <a href="/" class="logo"></a> -->
+        <!--<figcaption class="imglabel">The GIF. Old School.</figcaption>-->
+        <div style="margin-top:2em;padding-bottom:1em;">
+          <!-- <h1 class="codrops-header__title">GIF.COM.AI</h1> -->
+          <img src="/static/images/gifcomlogo.png" style="float:left;position:relative;border-radius:50%;width: 100px;box-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.16), 0 6px 20px 0 rgba(0, 225, 225, 0.19);" />
+          <h1 class="codrops-header__title">GIF.COM.AI</h1>
+          <p style="text-align: end;">powered by . . .</p>
+          <h5 class="ai__title">
+            <a href="#" style="pointer-events: none;color:#1572b6;">
+              <span style="color:firebrick;">A</span>nimation 
+            </a>
+            <br>
+            <a href="#" style="pointer-events: none;color:#1572b6;padding-left:25%;">
+              <span style="color:firebrick;text-align:center;">I</span>ntelligence
+            </a>
+          </h5>
+          <p class="info">A recordable gif webtop.<br />Make memes and simulations.</p>
+        </div>
+<a href="/#post" class="abutton btn btn-primary" style="right: 2.5em;top: 5em;z-index: 99999999;padding-left:4.75em;display:none;"><i class="fa fa-desktop"></i>Make GIF's</a>
+<a id="extension" href="https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje"><img class="chromeBtn chromeBtnDesktop" src="static/assets/images/chrome-btn.png" /></a>
+        <p class="bookmarkContainer">
+  <!--<a ondragend="javascript:ga('send', 'event', 'homepage', 'bookmarklet', 'Dragged and dropped bookmarklet');" class="bookmarkbutton bm" id="bookmarklet" href="javascript:prefFile='';void(z=document.body.appendChild(document.createElement('script')));void(z.language='javascript');void(z.type='text/javascript');void(z.src='https://gif.com.ai/static/inspector.js?v=1.1');void(z.id='modi');">📌 GIF AI</a>-->
+  <a style="display:none;"> onclick="alert('You must navigate to another website to use this web clipper.')" ondragend="this.click();ga('send', 'event', 'homepage', 'bookmarklet', 'Dragged and dropped bookmarklet');" class="bookmarkbutton bm" id="bookmarklet" href="javascript:if(top['share2facebook@gmail.com']){top['share2facebook@gmail.com']}else{prefFile='';void(z=document.body.appendChild(document.createElement('script')));void(z.language='javascript');void(z.type='text/javascript');void(z.src='https://gif.com.ai/static/inspector.js?v=1.1');void(z.id='modi');}"><img src="/static/images/0010_Wand.png"> gif.com.ai</a>
+  <span class="bm" style="font-size:medium;color:black;">&larr; &#xFE0F; Drag to bookmarks!</span></p>
+      </figure>
+    </header>
+  </div>
+  <div class="content content--side" id="righthalf">
+    <button class="desktop" onclick="topFunction()" id="myTopBtn" title="Go to top">Top</button>
+    <div class="MainContainer verticalHeight100" id="scrollContainer">
+        <ul class="menu desktop">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" onclick="topFunction('features')">Features</a></li>
+          <li><a href="#" onclick="topFunction('pricing')">Pricing</a></li>
+          <li><a href="#" onclick="topFunction('gallery')">Gallery</a></li>
+          <li class="slider"></li>
+        </ul>
+      <div class="ParallaxContainer surf-bg" id="myC">
+        <h1 style="z-index:1;color:indianred;font-size: 42pt !important;padding-bottom:22rem;">ANIMATE ANYTHING
+          <br />
+          <small class="intro" style="font-size:large !important;">Your animation intelligence engine.</small>
+        </h1>
+      </div>
+      <div id="MainContentContainer" class="ContentContainer">
+        <div class="mobile gifcomlogo"></div>
+        <h5 class="mobile title" style="text-align:center;font-weight:bold;color:#333;">GIF.COM.AI</h5>
+          <div class="container text-center py-5" id="features">
+          <h6 class="desktop dreamtext" style="text-align:center;color:#47518c;opacity:0.92;font-size:-webkit-xxx-large;">Do You Dream In Gif?</h6>
+          <p class="desktop makegiflabel">Surf the web. Gather content. Make a gif.</p>
+            <div class="row" style="margin-top: 20px;margin-bottom: 75px;width: 82%;margin: 0 auto;">
+                <div class="col-lg-4 col-md-6"><i class="fas text-danger fa-desktop fa fa-3x py-4"></i>
+                  <h6 class="text-uppercase">Modern Design</h6>
+                  <p class="text-muted"> Get creative in your very own gif sandbox. Meticulously engineered using ultra modern HTML5 & Polymer tech transmorphing webkit into your animation studio!
+                  </p>
+                </div>
+                <div class="col-lg-4 col-md-6"><i class="fas text-danger fa-gear fa fa-3x py-4"></i>
+                  <h6 class="text-uppercase">Meme Mechanics</h6>
+                  <p class="text-muted">
+                    Write your own gif automation scripts using Puppeteer or CasperJS. Automatically create unique & novel gif's with the UI. Create heavy duty meme mechanics and automate with grit!
+                  </p>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-lg-4 col-md-6"><i class="fas text-danger fa-code fa fa-3x py-4"></i>
+                  <h6 class="text-uppercase">Introducing Gif Script</h6>
+                  <p class="text-muted">
+                    Native support for GifScript, a superset of JavaScript built into the gif.com.ai platform. Powerful API's give you access to the full DOM + stage & cinimatic controls!
+                  </p>
+                </div>
+                <div class="col-lg-4 col-md-6"><i class="fas text-danger fa-feed fa fa-3x py-4"></i>
+                  <h6 class="text-uppercase">Ready to ship</h6>
+                  <p class="text-muted"> Process your animation in classic .gif format. It's the most recognized file format in the world. Distribute your gif to email, social, SMS and beyond!
+                  </p>
+                </div>
+                <div class="col-lg-4 col-md-6"><i class="fas text-danger fa-download fa fa-3x py-4"></i>
+                  <h6 class="text-uppercase">100% free</h6>
+                  <p class="text-muted"> The main component of the gif.com.ai technology is a Chrome Extension that is free to use. There is absolutley no software or any files to download. Just use your browser!
+                  </p>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-lg-4 col-md-6"><i class="fas text-danger fa-binoculars fa fa-3x py-4"></i>
+                  <h6 class="text-uppercase">Just Explore</h6>
+                  <p class="text-muted">
+                    Dump the mindset of using that old software tool you use at school or in the office. Instead. Explore the web. Think of it as your canvas and let inspiration find you!
+                  </p>
+                </div>
+              </div>
+          </div>
+
+<article class="mobile" id="home-splash-screen-mobile">
+            <img src="/static/images/gifcomlogo.png" style="position:relative;border-radius:50%;width: 65px;box-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.16), 0 6px 20px 0 rgba(0, 225, 225, 0.19);" />
+            <h5 class="text-muted"><a href="#" style="pointer-events: none;"><span style="color:firebrick;">A</span>nimation <span style="color:firebrick;">I</span>ntelligence</a></h5>
+            <p class="hideit" style="display:inline-block;font-size: 95%;"><small class="plan-icon text-muted">($299.00)<br/><code><a class="gold" style="padding:7px;" href="https://gif.com.ai/plan?type=gold">&nbsp;Gold&nbsp;&nbsp;</a></code></small>
+                <small
+                    class="plan-icon text-semi-bold">($49.00)<br/><code class="silver"><a class="silver" style="padding:7px;" href="https://gif.com.ai/plan?type=silver"> &nbsp;&nbsp;Silver&nbsp;&nbsp; </a></code></small>
+                    <small
+                        class="plan-icon text-muted">($99.00)<br/><code><a class="bronze" style="padding:7px;" href="https://gif.com.ai/plan?type=bronze">‏‏‎Bronze‏‏‎</a></code></small>
+                        <!-- <small
+                            class="plan-icon text-muted">($525.95)<br/><code><a class="rosegold" style="padding:7px;" href="https://gif.com.ai/plan?type=goldplus">‏‏‎ ‎Gold+ ‏‏‎</a></code></small> -->
+            </p>
+            <p class="hideit" style="clear:both;"><br/><span>Try for free!</span><br/></p>
+        </article>
+
+        <div class="ContentContainer dotted-bg flipmeV mobile" style="position:static;height:100px;background:white;background-image:url(static/assets/images/welcome-bg-1.png);width:100%;background-repeat: no-repeat;">
+  </div>
+        <h1 class="desktop" style="text-align: center;color: #54233b;font-family: monospace;">Benefits</h1>
+        <div class="slide Content desktop" id="slide2">
+          <div class="step1">
+            <div class="stretch">
+              <h2 style="font-family: monospace;">Import Content</h2>
+              <h5>Combine images in the gif webtop!</h5>
+              <p> Find image or gif links on the web.
+              <br />Use the Chrome Extension & import them directly.
+              <br />Build up a rich gallery of content to combine.
+            </div>
+          </div>
+          <div class="step2">
+            <div class="stretch" style="float:right;">
+              <h2 style="font-family: monospace;">LimeText™ IDE</h2>
+              <h5>Code a gif using JavaScript!</h5>
+              <p>Are you a coder? Tweak a gif bit-by-bit.
+              <br />
+              Optionally. Peer into each components
+              <br />internals and make your gif truly unique.</p>
+            </div>
+          </div>
+          <div class="step3">
+            <div class="stretch">
+              <h2 style="font-family: monospace;">GIF Webtop</h2>
+              <h5>Design and record from your personal space!</h5>
+              <p>Record natural animatronic movements.
+              <br />
+              Overlay your custom pieces. Use custom 
+              <br /> filters to make your animation.</p>
+            </div>
+          </div>
+        </div>
+        <h1 id="pricing" class="desktop" style="text-align: center;color: #54233b;font-family: monospace;">Pricing</h1>
+        <article name="pricetable" id="priceplans" class="desktop">
+          <div class="fluid-container fakePlanContainer" style="max-width: 1200px;margin: 0 auto;">
+            <div class="row mt-1 mb-1" style="padding-bottom: 65px;">
+              <div class="col-md-4 col-sm-4">
+                <div class="col-md-12 text-center mb-4">
+                  <span class="heading-name">ɖ1,299.00<small style="text-transform: lowercase;"> | total</small></span>
+                </div>
+                <div class="box-container">
+                  <div class="col-md-12">
+              <div class="icon-set-box gold">        
+              </div>
+
+                  </div>
+                  <div class="col-md-12">
+                    <p class="heading-main">
+                      Preloaded with 250k Tokens to Spend in the GifShop™ & Recordings
+                    </p>
+                  </div>
+                  <h6>(250,000 tokens / 8,300 minutes)</h6>
+                  
+                  <div class="col-md-12">
+                    <p class="subheading-box">
+                      Preload your experience with 250k tokens & the Gold plan. Includes GifShop™ access plus LimeText™ IDE <br/> <!-- <a class="coin-more morelink">see more</a> -->
+                    </p>
+                  </div>
+                  
+                  <div class="col-md-12 text-center">
+                   <a href="https://gif.com.ai/plan?type=gold"><button type="button" class="btn btn-primary">Get gold</button></a>
+                  </div>
+                  
+                  </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-4">
+                <div class="col-md-12 text-center mb-4">
+                  <span class="heading-name">ɖ499.00<small style="text-transform: lowercase;"> | total</small></span>
+                </div>
+                <div class="box-container capsule">
+                  <div class="col-md-12">
+              <div class="icon-set-box silver">
+              </div>
+
+                  </div>
+                  <div class="col-md-12">
+                    <p class="heading-main">
+                      Preloaded with 75,000 Tokens to Spend in the GifShop™ & Recordings
+                    </p>
+                  </div>
+                  <h6>(75,000 tokens / 2,500 minutes)</h6>
+                  
+                  <div class="col-md-12">
+                    <p class="subheading-box">
+                      Preload your experience with 75k tokens & the Silver plan. Includes GifShop™ access <br/> <!-- <a class="coin-more" href="javascript:topFunction('details');">see more</a> -->
+                    </p>
+                  </div>
+                  
+                  <div class="col-md-12 text-center">
+                   <a href="https://gif.com.ai/plan?type=silver"><button type="button" class="btn btn-primary">Get silver</button></a>
+                  </div>
+                  
+                  </div>
+              </div>
+              
+              
+              <div class="col-md-4 col-sm-4">
+                <div class="col-md-12 text-center mb-4">
+                  <span class="heading-name">ɖ99.00<small style="text-transform: lowercase;"> | total</small></span>
+                </div>
+                <div class="box-container tag">
+                  <div class="col-md-12">
+                    <div class="icon-set-box bronze">
+                    </div>
+                  </div>
+
+                            <div class="col-md-12">
+                              <p class="heading-main">
+                                Preloaded with 1.5k Tokens to Spend on Recordings watermark free
+                              </p>
+                            </div>
+                            <h6>(1,500 tokens / 60 minutes)</h6>
+                            
+                            <div class="col-md-12">
+                              <p class="subheading-box">
+                                Preload your experience with 1.5k tokens & the Bronze plan. Remove the GIF.COM.AI watermarks <br/> <!-- <a class="coin-more" href="javascript:topFunction('details');">see more</a> -->
+                              </p>
+                            </div>
+                            
+                            <div class="col-md-12 text-center">
+                             <a href="https://gif.com.ai/plan?type=bronze"><button type="button" class="btn btn-primary">Get bronze</button></a>
+                            </div>
+                            
+                            </div>
+                        </div>
+                        
+                         <!-- <div class="col-md-3 col-sm-3">
+                          <div class="col-md-12 text-center mb-4">
+                            <span class="heading-name">$525.95<small style="text-transform: lowercase;"> | month</small></span>
+                          </div>
+                          <div class="box-container NAUTILUS">
+                            <div class="col-md-12">
+                    <div class="icon-set-box goldplus">
+                    </div>
+
+                  </div>
+                  <div class="col-md-12">
+                    <p class="heading-main">
+                      Preloaded With Unlimited Tokens
+                    </p>
+                  </div>
+                  
+                  <div class="col-md-12">
+                    <p class="subheading-box">
+                      Preload your extension with ∞ tokens & the Gold Plus plan, <br/>
+                    </p>
+                  </div>
+                  
+                  <div class="col-md-12 text-center">
+                    <a href="https://gif.com.ai/plan?type=Goldplus"><button type="button" class="btn btn-primary">See More</button></a>
+                  </div>
+                  
+                  </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="fluid-container realPlanContainer" style="max-width: 1200px;margin: 0 auto;display:none;">
+            <div class="row mt-1 mb-1" style="padding-bottom: 65px;">
+              <div class="col-md-4 col-sm-4">
+                <div class="col-md-12 text-center mb-4">
+                  <span class="heading-name">$299.00<small style="text-transform: lowercase;"> | month</small></span>
+                </div>
+                <div class="box-container">
+                  <div class="col-md-12">
+              <div class="icon-set-box gold">        
+              </div>
+
+                  </div>
+                  <div class="col-md-12">
+                    <p class="heading-main">
+                      Preloaded with 250k Tokens to Spend in the GifShop™ & Recordings
+                    </p>
+                  </div>
+                  <h6>(250,000 tokens / 8,300 minutes)</h6>
+                  
+                  <div class="col-md-12">
+                    <p class="subheading-box">
+                      Preload your experience with 250k tokens & the Gold plan. Includes GifShop™ access plus LimeText™ IDE <br/> <!-- <a class="coin-more morelink">see more</a> -->
+                    </p>
+                  </div>
+                  
+                  <div class="col-md-12 text-center">
+                   <a href="https://gif.com.ai/plan?type=gold"><button type="button" class="btn btn-primary">Get gold</button></a>
+                  </div>
+                  
+                  </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-4">
+                <div class="col-md-12 text-center mb-4">
+                  <span class="heading-name">$99.00<small style="text-transform: lowercase;"> | month</small></span>
+                </div>
+                <div class="box-container capsule">
+                  <div class="col-md-12">
+              <div class="icon-set-box silver">
+              </div>
+
+                  </div>
+                  <div class="col-md-12">
+                    <p class="heading-main">
+                      Preloaded with 75,000 Tokens to Spend in the GifShop™ & Recordings
+                    </p>
+                  </div>
+                  <h6>(75,000 tokens / 2,500 minutes)</h6>
+                  
+                  <div class="col-md-12">
+                    <p class="subheading-box">
+                      Preload your experience with 75k tokens & the Silver plan. Includes GifShop™ access <br/> <!-- <a class="coin-more" href="javascript:topFunction('details');">see more</a> -->
+                    </p>
+                  </div>
+                  
+                  <div class="col-md-12 text-center">
+                   <a href="https://gif.com.ai/plan?type=silver"><button type="button" class="btn btn-primary">Get silver</button></a>
+                  </div>
+                  
+                  </div>
+              </div>
+              
+              
+              <div class="col-md-4 col-sm-4">
+                <div class="col-md-12 text-center mb-4">
+                  <span class="heading-name">$49.00<small style="text-transform: lowercase;"> | month</small></span>
+                </div>
+                <div class="box-container tag">
+                  <div class="col-md-12">
+                    <div class="icon-set-box bronze">
+                    </div>
+                  </div>
+
+                            <div class="col-md-12">
+                              <p class="heading-main">
+                                Preloaded with 1.5k Tokens to Spend on Recordings watermark free
+                              </p>
+                            </div>
+                            <h6>(1,500 tokens / 60 minutes)</h6>
+                            
+                            <div class="col-md-12">
+                              <p class="subheading-box">
+                                Preload your experience with 1.5k tokens & the Bronze plan. Remove the GIF.COM.AI watermarks <br/> <!-- <a class="coin-more" href="javascript:topFunction('details');">see more</a> -->
+                              </p>
+                            </div>
+                            
+                            <div class="col-md-12 text-center">
+                             <a href="https://gif.com.ai/plan?type=bronze"><button type="button" class="btn btn-primary">Get bronze</button></a>
+                            </div>
+                            
+                            </div>
+                        </div>
+                        
+                         <!-- <div class="col-md-3 col-sm-3">
+                          <div class="col-md-12 text-center mb-4">
+                            <span class="heading-name">$525.95<small style="text-transform: lowercase;"> | month</small></span>
+                          </div>
+                          <div class="box-container NAUTILUS">
+                            <div class="col-md-12">
+                    <div class="icon-set-box goldplus">
+                    </div>
+
+                  </div>
+                  <div class="col-md-12">
+                    <p class="heading-main">
+                      Preloaded With Unlimited Tokens
+                    </p>
+                  </div>
+                  
+                  <div class="col-md-12">
+                    <p class="subheading-box">
+                      Preload your extension with ∞ tokens & the Gold Plus plan, <br/>
+                    </p>
+                  </div>
+                  
+                  <div class="col-md-12 text-center">
+                    <a href="https://gif.com.ai/plan?type=Goldplus"><button type="button" class="btn btn-primary">See More</button></a>
+                  </div>
+                  
+                  </div>
+              </div> -->
+            </div>
+          </div>
+              <span style="text-align: center;margin: 10px;font-size: xx-large;">FREE</span>
+              <span class="plan-label" style="width:100%;font-size: medium;">(100 tokens / 4 minutes / 20 gif animations per month)</span>
+              <br>
+              <small style="width: 100%;font-size: unset;">Includes watermark free recording &amp; LimeText™ IDE</small>
+              <h5>Pay with</h6>
+              <div class="emoji-toggle emoji-happy">
+                <input type="checkbox" id="toggle1" class="toggle" onchange="newPlan(this)">
+                <div class="emoji"></div>
+                <label for="toggle1" class="welle"></label>
+              </div>
+        </article>
+        <div class="slide Content desktop" id="slide3">
+          <h1 style="text-align: center;color: #54233b;font-family: monospace;">Milestones</h1>
+          <h3 style="text-align:center;color: #9bb1df;">2020</h3>
+            <div id="bulletpoints">
+              <div class="c-schedule-table">
+                <ul>
+                  <li class="c-schedule-item">02 Feb
+                    <p>Experience the new splash page with brand new pricing options</p>
+                  </li>
+                </ul>
+              </div>
+           </div>
+          <h3 style="text-align:center;color: #9bb1df;">2019</h3>
+           <div id="bulletpoints">
+              <div class="c-schedule-table">
+                <ul>
+                  <li class="c-schedule-item">13 Nov
+                    <p>Completed LimeText™ IDE for coders!</p>
+                  </li>
+<!--                   <li class="c-schedule-item">02 Feb
+                    <p style="text-decoration: line-through;">Added the Gif Shop!</p>
+                  </li> -->
+                  <li class="c-schedule-item">27 Jan
+                    <p>Sticker support. Make transparent overlay animations</p>
+                  </li>
+<!--                   <li class="c-schedule-item">1 Jan
+                    <p  style="text-decoration: line-through;">Added the content explorer. Browse and add from Reddit!</p>
+                  </li> -->
+                </ul>
+              </div>
+           </div>
+          <h3 style="text-align:center;color: #9bb1df;">2018</h3>
+            <div id="bulletpoints">
+              <div class="c-schedule-table">
+                <ul>
+                  <li class="c-schedule-item">12 Dec
+                    <p>Layer support. Send any image to the front or back</p>
+                  </li>
+<!--                   <li class="c-schedule-item">5 Dec
+                    <p style="text-decoration: line-through;">Three gif enhancers are oficially launched. Lime Editor, Mirror Mode, and Bounce Effect.</p>
+                  </li> -->
+<!--                   <li class="c-schedule-item">2 Nov
+                    <p style="text-decoration: line-through;">The gif shop exits out of beta and is open to the public! </p>
+                  </li> -->
+<!--                   <li class="c-schedule-item">19 Oct
+                    <p style="text-decoration: line-through;">The gif shop enters private beta mode.</p>
+                  </li> -->
+                  <li class="c-schedule-item">18 Sep
+                    <p>Added this splash screen, with milestones and welcome message</p>
+                  </li>
+                  <li class="c-schedule-item">5 Aug
+                    <p>The animation studio is complete and feature ready!</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="c-schedule-item">5 May
+                    <p>The gif AI renderer is completed</p>
+                  </li>
+                  <li class="c-schedule-item">15 Jan
+                    <p>Work begins on a new and better cloud based gif making app!</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <h1 class="desktop" id="gallery" style="text-align: center;color: #54233b;font-family: monospace;padding-bottom:50px;">Gallery</h1>
+        <!-- <div style="
+          position: absolute;
+          width: 100%;
+          background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 95%);
+          height: 150px;
+          z-index: 99999999999999999 !important;
+        "></div> -->
+        <article class="imgur-wrapper2 desktop">
+          <div class="gallery">
+            <div class="gallery__strip__wrapper">
+              <div class="gallery__strip one">
+                <div class="photo">
+                  <div class="div1">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="km368S3"><a href="//imgur.com/km368S3">untitled</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div2">
+                    <blockquote class="imgur-embed-pub small-img" lang="en" data-id="8LdcFn5" data-context="false">
+                    <a href="//imgur.com/8LdcFn5">Created with https://gif.com.ai</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div3">
+                    <blockquote class="imgur-embed-pub long-img" lang="en" data-id="lukZEO3"><a href="//imgur.com/lukZEO3">spaghetti devil</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div4">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="mHJd0hr"><a href="//imgur.com/mHJd0hr">Welcome to Retrocade</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__strip__wrapper">
+              <div class="gallery__strip two">
+                <div class="photo">
+                  <div class="div5">
+                    <blockquote class="imgur-embed-pub long-img" lang="en" data-id="QNiD8Hg"><a href="//imgur.com/QNiD8Hg">Vapor Cat</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div6">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="7t9svTV"><a href="//imgur.com/7t9svTV">It Is</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div7">
+                    <blockquote class="imgur-embed-pub small-img" lang="en" data-id="FN1BgNx" data-context="false"><a href="//imgur.com/FN1BgNx">gif.com.ai</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div8">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="iDfT6Od"><a href="//imgur.com/iDfT6Od">Becoming Bot</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__strip__wrapper">
+              <div class="gallery__strip three">
+                <div class="photo">
+                  <div class="div9">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="qGgo9ik"><a href="//imgur.com/qGgo9ik">Well you&#39;re right in that it is an illusion.</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div10">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="rgHrsoa"><a href="//imgur.com/rgHrsoa">Stepping Bat Simulation</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div11">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="0hRIelY"><a href="//imgur.com/0hRIelY">reOrder Forest</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div12">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="0OiShvD" data-context="false"><a href="//imgur.com/0OiShvD">Created with https://gif.com.ai</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div13">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="nqi7rJ5"><a href="//imgur.com/nqi7rJ5">Ka-chowmobile</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__strip__wrapper">
+              <div class="gallery__strip four">
+                <div class="photo">
+                  <div class="div14">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="HU9u1D4"><a href="//imgur.com/HU9u1D4">Are you human. Or are you dancer?</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div15">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="398dg58"  ><a href="//imgur.com/398dg58">EEVEE 1</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div16">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="mPtuLkz"><a href="//imgur.com/mPtuLkz">Orange Julius, Stern Recoil-er</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div17">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="fZhC1NN"><a href="//imgur.com/fZhC1NN">Go Banana</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+                <div class="photo">
+                  <div class="div18">
+                    <blockquote class="imgur-embed-pub small-img" lang="en" data-id="H4hya4s" data-context="false"><a href="//imgur.com/H4hya4s">gif.com.ai</a></blockquote>
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+         <article class="desktop" id="home-splash-screen">
+            <div class="title" style="font-size: 24px;">gif.com.ai</div>
+            <h3><a href="#" style="pointer-events: none;"><span style="color:firebrick;">A</span>nimation <span style="color:firebrick;">I</span>ntelligence</a></h3>
+            <p style="display:inline-block;"><small
+                        class="plan-icon"><code><a class="gold" style="padding:7px;" href="https://gif.com.ai/plan?type=gold">‏‏‎ ‎Gold‏‏‎ ‎</a></code></small>
+                <small
+                    class="plan-icon"><br/><code class="silver"><a class="silver" style="padding:7px;" href="https://gif.com.ai/plan?type=silver"> Silver </a></code></small>
+                    <small class="plan-icon"><code><a class="bronze" style="padding:7px;" href="https://gif.com.ai/plan?type=bronze"> Bronze </a></code></small>
+            </p>
+            <p style="clear:both;"><strong class="tokenlabel">100 Tokens : 4 minutes</strong><br/><br/><span>Try for free!</span><br/></p>
+        </article>
+
+        <div id="btmchromebtn" class="desktop" style="background: white;height: 135px;padding-bottom:0;text-align:center;">
+          <a href="/#post" class="abutton btn btn-primary" style="height: 63px;width: 50px;background: #e8e8e8;">
+            <i class="fa fa-magic" title="Make GIF's" aria-hidden="true" style="color: royalblue;left: 20;font-size: xx-large;-webkit-text-stroke-width: thin;-webkit-text-stroke-color: gold;"></i>
+          </a>
+          <a style="display:none;" class="desktop" href="https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje">
+            <img title="Get gif.com.ai on Chrome!" style="position: relative !important;display:block;margin:auto;" width="180px" src="https://gif.com.ai/static/images/chrome-bag-icon.png">
+            <h4 style="text-align:center;text-decoration: underline;color: #415a7d;">Get on Chrome!</h4>
+          </a>
+        </div>
+      </div>
+      <div class="ContentContainer dotted-bg flipmeV desktop" style="bottom:0;height:450px;background:url(static/assets/images/welcome-bg-1.png), linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 95%);width:100%;background-repeat: no-repeat;">
+        <div class="love desktop"><i class="fa fa-heart"></i></div>
+        <div class="withlove">Made In <span style="color:cornflowerblue;">Los Angeles</span>
+          <br />
+          <input class="form__button" style="color:slategrey;font-weight:300 !important;" type="button" name="copyright" value="Copyright 2021 - All Rights Reserved" />
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <script>
+  jQuery(document).ready(function($) {
+
+    if(!window.localStorage.getItem('import')){
+      window.localStorage.setItem('import', JSON.stringify([{
+        html: `<img src="${window.catgif.url}">`,
+        realHeight: 480,
+        realWidth: 640,
+        settings: "",
+        url: window.catgif.url
+      }]))
+    }
+
+    $('.abutton').on('click', function(event){
+      post('https://gif.com.ai/post/');
+    });
+
+    $('#home-splash-screen .plan-icon:eq(0)').on('mouseenter', function(){
+      $('.tokenlabel').text("250,000 Tokens : 8,300 minutes")
+    }).on('mouseleave', function(){
+      $('.tokenlabel').text("100 Tokens : 4 minutes")
+    });
+
+    $('#home-splash-screen .plan-icon:eq(1)').on('mouseenter', function(){
+      $('.tokenlabel').text("75,000 Tokens : 2,500 minutes")
+    }).on('mouseleave', function(){
+      $('.tokenlabel').text("100 Tokens : 4 minutes")
+    });
+
+    $('#home-splash-screen .plan-icon:eq(2)').on('mouseenter', function(){
+      $('.tokenlabel').text("1,500 Tokens : 60 minutes")
+    }).on('mouseleave', function(){
+      $('.tokenlabel').text("100 Tokens : 4 minutes")
+    });
+
+    /*$('#home-splash-screen .plan-icon:eq(3)').on('mouseenter', function(){
+      $('.tokenlabel').text("∞ Tokens : Infinite minutes")
+    }).on('mouseleave', function(){
+      $('.tokenlabel').text("100 Tokens : 4 minutes")
+    });*/
+
+    /*setTimeout(function(){
+      $('.imgur-wrapper').scrollTop(430);
+    },2500);*/
+    //$('.abutton').hide();
+    //if ( $.browser.webkit ) {
+    if(true == true){
+      $('#bookmarklet,.bm').hide();
+      //$('#extension').show();    
+    } else {
+      $('#extension').hide();
+      $('#bookmarklet').show();
+      //$('.abutton').hide();
+    }
+    var alterClass = function() {
+      var ww = document.body.clientWidth;
+      if(ww < 1024){
+        //window.location.replace('https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje');
+        $('.MainContainer,.ContentContainer').removeClass('verticalHeight100').addClass('verticalHeight');
+        $('.ParallaxContainer,.desktop').css('display','none'); 
+        $('.mobile').css('display', 'block');
+        window.isMobile = true;
+        //$("#dvid").hide(); //hide your div initially
+        //var topOfOthDiv = $("#othdiv").offset().top;
+        /*$('.MainContainer').scroll(function() {
+            if($('.MainContainer').scrollTop() > window.screen.height + 250) { //scrolled past the other div?
+              $("#dvid").show(200); //reached the desired point -- show div
+            } else if($("#dvid").is(':visible')) {
+              $("#dvid").hide();
+            }
+        }).on({
+            'touchmove': function(e) {
+                if (e.originalEvent.touches > 0 || e.originalEvent.touches > 0) {
+                  console.log('Down');
+                } else {
+                  $("#dvid").hide();
+                }
+            }
+        });*/
+      } else {
+        //$('.ContentContainer').addClass('verticalHeight100');
+        //$('#features').css('padding-top', '10vh');
+        $('.ParallaxContainer').css('display','flex'); 
+        $('.mobile').css('display', 'none');
+      }
+      if (ww < 1100) {
+        $('#lefthalf').css('display', 'none');
+        $('#righthalf').removeClass('content--side');
+        $('#top').css('width', '100%');
+      } else if (ww >= 1101) {
+        $('#lefthalf').css('display', 'block');
+        $('#righthalf').addClass('content--side');
+        $('#top').css('width', 'calc(100% + 30vw)');
+      };
+      if (ww < 1440) {
+        //$('.stretch').css('width', '35%');
+      } else if (ww >= 1441) {
+        $('.stretch').css('width', '');
+      }
+    };
+    $(window).resize(function() {
+      alterClass();
+    });
+
+      document.querySelector('.abutton').onmousemove = (e) => {
+
+        const x = e.pageX - e.target.offsetLeft
+        const y = e.pageY - e.target.offsetTop
+
+        e.target.style.setProperty('--x', `${ x }px`)
+        e.target.style.setProperty('--y', `${ y }px`)
+        
+      }
+
+      /*---------- secondary js ------------*/
+
+      const els = document.querySelectorAll("[type='radio']");
+      for (const el of els)
+        el.addEventListener("input", e => reorder(e.target, els));
+      reorder(els[0], els);
+
+      function reorder(targetEl, els) {
+        const nItems = els.length;
+        let processedUncheck = 0;
+        for (const el of els) {
+          const containerEl = el.nextElementSibling;
+          if (el === targetEl) {//checked radio
+            containerEl.style.setProperty("--w", "100%");
+            containerEl.style.setProperty("--l", "0");
+          }
+          else {//unchecked radios
+            containerEl.style.setProperty("--w", `${100/(nItems-1)}%`);
+            containerEl.style.setProperty("--l", `${processedUncheck * 100/(nItems-1)}%`);
+            processedUncheck += 1;
+          }
+        }
+      }
+
+        /*$("#MainContentContainer").accordion({
+            collapsible: true
+          });*/
+
+        $('#pricelink').on('click', function(){
+          $('#scrollContainer').animate({
+            'scrollTop': $('#priceplans').offset().top - 200
+          }, 1000);
+        });
+
+        /*$('.morelink').on('click', function(){
+          $('#MainContentContainer').animate({
+            'scrollTop': 0
+          }, 1000);
+        });*/
+
+        $("#othdiv > div.coin.silver").hide();
+
+        $("#scrollContainer").on("scroll", function(event) {
+
+            //alert(JSON.stringify(jQuery.browser));
+
+            if(window.isMobile){
+              return false;
+            }
+
+            /*$('#scrollContainer').animate({
+                  'scrollTop': $('#MainContentContainer').offset().top
+                }, 5000);*/
+
+            var scrollPos = $("#scrollContainer").scrollTop();
+
+            var s = scrollPos,
+            d = $("#scrollContainer").height();
+
+            var scrollPercent = (s / d) * 100;
+
+            scrollPercent = 100 - Math.max(0,100 - scrollPercent);
+            
+            console.log(scrollPercent);
+            console.log($(document).height());
+            
+            if(document.body.clientWidth > 1024){
+              if(scrollPercent > 0 && scrollPercent < 25) {
+                $("#righthalf").css('width', '75vw');
+                $("#lefthalf").css('width', '25vw').show();
+              } else {
+                $("#righthalf").css('width', 75 + scrollPercent + 'vw');
+                $("#lefthalf").css({'width': 25 - scrollPercent + 'vw'});
+              }
+
+              if($("#lefthalf").width() <= 50){
+                $("#lefthalf").hide();
+                //$('#scrollContainer').clearQueue().stop();
+              }
+
+              if (scrollPos <= 0 ) {
+                  $("#myTopBtn").fadeOut();
+                  $(".coin.silver").hide();
+              } else {
+                  $("#myTopBtn").fadeIn();
+                  $(".coin.silver").fadeOut();
+              }
+            } else {
+              $("#righthalf").css('width', '100%');
+              $("#lefthalf").hide();
+            }
+
+            /*var element = event.target;
+            if(element.scrollHeight - element.scrollTop === element.clientHeight){
+              $("#myTopBtn").fadeOut();
+              $(".coin.silver").fadeIn();
+            }*/
+        });
+
+      /*---------- end secondary ------------js*/
+    
+    //Fire it when the page first loads:
+    alterClass();
+  });
+</script>
+<script>
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction(plan) {
+    switch(plan){
+      case 'pricing':
+        //setTimeout(function(){
+          $('#scrollContainer').animate({
+            'scrollTop': $('#priceplans').offset().top - 160
+          }, 2000);
+        //},1500);
+          break;
+      case 'gallery':
+        //setTimeout(function(){
+          $('#scrollContainer').animate({
+            'scrollTop': $('#gallery').offset().top - 300
+          }, 3000);
+        //},1500);
+          break;
+      case 'features':
+        //setTimeout(function(){
+          $('#scrollContainer').animate({
+            'scrollTop': $('#features').offset().top
+          }, 1200);
+        //},1500);
+          break;
+      default:
+        //setTimeout(function(){
+          $('#scrollContainer').animate({
+            'scrollTop': 0
+          }, 1250);
+        //},1500);
+          break;
+    }
+    //document.body.scrollTop = 0;
+    //document.documentElement.scrollTop = 0;
+  }
+
+  function newPlan(element){
+    $(".realPlanContainer, .fakePlanContainer").toggle();   
+  }
+</script>
+<script>
+/*drift.on("ready", api => {
+ api.widget.hide()
+ 
+ if (window.innerWidth >= 780) {
+  api.widget.show()
+ }
+  
+})*/
+</script>
