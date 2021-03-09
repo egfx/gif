@@ -491,7 +491,7 @@ li! > .btn-group {
 }
 /* Grid mode */
 .grid-bg {
-  background: url(https://cdn.jsdelivr.net/gh/egfx/gif@master/static/images/il-grid-trans.png) top left repeat;
+  background: url(https://egfx.github.io/gif/static/images/il-grid-trans.png) top left repeat;
   background-position-y: 2px;
   cursor: move;
 }
