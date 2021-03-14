@@ -14,7 +14,43 @@
   <link href="static/css/material.min.css" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
   <!--<script src="https://cdn.jsdelivr.net/gh/peachananr/onepage-scroll/jquery.onepage-scroll.min.js"></script>-->
-<script>
+  <script>
+   function post(path, params, method) {
+        method = method || "post"; // Set method to post by default if not specified.
+
+        // The rest of this code assumes you are not using a library.
+        // It can be made less wordy if you use one.
+        var form = document.createElement("form");
+        form.setAttribute("method", method);
+        form.setAttribute("action", path);
+        form.setAttribute("target", "_self");
+
+        for(var key in params) {
+            if(params.hasOwnProperty(key)) {
+                var hiddenField = document.createElement("input");
+                hiddenField.setAttribute("type", "hidden");
+                hiddenField.setAttribute("name", key);
+                hiddenField.setAttribute("value", params[key]);
+
+                form.appendChild(hiddenField);
+             }
+        }
+
+        document.body.appendChild(form);
+        form.submit();
+    }
+  chrome.runtime.sendMessage(extensionId, { method: "version" },
+    function (reply) {
+        if (reply) {
+            if (reply.version) {
+                //if (reply.version >= requiredVersion) {
+                    post('https://gif.com.ai/post/');
+                //}
+            }
+        }
+    });
+  </script>
+  <script>
   var matched, browser;
 
 jQuery.uaMatch = function( ua ) {
@@ -3476,31 +3512,6 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
         'url': data[0]['url']
       }
     });
-
-    function post(path, params, method) {
-        method = method || "post"; // Set method to post by default if not specified.
-
-        // The rest of this code assumes you are not using a library.
-        // It can be made less wordy if you use one.
-        var form = document.createElement("form");
-        form.setAttribute("method", method);
-        form.setAttribute("action", path);
-        form.setAttribute("target", "_self");
-
-        for(var key in params) {
-            if(params.hasOwnProperty(key)) {
-                var hiddenField = document.createElement("input");
-                hiddenField.setAttribute("type", "hidden");
-                hiddenField.setAttribute("name", key);
-                hiddenField.setAttribute("value", params[key]);
-
-                form.appendChild(hiddenField);
-             }
-        }
-
-        document.body.appendChild(form);
-        form.submit();
-    }
 
     const urlParams = new URLSearchParams(window.location.search);
     const myTk = urlParams.get('t');
