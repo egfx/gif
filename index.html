@@ -39,7 +39,7 @@
         document.body.appendChild(form);
         form.submit();
     }
-  chrome.runtime.sendMessage(extensionId, { method: "version" },
+  chrome.runtime.sendMessage("gifExtension", { method: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {
