@@ -3449,72 +3449,6 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
       ga('send', 'pageview');
 </script>
 <body>
-<script>
-
-   function ajax_get(url, callback) {
-      var xmlhttp = new XMLHttpRequest();
-      xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-          console.log('responseText:' + xmlhttp.responseText);
-          try {
-            var data = JSON.parse(xmlhttp.responseText);
-          } catch (err) {
-            console.log(err.message + " in " + xmlhttp.responseText);
-            return;
-          }
-          callback(data);
-        }
-      };
-
-      xmlhttp.open("GET", url, true);
-      xmlhttp.send();
-    }
-
-    ajax_get('https://api.thecatapi.com/v1/images/search?mime_types=gif', function(data) {
-      window.catgif = {
-        'id': data[0]['id'],
-        'url': data[0]['url']
-      }
-    });
-
-    function post(path, params, method) {
-        method = method || "post"; // Set method to post by default if not specified.
-
-        // The rest of this code assumes you are not using a library.
-        // It can be made less wordy if you use one.
-        var form = document.createElement("form");
-        form.setAttribute("method", method);
-        form.setAttribute("action", path);
-        form.setAttribute("target", "_self");
-
-        for(var key in params) {
-            if(params.hasOwnProperty(key)) {
-                var hiddenField = document.createElement("input");
-                hiddenField.setAttribute("type", "hidden");
-                hiddenField.setAttribute("name", key);
-                hiddenField.setAttribute("value", params[key]);
-
-                form.appendChild(hiddenField);
-             }
-        }
-
-        document.body.appendChild(form);
-        form.submit();
-    }
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const myTk = urlParams.get('t');
-
-    /*if(window.localStorage.getItem('tk') > 0 && !myTk){
-     post('https://gif.com.ai/post/');
-    }*/
-    /*if(location.hash == '#/post?activate'){
-      if(!window.localStorage.getItem('tk')){
-        window.localStorage.setItem('tk', 100);
-      }
-      execPost();
-    }*/
-</script>
 <div id="xpull_container" class="sticky mobile" style="padding-bottom:0;">
   <a href="https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje"><img title="Get gif.com.ai on Chrome!" class="chromeBtn" src="https://egfx.github.io/gif/static/images/chrome-btn.png" /></a>
 </div>
@@ -3566,9 +3500,7 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
         <!--<figcaption class="imglabel">The GIF. Old School.</figcaption>-->
         <div style="margin-top:2em;padding-bottom:1em;">
           <!-- <h1 class="codrops-header__title">GIF.COM.AI</h1> -->
-          <a href="https://gif.com.ai/">
-            <img src="https://egfx.github.io/gif/static/images/gifcomlogo.png" style="float:left;position:relative;border-radius:50%;width: 100px;box-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.16), 0 6px 20px 0 rgba(0, 225, 225, 0.19);" />
-          </a>
+          <img src="https://egfx.github.io/gif/static/images/gifcomlogo.png" style="float:left;position:relative;border-radius:50%;width: 100px;box-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.16), 0 6px 20px 0 rgba(0, 225, 225, 0.19);" />
           <h1 class="codrops-header__title">GIF.COM.AI</h1>
           <p style="text-align: end;">powered by . . .</p>
           <h5 class="ai__title">
@@ -4249,31 +4181,8 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
     var alterClass = function() {
       var ww = document.body.clientWidth;
       if(ww < 1024){
-        //window.location.replace('https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje');
-        $('.MainContainer,.ContentContainer').removeClass('verticalHeight100').addClass('verticalHeight');
-        $('.ParallaxContainer,.desktop').css('display','none'); 
-        $('.mobile').css('display', 'block');
-        window.isMobile = true;
-        //$("#dvid").hide(); //hide your div initially
-        //var topOfOthDiv = $("#othdiv").offset().top;
-        /*$('.MainContainer').scroll(function() {
-            if($('.MainContainer').scrollTop() > window.screen.height + 250) { //scrolled past the other div?
-              $("#dvid").show(200); //reached the desired point -- show div
-            } else if($("#dvid").is(':visible')) {
-              $("#dvid").hide();
-            }
-        }).on({
-            'touchmove': function(e) {
-                if (e.originalEvent.touches > 0 || e.originalEvent.touches > 0) {
-                  console.log('Down');
-                } else {
-                  $("#dvid").hide();
-                }
-            }
-        });*/
+        window.location.replace('https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje');
       } else {
-        //$('.ContentContainer').addClass('verticalHeight100');
-        //$('#features').css('padding-top', '10vh');
         $('.ParallaxContainer').css('display','flex'); 
         $('.mobile').css('display', 'none');
       }
