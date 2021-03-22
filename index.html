@@ -13,44 +13,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet" />
   <link href="static/css/material.min.css" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-  <!--<script src="https://cdn.jsdelivr.net/gh/peachananr/onepage-scroll/jquery.onepage-scroll.min.js"></script>-->
-<script>
-  var matched, browser;
-
-jQuery.uaMatch = function( ua ) {
-    ua = ua.toLowerCase();
-
-    var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
-        /(webkit)[ \/]([\w.]+)/.exec( ua ) ||
-        /(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
-        /(msie) ([\w.]+)/.exec( ua ) ||
-        ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec( ua ) ||
-        [];
-
-    return {
-        browser: match[ 1 ] || "",
-        version: match[ 2 ] || "0"
-    };
-};
-
-matched = jQuery.uaMatch( navigator.userAgent );
-browser = {};
-
-if ( matched.browser ) {
-    browser[ matched.browser ] = true;
-    browser.version = matched.version;
-}
-
-// Chrome is Webkit, but Webkit is also Safari.
-if ( browser.chrome ) {
-    browser.webkit = true;
-} else if ( browser.webkit ) {
-    browser.safari = true;
-}
-
-jQuery.browser = browser;
-</script>
-
   <style>
     @import "https://fonts.googleapis.com/css?family=Raleway:300,400,500,900,700,300|Work+Sans:400,600|Montserrat:300,400,700|Nunito|Rajdhani|Fira+Sans:800";
       html, body {
@@ -3483,23 +3445,10 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 
 0-8.997-7.294-16.29-16.291-16.29"></path>
   </svg> </svg> <main id="othdiv">
-  <!-- <div class="coin silver desktop" onclick="location.href='https://gif.com.ai/plan?type=silver';">
-    <p>$</p>
-    <div class="coinwrapper">
-      <a href="https://gif.com.ai/plan?type=bronze" class="bg_links social bronze" title="Bronze Pack"></a>
-      <a href="https://gif.com.ai/plan?type=silver" class="bg_links social silver" title="Silver Pack"></a>
-      <a href="https://gif.com.ai/plan?type=gold" class="bg_links social gold" title="Gold Pack"></a>
-      <span class="icon"></span>
-    </div>
-  </div> -->
   <div class="content content--side side--bg" id="lefthalf">
-  <!--<button onClick="javascript:ga('send', 'event', 'Homepage', 'click', 'Clicked Make A Gif button');return execPost();" style="z-index:9999999;color:azure;font-weight:900;background: orangered;float: right;" class="mdl-layout__tab is-active"><i aria-hidden="true" style="vertical-align: sub;" class="fa fa-2x fa-magic"></i> DEMO A GIF</button>-->
     <header class="codrops-header">
       <figure>
-        <!-- <a href="/" class="logo"></a> -->
-        <!--<figcaption class="imglabel">The GIF. Old School.</figcaption>-->
         <div style="margin-top:2em;padding-bottom:1em;">
-          <!-- <h1 class="codrops-header__title">GIF.COM.AI</h1> -->
           <img src="https://egfx.github.io/gif/static/images/gifcomlogo.png" style="float:left;position:relative;border-radius:50%;width: 100px;box-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.16), 0 6px 20px 0 rgba(0, 225, 225, 0.19);" />
           <h1 class="codrops-header__title">GIF.COM.AI</h1>
           <p style="text-align: end;">powered by . . .</p>
@@ -3517,7 +3466,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
 <a href="https://gif.com.ai/#post" class="abutton btn btn-primary" style="right: 2.5em;top: 5em;z-index: 99999999;padding-left:4.75em;display:none;"><i class="fa fa-desktop"></i>Make GIF's</a>
 <a id="extension" href="https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje"><img class="chromeBtn chromeBtnDesktop" src="https://egfx.github.io/gif/static/images/chrome-btn.png" /></a>
         <p class="bookmarkContainer">
-  <!--<a ondragend="javascript:ga('send', 'event', 'homepage', 'bookmarklet', 'Dragged and dropped bookmarklet');" class="bookmarkbutton bm" id="bookmarklet" href="javascript:prefFile='';void(z=document.body.appendChild(document.createElement('script')));void(z.language='javascript');void(z.type='text/javascript');void(z.src='https://gif.com.aihttps://egfx.github.io/gif/static/inspector.js?v=1.1');void(z.id='modi');">📌 GIF AI</a>-->
   <a style="display:none;"> onclick="alert('You must navigate to another website to use this web clipper.')" ondragend="this.click();ga('send', 'event', 'homepage', 'bookmarklet', 'Dragged and dropped bookmarklet');" class="bookmarkbutton bm" id="bookmarklet" href="javascript:if(top['share2facebook@gmail.com']){top['share2facebook@gmail.com']}else{prefFile='';void(z=document.body.appendChild(document.createElement('script')));void(z.language='javascript');void(z.type='text/javascript');void(z.src='https://gif.com.aihttps://egfx.github.io/gif/static/inspector.js?v=1.1');void(z.id='modi');}"><img src="https://egfx.github.io/gif/static/images/0010_Wand.png"> gif.com.ai</a>
   <span class="bm" style="font-size:medium;color:black;">&larr; &#xFE0F; Drag to bookmarks!</span></p>
       </figure>
@@ -3592,8 +3540,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                     class="plan-icon text-semi-bold">($49.00)<br/><code class="silver"><a class="silver" style="padding:7px;" href="https://gif.com.ai/plan?type=silver"> &nbsp;&nbsp;Silver&nbsp;&nbsp; </a></code></small>
                     <small
                         class="plan-icon text-muted">($99.00)<br/><code><a class="bronze" style="padding:7px;" href="https://gif.com.ai/plan?type=bronze">‏‏‎Bronze‏‏‎</a></code></small>
-                        <!-- <small
-                            class="plan-icon text-muted">($525.95)<br/><code><a class="rosegold" style="padding:7px;" href="https://gif.com.ai/plan?type=goldplus">‏‏‎ ‎Gold+ ‏‏‎</a></code></small> -->
             </p>
             <p class="hideit" style="clear:both;"><br/><span>Try for free!</span><br/></p>
         </article>
@@ -3655,7 +3601,7 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                   
                   <div class="col-md-12">
                     <p class="subheading-box">
-                      Preload your experience with 250k tokens & the Gold plan. Includes GifShop™ access plus LimeText™ IDE <br/> <!-- <a class="coin-more morelink">see more</a> -->
+                      Preload your experience with 250k tokens & the Gold plan. Includes GifShop™ access plus LimeText™ IDE <br/>
                     </p>
                   </div>
                   
@@ -3685,7 +3631,7 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                   
                   <div class="col-md-12">
                     <p class="subheading-box">
-                      Preload your experience with 75k tokens & the Silver plan. Includes GifShop™ access <br/> <!-- <a class="coin-more" href="javascript:topFunction('details');">see more</a> -->
+                      Preload your experience with 75k tokens & the Silver plan. Includes GifShop™ access <br/>
                     </p>
                   </div>
                   
@@ -3716,7 +3662,7 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                             
                             <div class="col-md-12">
                               <p class="subheading-box">
-                                Preload your experience with 1.5k tokens & the Bronze plan. Remove the GIF.COM.AI watermarks <br/> <!-- <a class="coin-more" href="javascript:topFunction('details');">see more</a> -->
+                                Preload your experience with 1.5k tokens & the Bronze plan. Remove the GIF.COM.AI watermarks <br/>
                               </p>
                             </div>
                             
@@ -3726,35 +3672,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                             
                             </div>
                         </div>
-                        
-                         <!-- <div class="col-md-3 col-sm-3">
-                          <div class="col-md-12 text-center mb-4">
-                            <span class="heading-name">$525.95<small style="text-transform: lowercase;"> | month</small></span>
-                          </div>
-                          <div class="box-container NAUTILUS">
-                            <div class="col-md-12">
-                    <div class="icon-set-box goldplus">
-                    </div>
-
-                  </div>
-                  <div class="col-md-12">
-                    <p class="heading-main">
-                      Preloaded With Unlimited Tokens
-                    </p>
-                  </div>
-                  
-                  <div class="col-md-12">
-                    <p class="subheading-box">
-                      Preload your extension with ∞ tokens & the Gold Plus plan, <br/>
-                    </p>
-                  </div>
-                  
-                  <div class="col-md-12 text-center">
-                    <a href="https://gif.com.ai/plan?type=Goldplus"><button type="button" class="btn btn-primary">See More</button></a>
-                  </div>
-                  
-                  </div>
-              </div> -->
             </div>
           </div>
           <div class="fluid-container realPlanContainer" style="max-width: 1200px;margin: 0 auto;display:none;">
@@ -3778,7 +3695,7 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                   
                   <div class="col-md-12">
                     <p class="subheading-box">
-                      Preload your experience with 250k tokens & the Gold plan. Includes GifShop™ access plus LimeText™ IDE <br/> <!-- <a class="coin-more morelink">see more</a> -->
+                      Preload your experience with 250k tokens & the Gold plan. Includes GifShop™ access plus LimeText™ IDE <br/> 
                     </p>
                   </div>
                   
@@ -3808,7 +3725,7 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                   
                   <div class="col-md-12">
                     <p class="subheading-box">
-                      Preload your experience with 75k tokens & the Silver plan. Includes GifShop™ access <br/> <!-- <a class="coin-more" href="javascript:topFunction('details');">see more</a> -->
+                      Preload your experience with 75k tokens & the Silver plan. Includes GifShop™ access <br/> 
                     </p>
                   </div>
                   
@@ -3849,35 +3766,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                             
                             </div>
                         </div>
-                        
-                         <!-- <div class="col-md-3 col-sm-3">
-                          <div class="col-md-12 text-center mb-4">
-                            <span class="heading-name">$525.95<small style="text-transform: lowercase;"> | month</small></span>
-                          </div>
-                          <div class="box-container NAUTILUS">
-                            <div class="col-md-12">
-                    <div class="icon-set-box goldplus">
-                    </div>
-
-                  </div>
-                  <div class="col-md-12">
-                    <p class="heading-main">
-                      Preloaded With Unlimited Tokens
-                    </p>
-                  </div>
-                  
-                  <div class="col-md-12">
-                    <p class="subheading-box">
-                      Preload your extension with ∞ tokens & the Gold Plus plan, <br/>
-                    </p>
-                  </div>
-                  
-                  <div class="col-md-12 text-center">
-                    <a href="https://gif.com.ai/plan?type=Goldplus"><button type="button" class="btn btn-primary">See More</button></a>
-                  </div>
-                  
-                  </div>
-              </div> -->
             </div>
           </div>
               <span style="text-align: center;margin: 10px;font-size: xx-large;">FREE</span>
@@ -3910,15 +3798,9 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                   <li class="c-schedule-item">13 Nov
                     <p>Completed LimeText™ IDE for coders!</p>
                   </li>
-<!--                   <li class="c-schedule-item">02 Feb
-                    <p style="text-decoration: line-through;">Added the Gif Shop!</p>
-                  </li> -->
                   <li class="c-schedule-item">27 Jan
                     <p>Sticker support. Make transparent overlay animations</p>
                   </li>
-<!--                   <li class="c-schedule-item">1 Jan
-                    <p  style="text-decoration: line-through;">Added the content explorer. Browse and add from Reddit!</p>
-                  </li> -->
                 </ul>
               </div>
            </div>
@@ -3929,15 +3811,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                   <li class="c-schedule-item">12 Dec
                     <p>Layer support. Send any image to the front or back</p>
                   </li>
-<!--                   <li class="c-schedule-item">5 Dec
-                    <p style="text-decoration: line-through;">Three gif enhancers are oficially launched. Lime Editor, Mirror Mode, and Bounce Effect.</p>
-                  </li> -->
-<!--                   <li class="c-schedule-item">2 Nov
-                    <p style="text-decoration: line-through;">The gif shop exits out of beta and is open to the public! </p>
-                  </li> -->
-<!--                   <li class="c-schedule-item">19 Oct
-                    <p style="text-decoration: line-through;">The gif shop enters private beta mode.</p>
-                  </li> -->
                   <li class="c-schedule-item">18 Sep
                     <p>Added this splash screen, with milestones and welcome message</p>
                   </li>
@@ -3957,13 +3830,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
             </div>
         </div>
         <h1 class="desktop" id="gallery" style="text-align: center;color: #54233b;font-family: monospace;padding-bottom:50px;">Gallery</h1>
-        <!-- <div style="
-          position: absolute;
-          width: 100%;
-          background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 95%);
-          height: 150px;
-          z-index: 99999999999999999 !important;
-        "></div> -->
         <article class="imgur-wrapper2 desktop">
           <div class="gallery">
             <div class="gallery__strip__wrapper">
@@ -4159,15 +4025,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
       $('.tokenlabel').text("100 Tokens : 4 minutes")
     });
 
-    /*$('#home-splash-screen .plan-icon:eq(3)').on('mouseenter', function(){
-      $('.tokenlabel').text("∞ Tokens : Infinite minutes")
-    }).on('mouseleave', function(){
-      $('.tokenlabel').text("100 Tokens : 4 minutes")
-    });*/
-
-    /*setTimeout(function(){
-      $('.imgur-wrapper').scrollTop(430);
-    },2500);*/
     //$('.abutton').hide();
     //if ( $.browser.webkit ) {
     if(true == true){
@@ -4239,9 +4096,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
         }
       }
 
-        /*$("#MainContentContainer").accordion({
-            collapsible: true
-          });*/
 
         $('#pricelink').on('click', function(){
           $('#scrollContainer').animate({
@@ -4249,25 +4103,10 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
           }, 1000);
         });
 
-        /*$('.morelink').on('click', function(){
-          $('#MainContentContainer').animate({
-            'scrollTop': 0
-          }, 1000);
-        });*/
 
         $("#othdiv > div.coin.silver").hide();
 
         $("#scrollContainer").on("scroll", function(event) {
-
-            //alert(JSON.stringify(jQuery.browser));
-
-            if(window.isMobile){
-              return false;
-            }
-
-            /*$('#scrollContainer').animate({
-                  'scrollTop': $('#MainContentContainer').offset().top
-                }, 5000);*/
 
             var scrollPos = $("#scrollContainer").scrollTop();
 
@@ -4307,11 +4146,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
               $("#lefthalf").hide();
             }
 
-            /*var element = event.target;
-            if(element.scrollHeight - element.scrollTop === element.clientHeight){
-              $("#myTopBtn").fadeOut();
-              $(".coin.silver").fadeIn();
-            }*/
         });
 
       /*---------- end secondary ------------js*/
@@ -4360,14 +4194,4 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
   function newPlan(element){
     $(".realPlanContainer, .fakePlanContainer").toggle();   
   }
-</script>
-<script>
-/*drift.on("ready", api => {
- api.widget.hide()
- 
- if (window.innerWidth >= 780) {
-  api.widget.show()
- }
-  
-})*/
 </script>
