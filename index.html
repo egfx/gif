@@ -3968,10 +3968,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
           <a href="https://gif.com.ai/#post" class="abutton btn btn-primary" style="height: 63px;width: 50px;background: #e8e8e8;">
             <i class="fa fa-magic" title="Make GIF's" aria-hidden="true" style="color: royalblue;left: 20;font-size: xx-large;-webkit-text-stroke-width: thin;-webkit-text-stroke-color: gold;"></i>
           </a>
-          <a style="display:none;" class="desktop" href="https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje">
-            <img title="Get gif.com.ai on Chrome!" style="position: relative !important;display:block;margin:auto;" width="180px" src="https://egfx.github.io/gif/static/images/chrome-bag-icon.png">
-            <h4 style="text-align:center;text-decoration: underline;color: #415a7d;">Get on Chrome!</h4>
-          </a>
         </div>
       </div>
       <div class="ContentContainer dotted-bg flipmeV desktop" style="bottom:0;height:450px;background:url(https://egfx.github.io/gif/static/images/welcome-bg.png), linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 95%);width:100%;background-repeat: no-repeat;">
@@ -4019,15 +4015,11 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
       $('.tokenlabel').text("100 Tokens : 4 minutes")
     });
 
-    //$('.abutton').hide();
-    //if ( $.browser.webkit ) {
     if(true == true){
       $('#bookmarklet,.bm').hide();
-      //$('#extension').show();    
     } else {
       $('#extension').hide();
       $('#bookmarklet').show();
-      //$('.abutton').hide();
     }
     var alterClass = function() {
       var ww = document.body.clientWidth;
@@ -4047,7 +4039,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
         $('#top').css('width', 'calc(100% + 30vw)');
       };
       if (ww < 1440) {
-        //$('.stretch').css('width', '35%');
       } else if (ww >= 1441) {
         $('.stretch').css('width', '');
       }
@@ -4125,7 +4116,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
 
               if($("#lefthalf").width() <= 50){
                 $("#lefthalf").hide();
-                //$('#scrollContainer').clearQueue().stop();
               }
 
               if (scrollPos <= 0 ) {
