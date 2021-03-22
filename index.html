@@ -3983,16 +3983,6 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
   <script>
   jQuery(document).ready(function($) {
 
-    if(!window.localStorage.getItem('import')){
-      window.localStorage.setItem('import', JSON.stringify([{
-        html: `<img src="${window.catgif.url}">`,
-        realHeight: 480,
-        realWidth: 640,
-        settings: "",
-        url: window.catgif.url
-      }]))
-    }
-
     $('.abutton').on('click', function(event){
       post('https://gif.com.ai/post/');
     });
