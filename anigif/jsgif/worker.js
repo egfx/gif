@@ -13,7 +13,7 @@ onmessage = function (evt) {
     var encoder = new GIFEncoder(); //create a new GIFEncoder for every new job
     encoder.setRepeat(msg.repeat)
     encoder.setDelay(msg.delay)
-    encoder.setTransparent(0x00000000)
+    //encoder.setTransparent(0x00000000)
     if(msg.frame_index == 0){
       encoder.start();
     }else{
