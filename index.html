@@ -15,6 +15,8 @@
   <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
   <style>
     @import "https://fonts.googleapis.com/css?family=Raleway:300,400,500,900,700,300|Work+Sans:400,600|Montserrat:300,400,700|Nunito|Rajdhani|Fira+Sans:800";
+    @import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap");
       html, body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", 
 Helvetica, Arial, sans-serif;
@@ -3399,6 +3401,72 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
       content: "Loves Me Not";
     }
     /* End Doge Toggle */
+    
+    /* new healine text */
+    .newheadline .lines {
+      position: fixed;
+      width: 100vw;
+      height: 4em;
+      background: linear-gradient(rgba(89, 193, 254, 0.2) 20%, #59c1fe 40%, #59c1fe 60%, rgba(89, 193, 254, 0.2) 80%);
+      background-size: 1px 0.5em;
+      box-shadow: 0 0 1em rgba(89, 193, 254, 0.4);
+      transform: translateY(-1em);
+      left: 0;
+    }
+    .newheadline h1 {
+      position: relative;
+      font-family: "Exo";
+      font-size: 9em;
+      margin: 0;
+      transform: skew(-15deg);
+      letter-spacing: 0.03em;
+    }
+    .newheadline h1::after {
+      content: "";
+      position: absolute;
+      top: -0.1em;
+      right: 0.05em;
+      width: 0.4em;
+      height: 0.4em;
+      background: radial-gradient(white 3%, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.05) 60%, transparent 80%), radial-gradient(rgba(255, 255, 255, 0.2) 50%, transparent 60%) 50% 50%/5% 100%, radial-gradient(rgba(255, 255, 255, 0.2) 50%, transparent 60%) 50% 50%/70% 5%;
+      background-repeat: no-repeat;
+    }
+    .newheadline h1 span:first-child {
+      display: block;
+      text-shadow: 0 0 0.1em #8ba2d0, 0 0 0.2em black, 0 0 5em #165ff3;
+      -webkit-text-stroke: 0.06em rgba(0, 0, 0, 0.5);
+    }
+    .newheadline h1 span:last-child {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: linear-gradient(#032d50 25%, #00a1ef 35%, white 50%, #20125f 50%, #8313e7 55%, #ff61af 75%);
+      -webkit-text-stroke: 0.01em #94a0b9;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .newheadline h2 {
+      font-family: "Mr Dafoe";
+      margin: 0;
+      font-size: 5.5em;
+      margin-top: -0.6em;
+      color: white;
+      text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+      transform: rotate(-7deg);
+    }
+
+    .newheadline .hgrid {
+      background: linear-gradient(transparent 65%, rgba(46, 38, 255, 0.4) 75%, #7d41e6 80%, rgba(46, 38, 255, 0.4) 85%, transparent 95%), linear-gradient(90deg, transparent 65%, rgba(46, 38, 255, 0.4) 75%, #7d41e6 80%, rgba(46, 38, 255, 0.4) 85%, transparent 95%);
+      background-size: 30px 30px;
+      width: 200vw;
+      height: 300vh;
+      position: absolute;
+      bottom: -120vh;
+      transform: rotateX(-100deg);
+      -webkit-mask-image: linear-gradient(black, rgba(0, 0, 0, 0) 80%);
+    }
+    /* end new headline text */
     </style>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -3485,7 +3553,15 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
         <div class="mobile gifcomlogo"></div>
         <h5 class="mobile title" style="text-align:center;font-weight:bold;color:#333;">GIF.COM.AI</h5>
           <div class="container text-center py-5" id="features">
-          <h6 class="desktop dreamtext" style="text-align:center;color:#47518c;opacity:0.92;font-size:-webkit-xxx-large;">Do You Dream In Gif?</h6>
+            <div class="newheadline">
+              <div class="hgrid"></div>
+              <div class="lines"></div>
+              <h1>
+                <span>Do You Dream in Gif?</span>
+                <span>Do You Dream in Gif?</span>
+              </h1>
+            </div>
+          <!-- <h6 class="desktop dreamtext" style="text-align:center;color:#47518c;opacity:0.92;font-size:-webkit-xxx-large;">Do You Dream In Gif?</h6> -->
           <p class="desktop makegiflabel">Surf the web. Gather content. Make a gif.</p>
             <div class="row" style="margin-top: 20px;margin-bottom: 75px;width: 82%;margin: 0 auto;">
                 <div class="col-lg-4 col-md-6"><i class="fas text-danger fa-desktop fa fa-3x py-4"></i>
