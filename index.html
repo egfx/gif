@@ -4215,34 +4215,29 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
 <script>
   // When the user clicks on the button, scroll to the top of the document
   function topFunction(plan) {
+    $('.MainContainer').css('overflow', 'auto');
+    $('.MainContainer').css('overflow-x', 'hidden');
     switch(plan){
       case 'pricing':
-        //setTimeout(function(){
           $('#scrollContainer').animate({
             'scrollTop': $('#priceplans').offset().top - 160
           }, 2000);
-        //},1500);
           break;
       case 'gallery':
-        //setTimeout(function(){
           $('#scrollContainer').animate({
             'scrollTop': $('#gallery').offset().top - 300
           }, 3000);
-        //},1500);
           break;
       case 'features':
-        //setTimeout(function(){
           $('#scrollContainer').animate({
             'scrollTop': $('#features').offset().top
           }, 1200);
-        //},1500);
           break;
       default:
-        //setTimeout(function(){
+          $('.MainContainer').css('overflow', 'hidden');
           $('#scrollContainer').animate({
             'scrollTop': 0
           }, 1250);
-        //},1500);
           break;
     }
     //document.body.scrollTop = 0;
@@ -4252,4 +4247,8 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
   function newPlan(element){
     $(".realPlanContainer, .fakePlanContainer").toggle();   
   }
+  
+  $('.MainContainer').css('overflow', 'hidden');
+  
+  
 </script>
