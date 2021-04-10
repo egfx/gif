@@ -4218,6 +4218,11 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
     $('.MainContainer').css('overflow', 'auto');
     $('.MainContainer').css('overflow-x', 'hidden');
     switch(plan){
+      case 'bottom':
+          $('scrollContainer').animate({
+            'scrollTop': $('.ContentContainer:last').offset().top
+          }, 1259);
+          break;
       case 'pricing':
           $('#scrollContainer').animate({
             'scrollTop': $('#priceplans').offset().top - 160
@@ -4253,8 +4258,8 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
   var scroll = 0;
     $("#othdiv").on('mousewheel DOMMouseScroll', function(event) {
         scroll++;
-        if(scroll > 5) {
-          window.scrollTo(0,document.body.scrollHeight);
+        if(scroll > 1) {
+          topFunction('bottom');
         }
     });
   
