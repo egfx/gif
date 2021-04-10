@@ -3541,7 +3541,7 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
     <button class="desktop" onclick="topFunction()" id="myTopBtn" title="Go to top">Top</button>
     <div class="MainContainer verticalHeight100" id="scrollContainer">
         <ul class="menu desktop">
-          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" onclick="topFunction('bottom')" class="active">Home</a></li>
           <li><a href="#" onclick="topFunction('features')">Features</a></li>
           <li><a href="#" onclick="topFunction('pricing')">Pricing</a></li>
           <li><a href="#" onclick="topFunction('gallery')">Gallery</a></li>
@@ -4255,9 +4255,5 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
   
   $('.MainContainer').css('overflow', 'hidden');
   
-  $("#othdiv").on('mousewheel DOMMouseScroll', function(event) {
-    event.stopPropagation();
-    topFunction('bottom');
-  });
   
 </script>
