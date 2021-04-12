@@ -4210,50 +4210,47 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
     
     //Fire it when the page first loads:
     alterClass();
-  });
-</script>
-<script>
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction(plan) {
-    $('.MainContainer').css('overflow', 'auto');
-    $('.MainContainer').css('overflow-x', 'hidden');
-    switch(plan){
-      case 'bottom':
-          $('#scrollContainer').animate({
-            'scrollTop': $('#magicwand').offset().top
-          }, 3000);
-          break;
-      case 'pricing':
-          $('#scrollContainer').animate({
-            'scrollTop': $('#priceplans').offset().top - 160
-          }, 2000);
-          break;
-      case 'gallery':
-          $('#scrollContainer').animate({
-            'scrollTop': $('#gallery').offset().top - 300
-          }, 3000);
-          break;
-      case 'features':
-          $('#scrollContainer').animate({
-            'scrollTop': $('#features').offset().top
-          }, 1200);
-          break;
-      default:
-          $('.MainContainer').css('overflow', 'hidden');
-          $('#scrollContainer').animate({
-            'scrollTop': 0
-          }, 1250);
-          break;
+    
+     // When the user clicks on the button, scroll to the top of the document
+    function topFunction(plan) {
+      $('.MainContainer').css('overflow', 'auto');
+      $('.MainContainer').css('overflow-x', 'hidden');
+      switch(plan){
+        case 'bottom':
+            $('#scrollContainer').animate({
+              'scrollTop': $('#magicwand').offset().top
+            }, 3000);
+            break;
+        case 'pricing':
+            $('#scrollContainer').animate({
+              'scrollTop': $('#priceplans').offset().top - 160
+            }, 2000);
+            break;
+        case 'gallery':
+            $('#scrollContainer').animate({
+              'scrollTop': $('#gallery').offset().top - 300
+            }, 3000);
+            break;
+        case 'features':
+            $('#scrollContainer').animate({
+              'scrollTop': $('#features').offset().top
+            }, 1200);
+            break;
+        default:
+            $('.MainContainer').css('overflow', 'hidden');
+            $('#scrollContainer').animate({
+              'scrollTop': 0
+            }, 1250);
+            break;
+      }
+      //document.body.scrollTop = 0;
+      //document.documentElement.scrollTop = 0;
     }
-    //document.body.scrollTop = 0;
-    //document.documentElement.scrollTop = 0;
-  }
 
-  function newPlan(element){
-    $(".realPlanContainer, .fakePlanContainer").toggle();   
-  }
-  
-  $('.MainContainer').css('overflow', 'hidden');
-  
-  
+    function newPlan(element){
+      $(".realPlanContainer, .fakePlanContainer").toggle();   
+    }
+
+    $('.MainContainer').css('overflow', 'hidden');
+ });
 </script>
