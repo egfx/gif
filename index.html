@@ -4210,8 +4210,12 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
     
     //Fire it when the page first loads:
     alterClass();
-    
-     // When the user clicks on the button, scroll to the top of the document
+
+    $('.MainContainer').css('overflow', 'hidden');
+ });
+</script>
+<script>
+  // When the user clicks on the button, scroll to the top of the document
     function topFunction(plan) {
       $('.MainContainer').css('overflow', 'auto');
       $('.MainContainer').css('overflow-x', 'hidden');
@@ -4249,8 +4253,5 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
 
     function newPlan(element){
       $(".realPlanContainer, .fakePlanContainer").toggle();   
-    }
-
-    $('.MainContainer').css('overflow', 'hidden');
- });
+    } 
 </script>
