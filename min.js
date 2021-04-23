@@ -1,1 +1,3491 @@
-var _0x294f=['setSelectScreenImport','split','b14.jpg','forEach','{}.constructor(\x22return\x20this\x22)(\x20)','sold','paymentMethodId','g14.jpg','owner','toggleClass','css','className','results','tutorial','Bronze','finalizing','XMLHttpRequest','fadeOut','createTextNode','none','showTutorial','1IMnI0EbDWNKCFPNiNkAo0xw','bronze','1IMyGBEbDWNKCFPNJ8Jkg7Ql','checkInputValue','files','POST','onload','getEntities','auto','<img\x20src=\x22','input','blur','plans','ceil','parse','removeClass','clicked','prototype','href','getDataUri','getBase64FromUrl','absolute','fadeIn','payTokens','framesPerSecond','destroy','addEventListener','72269zEMkde','stringify','Your\x20gif\x20is\x20too\x20large!\x20Please\x20try\x20again...','ids','value','Gif\x20Title','.anic','preventDefault','tmp','height','currentPlan','reload','before','s1.jpg','GridCtrl','atob','FromLocalCache','status','dropAreaTimeout','canvas','nextPlan','replaceWith','hide','controller','stateMode','handleAction','code','g8.jpg','0px','checkmarkTimeout','<svg\x20id=\x22diagtext\x22\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20xmlns:xlink=\x22http://www.w3.org/1999/xlink\x22><defs><pattern\x20id=\x22marktext\x22\x20patternUnits=\x22userSpaceOnUse\x22\x20width=\x22150\x22\x20height=\x22125\x22><text\x20y=\x2230\x22\x20fill=\x22white\x22\x20font-size=\x2224\x22\x20id=\x22name\x22\x20font-family=\x22Comic\x20Sans\x20MS,cursive\x22\x20opacity=\x220.175\x22\x20class=\x22textStyle\x22>','#ffffff','toType','import','filedrop','url','price_','remove','s5.jpg','getMyFiles','https://api.github.com/gists/','addWidget','getWidgetByGuidRemote','breeze','indexOf','slow','createRange','.clouds','s11.jpg','Yes','<div\x20class=\x22widget-wrap\x22>','setItem','showError','491nbsPWD','https://egfx.github.io/gif','~\x20$0.01\x20/\x20second','18442sIzcgT','This\x20widget\x20will\x20be\x20removed\x20from\x20the\x20bar\x20immediately','ComplexType','unshift','g6.jpg','showTutorial2','card','when\x20your\x20ready\x20click\x20done','Anonymous','block','facebook','error\x20below...','bouncetype','(75,000\x20tokens\x20/\x202,500\x20minutes)','.ui-wrapper','Myself','Source:\x20','currentTarget','touchend\x20mouseup','addEntity','zIndex','app','outerWidth','directive','join','setAttribute','slide-from-top','textContent','requiresAction','antialiased','form','handlePaste','.rotatingblock','headline','center','2px\x20dashed\x20#ea1612','.morphsearch-close','angular','busy','search--open','gif\x20controls\x20ready...','floor','main.css','show','search','undefined','exportEntities','closest','angular.filter','getMetaFromUrl','where','g4.jpg','selectedElements','92300RYLenG','config','cancel','bottom\x20left','Move\x20to\x20back','parent','pixelsToColumns','draggable','cursor','#myExplore','btoa','enter\x20title\x20here','fadeout','complete','✓\x20Spend\x20tokens\x20in\x20the\x20GifShop™','disabled','drop-feedback','\x22\x20/>','getMyNotes','http://imgur.com/','<b\x20style=\x22color:\x20darkslategrey;font-size:\x20large;\x22>','WidgetSrvc','grid.start','s14.jpg','center\x20right','val','link','https://api.imgur.com/3/upload.json','183357NvuOsD','breezeSavedEntities','entityAspect','20DjwKSY','finally','loadDrop','tagName','isPost','no-touch','ngMobileClick','freebirds','Unchanged','json','realHeight','Your\x20gif\x20is\x20too\x20heavy!\x20Try\x20again\x20with\x20a\x20smaller\x20canvas\x20area.','ngRightClick','trustedHtml','dropped','g15.jpg','addImage','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22ribbon\x20ribbon-top-right\x20silver-bg\x22><span>Silver</span></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<table\x20id=\x22pricetable\x22\x20class=\x22table-fill\x22\x20style=\x22width:\x20100%;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22text-left\x22>Feature</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22text-center\x22>Benefit</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tbody\x20class=\x22table-hover\x20silver-theme\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>No\x20Watermarks</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>✓\x20Make\x20GIFs\x20without\x20watermarks</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>GifShop™</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>✓\x20Get\x20access\x20to\x20custom\x20apps\x20in\x20the\x20GifShop™</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>75k\x20tokens</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>✓\x20Get\x2075,000\x20tokens\x20to\x20spend</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</table>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','.horizontal-scroll-wrapper','preview.html','copy','clone','ngBindHtml','GET\x20MORE\x20GIF','default','execWidget','submit','$viewContentLoaded','add','modElement','fetchMetadata','widgets','contextmenu','$$path','custom','\x22\x20data-guid=\x22','#gifcanvas','removeItem','addFile','stripe','g1.jpg','edit','2px\x20dashed\x20#3aa8ff','getSearched','start','display','change','execute','<div\x20class=\x22div-tooltip\x22></div>','updatePlan','silver','slice','style','menuOptions','Int32','dblclick','action','.gridBtns','background-color','active','MainModule','ui-state-disabled','bootstrap','function','.swal2-footer','removeFromSearch','slide-from-bottom','g3.jpg','readAsDataURL','charCodeAt','.content','pay','title','tags','$controllerProvider','selectScreen','qk.gif','.gm-gridster','length','.div-tooltip','.hover-div','https://gif.com.ai/','compileGalleryItem','unbind','text','s2.jpg','random','findIndex','data-guid','contains','amount','parsing\x20gif\x20finished!\x20Moving\x20on...','$broadcast','$location','success','retrievePaymentIntent','Goldplus','entityState','input.morphsearch-input','1IMnIYEbDWNKCFPN0Uri9Osr','loadMore','createGIF','gridme','save','onlyLastFrames','noTracking','replace','main.html','showSettings','ispost','Move\x20to\x20front','$interval','Online','b8.jpg','acceptChanges','getSelection','hasClass','#search-input','doEvent','tokenAmount','position','apps','watermark','_plan','goToUrl','lazyDirective','string','valid','bottom','attribute','hideCanvasOverlay','#gifheadline','$sceDelegateProvider','bind','$httpParamSerializer','settings.json','#exitBtn','clear','found','GET','.sr-field-error','concat','\x20/\x20Month</span>','type','g12.jpg','keyCode','run','onbeforeunload','row','dragurl','transgray','plan-modal-border-','anonUserData','anic','openDetails','.gifcomai_footer','period','importer','push','aHrefSanitizationWhitelist','✓\x20Get\x201,500\x20tokens\x20to\x20spend\x20each\x20month','\x20using\x20https://gif.com.ai','using','source','location','searchable','Source:\x20https://gif.com.ai','#anigif_bar','Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20this?','path','size','#myExplore\x20.search','#name','trash','img#record','parseGifGfx','#anigif_wrapper,#gifheadline','Modified','showPlus','getOwnPropertyNames','isDeleted','done','sizeY','exploreArr','top\x20center','Remove?','focusout','✓\x20Introducing\x20LimeText™\x20IDE\x20for\x20coders','Gold\x20boost\x20includes\x20up\x20to\x208,300\x20minutes\x20of\x20recording\x20time','gridControls','swal-max','#record','url(\x22static/images/payment-modal-background-silver.jpg\x22)','removeCss','initDroppable','#droptarget','url(\x22static/images/payment-modal-background-gold.jpg\x22)','span.morphsearch-close','11139RUNIuB','bfac0df8ac88916c9dfff21ca20230b6','each','13WgFKuT','bottomToolButtons','attr','BreezeDataContext','parseSettings','getSearchedWidgets','getElementsByTagName','left','stitched','s6.jpg','get_canvas','$sce','open','s15.jpg','<div\x20class=\x22wframe\x22><div\x20ng-include\x20src=\x22::tmp\x22></div></div>','call','$index','quality','$window','confirm','requires_confirmation','scopes','orderData','<div></div>','key','send','substring','addOneByGuid','addCanvasSelectors','base64','EntityManager','b9.jpg','$filter','Client-ID\x20797f0be369944e6','exploreImport','Silver','promise','$locationProvider','note','$cacheFactory','$ocLazyLoad','featuredLabel','index','Call\x20took\x20','otherwise','siblings','handleCardAction','1djYoQG','enabled','g13.jpg','html5Mode','ready','resetGifCanvas','execSearch','resourceUrlWhitelist','load','s13.jpg','lazyController','MergeStrategy','message','/post','normal','deleteMe','userplan','hasChanges','prop','getNext','$scope','trustAsCss','</text></pattern>\x20\x20\x20\x20\x20\x20<pattern\x20id=\x22combo\x22\x20xlink:href=\x22#marktext\x22\x20patternTransform=\x22rotate(-15)\x22\x20/></defs><rect\x20width=\x22100%\x22\x20height=\x22100%\x22\x20fill=\x22url(#combo)\x22\x20/></svg>','base64MimeType','backgroundImage','url(\x22static/images/payment-modal-background-bronze.jpg\x22)','.verticalstripe','compileToCanvas','trustAsJs','EntityQuery','method','fadeTo','Remove','\x22/>','DataService','wrap','b4.jpg','uniq','inArray','flex','last_modified','FetchStrategy','inactive','create','High','https://2fb.me/https://gif.com.ai','isLast','removeSelectScreenItem','stopPropagation','lastIndexOf','image','query','signup','when','b17.jpg','myself','ui.bootstrap.contextMenu','editorLineNumber','blob','getContext','Engine','pixelsToRows','$on','oc.lazyLoad','#anigif_wrapper','head','gridster','content','jQuery','getPrototypeOf','cast_connected','anigif_bar','element','deviceDetector','tokens','Get\x20','addRender','g7.jpg','img','data','myChannel','cssText','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p><b\x20style=\x27color:#222;\x27>','\x20milliseconds.','styleSheet','pinned','s12.jpg','Bad\x20Piece!','resolve','s16.jpg','>\x20source','anigif_wrapper','paymentMethod','_self','getIem','register','prevObject','createPaymentMethod','gifRecordDone','focus','options','getRandomThumbA','$destroy','revisions','addEntityType','g2.jpg','$influence','loginType','scope','renderWidgets','getEntityType','*[gridster-item]','storeBase64Imgur','gif.com.ai','find','clientSecret','Added','catch','OverwriteChanges','Right-click\x20on\x20the\x20element\x20to\x20remove\x20it\x20from\x20the\x20canvas.','drop-area','.forkme','modelLibrary','substr','appendTo','dropAllowed','b5.jpg','getElementById','addNote','g9.jpg','thumbnail','$49.00','body','toString','triggerHandler','referrer','b1.jpg','3AaHSIO','top\x20left','morphsearch','ngSanitize','#mainbox\x20>\x20*','outerHTML','then','parseHTML','$setViewValue','executeQuery','^gridster','deleteWidget','#myExplore\x20.search__input','[SBhprULCZSGXWdkSuUrKNVYOCC]','now','.horizontalstripe','img#config,img#play,img#stop','✓\x20Get\x20250,000\x20tokens\x20to\x20spend\x20each\x20month','$299.00','#script_button','ajax','g5.jpg','\x22Helvetica\x20Neue\x22,\x20Helvetica,\x20sans-serif','video','$compileProvider','getRandomThumbB','getBackgroundPosition','goldplus','warning','giftop','plan','share','b6.jpg','#status','rgba(0,0,0,.9)','editor','imports','from','base.','images','appendChild','debugInfoEnabled','compileTemplate','https://gif.com.ai/plan?type=','error','append','getProperty','toLowerCase','$apply','some','widget','1IMnIJEbDWNKCFPN6wD2guCp','100%','b7.jpg','selector','Gold','Guid','url(\x27data:image/svg+xml;base64,','16px','getGuids','addOneByGistId','exec','widgetcss','g10.jpg','~\x20$0.03\x20/\x20second','125VEnfwy','get','resizable','gold','src','img.crosshair','metadataStore','orderComplete','closeDetails','bottom\x20right','String','backgroundMover','mousedown','getEntityByKey','#32325d','(Unlimited\x20tokens\x20/\x20Unlimited\x20minutes)','paymentIntent','dropzone','renderMode','$compile','setRequestHeader','mount','addClass','all','ngTouch','(250,000\x20tokens\x20/\x208,300\x20minutes)','test','setDeleted','settings','name','orderBy','width','startIt','img,\x20video','price','post','.gifshopBtn','importEntities','createElement','extend','(1,500\x20tokens\x20/\x2060\x20minutes)','Thanks','inlineCount','charAt','delElement','click','filter','top','deleteMeNow','(0\x20tokens\x20/\x200\x20minutes)','$routeProvider','cores','DataType','factory','3790szTMZR','response','https://gifcities.archive.org/api/v1/gifsearch','$rootScope','trigger','setCnvBg','User','getGifAsCanvas','$http','b3.jpg','item','user_id','currentElementIndex','ng.deviceDetector','detachEntity','easeOutExpo','lodash','take','querySelector','target','initialize','google','reduce','users/:id','$parse','result','LimeTextTarget','file','s4.jpg','center\x20left','slide-from-left','initializeAdapterInstance','image/gif','accesspoint','saveChanges','thumbs','addLimeText','localStorage','StripePlanCtrl','keyup','flex-wrap','#widgetcss','createEntity','getGistById','classList','#fa755a','hasOwnProperty','defer','Boolean','#cards','$routeParams','realWidth','EntityState','resizeIt','drag-active','background-position','getItem','✓\x20Make\x20GIFs\x20without\x20watermarks','$ocLazyLoadProvider','gifctrl','Done','g11.jpg','fromCharCode','resize','pageY','pk_live_xcLmEp02dMgFWZxIs2Wy2WGu','service','hideInput','isHost','static/partials/stripesplash.html','Predicate','stop','splice','kFormatter','#dropzone','col','trustAsHtml','guids','gifshop','s8.jpg','text/css','#demo-menu-top-right,\x20.btm-controls','adduser/local','#aab7c4','return\x20','billing_details','Edit\x20in\x20LimeText™','DateTime','explore','include','notes','setScope','html','$watch','.jsgif','mode','syncImages','sans-serif','gif','Previous\x20URL','match','.block','border','Bronze\x20boost\x20includes\x2060\x20minutes\x20of\x20recording\x20time','hidden','makeGifCanvas','onloadend','contents','pageX','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','toFixed','$timeout','gifcanvas','2qrsSUm','px\x20','delete','.explore_gif','#card-element','paste','loadMoreLimit','gSBhpirULfCZS.com.aiGXWdkSuUrKNVYOCC','elements','</b>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22flex-basis:\x20100%;height:\x200;\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>','map','animate','parentNode','grid.stop','sizeX','guid','log','$document','Still\x20loading...','check','entityType','s10.jpg','ngRoute','anigif','$resource'];function _0x1140(_0xd4ab14,_0x474020){_0xd4ab14=_0xd4ab14-0x82;var _0x5434b4=_0x294f[_0xd4ab14];return _0x5434b4;}var _0x4b74f5=_0x1140;(function(_0x447206,_0x402152){var _0x5d4656=_0x1140;while(!![]){try{var _0x5986f0=-parseInt(_0x5d4656(0x2f5))+-parseInt(_0x5d4656(0xb2))*parseInt(_0x5d4656(0x2d9))+parseInt(_0x5d4656(0x2f8))*-parseInt(_0x5d4656(0x1b2))+parseInt(_0x5d4656(0x2a1))*parseInt(_0x5d4656(0x17c))+parseInt(_0x5d4656(0x26c))*parseInt(_0x5d4656(0x13b))+parseInt(_0x5d4656(0x83))*parseInt(_0x5d4656(0x3be))+parseInt(_0x5d4656(0x2a4))*parseInt(_0x5d4656(0x223));if(_0x5986f0===_0x402152)break;else _0x447206['push'](_0x447206['shift']());}catch(_0x5e01a9){_0x447206['push'](_0x447206['shift']());}}}(_0x294f,0x1a780));var _0x1f5f70=function(){var _0x24954d=!![];return function(_0x51979e,_0x4bc682){var _0x442dc0=_0x24954d?function(){if(_0x4bc682){var _0xca141a=_0x4bc682['apply'](_0x51979e,arguments);return _0x4bc682=null,_0xca141a;}}:function(){};return _0x24954d=![],_0x442dc0;};}(),_0x191a08=_0x1f5f70(this,function(){var _0xabef02=_0x1140,_0x3e474b=function(){var _0x44b378=_0x1140,_0x43c709;try{_0x43c709=Function('return\x20(function()\x20'+_0x44b378(0x240)+');')();}catch(_0x533781){_0x43c709=window;}return _0x43c709;},_0x569941=_0x3e474b(),_0x1b4c32=function(){var _0x131379=_0x1140;return{'key':_0x131379(0x1bc),'value':_0x131379(0x379),'getAttribute':function(){var _0x185e34=_0x131379;for(var _0x28e310=0x0;_0x28e310<0x3e8;_0x28e310--){var _0x47afd4=_0x28e310>0x0;switch(_0x47afd4){case!![]:return this['item']+'_'+this[_0x185e34(0x270)]+'_'+_0x28e310;default:this[_0x185e34(0x1bc)]+'_'+this[_0x185e34(0x270)];}}}()};},_0x296792=new RegExp(_0xabef02(0x148),'g'),_0x5947bb=_0xabef02(0x22a)[_0xabef02(0x362)](_0x296792,'')[_0xabef02(0x23d)](';'),_0x168ef2,_0x4dee2e,_0x23b6b2,_0x386a78;for(var _0x32331c in _0x569941){if(_0x32331c[_0xabef02(0x346)]==0x8&&_0x32331c[_0xabef02(0x33d)](0x7)==0x74&&_0x32331c[_0xabef02(0x33d)](0x5)==0x65&&_0x32331c[_0xabef02(0x33d)](0x3)==0x75&&_0x32331c[_0xabef02(0x33d)](0x0)==0x64){_0x168ef2=_0x32331c;break;}}for(var _0x3d873d in _0x569941[_0x168ef2]){if(_0x3d873d[_0xabef02(0x346)]==0x6&&_0x3d873d[_0xabef02(0x33d)](0x5)==0x6e&&_0x3d873d['charCodeAt'](0x0)==0x64){_0x4dee2e=_0x3d873d;break;}}if(!('~'>_0x4dee2e)){for(var _0xd4dc1a in _0x569941[_0x168ef2]){if(_0xd4dc1a[_0xabef02(0x346)]==0x8&&_0xd4dc1a['charCodeAt'](0x7)==0x6e&&_0xd4dc1a[_0xabef02(0x33d)](0x0)==0x6c){_0x23b6b2=_0xd4dc1a;break;}}for(var _0x961bde in _0x569941[_0x168ef2][_0x23b6b2]){if(_0x961bde[_0xabef02(0x346)]==0x8&&_0x961bde[_0xabef02(0x33d)](0x7)==0x65&&_0x961bde[_0xabef02(0x33d)](0x0)==0x68){_0x386a78=_0x961bde;break;}}}if(!_0x168ef2||!_0x569941[_0x168ef2])return;var _0xe599c6=_0x569941[_0x168ef2][_0x4dee2e],_0x43baae=!!_0x569941[_0x168ef2][_0x23b6b2]&&_0x569941[_0x168ef2][_0x23b6b2][_0x386a78],_0x1b18a3=_0xe599c6||_0x43baae;if(!_0x1b18a3)return;var _0x301d3a=![];for(var _0x2b6e53=0x0;_0x2b6e53<_0x5947bb['length'];_0x2b6e53++){var _0x4dee2e=_0x5947bb[_0x2b6e53],_0x51f79c=_0x4dee2e[0x0]===String[_0xabef02(0x1f0)](0x2e)?_0x4dee2e[_0xabef02(0x32b)](0x1):_0x4dee2e,_0xc14c58=_0x1b18a3[_0xabef02(0x346)]-_0x51f79c[_0xabef02(0x346)],_0x6c8af0=_0x1b18a3[_0xabef02(0x298)](_0x51f79c,_0xc14c58),_0x2fdd99=_0x6c8af0!==-0x1&&_0x6c8af0===_0xc14c58;_0x2fdd99&&((_0x1b18a3[_0xabef02(0x346)]==_0x4dee2e[_0xabef02(0x346)]||_0x4dee2e[_0xabef02(0x298)]('.')===0x0)&&(_0x301d3a=!![]));}if(!_0x301d3a)data;else return;_0x1b4c32();});_0x191a08(),angular[_0x4b74f5(0xfa)](document)[_0x4b74f5(0xb6)](function(){var _0x1eeb56=_0x4b74f5;angular[_0x1eeb56(0x336)](document,[_0x1eeb56(0x334)]);});!Array[_0x4b74f5(0x262)][_0x4b74f5(0x16c)]&&(Array[_0x4b74f5(0x262)][_0x4b74f5(0x16c)]=function(_0x33e191){var _0x148d8c=_0x4b74f5;if(this===null)throw new TypeError();var _0xd49f13=Object(this),_0x363560=_0xd49f13['length']||0x0;if(typeof _0x33e191!='function')throw new TypeError();for(var _0x1bbded=0x0;_0x1bbded<_0x363560;_0x1bbded++){if(_0x1bbded in _0xd49f13&&_0x33e191[_0x148d8c(0x92)](this,_0xd49f13[_0x1bbded],_0x1bbded,_0xd49f13))return!![];}return![];});var MainModule=angular['module']('MainModule',[_0x4b74f5(0x239),'ngResource',_0x4b74f5(0x13e),_0x4b74f5(0x194),'ngCookies','gridster',_0x4b74f5(0xf1),_0x4b74f5(0x2d4),'ngLodash',_0x4b74f5(0x1bf),_0x4b74f5(0xea)])[_0x4b74f5(0x2da)]([_0x4b74f5(0x1ae),_0x4b74f5(0x37c),'$httpProvider',_0x4b74f5(0x153),_0x4b74f5(0x342),_0x4b74f5(0xa8),_0x4b74f5(0x1ec),function(_0x570dda,_0x19365a,_0x4a010d,_0x3b4c7c,_0x332ac4,_0x3ff311,_0x38a075){var _0x3ca84a=_0x4b74f5;_0x570dda[_0x3ca84a(0xe7)](_0x3ca84a(0xbf),{'templateUrl':'static/partials/home.html','controller':_0x3ca84a(0x27a),'reloadOnSearch':![]})[_0x3ca84a(0xe7)]('/plan',{'templateUrl':_0x3ca84a(0x1f7),'controller':_0x3ca84a(0x1d8)})[_0x3ca84a(0xaf)]({'controller':function(){var _0x5d88df=_0x3ca84a;window[_0x5d88df(0x39c)][_0x5d88df(0x362)](_0x5d88df(0x2a2));},'template':_0x3ca84a(0x9a)}),_0x19365a[_0x3ca84a(0xb9)](['**']),_0x3b4c7c[_0x3ca84a(0x397)](/^\s*(https?|ftp|mailto|file|javascript|tel):/),_0x3b4c7c[_0x3ca84a(0x164)](![]),_0x3ff311[_0x3ca84a(0xb5)]({'enabled':!![],'requireBase':![]}),MainModule[_0x3ca84a(0xbc)]=_0x332ac4[_0x3ca84a(0x111)],MainModule[_0x3ca84a(0x375)]=_0x3b4c7c[_0x3ca84a(0x2bb)];}])[_0x4b74f5(0x283)](_0x4b74f5(0x1d8),['WidgetSrvc',_0x4b74f5(0xfb),_0x4b74f5(0xc6),_0x4b74f5(0x1e4),_0x4b74f5(0x355),_0x4b74f5(0x221),_0x4b74f5(0x95),_0x4b74f5(0x367),_0x4b74f5(0x86),_0x4b74f5(0x2b3),function(_0x5e1b11,_0x47b2dc,_0x4a6118,_0x456fc1,_0x2e5876,_0x2ec625,_0x4133bd,_0x4259e7,_0x428d9f,_0x233ae0){var _0x5bd8a7=_0x4b74f5;_0x4a6118['deviceDetector']=_0x47b2dc,_0x4a6118[_0x5bd8a7(0x25d)]=[{'type':_0x5bd8a7(0x24a),'price':0x31,'stripe':{'id':_0x5bd8a7(0x251)},'thumbs':[_0x5bd8a7(0x13a),'b2.jpg',_0x5bd8a7(0x1bb),_0x5bd8a7(0xd6),_0x5bd8a7(0x130),_0x5bd8a7(0x15b),_0x5bd8a7(0x170),_0x5bd8a7(0x369),_0x5bd8a7(0xa2),'b10.jpg','b11.jpg','b12.jpg','b13.jpg',_0x5bd8a7(0x23e),'b15.jpg','b16.jpg',_0x5bd8a7(0xe8)],'quotes':[_0x5bd8a7(0x1eb),_0x5bd8a7(0x398)],'headline':''},{'type':'Silver','price':0x63,'stripe':{'id':_0x5bd8a7(0x16e)},'thumbs':[_0x5bd8a7(0x279),_0x5bd8a7(0x34d),'s3.jpg',_0x5bd8a7(0x1ce),_0x5bd8a7(0x292),_0x5bd8a7(0x8c),'s7.jpg',_0x5bd8a7(0x201),'s9.jpg',_0x5bd8a7(0x238),_0x5bd8a7(0x29c),_0x5bd8a7(0x108),_0x5bd8a7(0xbb),_0x5bd8a7(0x2f0),_0x5bd8a7(0x90),_0x5bd8a7(0x10b)],'quotes':[_0x5bd8a7(0x1eb),'✓\x20Spend\x20tokens\x20in\x20the\x20GifShop™','✓\x20Get\x2075,000\x20tokens\x20to\x20spend\x20each\x20month'],'headline':''},{'type':_0x5bd8a7(0x172),'price':0x12b,'stripe':{'id':_0x5bd8a7(0x35b)},'thumbs':['g1.jpg','g2.jpg',_0x5bd8a7(0x33b),'g4.jpg',_0x5bd8a7(0x150),_0x5bd8a7(0x2a8),_0x5bd8a7(0xff),_0x5bd8a7(0x287),_0x5bd8a7(0x133),_0x5bd8a7(0x17a),_0x5bd8a7(0x1ef),_0x5bd8a7(0x388),_0x5bd8a7(0xb4),_0x5bd8a7(0x243),_0x5bd8a7(0x307)],'quotes':[_0x5bd8a7(0x1eb),_0x5bd8a7(0x2e7),_0x5bd8a7(0x3b3),_0x5bd8a7(0x14c)],'headline':''},{'type':'Goldplus','price':0x18f,'stripe':{'id':_0x5bd8a7(0x253)},'thumbs':[_0x5bd8a7(0x320),_0x5bd8a7(0x11b),_0x5bd8a7(0x33b),_0x5bd8a7(0x2d7),_0x5bd8a7(0x150),_0x5bd8a7(0x2a8),_0x5bd8a7(0xff),_0x5bd8a7(0x287),'g9.jpg',_0x5bd8a7(0x17a),_0x5bd8a7(0x1ef)],'quotes':[_0x5bd8a7(0x1eb),'✓\x20Spend\x20tokens\x20in\x20the\x20GifShop™',_0x5bd8a7(0x3b3),'✓\x20Get\x20Unlimited\x20tokens\x20to\x20spend\x20each\x20month'],'headline':''}];var _0x1aeabf=_0x456fc1[_0x5bd8a7(0x387)][_0x5bd8a7(0x16a)]();_0x4a6118[_0x5bd8a7(0x276)]=_0x4a6118['plans'][_0x4a6118[_0x5bd8a7(0x25d)][_0x5bd8a7(0x34f)](_0x34d579=>_0x34d579[_0x5bd8a7(0x387)]['toLowerCase']()==_0x1aeabf)];var _0x367ff8=_0x4a6118[_0x5bd8a7(0x25d)][_0x5bd8a7(0x34f)](_0x455bb3=>_0x455bb3['type'][_0x5bd8a7(0x16a)]()==_0x1aeabf);_0x367ff8=_0x367ff8+0x1,_0x4a6118[_0x5bd8a7(0x280)]=_0x4a6118[_0x5bd8a7(0x25d)][_0x367ff8],_0x4a6118['orderData']={'items':[{'plan':_0x5bd8a7(0x290)+_0x4a6118[_0x5bd8a7(0x276)][_0x5bd8a7(0x31f)]['id'],'price':_0x4a6118[_0x5bd8a7(0x276)][_0x5bd8a7(0x19e)],'quantity':0x1}],'currency':'usd'};var _0x2c8205=Stripe(_0x5bd8a7(0x1f3)),_0x5d4bc0=_0x2c8205[_0x5bd8a7(0x22b)](),_0x2fce2e={'base':{'color':_0x5bd8a7(0x18a),'fontFamily':_0x5bd8a7(0x151),'fontSmoothing':_0x5bd8a7(0x2c1),'fontSize':_0x5bd8a7(0x175),'::placeholder':{'color':_0x5bd8a7(0x205)}},'invalid':{'color':_0x5bd8a7(0x1df),'iconColor':_0x5bd8a7(0x1df)}};_0x4a6118['card']=_0x5d4bc0[_0x5bd8a7(0xdd)]('card',{'style':_0x2fce2e}),_0x4a6118[_0x5bd8a7(0x2aa)][_0x5bd8a7(0x191)](_0x5bd8a7(0x227)),_0x4a6118[_0x5bd8a7(0x329)]=function(){_0x2ec625(function(){var _0x5e5e21=_0x1140;delete _0x4a6118[_0x5e5e21(0xac)],_0x2e5876[_0x5e5e21(0x2d0)]({'type':_0x4a6118[_0x5e5e21(0x280)][_0x5e5e21(0x387)]});},0x28a);},_0x4a6118[_0x5bd8a7(0x117)]=_0x4a6118['currentPlan'][_0x5bd8a7(0x1d5)][Math[_0x5bd8a7(0x2cd)](Math[_0x5bd8a7(0x34e)]()*_0x4a6118[_0x5bd8a7(0x276)][_0x5bd8a7(0x1d5)][_0x5bd8a7(0x346)])],_0x4a6118[_0x5bd8a7(0x154)]=_0x4a6118[_0x5bd8a7(0x276)]['thumbs'][Math[_0x5bd8a7(0x2cd)](Math[_0x5bd8a7(0x34e)]()*_0x4a6118[_0x5bd8a7(0x276)]['thumbs']['length'])],_0x4a6118['getRandomThumbC']=_0x4a6118['currentPlan'][_0x5bd8a7(0x1d5)][Math[_0x5bd8a7(0x2cd)](Math[_0x5bd8a7(0x34e)]()*_0x4a6118[_0x5bd8a7(0x276)]['thumbs'][_0x5bd8a7(0x346)])],_0x4a6118[_0x5bd8a7(0xac)]=_0x4a6118['currentPlan'][_0x5bd8a7(0x2c5)];switch(_0x4a6118[_0x5bd8a7(0x276)]['type']){case _0x5bd8a7(0x358):_0x4a6118[_0x5bd8a7(0xac)]=_0x5bd8a7(0x18b);break;case'Gold':_0x4a6118[_0x5bd8a7(0xac)]=_0x5bd8a7(0x195);break;case _0x5bd8a7(0xa6):_0x4a6118[_0x5bd8a7(0xac)]=_0x5bd8a7(0x2b1);break;case _0x5bd8a7(0x24a):_0x4a6118['featuredLabel']=_0x5bd8a7(0x1a4);break;default:_0x4a6118[_0x5bd8a7(0xac)]=_0x5bd8a7(0x1ad);break;}var _0x2d8631,_0x1a5ef3;_0x4a6118[_0x5bd8a7(0x392)]=function(_0x5dc2cf,_0x30be56,_0x164d45){_0x2d8631=_0x2ec625(function(){var _0x32c093=_0x1140;angular[_0x32c093(0x23f)](_0x30be56,function(_0x1539c8){var _0x37be25=_0x32c093;$(_0x1539c8)[_0x37be25(0x124)](_0x37be25(0x33e))['stop']()[_0x37be25(0x22e)]({'height':$(_0x37be25(0x348))[_0x37be25(0x124)](_0x37be25(0x33e))[0x0]['scrollHeight']+_0x164d45},0xc8);});},0x1f4);},_0x4a6118[_0x5bd8a7(0x184)]=function(_0x26e26a,_0x47979c){_0x2ec625['cancel'](_0x2d8631),_0x1a5ef3=_0x2ec625(function(){var _0x3a8859=_0x1140;angular[_0x3a8859(0x23f)](_0x47979c,function(_0x1250fd){var _0x171b80=_0x3a8859;$(_0x1250fd)['find'](_0x171b80(0x33e))[_0x171b80(0x1f9)]()[_0x171b80(0x22e)]({'height':_0x171b80(0x288)},0xc8);});},0x1f4);},_0x4a6118[_0x5bd8a7(0x2a0)]=function(_0x14df4a){var _0x4974a7=_0x5bd8a7,_0x2f18de=document[_0x4974a7(0x1c4)](_0x4974a7(0x384));_0x2f18de[_0x4974a7(0x2bf)]=_0x14df4a,setTimeout(function(){var _0x3bc604=_0x4974a7;_0x2f18de[_0x3bc604(0x2bf)]='';},0xfa0);},_0x4a6118[_0x5bd8a7(0x183)]=function(_0x4a58d3){var _0x3c8d54=_0x5bd8a7;_0x2c8205[_0x3c8d54(0x357)](_0x4a58d3)['then'](function(_0x5006d5){var _0xd2648d=_0x3c8d54,_0x116edb=_0x5006d5[_0xd2648d(0x18c)],_0x396783=JSON[_0xd2648d(0x26d)](_0x116edb,null,0x2);switch(_0x116edb[_0xd2648d(0x352)]){case 0x37f:_0x4133bd[_0xd2648d(0x1d7)]['setItem']('tk',0x5dc),_0x4133bd[_0xd2648d(0x1d7)][_0xd2648d(0x29f)](_0xd2648d(0x373),_0xd2648d(0x252));break;case 0x9bf:_0x4133bd[_0xd2648d(0x1d7)][_0xd2648d(0x29f)]('tk',0x124f8),_0x4133bd[_0xd2648d(0x1d7)][_0xd2648d(0x29f)](_0xd2648d(0x373),_0xd2648d(0x32a));break;case 0x270b:_0x4133bd['localStorage']['setItem']('tk',0x3d090),_0x4133bd['localStorage']['setItem']('_plan',_0xd2648d(0x17f));break;case 0x270f:_0x4133bd[_0xd2648d(0x1d7)][_0xd2648d(0x29f)]('tk',0x3b9ac9ff),_0x4133bd[_0xd2648d(0x1d7)]['setItem'](_0xd2648d(0x373),_0xd2648d(0x156));break;default:_0x4133bd['localStorage'][_0xd2648d(0x29f)]('tk',0xa),_0x4133bd['localStorage'][_0xd2648d(0x29f)](_0xd2648d(0x373),_0xd2648d(0x310));break;}_0x4133bd['location']['pathname']=_0xd2648d(0xbf);});},_0x4a6118[_0x5bd8a7(0x285)]=function(_0x1849d6){var _0x3643dd=_0x5bd8a7;_0x2c8205[_0x3643dd(0xb1)](_0x1849d6)[_0x3643dd(0x141)](function(_0x11d1b3){var _0x162018=_0x3643dd;if(_0x11d1b3['error'])_0x4a6118[_0x162018(0x2a0)]('Your\x20card\x20was\x20not\x20authenticated,\x20please\x20try\x20again');else _0x11d1b3[_0x162018(0x18c)][_0x162018(0x27d)]===_0x162018(0x97)&&_0x5e1b11['post'](_0x162018(0x33f),JSON[_0x162018(0x26d)]({'paymentIntentId':_0x11d1b3[_0x162018(0x18c)]['id']}))[_0x162018(0x141)](function(_0x2ec606){var _0x3137c9=_0x162018;_0x2ec606[_0x3137c9(0x167)]?_0x4a6118[_0x3137c9(0x2a0)](_0x2ec606[_0x3137c9(0x167)]):_0x4a6118[_0x3137c9(0x183)](_0x1849d6);});});},_0x4a6118['goPay']=function(){var _0x282308=_0x5bd8a7,_0x2e7a3c=document['querySelector'](_0x282308(0x3a4))[_0x282308(0x270)],_0x322147={'billing_details':{}};_0x2e7a3c&&(_0x322147[_0x282308(0x207)]['name']=_0x2e7a3c),_0x2c8205[_0x282308(0x113)](_0x282308(0x2aa),_0x4a6118[_0x282308(0x2aa)],_0x322147)[_0x282308(0x141)](function(_0x268122){var _0x1bd2c1=_0x282308;if(_0x268122[_0x1bd2c1(0x167)])_0x4a6118['showError'](_0x268122[_0x1bd2c1(0x167)][_0x1bd2c1(0xbe)]);else return _0x4a6118[_0x1bd2c1(0x99)][_0x1bd2c1(0x242)]=_0x268122[_0x1bd2c1(0x10e)]['id'],_0x5e1b11[_0x1bd2c1(0x19f)](_0x1bd2c1(0x33f),JSON[_0x1bd2c1(0x26d)](_0x4a6118[_0x1bd2c1(0x99)]));})['then'](function(_0x53fb27){var _0x3aab97=_0x282308;_0x53fb27=_0x53fb27[_0x3aab97(0x101)],console[_0x3aab97(0x233)](_0x53fb27);if(_0x53fb27[_0x3aab97(0x2c0)])_0x4a6118[_0x3aab97(0x285)](_0x53fb27[_0x3aab97(0x125)]);else _0x53fb27[_0x3aab97(0x167)]?_0x4a6118[_0x3aab97(0x2a0)](_0x53fb27[_0x3aab97(0x167)]):_0x4a6118[_0x3aab97(0x183)](_0x53fb27[_0x3aab97(0x125)]);}),_0x4133bd[_0x282308(0x38b)]=function(_0x33c0c1){var _0x3faff5=_0x282308;_0x4133bd[_0x3faff5(0x39c)][_0x3faff5(0x362)](_0x3faff5(0x349));};};}])[_0x4b74f5(0x283)](_0x4b74f5(0x27a),['$q','$rootScope','$scope',_0x4b74f5(0x18f),'$log',_0x4b74f5(0x221),_0x4b74f5(0x367),_0x4b74f5(0xa3),_0x4b74f5(0x95),_0x4b74f5(0x234),_0x4b74f5(0x1e4),_0x4b74f5(0x37e),'$location',_0x4b74f5(0x8e),_0x4b74f5(0xab),_0x4b74f5(0x1ba),'$injector',_0x4b74f5(0x86),_0x4b74f5(0x2ee),_0x4b74f5(0x1c2),_0x4b74f5(0xfb),_0x4b74f5(0x2b3),function(_0x11d89c,_0x453f0d,_0x26131b,_0x2d1fcb,_0x20dd65,_0x3817e1,_0x3021c7,_0x5e7837,_0x1b381f,_0x54ba7f,_0x2ee71d,_0xe38426,_0x32b32d,_0x46f8f2,_0xa97264,_0x6d2e17,_0x429133,_0x1decdb,_0x1d3373,_0x4f9cd6,_0xa7c903,_0x35fb2d){var _0x2beee4=_0x4b74f5;_0x26131b[_0x2beee4(0xe9)]={'loading':!![]},_0x35fb2d[_0x2beee4(0x141)](function(_0x32fb91){var _0x5943d0=_0x2beee4;_0x26131b[_0x5943d0(0xe9)]=_0x32fb91;}),_0x26131b[_0x2beee4(0xfb)]=_0xa7c903,_0x26131b[_0x2beee4(0x374)]=function(_0x3497ae){var _0xe0c4ef=_0x2beee4;_0x1b381f[_0xe0c4ef(0x39c)][_0xe0c4ef(0x362)](_0x3497ae);},_0x26131b[_0x2beee4(0xe6)]=function(){var _0x5011e4=_0x2beee4;_0x26131b[_0x5011e4(0x390)]={'username':Date[_0x5011e4(0x149)](),'password':_0x5011e4(0x2ff)},_0x1d3373[_0x5011e4(0x19f)](_0x5011e4(0x204),JSON[_0x5011e4(0x26d)](_0x26131b[_0x5011e4(0x390)]))['then'](function(_0x762c64){var _0x1794f5=_0x5011e4;!_0x1b381f[_0x1794f5(0x1d7)][_0x1794f5(0x1ea)]('tk')?_0x26131b[_0x1794f5(0x36f)]=0x64:_0x26131b[_0x1794f5(0x36f)]=0x64+_0x1b381f['localStorage'][_0x1794f5(0x1ea)]('tk'),_0x1b381f[_0x1794f5(0x1d7)][_0x1794f5(0x29f)]('tk',_0x1b381f[_0x1794f5(0x1d7)][_0x1794f5(0x1ea)]('tk')),_0x1b381f[_0x1794f5(0x39c)][_0x1794f5(0x263)]=_0x1794f5(0xdf);});},_0x1b381f[_0x2beee4(0x2fc)]=_0x26131b[_0x2beee4(0x365)]=_0x32b32d[_0x2beee4(0x3a1)]()==_0x2beee4(0xbf)?!![]:![];_0x1b381f[_0x2beee4(0x1d7)][_0x2beee4(0x1ea)](_0x2beee4(0x28d))&&_0x1b381f[_0x2beee4(0x1d7)][_0x2beee4(0x1ea)](_0x2beee4(0x28d))!==_0x2beee4(0x2d1)?(angular['forEach'](_0x5e7837('unique')(JSON[_0x2beee4(0x25f)](_0x1b381f[_0x2beee4(0x1d7)][_0x2beee4(0x1ea)](_0x2beee4(0x28d))),'url'),function(_0x3a4a41){var _0x27b26e=_0x2beee4;_0x1decdb[_0x27b26e(0x31e)](_0x3a4a41)[_0x27b26e(0x141)](function(){var _0xfd07e8=_0x27b26e;_0x1b381f[_0xfd07e8(0x1d7)][_0xfd07e8(0x31d)](_0xfd07e8(0x28d)),_0x26131b[_0xfd07e8(0x15f)]=_0x1decdb[_0xfd07e8(0x293)]();});}),_0x1b381f[_0x2beee4(0x1d7)]['removeItem']('import')):_0x1b381f['localStorage'][_0x2beee4(0x31d)](_0x2beee4(0x28d));_0x1b381f['localStorage'][_0x2beee4(0x1ea)]('tk')&&(_0x26131b[_0x2beee4(0x36f)]=_0x1d3373[_0x2beee4(0x1fb)](parseInt(_0x1b381f[_0x2beee4(0x1d7)]['getItem']('tk'))));!_0x1b381f[_0x2beee4(0x1d7)][_0x2beee4(0x1ea)]('tk')?(_0x26131b[_0x2beee4(0x36f)]=0x64,_0x1b381f['localStorage'][_0x2beee4(0x29f)]('tk',_0x26131b[_0x2beee4(0x36f)])):_0x26131b[_0x2beee4(0x36f)]=_0x1d3373[_0x2beee4(0x1fb)](parseInt(_0x1b381f[_0x2beee4(0x1d7)][_0x2beee4(0x1ea)]('tk')));_0x26131b[_0x2beee4(0x1f6)]=_0x2ee71d['host'],_0x26131b[_0x2beee4(0x139)]=document[_0x2beee4(0x139)],_0x453f0d[_0x2beee4(0xf0)]('gifRecordDone',function(){var _0xe06576=_0x2beee4;_0x26131b['tokenAmount']=_0x1b381f[_0xe06576(0x1d7)][_0xe06576(0x1ea)]('tk');}),_0x26131b[_0x2beee4(0x3a5)]=[],_0x26131b['castType']=_0x2beee4(0xf8),_0x26131b['notes']=[],_0x26131b[_0x2beee4(0x11d)]=[_0x2beee4(0x2ae),_0x2beee4(0x1c7),_0x2beee4(0x31a)],_0x26131b[_0x2beee4(0x26f)]=[],_0x26131b['tags']=[];if(_0x2ee71d[_0x2beee4(0x255)]){var _0x424545=_0x2ee71d[_0x2beee4(0x255)]['split'](','),_0x38481d=new Image();_0x38481d[_0x2beee4(0x257)]=function(){var _0x131092=_0x2beee4;_0x1decdb[_0x131092(0x31e)]({'realHeight':fe1[_0x131092(0x275)],'realWidth':fe1[_0x131092(0x19b)],'html':_0x131092(0x25a)+self[_0x131092(0x1cd)]['url']+_0x131092(0x2ea),'css':'','settings':'','url':self[_0x131092(0x1cd)][_0x131092(0x28f)]})['then'](function(){var _0x5cd9b0=_0x131092;_0x26131b[_0x5cd9b0(0x15f)]=_0x1decdb[_0x5cd9b0(0x293)]();});},_0x38481d[_0x2beee4(0x180)]=urlFile[i];}_0x26131b[_0x2beee4(0x2d8)]=[],_0x26131b[_0x2beee4(0x284)]=_0x2ee71d[_0x2beee4(0x211)],_0x26131b[_0x2beee4(0x395)]=function(){var _0x46c542=_0x2beee4,_0x330eba=_0x1decdb[_0x46c542(0x2eb)]();for(let _0x379693=_0x330eba[_0x46c542(0x346)]-0x1;_0x379693>=0x0;_0x379693--){_0x1decdb['delElement'](_0x330eba[_0x379693]);};_0x26131b[_0x46c542(0x15f)]=_0x1decdb[_0x46c542(0x293)]();},_0x26131b['initExplore']=function(){var _0x2d7cfe=_0x2beee4,_0x56f199=document[_0x2d7cfe(0x131)]('btn-search-close'),_0x11002c=document[_0x2d7cfe(0x1c4)](_0x2d7cfe(0x3a3)),_0x1fa5c5=_0x11002c[_0x2d7cfe(0x1c4)](_0x2d7cfe(0x147));function _0x2042d7(){_0x32a7d8();}function _0x32a7d8(){var _0x349f69=_0x2d7cfe;_0x1fa5c5[_0x349f69(0x26b)](_0x349f69(0x115),_0x5d3922),_0x1fa5c5['addEventListener'](_0x349f69(0x3b2),_0x4c70da),_0x56f199[_0x349f69(0x26b)](_0x349f69(0x1a9),_0x4c70da),document['addEventListener'](_0x349f69(0x1d9),function(_0x123344){var _0x51b914=_0x349f69;_0x123344[_0x51b914(0x389)]==0x1b&&_0x4c70da();});}function _0x5d3922(){var _0x48fff6=_0x2d7cfe;$(_0x48fff6(0x30a))[_0x48fff6(0x192)](_0x48fff6(0x38e)),_0x11002c[_0x48fff6(0x1de)][_0x48fff6(0x314)]('search--open'),_0x1fa5c5['focus']();}function _0x4c70da(){var _0x4c5990=_0x2d7cfe;$(_0x4c5990(0x30a))[_0x4c5990(0x260)](_0x4c5990(0x38e)),_0x11002c[_0x4c5990(0x1de)][_0x4c5990(0x291)](_0x4c5990(0x2cb)),_0x1fa5c5[_0x4c5990(0x25c)](),_0x26131b['checkInputValue']!=$(_0x4c5990(0x36d))[_0x4c5990(0x2f2)]()&&(_0x26131b[_0x4c5990(0x20a)]($(_0x4c5990(0x36d))[_0x4c5990(0x2f2)]()),_0x26131b[_0x4c5990(0x254)]=$(_0x4c5990(0x36d))[_0x4c5990(0x2f2)]());}$(_0x2d7cfe(0x30a))['hasClass'](_0x2d7cfe(0x38e))?_0x4c70da():_0x5d3922(),_0x2042d7();},_0x26131b[_0x2beee4(0xa5)]=function(_0x1e8a3c){var _0x447cac=_0x2beee4;_0x1decdb['addFile']({'realHeight':$(_0x447cac(0x226))[_0x447cac(0x17d)](_0x1e8a3c)[_0x447cac(0x275)],'realWidth':$(_0x447cac(0x226))[_0x447cac(0x17d)](_0x1e8a3c)['width'],'html':$($(_0x447cac(0x226))[_0x447cac(0x17d)](_0x1e8a3c))[_0x447cac(0xc4)](_0x447cac(0x140)),'css':'','settings':'','url':$($(_0x447cac(0x226))[_0x447cac(0x17d)](_0x1e8a3c))[_0x447cac(0xc4)](_0x447cac(0x180))})['then'](function(){var _0x2312eb=_0x447cac;_0x26131b[_0x2312eb(0x15f)]=_0x1decdb[_0x2312eb(0x293)]();});},_0x26131b[_0x2beee4(0x20a)]=function(_0xb13ddc='click'){var _0x4a8d7b=_0x2beee4,_0x5a155d=_0x5a155d||0x0;_0x26131b[_0x4a8d7b(0x3af)]=[],$(_0x4a8d7b(0x2e2))[_0x4a8d7b(0xd1)](0x4e2,0x1),_0x6d2e17[_0x4a8d7b(0x17d)](_0x4a8d7b(0x1b4),{'params':{'q':_0xb13ddc}})[_0x4a8d7b(0x141)](function(_0x1423e3){var _0x170b89=_0x4a8d7b;_0x26131b[_0x170b89(0x3af)]=_0x1423e3['data'];});},_0x26131b['loadMoreLimit']=0xa,_0x26131b[_0x2beee4(0x35c)]=function(_0x97de4c,_0x4c9f1a){var _0x221cb1=_0x2beee4;_0x97de4c&&_0x4c9f1a&&(_0x26131b[_0x221cb1(0x229)]+=0xa);},_0x26131b[_0x2beee4(0x23c)]=function(_0x4bb5ed,_0x587fa9,_0x667d8f){var _0x5a0b80=_0x2beee4,_0x292e7a=[];if(_0x667d8f)_0x26131b[_0x5a0b80(0x2d8)]['push'](_0x26131b[_0x5a0b80(0x15f)][_0x4bb5ed]);else{_0x26131b[_0x5a0b80(0x2d8)]['forEach'](function(_0x229831){_0x292e7a['push'](_0x229831['url']);});var _0x4992ba=$[_0x5a0b80(0xd8)]($(_0x587fa9['target'])[_0x5a0b80(0x85)](_0x5a0b80(0x180)),_0x292e7a);_0x26131b['selectedElements'][_0x5a0b80(0x1fa)](_0x4992ba,0x1);}_0x26131b['selectedElements']['length']?_0x26131b[_0x5a0b80(0x3aa)]=!![]:_0x26131b[_0x5a0b80(0x3aa)]=![];},_0x26131b[_0x2beee4(0x2fa)]=function(){var _0x278b21=_0x2beee4;$(_0x278b21(0x136))[_0x278b21(0x28e)]({'dragOver':function(_0x3b81f7){var _0x490743=_0x278b21;_0x26131b[_0x490743(0x28e)]=!![],_0x3b81f7?(_0x26131b[_0x490743(0x12f)]=!![],_0x3817e1(function(){var _0xd8ba40=_0x490743;$(_0xd8ba40(0x1fc))[_0xd8ba40(0x192)](_0xd8ba40(0x18d))[_0xd8ba40(0x246)]('background-color',_0xd8ba40(0x15d)),$(_0xd8ba40(0x3bb))[_0xd8ba40(0x246)]({'border':_0xd8ba40(0x322),'display':_0xd8ba40(0xd9)});},0xfa)):(_0x26131b[_0x490743(0x12f)]=![],_0x3817e1(function(){var _0x1eb38e=_0x490743;$('#dropzone')[_0x1eb38e(0x192)]('dropzone')['css'](_0x1eb38e(0x332),'rgba(0,0,0,.9)'),$(_0x1eb38e(0x3bb))[_0x1eb38e(0x246)]({'border':_0x1eb38e(0x2c7),'display':_0x1eb38e(0xd9)});},0xfa));},'dragLeave':function(){_0x3817e1(function(){var _0x501deb=_0x1140;$(_0x501deb(0x1fc))[_0x501deb(0x260)](_0x501deb(0x18d))[_0x501deb(0x246)](_0x501deb(0x332),''),$(_0x501deb(0x3bb))[_0x501deb(0x246)]({'border':'','display':'none'}),_0x26131b['filedrop']=![];},0x9c4);},'callback':function(_0xa63aea,_0x4e9691,_0x5668d6){var _0x2fb8bc=_0x278b21;_0x26131b[_0x2fb8bc(0x343)]=!![];var _0x11a130=this;$('#dropzone')[_0x2fb8bc(0x260)](_0x2fb8bc(0x18d))[_0x2fb8bc(0x246)](_0x2fb8bc(0x332),''),$(_0x2fb8bc(0x3bb))[_0x2fb8bc(0x246)](_0x2fb8bc(0x218),''),_0x3817e1(function(){var _0x3bbdf9=_0x2fb8bc;_0x26131b[_0x3bbdf9(0x28e)]=![];},0x1f4);if(_0x5668d6==_0x2fb8bc(0x38d)){console[_0x2fb8bc(0x233)](_0x11a130['file']);var _0x252708=new Image();_0x252708[_0x2fb8bc(0x257)]=function(){var _0x2e88c6=_0x2fb8bc;_0x1decdb[_0x2e88c6(0x31e)]({'realHeight':_0x252708[_0x2e88c6(0x275)],'realWidth':_0x252708[_0x2e88c6(0x19b)],'html':'<img\x20src=\x22'+_0x11a130[_0x2e88c6(0x1cd)][_0x2e88c6(0x28f)]+_0x2e88c6(0x2ea),'css':'','settings':'','url':_0x11a130[_0x2e88c6(0x1cd)][_0x2e88c6(0x28f)]})['then'](function(){var _0x8b70ce=_0x2e88c6;_0x26131b[_0x8b70ce(0x15f)]=_0x1decdb[_0x8b70ce(0x293)]();});},_0x252708[_0x2fb8bc(0x180)]=_0x11a130['file'][_0x2fb8bc(0x28f)];}else{if(_0x5668d6==_0x2fb8bc(0x1cd)||_0x5668d6==_0x2fb8bc(0x228)){var _0x8d1e05=new Image();_0x8d1e05[_0x2fb8bc(0x257)]=function(){var _0x349edc=_0x2fb8bc;_0x1d3373[_0x349edc(0x122)](_0x8d1e05[_0x349edc(0x180)],_0x8d1e05['width'],_0x8d1e05['height'])[_0x349edc(0x141)](function(_0x5e9860){var _0x1be231=_0x349edc,_0x4291a6=_0x5e9860;_0x1decdb[_0x1be231(0x31e)]({'realHeight':_0x4291a6[_0x1be231(0x275)],'realWidth':_0x4291a6[_0x1be231(0x19b)],'html':_0x1be231(0x25a)+_0x4291a6[_0x1be231(0x2f3)]+_0x1be231(0x2ea),'css':'','settings':'','url':_0x4291a6[_0x1be231(0x2f3)]})[_0x1be231(0x141)](function(){var _0x4a9e13=_0x1be231;_0x26131b[_0x4a9e13(0x15f)]=_0x1decdb[_0x4a9e13(0x293)]();});});},_0x8d1e05['src']=_0xa63aea;}}}});},_0x26131b[_0x2beee4(0x20f)]('imports',function(){var _0x4f27b1=_0x2beee4;_0x26131b[_0x4f27b1(0x15f)][_0x4f27b1(0x346)]&&(_0x26131b[_0x4f27b1(0x343)]=!![]);}),_0x26131b[_0x2beee4(0x2c3)]=function(_0x5f49a4){_0x3817e1(function(){var _0x247062=_0x1140,_0x3a0e3e=_0x5f49a4[_0x247062(0x1c5)][_0x247062(0x270)];_0x1d3373[_0x247062(0x2d5)](_0x3a0e3e)[_0x247062(0x141)](function(_0x5d779c){var _0x36d5e1=_0x247062;_0x1decdb['addFile']({'realHeight':_0x5d779c[_0x36d5e1(0x275)],'realWidth':_0x5d779c[_0x36d5e1(0x19b)],'html':_0x36d5e1(0x25a)+_0x3a0e3e+_0x36d5e1(0x2ea),'css':'','settings':'','url':_0x3a0e3e})[_0x36d5e1(0x141)](function(){var _0x5e89df=_0x36d5e1;_0x5f49a4[_0x5e89df(0x1c5)][_0x5e89df(0x270)]='',_0x26131b[_0x5e89df(0x15f)]=_0x1decdb['getMyFiles'](),_0x26131b['selectScreen']=!![];});});});},_0x26131b[_0x2beee4(0xe1)]=function(_0x520d65){var _0x1a6417=_0x2beee4;swal({'title':'Remove','text':'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20this?','type':_0x1a6417(0x157),'showCancelButton':!![],'animation':_0x1a6417(0x1d0),'confirmButtonText':_0x1a6417(0x29d),'cancelButtonText':'No','allowEscapeKey':![],'allowOutsideClick':![]})[_0x1a6417(0x141)](function(_0x44aca6){var _0x2f9dcf=_0x1a6417;if(_0x44aca6[_0x2f9dcf(0x270)])_0x1decdb[_0x2f9dcf(0x1a8)](_0x26131b['imports'][_0x520d65]),_0x1decdb['syncFiles']()[_0x2f9dcf(0x141)](function(){_0x3817e1(function(){var _0x230c88=_0x1140;_0x26131b[_0x230c88(0x15f)]=_0x1decdb[_0x230c88(0x293)]();});});else return![];});},_0x26131b[_0x2beee4(0x250)]=![],_0x26131b[_0x2beee4(0x2a9)]=!Boolean(_0x1b381f['localStorage']['getItem'](_0x2beee4(0x249))),_0x26131b['tutorial']=function(){var _0x3c47a0=_0x2beee4;_0x1b381f[_0x3c47a0(0x1d7)][_0x3c47a0(0x29f)](_0x3c47a0(0x249),!![]);};var _0x50ec7d=_0x32b32d[_0x2beee4(0x319)][_0x2beee4(0x12d)](_0x32b32d[_0x2beee4(0x319)][_0x2beee4(0xe3)]('/')+0x1);_0x26131b[_0x2beee4(0x1d3)]={'type':_0x50ec7d,'path':'/'+_0x50ec7d};if(_0x2ee71d[_0x2beee4(0x1fd)])_0x26131b[_0x2beee4(0x1fd)]=_0x2ee71d[_0x2beee4(0x1fd)];_0x26131b[_0x2beee4(0x1fd)]=_0x26131b[_0x2beee4(0x1fd)]?_0x26131b['col']:0xc,_0x26131b['addWidget']=function(_0x403c96){var _0x45381b=_0x2beee4;if(_0x403c96){if(!_0x403c96['hasOwnProperty'](_0x45381b(0x232)))return _0x1decdb[_0x45381b(0x132)](_0x403c96);}},_0x26131b[_0x2beee4(0x277)]=function(){var _0x5caec5=_0x2beee4;_0x1b381f[_0x5caec5(0x39c)][_0x5caec5(0x277)]();},_0x26131b[_0x2beee4(0x11f)]=function(_0x14e71b){var _0x2ac2b3=_0x2beee4,_0x59590e=_0x11d89c[_0x2ac2b3(0x1e1)]();return _0x26131b[_0x2ac2b3(0x20c)]=_0x14e71b?_0x14e71b:_0x1decdb['getMyNotes'](),_0x59590e[_0x2ac2b3(0x10a)](_0x26131b['notes']),_0x59590e['promise'];},_0x26131b[_0x2beee4(0xfe)]=function(_0xc61e65,_0xca89b9,_0x33a6b7){var _0x5b28f4=_0x2beee4,_0x3a9827=_0x11d89c[_0x5b28f4(0x1e1)]();return _0x3a9827[_0x5b28f4(0x10a)](_0x26131b[_0x5b28f4(0x295)](_0xc61e65)[_0x5b28f4(0x141)](function(_0x7ffbf6){var _0x189c16=_0x5b28f4;_0x26131b[_0x189c16(0x11f)]()[_0x189c16(0x141)](function(){var _0x3fdcf7=_0x189c16;_0x33a6b7&&typeof _0x33a6b7===_0x3fdcf7(0x337)&&_0x33a6b7(_0x7ffbf6);});})),_0x26131b['apps']=[],_0x3a9827[_0x5b28f4(0xa7)];},_0x26131b['gridsterOpts']={'columns':_0x26131b[_0x2beee4(0x1fd)],'pushing':!![],'floating':!![],'width':_0x2beee4(0x259),'colWidth':_0x2beee4(0x259),'rowHeight':'match','margins':[0xa,0xa],'isMobile':![],'minColumns':0x1,'minRows':0x1,'maxRows':0x64,'defaultSizeX':0x2,'defaultSizeY':0x2,'mobileBreakPoint':0x258,'mobileModeEnabled':![],'avoid_overlapped_widgets':!![],'resizable':{'enabled':![],'handles':_0x2beee4(0x24f),'start':function(_0x1b7b7a,_0x7e651d,_0x24eee0){},'resize':function(_0x1eb750,_0x322b0a,_0x1fbc15){var _0x3f0c10=_0x2beee4;_0x26131b['$broadcast'](_0x3f0c10(0x2ca),!![]);},'stop':function(_0x33aeea,_0x5505bf,_0x4c0de3){var _0x47257f=_0x2beee4,_0x2b6799=_0x4c0de3[_0x47257f(0xad)](),_0x48d9b5=_0x26131b[_0x47257f(0x20c)][_0x2b6799],_0x457341={'sizeX':_0x48d9b5[_0x47257f(0x231)],'sizeY':_0x48d9b5[_0x47257f(0x3ae)],'realWidth':_0x5505bf[_0x47257f(0x3a2)][_0x47257f(0x19b)],'realHeight':_0x5505bf[_0x47257f(0x3a2)][_0x47257f(0x275)]};_0x26131b[_0x47257f(0x35f)](_0x47257f(0x1f1),_0x457341,_0x2b6799);}},'draggable':{'enabled':!![],'start':function(_0x365e68,_0xd92696,_0x40c4b2){var _0x122258=_0x2beee4;classie[_0x122258(0x314)](document[_0x122258(0x136)],_0x122258(0x1e8)),_0x3817e1[_0x122258(0x2db)](_0x26131b[_0x122258(0x27e)]),classie['add'](document[_0x122258(0x131)](_0x122258(0x12a)),_0x122258(0x2cf)),_0x26131b[_0x122258(0x306)]=![],_0x26131b[_0x122258(0x354)](_0x122258(0x2ef),_0x40c4b2);},'drag':function(_0x54e869,_0x3425b6,_0x4ddba5){var _0x51f3de=_0x2beee4;_0x26131b[_0x51f3de(0x1be)]=_0x4ddba5[_0x51f3de(0xad)](),_0x26131b[_0x51f3de(0x354)](_0x51f3de(0x2ca),!![]);},'stop':function(_0x342eca,_0x4155bc,_0x2120d0){var _0x1c4973=_0x2beee4;if(_0x2120d0[_0x1c4973(0x36c)](_0x1c4973(0x8b))){var _0x118a93=angular[_0x1c4973(0xfa)]('.gm-gridster')[_0x1c4973(0x283)]('gridster'),_0x433360=angular[_0x1c4973(0xfa)](_0x1c4973(0x345))[_0x1c4973(0x124)](_0x1c4973(0x121));_0x433360[_0x1c4973(0x82)](function(_0xb9327f,_0x576db2){var _0x57fb13=_0x1c4973,_0x533315=angular[_0x57fb13(0xfa)](_0x576db2)['controller']('gridsterItem'),_0x90b41f=angular[_0x57fb13(0xfa)](_0x576db2)[_0x57fb13(0x283)](_0x57fb13(0xf4));_0x118a93['autoSetItemPosition'](_0x533315);});}var _0x49a759=_0x26131b[_0x1c4973(0x1be)],_0x3dc158=_0x26131b[_0x1c4973(0x20c)][_0x49a759],_0x3c0a1e={'row':_0x3dc158[_0x1c4973(0x38c)],'col':_0x3dc158[_0x1c4973(0x1fd)]},_0x5cb0d2=function(){var _0x3bd07f=_0x1c4973;classie[_0x3bd07f(0x291)](document[_0x3bd07f(0x131)]('drop-area'),_0x3bd07f(0x2cf)),classie['remove'](document[_0x3bd07f(0x136)],_0x3bd07f(0x1e8));};!_0x26131b[_0x1c4973(0x306)]?_0x5cb0d2():(_0x3817e1[_0x1c4973(0x2db)](_0x26131b[_0x1c4973(0x27e)]),_0x26131b[_0x1c4973(0x27e)]=_0x3817e1(_0x5cb0d2,0x190)),_0x26131b[_0x1c4973(0x354)](_0x1c4973(0x230),_0x2120d0);}}},_0x26131b[_0x2beee4(0xc2)]=_0x1b381f[_0x2beee4(0x1d7)][_0x2beee4(0x1ea)](_0x2beee4(0x373)),_0x26131b[_0x2beee4(0x84)]=[_0x2beee4(0x286)],_0x26131b[_0x2beee4(0x3ba)]=function(_0x3afa98,_0x5ddd38){var _0x292af8=_0x2beee4;_0x26131b[_0x292af8(0x306)]=!![],classie[_0x292af8(0x314)](_0x5ddd38[_0x292af8(0x1c5)],_0x292af8(0x2e9)),_0x3817e1[_0x292af8(0x2db)](_0x26131b[_0x292af8(0x289)]),_0x26131b[_0x292af8(0x289)]=_0x3817e1(function(){var _0x39a457=_0x292af8;classie[_0x39a457(0x291)](_0x5ddd38[_0x39a457(0x1c5)],'drop-feedback'),_0x5ddd38[_0x39a457(0xe2)]();},0x320);if(_0x1b381f['localStorage'][_0x292af8(0x1ea)]('tk')>0x0)switch(_0x3afa98){case _0x292af8(0x3a5):_0x453f0d[_0x292af8(0x354)](_0x292af8(0xc1),{'item':_0x26131b[_0x292af8(0x20c)][_0x26131b[_0x292af8(0x1be)]],'index':_0x26131b[_0x292af8(0x1be)],'confirm':!![]});break;case _0x292af8(0x286):_0x1b381f[_0x292af8(0x1d7)][_0x292af8(0x29f)]('LimeTextTarget',_0x26131b[_0x292af8(0x20c)][_0x26131b['currentElementIndex']]['guid']),_0x453f0d[_0x292af8(0x354)](_0x292af8(0x177),_0x292af8(0x3bf));break;default:console[_0x292af8(0x233)](_0x3afa98);break;}else _0x26131b[_0x292af8(0x268)](_0x292af8(0x17f));return![];},_0x26131b['pushpin']=function(_0x58e8db,_0x5aa408){var _0x11ede7=_0x2beee4;_0x5aa408&&(_0x5aa408[_0x11ede7(0xe2)](),jQuery(_0x11ede7(0x2c8))[_0x11ede7(0x1b6)](_0x11ede7(0x1a9)));if(_0x1b381f['localStorage']['getItem'](_0x11ede7(0x107))){var _0x100ad2=_0x1b381f[_0x11ede7(0x1d7)]['getItem']('pinned')['split'](',')[_0x11ede7(0x385)]([_0x58e8db])[_0x11ede7(0x1aa)](Boolean);_0x100ad2=_0x4f9cd6[_0x11ede7(0xd7)](_0x100ad2),_0x1b381f[_0x11ede7(0x1d7)][_0x11ede7(0x29f)](_0x11ede7(0x107),_0x100ad2[_0x11ede7(0x2bc)](','));}else _0x1b381f['localStorage'][_0x11ede7(0x29f)](_0x11ede7(0x107),_0x58e8db);_0x1decdb[_0x11ede7(0x296)](_0x58e8db)[_0x11ede7(0x141)](function(_0x36dc8e){var _0x2c6486=_0x11ede7;_0x1d3373[_0x2c6486(0x87)](_0x36dc8e[0x0])['then'](function(_0x5a50c3){var _0x4dd54f=_0x2c6486;if(!_0x5a50c3)return![];_0x26131b['pinned'][_0x4dd54f(0x396)]({'guid':_0x58e8db,'images':_0x5a50c3[_0x4dd54f(0x134)],'title':_0x5a50c3['title']});});});},_0x26131b['stringify']=function(_0x5cce49){var _0xc67b8b=_0x2beee4;return JSON[_0xc67b8b(0x26d)](_0x5cce49);},_0x26131b[_0x2beee4(0x107)]=[];if(typeof _0x1b381f[_0x2beee4(0x1d7)]['getItem'](_0x2beee4(0x107))===_0x2beee4(0x376)){var _0x5bff67=_0x1b381f['localStorage']['getItem'](_0x2beee4(0x107))[_0x2beee4(0x23d)](',');angular[_0x2beee4(0x23f)](_0x5bff67,function(_0x85859c){_0x26131b['pushpin'](_0x85859c);});}_0x26131b[_0x2beee4(0x35f)]=function(_0x2422b9,_0xbc2690,_0x9340f7){var _0x355b84=_0x2beee4;switch(_0x2422b9){case _0x355b84(0x20e):_0x26131b['notes'][_0x9340f7][_0x355b84(0x34c)]=_0xbc2690;break;case _0x355b84(0x246):_0x26131b[_0x355b84(0x20c)][_0x9340f7]['css']=_0xbc2690;break;case'js':_0x26131b[_0x355b84(0x20c)][_0x9340f7]['js']=_0xbc2690;break;case _0x355b84(0x198):_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x198)]=_0xbc2690;case _0x355b84(0x1f1):_0x26131b[_0x355b84(0x20c)][_0x9340f7]['sizeX']=_0xbc2690[_0x355b84(0x231)],_0x26131b[_0x355b84(0x20c)][_0x9340f7]['sizeY']=_0xbc2690[_0x355b84(0x3ae)],_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x1e5)]=_0xbc2690[_0x355b84(0x1e5)],_0x26131b['notes'][_0x9340f7][_0x355b84(0x302)]=_0xbc2690['realHeight'];break;case _0x355b84(0x107):_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x107)]=_0xbc2690[_0x355b84(0x107)];break;case _0x355b84(0x193):_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x34c)]=_0xbc2690[_0x355b84(0x34c)],_0x26131b[_0x355b84(0x20c)][_0x9340f7]['css']=_0xbc2690['css'],_0x26131b[_0x355b84(0x20c)][_0x9340f7]['js']=_0xbc2690['js'],_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x198)]=_0xbc2690[_0x355b84(0x198)],_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x231)]=_0xbc2690[_0x355b84(0x231)],_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x3ae)]=_0xbc2690['sizeY'],_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x1e5)]=_0xbc2690[_0x355b84(0x1e5)],_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x302)]=_0xbc2690[_0x355b84(0x302)],_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x38c)]=_0xbc2690[_0x355b84(0x38c)],_0x26131b['notes'][_0x9340f7][_0x355b84(0x1fd)]=_0xbc2690[_0x355b84(0x1fd)],_0x26131b[_0x355b84(0x20c)][_0x9340f7]['url']=_0xbc2690[_0x355b84(0x28f)],_0x26131b[_0x355b84(0x20c)][_0x9340f7]['active']=_0xbc2690[_0x355b84(0x333)],_0x26131b['notes'][_0x9340f7][_0x355b84(0x341)]=_0xbc2690[_0x355b84(0x341)],_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x244)]=_0xbc2690[_0x355b84(0x244)];break;case'gist':_0x26131b[_0x355b84(0x20c)][_0x9340f7][_0x355b84(0x34c)]=_0xbc2690[_0x355b84(0x34c)],_0x26131b['notes'][_0x9340f7][_0x355b84(0x246)]=_0xbc2690[_0x355b84(0x246)],_0x26131b['notes'][_0x9340f7]['js']=_0xbc2690['js'];break;}return _0x26131b['notes'][_0x9340f7][_0x355b84(0x333)]&&angular[_0x355b84(0x30c)](_0x26131b[_0x355b84(0x20c)][_0x9340f7],_0x1decdb['getFile'](_0x26131b[_0x355b84(0x20c)][_0x9340f7]['guid'])),_0x11d89c[_0x355b84(0x193)]([_0x1decdb[_0x355b84(0x315)](_0x26131b[_0x355b84(0x20c)][_0x9340f7]),_0x1decdb['modElement'](_0x26131b[_0x355b84(0x20c)][_0x9340f7]['guid'])]);},_0x26131b[_0x2beee4(0x198)]=function(){var _0x59738a=_0x2beee4;_0x26131b[_0x59738a(0x364)]=!![];},_0x26131b[_0x2beee4(0x155)]=function(){var _0x4de330=_0x2beee4,_0x1c3bde=[_0x4de330(0x13c),'top\x20right',_0x4de330(0x3b0),_0x4de330(0x1cf),_0x4de330(0x2f1),_0x4de330(0x2dc),'bottom\x20center',_0x4de330(0x185)];return _0x1c3bde[Math[_0x4de330(0x2cd)](Math[_0x4de330(0x34e)]()*_0x1c3bde['length'])];},_0x26131b['$watch'](_0x2beee4(0x200),function(){var _0x3fa315=_0x2beee4;if(_0x26131b['gifshop'])var _0x3d2c16=_0x3021c7(function(){var _0x5718bf=_0x1140;angular[_0x5718bf(0xfa)](_0x5718bf(0x29b))[_0x5718bf(0x246)](_0x5718bf(0x1e9),_0x26131b[_0x5718bf(0x155)]());},0x4650);else _0x3021c7[_0x3fa315(0x2db)](_0x3d2c16),_0x26131b[_0x3fa315(0x20c)][_0x3fa315(0x346)]&&_0x26131b['payTokens'](_0x3fa315(0x32a));}),_0x26131b[_0x2beee4(0x34a)]=function(_0x528260){var _0x3d8c37=_0x2beee4;_0x26131b['sold']=[],angular['forEach'](_0x26131b[_0x3d8c37(0x107)],function(_0xff18e1){var _0x576434=_0x3d8c37;_0x26131b[_0x576434(0x241)][_0x576434(0x396)](_0xff18e1['guid']);}),$(_0x3d8c37(0x1e3))[_0x3d8c37(0x24d)](_0x3d8c37(0x299),function(){var _0x26dce1=_0x3d8c37;$(_0x26dce1(0x1e3))[_0x26dce1(0x267)]('slow');});var _0x1cab54=_0x26131b['sold']['includes'](_0x528260['guid']);_0x26131b[_0x3d8c37(0x2b9)]={'title':_0x528260[_0x3d8c37(0x340)],'images':_0x528260[_0x3d8c37(0x162)],'price':_0x528260['price'],'guid':_0x528260['guid'],'sold':_0x1cab54};},_0x26131b[_0x2beee4(0x1d6)]=function(_0x19a362){var _0x544ecb=_0x2beee4;_0x26131b['gifCanvasSwitch']=![];var _0x112a44=_0x1decdb['getFile'](_0x19a362);console[_0x544ecb(0x233)](_0x112a44),angular['extend'](_0x112a44,{'text':(()=>_0x112a44[_0x544ecb(0x34c)]?_0x112a44[_0x544ecb(0x34c)]:_0x544ecb(0x25a)+_0x112a44['url']+_0x544ecb(0xd3))(),'css':(()=>_0x112a44[_0x544ecb(0x246)]?_0x112a44['css']:'')(),'js':(()=>_0x112a44['js']?_0x112a44['js']:'')(),'settings':(()=>_0x112a44[_0x544ecb(0x198)]?_0x112a44[_0x544ecb(0x198)]:'{}')(),'active':!![]});if(!_0x26131b[_0x544ecb(0x20c)][_0x544ecb(0x346)])_0x26131b['addWidget'](_0x112a44)['then'](function(_0x39c7a0){_0x26131b['renderWidgets']()['then'](function(_0x3c5b53){var _0x435c46=_0x1140;_0x26131b['currentElementIndex']=_0x3c5b53[_0x435c46(0x346)]-0x1,_0x1b381f[_0x435c46(0x1d7)][_0x435c46(0x29f)](_0x435c46(0x1cc),_0x3c5b53[_0x26131b['currentElementIndex']][_0x435c46(0x232)]),_0x453f0d['$broadcast'](_0x435c46(0x177),_0x435c46(0x3bf));});});else _0x1b381f[_0x544ecb(0x1d7)][_0x544ecb(0x110)](_0x544ecb(0x1cc))&&_0x26131b[_0x544ecb(0x11f)]()[_0x544ecb(0x141)](function(_0x2fadc9){var _0x21937b=_0x544ecb;_0x26131b[_0x21937b(0x1be)]=_0x2fadc9['length']-0x1,_0x453f0d[_0x21937b(0x354)](_0x21937b(0x177),_0x21937b(0x3bf));});},_0x26131b['menuOptions']=[{'text':_0x2beee4(0x208),'click':function(_0x232ab9,_0x4d61c9){var _0x27fbbd=_0x2beee4;_0x26131b[_0x27fbbd(0x1d6)]($(_0x4d61c9[_0x27fbbd(0x1c5)])[_0x27fbbd(0x101)](_0x27fbbd(0x232)));},'hasBottomDivider':!![]},{'text':_0x2beee4(0x366),'click':function(_0x53ef5d,_0x1f0d27){var _0xada67d=_0x2beee4,_0x3459ea=$(_0x1f0d27[_0xada67d(0x1c5)]);_0x3459ea[_0xada67d(0x2b8)](0x2),_0x3459ea[_0xada67d(0xb0)]()[_0xada67d(0x2b8)](0x1);},'hasTopDivider':!![]},{'text':_0x2beee4(0x2dd),'click':function(_0x6a8b3,_0x4b84b0){var _0xf37836=_0x2beee4,_0x41aa6d=$(_0x4b84b0[_0xf37836(0x1c5)]);_0x41aa6d[_0xf37836(0x2b8)](0x1),_0x41aa6d['siblings']()[_0xf37836(0x2b8)](0x2);}}],_0x26131b[_0x2beee4(0x268)]=function(_0x3f087d,_0x677bb1){var _0x39a959=_0x2beee4;_0x677bb1&&_0x677bb1[_0x39a959(0xe2)](),_0x1d3373[_0x39a959(0x268)](_0x3f087d)[_0x39a959(0x141)](function(_0x1a0947){var _0x3d6132=_0x39a959;if(_0x1a0947){var _0x4d1d59=_0x3d6132(0x166)+_0x3f087d;_0x1b381f[_0x3d6132(0x39c)][_0x3d6132(0x263)]=_0x4d1d59;}});},_0x26131b[_0x2beee4(0x308)]=function(_0x1dd5dd){var _0x28e3bb=_0x2beee4;_0x1dd5dd&&_0x1decdb[_0x28e3bb(0x308)]({'link':_0x1dd5dd[_0x28e3bb(0x2f3)],'size':_0x1dd5dd['size'],'height':_0x1dd5dd[_0x28e3bb(0x275)],'width':_0x1dd5dd[_0x28e3bb(0x19b)],'title':_0x1dd5dd[_0x28e3bb(0x340)]})[_0x28e3bb(0x141)](function(_0x3465a1){var _0x18a627=_0x28e3bb;_0x1decdb[_0x18a627(0x212)]()[_0x18a627(0x141)](function(_0x1138ba){var _0x2ae664=_0x18a627,_0xc3c346=_0x2ae664(0x2ec)+_0x1dd5dd['id'];console[_0x2ae664(0x233)](_0xc3c346),_0x1b381f['location'][_0x2ae664(0x263)]=_0xc3c346;});});},_0x26131b[_0x2beee4(0x311)]=function(_0x28fa2e){var _0x430c26=_0x2beee4;try{eval(_0x46f8f2[_0x430c26(0xce)](_0x28fa2e['js'])['toString']());}catch(_0x471afa){console['log'](_0x430c26(0x2af)),console[_0x430c26(0x233)](_0x471afa);}},_0x26131b[_0x2beee4(0x146)]=function(_0x388a63,_0x54f58a){var _0x5623a5=_0x2beee4;_0x388a63[_0x5623a5(0xad)]=_0x54f58a,_0x1d3373[_0x5623a5(0x3b9)](_0x54f58a),_0x1decdb['getWidgetByGuid'](_0x388a63[_0x5623a5(0x232)])[_0x5623a5(0x141)](function(_0x17eb55){var _0x54a32e=_0x5623a5;_0x1decdb[_0x54a32e(0x1a8)](_0x17eb55[0x0]),_0x26131b[_0x54a32e(0x35f)](_0x54a32e(0x193),_0x388a63,_0x54f58a);});},_0x26131b['googleAnalytics']=function(..._0x1a610f){ga(_0x1a610f);},_0x26131b[_0x2beee4(0x2b0)]='zerogravity',_0x26131b[_0x2beee4(0x36e)]=!![],_0x26131b[_0x2beee4(0x339)]=function(_0x3ca986){var _0x12e088=_0x2beee4;swal({'title':_0x12e088(0x3b1),'text':_0x12e088(0x2a5),'type':_0x12e088(0x157),'showCancelButton':!![],'allowOutsideClick':!![]})[_0x12e088(0x141)](function(_0x330015){var _0x19a629=_0x12e088;if(_0x330015){_0x26131b[_0x19a629(0x107)][_0x19a629(0x1fa)](_0x3ca986,0x1);var _0x8d659='';angular[_0x19a629(0x23f)](_0x26131b['pinned'],function(_0x528160){var _0x5cf716=_0x19a629;_0x8d659+=_0x528160[_0x5cf716(0x232)]+',';}),_0x1b381f[_0x19a629(0x1d7)][_0x19a629(0x29f)](_0x19a629(0x107),_0x8d659);}else return![];})['done']();},_0x26131b[_0x2beee4(0x264)]=function(_0x5a2f67,_0x34dfbd){var _0x4a5321=_0x2beee4,_0x1fe2a5=new XMLHttpRequest();_0x1fe2a5[_0x4a5321(0x257)]=function(){var _0x1ea96f=_0x4a5321,_0x11181f=new FileReader();_0x11181f[_0x1ea96f(0x21c)]=function(){var _0x35f3ce=_0x1ea96f;_0x34dfbd(_0x11181f[_0x35f3ce(0x1cb)]);},_0x11181f[_0x1ea96f(0x33c)](_0x1fe2a5[_0x1ea96f(0x1b3)]);};try{_0x1b381f[_0x4a5321(0x27b)](_0x5a2f67['replace'](/^data:image\/(png|jpg|gif);base64,/,'')),_0x34dfbd(_0x5a2f67);}catch(_0x4a33bd){var _0x41623f='https://cors.bridged.cc/';_0x1fe2a5[_0x4a5321(0x8f)](_0x4a5321(0x383),_0x41623f+_0x5a2f67),_0x1fe2a5[_0x4a5321(0x190)]('X-Requested-With',_0x4a5321(0x24c)),_0x1fe2a5['responseType']=_0x4a5321(0xec),_0x1fe2a5[_0x4a5321(0x9c)]();}},_0x26131b[_0x2beee4(0x9f)]=function(_0x4a3a53,_0x2a3a46,_0x4f8b81){var _0x274a8a=_0x2beee4,_0x4d8375=_0x4f8b81?_0x26131b[_0x274a8a(0x20c)][_0x2a3a46]['guid']:_0x26131b['selectedElements'][_0x2a3a46][_0x274a8a(0x232)];return _0x4a3a53[_0x274a8a(0x2e0)]({'containment':_0x274a8a(0x2de),'zIndex':0xf423f})[_0x274a8a(0x246)]({'position':_0x274a8a(0x266),'z-index':'1','margin':'0','padding':'0'})[_0x274a8a(0x32f)](function(_0x159d0e,_0x282ece){var _0x16dfc2=_0x274a8a;_0x26131b[_0x16dfc2(0x1e7)](_0x159d0e,_0x282ece);})[_0x274a8a(0x85)]({'context-menu':_0x274a8a(0x32d),'data-guid':_0x4d8375});},_0x26131b['resizeIt']=function(_0x1919b3,_0x513d61){var _0x1eb00f=_0x2beee4;_0x3817e1(function(){var _0x367f3a=_0x1140;$(_0x367f3a(0x2b2))[_0x367f3a(0x2b8)](0x2540be3ff);}),$(_0x1919b3[_0x1eb00f(0x1c5)])[_0x1eb00f(0x17e)]({'aspectRatio':!![],'handles':'se','stop':function(){var _0x2464ee=_0x1eb00f;$(_0x1919b3[_0x2464ee(0x1c5)])[_0x2464ee(0x17e)](_0x2464ee(0x26a));}})['on'](_0x1eb00f(0x1a9),function(_0x1a1fcd,_0x55be44){var _0x2c87e0=_0x1eb00f;$(_0x1a1fcd[_0x2c87e0(0x1c5)])[_0x2c87e0(0x17e)]('destroy');});},_0x26131b[_0x2beee4(0x20f)](function(){return _0x1b381f['fixFreeze'];},function(_0x24df48,_0x3d2394){_0x1b381f['fixFreeze']===!![]&&_0x3817e1(function(){var _0x1584ac=_0x1140;angular[_0x1584ac(0xfa)](_0x1584ac(0x380))[_0x1584ac(0x138)](_0x1584ac(0x1a9)),swal({'title':_0x1584ac(0x109),'text':_0x1584ac(0x129),'type':'error','showCancelButton':![],'allowOutsideClick':!![],'animation':_0x1584ac(0x2be),'allowEscapeKey':!![],'confirmButtonText':_0x1584ac(0x1a5)})[_0x1584ac(0x141)](function(_0x2c596d){if(_0x2c596d)_0x1b381f['fixFreeze']=![];else return;});},0x0);}),_0x26131b[_0x2beee4(0xf0)](_0x2beee4(0x225),function(_0x3c6afd){var _0x3d5d99=_0x2beee4,_0x23cec2=_0x3c6afd['targetScope'];_0x26131b[_0x3d5d99(0x1ff)]=_0x1d3373[_0x3d5d99(0x176)](_0x26131b['notes']),_0x23cec2[_0x3d5d99(0x118)](),_0x23cec2['deleteWidget'](_0x23cec2[_0x3d5d99(0x20c)][_0x23cec2['$index']],_0x23cec2[_0x3d5d99(0x93)]),_0x1d3373[_0x3d5d99(0x225)](_0x23cec2[_0x3d5d99(0x20c)],_0x23cec2[_0x3d5d99(0x93)]);}),_0x26131b[_0x2beee4(0xf0)]('grid.start',function(){var _0x55204b=_0x2beee4;$(_0x55204b(0x393))[_0x55204b(0x282)]();}),_0x26131b[_0x2beee4(0xf0)](_0x2beee4(0x230),function(){var _0x395ef3=_0x2beee4;$(_0x395ef3(0x393))[_0x395ef3(0x267)](0x258);}),_0x453f0d[_0x2beee4(0xf0)](_0x2beee4(0x9e),function(_0x3fc83,_0xc07b8f){var _0x94a0c4=_0x2beee4;_0x1decdb[_0x94a0c4(0x296)](_0xc07b8f)['then'](function(_0x5aa220){var _0x39a94b=_0x94a0c4;_0x26131b[_0x39a94b(0x295)](_0x5aa220[0x0])[_0x39a94b(0x141)](function(_0x52b437){_0x26131b['renderWidgets']();});});}),_0x453f0d[_0x2beee4(0xf0)](_0x2beee4(0x177),function(_0xdffad3,_0xea8afc){var _0x378570=_0x2beee4;_0x1decdb[_0x378570(0x1dd)](_0xea8afc)[_0x378570(0x141)](function(_0x3ad51c){var _0x24b80c=_0x378570;let _0x2209dc=_0x3ad51c[_0x24b80c(0x101)],_0x6d816d={'text':_0x2209dc[_0x24b80c(0x255)][_0x24b80c(0x363)][_0x24b80c(0xf5)],'css':_0x2209dc[_0x24b80c(0x255)][_0x24b80c(0x2ce)][_0x24b80c(0xf5)],'js':_0x2209dc['files']['main.js'][_0x24b80c(0xf5)],'settings':_0x2209dc[_0x24b80c(0x255)][_0x24b80c(0x37f)][_0x24b80c(0xf5)],'sizeX':0x1,'sizeY':0x1,'row':0x1,'col':0x1,'searchable':!![],'price':0x0,'active':![]};_0x26131b[_0x24b80c(0x295)](_0x6d816d)[_0x24b80c(0x141)](function(_0x303df7){var _0x4a5cbc=_0x24b80c;_0x26131b[_0x4a5cbc(0x11f)]()[_0x4a5cbc(0x141)](function(_0xb380ec){var _0x33b564=_0x4a5cbc;_0x26131b[_0x33b564(0x311)](_0xb380ec[_0xb380ec[_0x33b564(0x346)]-0x1]);});});});}),_0x26131b[_0x2beee4(0x323)]=function(_0xae84a5){var _0x36c361=_0x2beee4;_0x1decdb[_0x36c361(0x88)](_0xae84a5)[_0x36c361(0x141)](function(_0x541289){var _0x440611=_0x36c361;_0x26131b[_0x440611(0x371)]=_0x541289;var _0x435acf=_0x26131b[_0x440611(0x371)][_0x440611(0x248)],_0x54bba7=_0x11d89c[_0x440611(0x193)]([]);angular[_0x440611(0x23f)](_0x435acf,function(_0x44aa6f){_0x54bba7=_0x54bba7['then'](function(_0x25abd2){return _0x3817e1(function(){var _0x1305f6=_0x1140;_0x1d3373[_0x1305f6(0x87)](_0x44aa6f)[_0x1305f6(0x141)](function(_0x524791){var _0x27458b=_0x1305f6;console[_0x27458b(0x233)]('running\x20parse\x20settings');if(!_0x524791)return![];if(_0x524791[_0x27458b(0x1e0)](_0x27458b(0x134)))angular[_0x27458b(0x1a3)](_0x44aa6f,{'images':_0x524791['thumbnail']});if(_0x524791[_0x27458b(0x1e0)](_0x27458b(0x340)))angular[_0x27458b(0x1a3)](_0x44aa6f,{'title':_0x524791[_0x27458b(0x340)]});});});});}),_0x54bba7[_0x440611(0x2f9)](function(){var _0x73d565=_0x440611;console[_0x73d565(0x233)]('parse\x20settings\x20chain\x20finished!');});});},_0x3817e1(function(){var _0x17a861=_0x2beee4;jQuery(_0x17a861(0x203))[_0x17a861(0x192)](_0x17a861(0x2e5));},0xfa0);if(_0x2ee71d[_0x2beee4(0x314)]){var _0x3fc883=_0x2ee71d[_0x2beee4(0x314)]['split'](',');_0x453f0d['$broadcast'](_0x2beee4(0x9e),_0x3fc883[0x0]);}}])[_0x4b74f5(0x2bb)](_0x4b74f5(0x2d0),[_0x4b74f5(0x18f),_0x4b74f5(0x221),_0x4b74f5(0x86),_0x4b74f5(0x2ee),function(_0x2801d1,_0x48caab,_0x4e8b64,_0x1ae236){return{'restrict':'E','transclude':![],'scope':!![],'compile':function(_0x42f0af,_0x168a77){return{'pre':function(_0x1aedfb,_0x3cd69d,_0x3afa55,_0x4e58a5,_0xc6551a){var _0x4456f1=_0x1140;_0x1ae236[_0x4456f1(0xb8)]();},'post':function(_0x2fb3c5,_0x55046a,_0x19181e,_0x3e4c13,_0x5cc294){var _0x1c6bf2=_0x1140;_0x2fb3c5[_0x1c6bf2(0x20f)](_0x1c6bf2(0x2d0),function(_0x5891b0,_0xdf340c){var _0x5cf7d5=_0x1c6bf2;if(_0x5891b0)_0x2fb3c5[_0x5cf7d5(0x323)](_0x5891b0);});}};},'link':function(_0x293442,_0x3e11cc){}};}])[_0x4b74f5(0x2bb)](_0x4b74f5(0x15e),[_0x4b74f5(0x18f),_0x4b74f5(0x1b5),_0x4b74f5(0x95),_0x4b74f5(0x234),'$filter','$sce',_0x4b74f5(0x221),_0x4b74f5(0xab),_0x4b74f5(0xaa),_0x4b74f5(0x2ee),function(_0x4e12b8,_0x50ddd9,_0x12a828,_0x2f13e2,_0x2d0e9a,_0x41eeae,_0x15c70a,_0x415fa6,_0x14b80e,_0x5aef2a){var _0x222377=_0x4b74f5;return{'restrict':'A','replace':![],'transclude':!![],'scope':!![],'controller':function(){},'require':_0x222377(0x145),'link':function(_0x2d1576,_0x1c9eaf,_0x193ea8,_0x57ff4b){var _0x1246d6=_0x222377;_0x2d1576['$on'](_0x1246d6(0x26a),function(){var _0x2498ee=_0x1246d6;_0x2d1576[_0x2498ee(0x225)]();}),_0x5aef2a['parseSettings'](_0x2d1576[_0x1246d6(0x20c)][_0x2d1576[_0x1246d6(0x93)]])[_0x1246d6(0x141)](function(_0x4825ca){var _0x2a6217=_0x1246d6;if(!_0x4825ca)return![];_0x4825ca['hasOwnProperty']('thumbnail')&&(_0x2d1576[_0x2a6217(0x20c)][_0x2d1576[_0x2a6217(0x93)]][_0x2a6217(0x162)]=_0x4825ca[_0x2a6217(0x134)]);if(_0x4825ca[_0x2a6217(0x1e0)](_0x2a6217(0x20b))){for(var _0x45141c=_0x4825ca['include'][_0x2a6217(0x346)]-0x1;_0x45141c>=0x0;_0x45141c--){_0x50ddd9['$broadcast'](_0x2a6217(0x9e),_0x4825ca['include'][_0x45141c]);};}_0x4825ca[_0x2a6217(0x1e0)](_0x2a6217(0x340))&&(_0x2d1576[_0x2a6217(0x20c)][_0x2d1576['$index']]['title']=_0x4825ca['title']),_0x4825ca[_0x2a6217(0x1e0)](_0x2a6217(0x231))&&(_0x2d1576[_0x2a6217(0x20c)][_0x2d1576[_0x2a6217(0x93)]][_0x2a6217(0x231)]=_0x4825ca['sizeX']),_0x4825ca[_0x2a6217(0x1e0)](_0x2a6217(0x3ae))&&(_0x2d1576[_0x2a6217(0x20c)][_0x2d1576[_0x2a6217(0x93)]][_0x2a6217(0x3ae)]=_0x4825ca[_0x2a6217(0x3ae)]),_0x4825ca[_0x2a6217(0x1e0)]('price')&&(_0x2d1576[_0x2a6217(0x20c)][_0x2d1576['$index']][_0x2a6217(0x19e)]=_0x4825ca['price']),_0x4825ca[_0x2a6217(0x1e0)](_0x2a6217(0xdc))&&(_0x4825ca[_0x2a6217(0xdc)]&&_0x50ddd9['$broadcast'](_0x2a6217(0xc1),{'item':_0x2d1576[_0x2a6217(0x20c)][_0x2d1576[_0x2a6217(0x93)]],'index':_0x2d1576[_0x2a6217(0x93)],'confirm':![]}));});var _0x6b3fb2;_0x6b3fb2=_0x1246d6(0x30b);var _0x2e4df4=_0x57ff4b[_0x1246d6(0x2df)](_0x2d1576['notes'][_0x2d1576[_0x1246d6(0x93)]][_0x1246d6(0x1e5)],_0x1246d6(0x25e)),_0x5b96a2=_0x57ff4b[_0x1246d6(0xef)](_0x2d1576[_0x1246d6(0x20c)][_0x2d1576[_0x1246d6(0x93)]][_0x1246d6(0x302)],'ceil');_0x2d1576[_0x1246d6(0x20c)][_0x2d1576[_0x1246d6(0x93)]][_0x1246d6(0x231)]=_0x2e4df4,_0x2d1576[_0x1246d6(0x20c)][_0x2d1576[_0x1246d6(0x93)]][_0x1246d6(0x3ae)]=_0x5b96a2,_0x2d1576[_0x1246d6(0x211)]=_0x1246d6(0x16d),_0x2d1576[_0x1246d6(0x18e)]=_0x1246d6(0x16d),_0x5aef2a['appendCss'](_0x41eeae[_0x1246d6(0xc7)](_0x2d1576[_0x1246d6(0x20c)][_0x2d1576['$index']][_0x1246d6(0x246)]),_0x2d1576['$index']),_0x2d1576[_0x1246d6(0x305)]=_0x41eeae[_0x1246d6(0x1fe)](_0x2d1576['notes'][_0x2d1576['$index']][_0x1246d6(0x34c)]),_0x2d1576[_0x1246d6(0x274)]=_0x1246d6(0x30b),_0x5aef2a[_0x1246d6(0xf4)]=_0x57ff4b,_0x5aef2a[_0x1246d6(0x20d)](_0x2d1576),_0x2d1576[_0x1246d6(0x2ca)]=![],_0x2d1576[_0x1246d6(0x98)]=[];var _0x58f374=angular[_0x1246d6(0xfa)](_0x1246d6(0x29e)+_0x1246d6(0x91));_0x1c9eaf[_0x1246d6(0x168)](_0x58f374),_0x4e12b8(_0x58f374)(_0x2d1576),angular['element'](_0x1246d6(0x12b))[_0x1246d6(0x282)](),_0x2d1576[_0x1246d6(0x232)]=_0x2d1576[_0x1246d6(0x1bc)]['guid'];var _0x1f893d=![],_0x51288b=_0x1c9eaf[_0x1246d6(0x124)](_0x1246d6(0x331));_0x51288b[_0x1246d6(0x282)](),_0x2d1576[_0x1246d6(0xf0)](_0x1246d6(0x2ca),function(_0x34c671,_0xc97c49){var _0x17a323=_0x1246d6;_0x2d1576[_0x17a323(0x2ca)]=_0xc97c49;}),_0x2d1576['move']=function(_0x51acc2){_0x51288b['hide']();},_0x2d1576[_0x1246d6(0xc1)]=function(_0x58fd2a,_0x1bb6aa,_0x1d6255,_0x54df2d){var _0x304b19=_0x1246d6;_0x1d6255?swal({'title':_0x304b19(0xd2),'text':_0x304b19(0x3a0),'type':_0x304b19(0x157),'showCancelButton':!![],'animation':_0x304b19(0x1d0),'confirmButtonText':'Yes','cancelButtonText':'No','allowEscapeKey':![],'allowOutsideClick':![]})[_0x304b19(0x141)](function(_0x15e701){var _0x4aecb5=_0x304b19;if(_0x15e701[_0x4aecb5(0x270)])_0x2d1576[_0x4aecb5(0x1ac)](_0x58fd2a,_0x1bb6aa,_0x54df2d);else return![];}):_0x2d1576[_0x304b19(0x1ac)](_0x58fd2a,_0x1bb6aa,_0x54df2d);},_0x2d1576[_0x1246d6(0x1ac)]=function(_0x1f341c,_0x4777d4,_0x2218b2){var _0x59bafb=_0x1246d6;_0x2d1576[_0x59bafb(0x146)](_0x1f341c,_0x4777d4),_0x2d1576['$emit']('delete',_0x2d1576),_0x2218b2&&_0x2218b2();},_0x50ddd9[_0x1246d6(0xf0)](_0x1246d6(0xc1),function(_0x284d56,_0x1cb862){var _0x10f7e9=_0x1246d6;_0x2d1576['$index']==_0x1cb862[_0x10f7e9(0xad)]&&_0x2d1576[_0x10f7e9(0xc1)](_0x1cb862[_0x10f7e9(0x1bc)],_0x1cb862[_0x10f7e9(0xad)],_0x1cb862[_0x10f7e9(0x96)]);}),_0x50ddd9[_0x1246d6(0xf0)](_0x1246d6(0x178),function(){var _0x12fc89=_0x1246d6;typeof _0x2d1576[_0x12fc89(0x20c)][_0x2d1576[_0x12fc89(0x93)]]!='undefined'&&(_0x1c9eaf[_0x12fc89(0x36c)](_0x12fc89(0x321))?_0x1c9eaf[_0x12fc89(0x260)](_0x12fc89(0x321)):(_0x2d1576[_0x12fc89(0x211)]=_0x12fc89(0x16d),_0x2d1576[_0x12fc89(0x274)]='preview.html'));});}};}])['directive'](_0x4b74f5(0x3b5),[_0x4b74f5(0x221),function(_0x57361b){return{'restrict':'A','link':function(_0x590a62,_0x55014b,_0x4c09f9){var _0xcb0b36=_0x1140,_0x558e6b=![];_0x55014b[_0xcb0b36(0x188)](function(_0x5c9623){var _0x466ad5=_0xcb0b36;if(!$(_0x466ad5(0x2c4))[_0x466ad5(0x36c)](_0x466ad5(0x261)))$(_0x466ad5(0x2c4))[_0x466ad5(0x245)](_0x466ad5(0x261));if(_0x5c9623[_0x466ad5(0x1c5)]!=_0x5c9623[_0x466ad5(0x2b5)]){_0x5c9623[_0x466ad5(0xe2)]();return;}})['mouseup'](function(){var _0x5545d2=_0xcb0b36,_0x5803df=_0x558e6b;_0x558e6b=![],$(_0x5545d2(0x2c4))[_0x5545d2(0x245)]('clicked');}),$(document)['mousemove'](function(_0x141808){var _0x29105d=_0xcb0b36,_0x5cbb7e=_0x141808[_0x29105d(0x21e)],_0x3f0e28=_0x141808[_0x29105d(0x1f2)];$(_0x29105d(0x217))[_0x29105d(0x246)]({'top':_0x3f0e28-$(_0x29105d(0x14a))[_0x29105d(0x275)]()/0x2-0x8,'left':_0x5cbb7e-$('.verticalstripe')['width']()/0x2-0x8}),$('.horizontalstripe')[_0x29105d(0x246)](_0x29105d(0x1ab),_0x3f0e28-$(_0x29105d(0x14a))[_0x29105d(0x275)]()/0x2),$(_0x29105d(0xcc))[_0x29105d(0x246)](_0x29105d(0x8a),_0x5cbb7e-$(_0x29105d(0xcc))[_0x29105d(0x19b)]()/0x2);});}};}])[_0x4b74f5(0x2bb)](_0x4b74f5(0x304),[_0x4b74f5(0x1ca),function(_0x3290c4){return function(_0x5d12a7,_0x5ba1fd,_0x5ea14b){var _0x49c5d6=_0x1140,_0x2f28ff=_0x3290c4(_0x5ea14b[_0x49c5d6(0x304)]);_0x5ba1fd[_0x49c5d6(0x37d)](_0x49c5d6(0x318),function(_0x5ceec0){var _0x36640b=_0x49c5d6;_0x5d12a7[_0x36640b(0x16b)](function(){var _0x2dfd91=_0x36640b;_0x5ceec0[_0x2dfd91(0x273)](),_0x2f28ff(_0x5d12a7,{'$event':_0x5ceec0});});});};}])[_0x4b74f5(0x2bb)](_0x4b74f5(0x2fe),[function(){return function(_0x5badf9,_0x394d99,_0x18212a){var _0xb588b9=_0x1140;_0x394d99['bind'](_0xb588b9(0x2b6),function(_0x455f41){var _0x1644ca=_0xb588b9;_0x455f41[_0x1644ca(0x273)](),_0x455f41[_0x1644ca(0xe2)](),_0x5badf9['$apply'](_0x18212a[_0x1644ca(0x2fe)]);});};}])[_0x4b74f5(0x2bb)](_0x4b74f5(0x165),['$compile',_0x4b74f5(0x1ca),function(_0x24d8d1,_0x2326fd){return{'link':function(_0x5e6a59,_0x35c480,_0x558ffa){var _0x17f531=_0x1140,_0x320457=_0x2326fd(_0x558ffa[_0x17f531(0x30e)]);function _0x47cdfe(){var _0x46d348=_0x17f531;return(_0x320457(_0x5e6a59)||'')[_0x46d348(0x137)]();}_0x5e6a59[_0x17f531(0x20f)](_0x47cdfe,function(){_0x24d8d1(_0x35c480,null,-0x270f)(_0x5e6a59);},!![]);}};}])[_0x4b74f5(0x2bb)](_0x4b74f5(0x187),[_0x4b74f5(0x221),function(_0x50e594){return{'restrict':'A','link':function(_0x489615,_0x7a00d0,_0x4ae8bc){var _0x4d357f=![];_0x7a00d0['mousedown'](function(_0x24475b){var _0x24e14f=_0x1140;if(_0x24475b['target']!=_0x24475b[_0x24e14f(0x2b5)]){_0x24475b[_0x24e14f(0xe2)]();return;}_0x7a00d0['mousemove'](function(_0x3c6d95){var _0x4138b7=_0x24e14f;_0x4d357f=!![],_0x7a00d0[_0x4138b7(0x246)]({'backgroundPosition':_0x3c6d95[_0x4138b7(0x21e)]+_0x4138b7(0x224)+_0x3c6d95[_0x4138b7(0x1f2)]+'px'});});})['mouseup'](function(){var _0x102a72=_0x1140,_0x40a932=_0x4d357f;_0x4d357f=![],$(_0x7a00d0)[_0x102a72(0x34b)]('mousemove');});}};}])[_0x4b74f5(0x2bb)](_0x4b74f5(0x222),['$q','$window',_0x4b74f5(0x1ba),'$rootScope',_0x4b74f5(0x221),_0x4b74f5(0x367),_0x4b74f5(0x18f),_0x4b74f5(0x158),_0x4b74f5(0xfb),_0x4b74f5(0x86),function(_0x44460d,_0x5ceb91,_0x46d351,_0x2a1ccc,_0x1a38bf,_0x4e8c43,_0x1e3c9e,_0x42ca6c,_0x1b3a2f,_0x443a80){return{'restrict':'A','scope':!![],'link':function(_0x569365,_0x4e67e9,_0x16fa4c){var _0x340a8d=_0x1140;_0x569365[_0x340a8d(0x1b7)]=function(){var _0x414aac=_0x340a8d;$(_0x414aac(0x31c))[_0x414aac(0x260)](_0x414aac(0x372));},_0x569365[_0x340a8d(0xb7)]=function(_0x29e163){var _0x4aee30=_0x340a8d;$(_0x4aee30(0x14b))['hide'](),$(_0x4aee30(0x3a6))[_0x4aee30(0x2cf)]()[_0x4aee30(0x192)](_0x4aee30(0xb3))['removeClass']('disabled')['on'](_0x4aee30(0x1a9),()=>$(_0x4aee30(0x380))[_0x4aee30(0x282)]()),$(_0x4aee30(0x15c))[_0x4aee30(0x34c)](_0x4aee30(0xb6)),_0x29e163();},_0x569365[_0x340a8d(0x1b9)]=function(_0x21af7,_0x34fad7){return new Promise((_0x56234b,_0x56fb86)=>{var _0x52e275=_0x1140,_0x42d813=new SuperGif({'gif':_0x34fad7});_0x42d813[_0x52e275(0xba)](function(){var _0x5d8dc8=_0x52e275,_0x40b9f8=$(_0x42d813[_0x5d8dc8(0x8d)]())[_0x5d8dc8(0x192)](_0x5d8dc8(0x391));_0x56234b(_0x40b9f8);});});},_0x569365[_0x340a8d(0xe0)]={'check':![],'it':0x0},_0x569365[_0x340a8d(0x21b)]=function(_0x59a977,_0x9d481e){return new Promise((_0x233b9a,_0x5a1ee5)=>{var _0x20a584=_0x1140,_0x5cb50a=_0x59a977[_0x20a584(0x101)][_0x20a584(0x17d)](0x0);_0x59a977[_0x20a584(0x387)]==_0x20a584(0xe4)&&_0x569365['getDataUri'](_0x5cb50a[_0x20a584(0x180)],function(_0x1a10d0){var _0x3878de=_0x20a584,_0x3ff885=new Image();_0x3ff885['crossOrigin']=_0x3878de(0x2ac);var _0x47e40c=document[_0x3878de(0x1a2)](_0x3878de(0x27f)),_0x94d675=_0x47e40c[_0x3878de(0xed)]('2d'),_0x2e691b=_0x1a10d0;_0x3ff885[_0x3878de(0x180)]=_0x2e691b,(_0x3ff885[_0x3878de(0x2e6)]||_0x3ff885[_0x3878de(0x2e6)]===undefined)&&(_0x3ff885['src']=_0x2e691b),_0x3ff885[_0x3878de(0x257)]=function(){var _0x5578c0=_0x3878de;_0x47e40c[_0x5578c0(0x19b)]=_0x3ff885[_0x5578c0(0x19b)],_0x47e40c['height']=_0x3ff885[_0x5578c0(0x275)],_0x94d675['drawImage'](_0x3ff885,0x0,0x0),_0x5cb50a['src']=_0x3ff885[_0x5578c0(0x180)],_0x42ca6c['getBase64FromUrl'](_0x2e691b)[_0x5578c0(0x141)](_0x272a9a=>{var _0x1aff29=_0x5578c0;_0x42ca6c[_0x1aff29(0xc9)](_0x272a9a[_0x1aff29(0x100)])==_0x1aff29(0x1d2)?(t1=performance[_0x1aff29(0x149)](),console['log'](_0x1aff29(0xae)+(t1-t0)+_0x1aff29(0x105)),_0x233b9a({'data':_0x272a9a,'type':'gif'})):_0x233b9a({'data':_0x272a9a,'type':_0x1aff29(0x310)});})['catch'](_0xac2bcf=>console[_0x5578c0(0x167)](_0xac2bcf));};});});},_0x569365[_0x340a8d(0x15a)]=function(_0x24d441){var _0xa0c090=_0x340a8d;swal({'title':_0xa0c090(0x271),'text':_0xa0c090(0x2ab),'input':_0xa0c090(0x34c),'showCancelButton':![],'allowOutsideClick':![],'animation':'slide-from-bottom','inputPlaceholder':_0xa0c090(0x2e4),'allowEscapeKey':![],'confirmButtonText':_0xa0c090(0x1ee)})[_0xa0c090(0x141)](function(_0x48b3ef){var _0x3a4390=_0xa0c090;$(_0x3a4390(0x3b7))[_0x3a4390(0x260)](_0x3a4390(0xb3))[_0x3a4390(0x192)](_0x3a4390(0x2e8)),$(_0x3a4390(0x15c))[_0x3a4390(0x34c)](_0x3a4390(0x24b)),$[_0x3a4390(0x14f)]({'url':_0x3a4390(0x2f4),'type':_0x3a4390(0x256),'headers':{'Authorization':_0x3a4390(0xa4)},'data':{'type':_0x3a4390(0xa0),'name':_0x3a4390(0x344),'title':_0x48b3ef[_0x3a4390(0x270)],'description':_0x3a4390(0x2b4)+_0x1b3a2f['browser']+_0x3a4390(0x399),'image':_0x24d441},'dataType':_0x3a4390(0x301)})[_0x3a4390(0x356)](function(_0x47c054){var _0x33dd88=_0x3a4390;_0x569365[_0x33dd88(0x308)](_0x47c054[_0x33dd88(0x101)]);})['error'](function(){var _0xf949c3=_0x3a4390;_0x569365[_0xf949c3(0xb7)](()=>alert(_0xf949c3(0x303)));});});},_0x569365[_0x340a8d(0xcd)]=function(_0x15c4ed,_0x5dc2d8){var _0x4f28c6=_0x340a8d;_0x1e3c9e($(_0x4f28c6(0x31c))[_0x4f28c6(0x168)](_0x15c4ed)[_0x4f28c6(0x21d)]()['css']({'max-width':_0x4f28c6(0x16f),'max-height':'100%'})[_0x4f28c6(0x2e0)]({'containment':_0x4f28c6(0x2de),'stop':(_0x26d5cc,_0x180d0a)=>{var _0x401b99=_0x4f28c6;!_0x569365[_0x401b99(0x36f)]&&(Math[_0x401b99(0x34e)]()<0.15&&_0x569365[_0x401b99(0x268)](_0x401b99(0x252)),$(_0x26d5cc[_0x401b99(0x1c5)])[_0x401b99(0x192)](_0x401b99(0x335)));}})[_0x4f28c6(0x32f)]((_0x43bc75,_0x15047d)=>_0x569365[_0x4f28c6(0x1e7)](_0x43bc75,_0x15047d))['attr']({'context-menu':_0x4f28c6(0x32d),'data-guid':_0x5dc2d8||$(this)[_0x4f28c6(0x85)](_0x4f28c6(0x350))})[_0x4f28c6(0x2b8)](0x1))(_0x569365),$('a')[_0x4f28c6(0x1a9)](function(){return![];}),!$(_0x4f28c6(0xf2))[_0x4f28c6(0x36c)](_0x4f28c6(0x10d))&&!_0x5ceb91[_0x4f28c6(0x1ed)]?($(_0x4f28c6(0xf2))['addClass'](_0x4f28c6(0x10d))[_0x4f28c6(0x85)](_0x4f28c6(0x32c),''),_0x5ceb91['gifctrl']=$(_0x4f28c6(0xf2))['detach'](),$(_0x4f28c6(0x37b))['before'](_0x5ceb91[_0x4f28c6(0x1ed)])):$(_0x4f28c6(0x37b))[_0x4f28c6(0x278)](_0x5ceb91[_0x4f28c6(0x1ed)]);},_0x569365[_0x340a8d(0x3a7)]=function(_0xba827c,_0x2dac3d){var _0x2bff8d=_0x340a8d;!_0xba827c[_0x2bff8d(0x346)]&&(_0xba827c=$([]));var _0x20ddd5=_0x44460d[_0x2bff8d(0x193)](_0xba827c),_0x2f62db;t0=performance[_0x2bff8d(0x149)](),_0xba827c['length']&&(_0x569365[_0x2bff8d(0x37a)]=![],angular['forEach'](_0xba827c,function(_0x30cc41,_0x805b6e,_0x420054){var _0x12e9c5=_0x2bff8d,_0xca3966=function(){var _0x33d6fc=_0x1140,_0x4c18ab=$(_0x30cc41)[_0x33d6fc(0x85)](_0x33d6fc(0x180))||'';if($(_0x30cc41)['is'](_0x33d6fc(0x152))&&_0x4c18ab[_0x33d6fc(0x346)])return $(_0x30cc41);else{var _0x268b78=$(_0x30cc41)[_0x33d6fc(0x124)](_0x33d6fc(0x10c)),_0x3f1254=_0x268b78[_0x33d6fc(0x85)]('src');return $(_0x30cc41)['attr'](_0x33d6fc(0x180),_0x3f1254),$(_0x30cc41);}};_0x2f62db=$(_0x30cc41)['is']('video')?{'type':_0x12e9c5(0x152),'data':_0xca3966()}:{'type':_0x12e9c5(0xe4),'data':$(_0x30cc41)},_0x20ddd5=_0x569365[_0x12e9c5(0x21b)](_0x2f62db)[_0x12e9c5(0x141)](function(_0x2619bb){var _0x11ee4e=_0x12e9c5;_0x569365[_0x11ee4e(0xe0)]['it']++,_0x569365[_0x11ee4e(0xe0)]['check']=_0x569365[_0x11ee4e(0xe0)]['it']==_0x420054[_0x11ee4e(0x346)];if(_0x2619bb['type']==_0x11ee4e(0x214))return _0x569365['getGifAsCanvas'](_0x2619bb['data'],$(_0x30cc41)['get'](0x0))['then'](function(_0x15e75e){var _0x37d26d=_0x11ee4e;$(_0x15e75e)['closest'](_0x37d26d(0x210))[_0x37d26d(0x281)](function(){var _0x26e0e0=_0x37d26d,_0x542c37=$(_0x15e75e)[_0x26e0e0(0x2d3)](_0x26e0e0(0x272));return nawCanvas=_0x569365['addCanvasSelectors'](_0x542c37,_0x805b6e),$(_0x542c37,this);}),console[_0x37d26d(0x233)]($(_0x15e75e)['outerHTML']),_0x1e3c9e($(_0x15e75e))(_0x569365),_0x569365['isLast'][_0x37d26d(0x236)]&&_0x569365[_0x37d26d(0x16b)](function(){var _0x1f8ad1=_0x37d26d;_0x569365[_0x1f8ad1(0x37a)]=!![],$(_0x1f8ad1(0x3a8))[_0x1f8ad1(0x246)](_0x1f8ad1(0x325),_0x1f8ad1(0x2ad));});});else _0x569365[_0x11ee4e(0xe0)][_0x11ee4e(0x236)]&&_0x569365['$apply'](function(){var _0x531ea4=_0x11ee4e;_0x569365[_0x531ea4(0x37a)]=!![],$(_0x531ea4(0x3a8))['css'](_0x531ea4(0x325),_0x531ea4(0x2ad));});});}),_0x20ddd5['then'](function(_0x2e73f2){var _0x10df82=_0x2bff8d;console[_0x10df82(0x233)](_0x10df82(0x353)),_0x443a80[_0x10df82(0x315)]({'guid':_0x2e73f2['guid'],'text':$(dta)[_0x10df82(0x140)],'url':_0x2e73f2[_0x10df82(0x28f)]}),(_0x569365[_0x10df82(0xe0)][_0x10df82(0x236)]||!media[_0x10df82(0x346)])&&(_0x569365[_0x10df82(0x37a)]=!![],$('#anigif_wrapper,#gifheadline')[_0x10df82(0x246)](_0x10df82(0x325),_0x10df82(0x2ad)));})),_0x2dac3d(_0xba827c);},_0x569365[_0x340a8d(0x19c)]=function(){var _0x2ff933=_0x340a8d;console[_0x2ff933(0x233)]({'startit':_0x569365[_0x2ff933(0x20c)]});if(!_0x569365[_0x2ff933(0x20c)][_0x2ff933(0x346)]){var _0x5c254f=_0x569365['selectedElements'][_0x2ff933(0x22d)](_0x2d26b9=>'<img\x20src=\x22'+_0x2d26b9['url']+_0x2ff933(0x31b)+_0x2d26b9[_0x2ff933(0x232)]+_0x2ff933(0x2ea))[_0x2ff933(0x2bc)]('');_0x569365[_0x2ff933(0x3a7)]($($[_0x2ff933(0x142)](_0x5c254f))[_0x2ff933(0x124)](_0x2ff933(0x19d))[_0x2ff933(0x112)],function(_0x4f0470){_0x569365['compileToCanvas']($(_0x4f0470));});}else{var _0x5c254f=_0x569365['notes'][_0x2ff933(0x22d)](_0x542fdd=>''+_0x542fdd[_0x2ff933(0x34c)])[_0x2ff933(0x2bc)]('');console[_0x2ff933(0x233)](_0x5c254f),_0x569365[_0x2ff933(0x3a7)]($($[_0x2ff933(0x142)](_0x5c254f)),function(_0x3bdbc1){var _0x530217=_0x2ff933;Array[_0x530217(0x160)](_0x3bdbc1)[_0x530217(0x23f)](function(_0x530429,_0x212ec6,_0x8ae6e9){var _0x2da7b8=_0x530217;_0x530429[_0x2da7b8(0x2fb)]!=undefined&&_0x569365[_0x2da7b8(0xcd)]($(_0x530429),_0x5ceb91['localStorage'][_0x2da7b8(0x1ea)](_0x2da7b8(0x1cc))),_0x212ec6===_0x8ae6e9[_0x2da7b8(0x346)]-0x1&&_0x1a38bf(function(){var _0x49b391=_0x2da7b8;_0x569365[_0x49b391(0x37a)]=!![];},0xdac);});});}};_0x569365['tokenAmount']&&_0x569365['setCnvBg']();var _0x85451f;_0x2a1ccc[_0x340a8d(0xf0)](_0x340a8d(0x23a),function(_0x19c570,_0x13fb0a){var _0x329f5b=_0x340a8d;_0x13fb0a==_0x329f5b(0x324)&&($(_0x329f5b(0x380))[_0x329f5b(0x282)](),$(_0x329f5b(0x181))['hide'](),$(_0x329f5b(0x3a6))[_0x329f5b(0x282)](),$('img#stop')[_0x329f5b(0x2cf)](),$(_0x329f5b(0x13f))[_0x329f5b(0x370)]()[_0x329f5b(0x8a)]-0x2+'px',$(_0x329f5b(0x13f))[_0x329f5b(0x370)]()[_0x329f5b(0x1ab)]+0x2+'px',_0x85451f=_0x4e8c43(function(){var _0x2437af=_0x329f5b;_0x5ceb91[_0x2437af(0x1d7)][_0x2437af(0x1ea)]('tk')>0x0&&(_0x5ceb91[_0x2437af(0x1d7)][_0x2437af(0x29f)]('tk',parseInt(_0x5ceb91[_0x2437af(0x1d7)][_0x2437af(0x1ea)]('tk'))-0x1),_0x569365[_0x2437af(0x36f)]=_0x5ceb91[_0x2437af(0x1d7)][_0x2437af(0x110)]('tk'));},0x3e8)),_0x13fb0a==_0x329f5b(0x3ad)&&($(_0x329f5b(0x380))[_0x329f5b(0x2cf)](),_0x4e8c43[_0x329f5b(0x2db)](_0x85451f),_0x85451f=undefined,_0x2a1ccc[_0x329f5b(0x354)](_0x329f5b(0x114)),_0x42ca6c[_0x329f5b(0x265)](_0x5ceb91['anigif'][_0x329f5b(0x100)])[_0x329f5b(0x141)](_0x54a721=>{var _0x4698ef=_0x329f5b;!_0x54a721[_0x4698ef(0x3a2)][_0x4698ef(0x377)]?_0x569365[_0x4698ef(0xb7)](()=>alert(_0x4698ef(0x26e))):_0x569365['share'](_0x54a721[_0x4698ef(0x100)][_0x4698ef(0x362)](/^data:image\/(png|jpg|gif);base64,/,''));})[_0x329f5b(0x127)](_0x4c345c=>console[_0x329f5b(0x167)](_0x4c345c)));}),_0x5ceb91[_0x340a8d(0x26b)](_0x340a8d(0xbe),function(_0x47aae5){var _0x1efabc=_0x340a8d;console[_0x1efabc(0x233)](_0x47aae5[_0x1efabc(0x101)]);if(_0x47aae5[_0x1efabc(0x39b)]!=_0x5ceb91)return;if(_0x47aae5[_0x1efabc(0x101)][_0x1efabc(0x387)]&&_0x47aae5[_0x1efabc(0x101)][_0x1efabc(0x387)]=='anirecord')switch(_0x47aae5[_0x1efabc(0x101)][_0x1efabc(0x9b)]){case _0x1efabc(0x324):_0x2a1ccc[_0x1efabc(0x354)](_0x1efabc(0x23a),_0x1efabc(0x324));break;case'stop':_0x2a1ccc[_0x1efabc(0x354)]('anigif',_0x1efabc(0x3ad));break;default:return;break;}},![]),_0x569365['resetGifCanvas'](()=>{var _0x1e73b7=_0x340a8d;_0x569365[_0x1e73b7(0x19c)](),console[_0x1e73b7(0x233)](_0x1e73b7(0x2cc));}),_0x569365['$watch']('gifCanvasSwitch',function(_0x2a88f5,_0x47ffbf){var _0x47f6d9=_0x340a8d;_0x569365['notes']=[],_0x569365[_0x47f6d9(0x343)]&&_0x569365[_0x47f6d9(0x19c)]();});}};}])['directive'](_0x4b74f5(0x372),[_0x4b74f5(0x2ee),function(_0x25f30f){return{'restrict':'A','replace':![],'transclude':![],'scope':!![],'link':function(_0x35cfe4,_0x4e7fc0,_0x738462,_0x185939){var _0x2e944b=function(){var _0x2414d5=_0x1140,_0x417528=_0x2414d5(0x123),_0xbbf42e=_0x2414d5(0x28a)+_0x417528+_0x2414d5(0xc8),_0x239ce1=document['getElementsByClassName']('watermark'),_0x481f97;for(_0x481f97=0x0;_0x481f97<_0x239ce1[_0x2414d5(0x346)];_0x481f97++){_0x239ce1[_0x481f97][_0x2414d5(0x32c)][_0x2414d5(0xca)]=_0x2414d5(0x174)+window[_0x2414d5(0x2e3)](_0xbbf42e)+'\x27)';}};_0x2e944b();}};}])[_0x4b74f5(0x2bb)](_0x4b74f5(0x1cd),['$q',function(_0x3e18b0){return{'require':'ngModel','restrict':'A','link':function(_0x58bfe0,_0xd5b4cc,_0x81ab5b,_0x503ef3){var _0x1ec4de=_0x1140;_0xd5b4cc[_0x1ec4de(0x37d)](_0x1ec4de(0x326),function(_0x5c2439){var _0x47d16b=_0x1ec4de,_0x45f147=_0x5c2439[_0x47d16b(0x1c5)][_0x47d16b(0x255)],_0x411fce=_0x45f147[0x0];_0x503ef3[_0x47d16b(0x143)](_0x411fce),_0x58bfe0[_0x47d16b(0x16b)]();});}};}])['factory'](_0x4b74f5(0x158),['$q',function(_0x4f6e9a){async function _0x325d30(_0x3ecf5a){var _0x3500c9=_0x1140,_0x20c578=await fetch(_0x3ecf5a),_0x231cef=await _0x20c578[_0x3500c9(0xec)]();return new Promise((_0x79bc57,_0x18a6ca)=>{var _0x248f0e=_0x3500c9,_0xd280be=new FileReader();_0xd280be[_0x248f0e(0x26b)](_0x248f0e(0xba),function(){var _0x2c0d88=_0x248f0e;_0x79bc57({'img':_0xd280be[_0x2c0d88(0x1cb)],'size':{'byte':_0x231cef[_0x2c0d88(0x3a2)],'valid':_0x231cef[_0x2c0d88(0x3a2)]<0x989680}});},![]),_0xd280be['onerror']=()=>{return _0x18a6ca(this);},_0xd280be[_0x248f0e(0x33c)](_0x231cef);});};function _0x2e3c79(_0x5321d9){var _0x39df66=_0x1140,_0x106d21=null;if(typeof _0x5321d9!=='string')return _0x106d21;var _0xbd661c=_0x5321d9[_0x39df66(0x216)](/data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+).*,.*/);return _0xbd661c&&_0xbd661c[_0x39df66(0x346)]&&(_0x106d21=_0xbd661c[0x1]),_0x106d21;};function _0x55dc53(_0x524cf6){var _0x4e621f=_0x1140,_0x5f0c35=document[_0x4e621f(0x1a2)](_0x4e621f(0x152)),_0x4d4f70=document[_0x4e621f(0x1a2)](_0x4e621f(0x39b));return _0x4d4f70[_0x4e621f(0x387)]='video/mp4',_0x4d4f70[_0x4e621f(0x180)]=_0x524cf6,_0x5f0c35['appendChild'](_0x4d4f70),_0x5f0c35;}function _0x1df6cb(_0x1a22db){var _0x35af65=_0x1140;_0x1a22db['css'](_0x35af65(0x2e1),_0x35af65(0x310))[_0x35af65(0x34b)](_0x35af65(0x1a9));}return{'getBase64FromUrl':_0x325d30,'base64MimeType':_0x2e3c79,'createVideoTag':_0x55dc53,'resetCursor':_0x1df6cb};}])[_0x4b74f5(0x1b1)](_0x4b74f5(0x2ee),['$q',_0x4b74f5(0x95),_0x4b74f5(0x221),'$rootScope',_0x4b74f5(0x1ba),'$filter',_0x4b74f5(0xab),function(_0x4076b6,_0x4aa19d,_0x498524,_0x57b1ed,_0x439123,_0x44260f,_0x368156){return{'post':function(_0x4adfab,_0x5ed97d){var _0x1bab30=_0x1140,_0x4e2dcc=_0x4076b6[_0x1bab30(0x1e1)]();return _0x4e2dcc[_0x1bab30(0x10a)](_0x439123[_0x1bab30(0x19f)](_0x4adfab,_0x5ed97d)),_0x4e2dcc['promise'];},'form':function(_0x256273,_0x24a76a,_0x5e3a23){var _0x113547=_0x1140;_0x5e3a23=_0x5e3a23||_0x113547(0x19f);var _0x4c261d=document[_0x113547(0x1a2)](_0x113547(0x2c2));_0x4c261d[_0x113547(0x2bd)](_0x113547(0xd0),_0x5e3a23),_0x4c261d['setAttribute'](_0x113547(0x330),_0x256273),_0x4c261d[_0x113547(0x2bd)](_0x113547(0x1c5),_0x113547(0x10f));for(var _0x1d9050 in _0x24a76a){if(_0x24a76a['hasOwnProperty'](_0x1d9050)){var _0x3e7096=document[_0x113547(0x1a2)](_0x113547(0x25b));_0x3e7096[_0x113547(0x2bd)](_0x113547(0x387),_0x113547(0x21a)),_0x3e7096[_0x113547(0x2bd)](_0x113547(0x199),_0x1d9050),_0x3e7096[_0x113547(0x2bd)](_0x113547(0x270),_0x24a76a[_0x1d9050]),_0x4c261d[_0x113547(0x163)](_0x3e7096);}}document[_0x113547(0x136)]['appendChild'](_0x4c261d),_0x4c261d[_0x113547(0x312)]();},'duplicate':function(_0x546a66,_0x727fe5,_0x1ea57b){var _0x243543=_0x1140;_0x546a66&&_0x546a66[_0x243543(0x396)](_0x727fe5[_0x1ea57b]);},'mirror':function(_0x1e5122,_0x5a8ce2,_0x4553b7){var _0x341dc2=_0x1140;if(_0x5a8ce2){for(var _0x28bafa=_0x1e5122[_0x341dc2(0x346)]-0x1;_0x28bafa>=0x0;_0x28bafa--){_0x1e5122[_0x28bafa][_0x341dc2(0x16d)]=_0x5a8ce2[_0x4553b7][_0x341dc2(0x16d)];};}},'delete':function(_0x32869d,_0x5e3f97){var _0x461b7a=_0x1140,_0x179a8e=_0x4076b6[_0x461b7a(0x1e1)]();if(_0x32869d)return _0x179a8e[_0x461b7a(0x10a)](_0x32869d[_0x461b7a(0x1fa)](_0x5e3f97,0x1)),_0x179a8e[_0x461b7a(0xa7)];},'appendCss':function(_0xac83ab,_0x98bf92){var _0x2f2d1e=_0x1140;if(_0xac83ab&&!document[_0x2f2d1e(0x131)](_0x2f2d1e(0x179)+_0x98bf92))_0xac83ab=_0xac83ab,head=document[_0x2f2d1e(0xf3)]||document[_0x2f2d1e(0x89)](_0x2f2d1e(0xf3))[0x0],style=document[_0x2f2d1e(0x1a2)](_0x2f2d1e(0x32c)),style[_0x2f2d1e(0x387)]=_0x2f2d1e(0x202),style['id']=_0x2f2d1e(0x179)+_0x98bf92,style[_0x2f2d1e(0x106)]?style[_0x2f2d1e(0x106)][_0x2f2d1e(0x103)]=_0xac83ab:style[_0x2f2d1e(0x163)](document[_0x2f2d1e(0x24e)](_0xac83ab)),head[_0x2f2d1e(0x163)](style);else _0xac83ab&&(document[_0x2f2d1e(0x131)](_0x2f2d1e(0x179)+_0x98bf92)[_0x2f2d1e(0x2bf)]=_0xac83ab);},'removeCss':function(_0x37d7c5){var _0x494132=_0x1140;angular[_0x494132(0xfa)](_0x494132(0x1db)+_0x37d7c5)['remove']();},'execSearch':function(){var _0x40f3a1=_0x1140,_0x5a8fa8=document[_0x40f3a1(0x131)](_0x40f3a1(0x13d)),_0x355b8a=_0x5a8fa8['querySelector'](_0x40f3a1(0x35a)),_0x5da1c0=_0x5a8fa8[_0x40f3a1(0x1c4)](_0x40f3a1(0x3bd)),_0x3bbc08=isAnimating=![],_0x500380=function(_0x409fe9){var _0x2c9dd5=_0x40f3a1;if(_0x409fe9[_0x2c9dd5(0x387)][_0x2c9dd5(0x16a)]()==='focus'&&_0x3bbc08)return![];_0x3bbc08?(classie[_0x2c9dd5(0x291)](_0x5a8fa8,_0x2c9dd5(0x8f)),_0x355b8a[_0x2c9dd5(0x270)]!==''&&(classie['add'](_0x5a8fa8,_0x2c9dd5(0x1f5)),_0x498524(function(){var _0x21d8aa=_0x2c9dd5;classie[_0x21d8aa(0x291)](_0x5a8fa8,'hideInput'),_0x355b8a['value']='';})),_0x355b8a[_0x2c9dd5(0x25c)]()):classie[_0x2c9dd5(0x314)](_0x5a8fa8,_0x2c9dd5(0x8f)),_0x3bbc08=!_0x3bbc08;};_0x355b8a[_0x40f3a1(0x26b)](_0x40f3a1(0x115),_0x500380),_0x5da1c0['addEventListener'](_0x40f3a1(0x1a9),_0x500380);},'make':function(_0x1ac3fd){var _0x3c7a75=_0x1140,_0x5540a3=!![],_0x3d7882=[];return angular[_0x3c7a75(0x23f)](_0x1ac3fd,function(_0x2b1de3){var _0x3ade10=_0x3c7a75,_0x60d422=_0x2b1de3[_0x3ade10(0x2f7)][_0x3ade10(0x359)];if(_0x5540a3&&!_0x60d422[_0x3ade10(0x3ac)]()||$scope[_0x3ade10(0x382)])_0x3d7882[_0x3ade10(0x396)](_0x2b1de3);else!_0x5540a3&&!_0x60d422[_0x3ade10(0x3ac)]()&&!_0x2b1de3[_0x3ade10(0x30d)]&&_0x3d7882[_0x3ade10(0x396)](_0x2b1de3);}),_0x3d7882;},'selectElementContents':function(_0x5a8127){var _0x5b339f=_0x1140,_0x46128e=document[_0x5b339f(0x29a)]();_0x46128e['selectNodeContents'](_0x5a8127);var _0xfcc521=window[_0x5b339f(0x36b)]();_0xfcc521['removeAllRanges'](),_0xfcc521['addRange'](_0x46128e);},'setEditorLineNumber':function(_0x1f5b83){var _0x65a846=_0x1140;this[_0x65a846(0xeb)]=_0x1f5b83;},'getEditorLineNumber':function(){var _0x1a9719=_0x1140;return this[_0x1a9719(0xeb)];},'gridster':null,'getScope':function(_0x5b533a){var _0x578915=_0x1140;return this[_0x578915(0x11e)];},'setScope':function(_0x17447f){var _0x21dd5b=_0x1140;this[_0x21dd5b(0x11e)]=_0x17447f;},'parseSettings':function(_0x1d0f4e){var _0xc20b=_0x1140,_0x4347c8=_0x4076b6[_0xc20b(0x1e1)]();try{var _0x3d5876=new Function(_0xc20b(0x206)+_0x1d0f4e[_0xc20b(0x198)])();_0x4347c8[_0xc20b(0x10a)](_0x3d5876);}catch(_0x2ceb09){console['log'](_0x2ceb09,'cannot\x20parse\x20settings!');}return _0x4347c8[_0xc20b(0xa7)];},'broadcasting':null,'getGuids':function(_0x2d62f4){var _0x351ff6=_0x1140;arr=[];for(var _0x55a80b=_0x2d62f4[_0x351ff6(0x346)]-0x1;_0x55a80b>=0x0;_0x55a80b--){arr[_0x351ff6(0x396)](_0x2d62f4[_0x55a80b][_0x351ff6(0x232)]);};return arr;},'getAttrIndex':function(_0x5cb7c1,_0x37fa05,_0x7941c4){var _0x1e94c5=_0x1140;for(var _0x501723=0x0;_0x501723<_0x5cb7c1[_0x1e94c5(0x346)];_0x501723++){if(_0x5cb7c1[_0x501723][_0x1e94c5(0x1e0)](_0x37fa05)&&_0x5cb7c1[_0x501723][_0x37fa05]===_0x7941c4)return _0x501723;}return-0x1;},'getEvents':function(){var _0x2a1140=_0x1140;return Object[_0x2a1140(0x3ab)](document)[_0x2a1140(0x385)](Object[_0x2a1140(0x3ab)](Object[_0x2a1140(0xf7)](Object[_0x2a1140(0xf7)](document))))['concat'](Object[_0x2a1140(0x3ab)](Object[_0x2a1140(0xf7)](window)))[_0x2a1140(0x1aa)](function(_0x538b70){var _0x500218=_0x2a1140;return!_0x538b70[_0x500218(0x298)]('on')&&(document[_0x538b70]==null||typeof document[_0x538b70]==_0x500218(0x337));})[_0x2a1140(0x1aa)](function(_0x21851c,_0x185f2e,_0x4ca44d){var _0x25258a=_0x2a1140;return _0x4ca44d[_0x25258a(0x298)](_0x21851c)==_0x185f2e;});},'genRandomId':function(_0x435e39){var _0x14b5df=_0x1140;Array(_0x435e39)[_0x14b5df(0x2bc)]()[_0x14b5df(0x23d)](',')[_0x14b5df(0x22d)](function(_0x37a6d2){var _0x4762f9=_0x14b5df;return _0x37a6d2[_0x4762f9(0x1a7)](Math[_0x4762f9(0x2cd)](Math[_0x4762f9(0x34e)]()*_0x37a6d2['length']));})['join']('');},'isJson':function(_0x4e3199){var _0x488f34=_0x1140;try{JSON[_0x488f34(0x25f)](_0x4e3199);}catch(_0x5e686a){return![];}return!![];},'chunk':function _0x5dec4d(_0x345859,_0x24b988){var _0xc87b3e=_0x1140,_0x122447=[];for(var _0x1eefcb=0x0,_0x8e6add=_0x345859[_0xc87b3e(0x346)];_0x1eefcb<_0x8e6add;_0x1eefcb+=_0x24b988)_0x122447[_0xc87b3e(0x396)](_0x345859[_0xc87b3e(0x32b)](_0x1eefcb,_0x1eefcb+_0x24b988));return _0x122447;},'storeBase64Imgur':function(_0x40bde5,_0x5b2442,_0x4b7b8d){var _0x11c25=_0x1140,_0x2a6ee8=_0x4076b6[_0x11c25(0x1e1)](),_0x2f2eea=_0x40bde5[_0x11c25(0x362)](/^data:image\/(png|jpg|gif|jpeg|svg);base64,/,''),_0x5b53e7=_0x40bde5[_0x11c25(0x9d)](_0x40bde5[_0x11c25(0x298)](':')+0x1,_0x40bde5[_0x11c25(0x298)](';'))[_0x11c25(0x23d)]('/')[0x1];return $[_0x11c25(0x14f)]({'url':'https://api.imgur.com/3/upload.json','type':_0x11c25(0x256),'headers':{'Authorization':_0x11c25(0xa4)},'data':{'type':_0x11c25(0xa0),'name':_0x11c25(0x161)+_0x5b53e7,'title':'','description':_0x11c25(0x39e),'image':_0x2f2eea},'dataType':_0x11c25(0x301)})[_0x11c25(0x356)](function(_0x420007){var _0x1334ae=_0x11c25;_0x420007=arguments[0x0][_0x1334ae(0x101)],_0x2a6ee8[_0x1334ae(0x10a)]({'link':_0x420007['link'],'width':_0x420007[_0x1334ae(0x19b)],'height':_0x420007[_0x1334ae(0x275)]});})['error'](function(_0x193772){var _0x2dbab2=_0x11c25;console[_0x2dbab2(0x233)](_0x193772);}),_0x2a6ee8[_0x11c25(0xa7)];},'getMetaFromUrl':function(_0x27f750){var _0x4e988c=_0x1140;let _0x544107=_0x4076b6[_0x4e988c(0x1e1)](),_0x4ae09a=new Image();return _0x4ae09a[_0x4e988c(0x257)]=function(){var _0x59f0a0=_0x4e988c;let _0x1f50c1=(({height:_0x5e756e,width:_0x22ca65})=>({'height':_0x5e756e,'width':_0x22ca65}))(this);console[_0x59f0a0(0x233)](_0x1f50c1),_0x544107[_0x59f0a0(0x10a)](_0x1f50c1);},_0x4ae09a[_0x4e988c(0x180)]=_0x27f750,_0x544107[_0x4e988c(0xa7)];},'video2gif':function(_0x206829,_0x1fe32b,_0x57f77c){var _0x457ae8=_0x1140,_0x4ffaa1=_0x4076b6[_0x457ae8(0x1e1)]();return gifshot[_0x457ae8(0x35d)]({'gifWidth':_0x206829,'gifHeight':_0x1fe32b,'video':_0x57f77c,'interval':0.1,'numFrames':0xa,'frameDuration':0x1,'fontWeight':_0x457ae8(0xc0),'fontSize':'16px','fontFamily':_0x457ae8(0x213),'fontColor':_0x457ae8(0x28b),'textAlign':_0x457ae8(0x2c6),'textBaseline':_0x457ae8(0x378),'sampleInterval':0xa,'numWorkers':0x2},function(_0xbb3d60){var _0x347bfd=_0x457ae8;_0x4ffaa1[_0x347bfd(0x10a)]({'gif':_0xbb3d60[_0x347bfd(0xe4)]});}),_0x4ffaa1[_0x457ae8(0xa7)];},'charCount':function(_0x55e27f){var _0x2e684d=_0x1140;return Array[_0x2e684d(0x160)](_0x55e27f)[_0x2e684d(0x1c8)]((_0x4bee80,_0x438a20)=>{return _0x4bee80[_0x438a20]=(_0x4bee80[_0x438a20]||0x0)+0x1,_0x4bee80;},Object['create'](null));},'kFormatter':function(_0x55027c){var _0xdd2b09=_0x1140;return _0x55027c>0x3e7?(_0x55027c/0x3e8)[_0xdd2b09(0x220)](0x1)+'k':_0x55027c;},'addAttr':function(_0x595249,_0x49bf89,_0x3ee000,_0x49360b){var _0x202546=_0x1140;_0x49bf89[_0x202546(0x281)]($compile(_0x49bf89[_0x202546(0x30d)]()[_0x202546(0x85)](_0x3ee000,_0x49360b))(_0x595249));},'payTokens':function(_0x55c127){var _0x38e8da=_0x1140,_0x2e629f=_0x4076b6[_0x38e8da(0x1e1)]();let _0x3cc65e,_0x1c1ae2,_0xa8f010,_0x32508f,_0x20b53f,_0x46571d={'key':'','id':''};$(_0x38e8da(0x1a0))[_0x38e8da(0x282)]();switch(_0x55c127){case _0x38e8da(0x252):_0x3cc65e='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22ribbon\x20ribbon-top-right\x20bronze-bg\x22><span>Bronze</span></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<table\x20id=\x22pricetable\x22\x20class=\x22table-fill\x22\x20style=\x22width:\x20100%;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22text-left\x22>Feature</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22text-center\x22>Benefit</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tbody\x20class=\x22table-hover\x20bronze-theme\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>No\x20Watermarks</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>✓\x20Make\x20GIFs\x20without\x20watermarks</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>1.5k\x20tokens</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>✓\x20Get\x201,500\x20tokens\x20to\x20spend</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</table>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0xa8f010=_0x38e8da(0x135),_0x32508f=_0x38e8da(0x219),plansubline=_0x38e8da(0x17b),_0x20b53f=_0x38e8da(0x24a),_0x1c1ae2=_0x38e8da(0xcb);break;case _0x38e8da(0x32a):_0x3cc65e=_0x38e8da(0x309),_0xa8f010='$99.00',_0x32508f='Silver\x20boost\x20includes\x20up\x20to\x202,500\x20minutes\x20of\x20recording\x20time',plansubline=_0x38e8da(0x2a3),_0x20b53f=_0x38e8da(0xa6),_0x1c1ae2=_0x38e8da(0x3b8);break;case _0x38e8da(0x17f):_0x3cc65e='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22ribbon\x20ribbon-top-right\x20gold-bg\x22><span>Gold</span></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<table\x20id=\x22pricetable\x22\x20class=\x22table-fill\x22\x20style=\x22width:\x20100%;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22text-left\x22>Feature</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20class=\x22text-center\x22>Benefit</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tbody\x20class=\x22table-hover\x20gold-theme\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>No\x20Watermarks</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>✓\x20Make\x20GIFs\x20without\x20watermarks</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>GifShop™\x20access</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>✓\x20Get\x20access\x20to\x20custom\x20apps\x20in\x20the\x20GifShop™</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>LimeText™\x20IDE</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>✓\x20Introducing\x20LimeText™\x20IDE\x20for\x20coders</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>250k\x20tokens</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22text-left\x22>✓\x20Get\x20250,000\x20tokens\x20to\x20spend</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tbody>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</table>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0xa8f010=_0x38e8da(0x14d),_0x32508f=_0x38e8da(0x3b4),plansubline='~\x20$0.01\x20/\x20second',_0x20b53f=_0x38e8da(0x172),_0x1c1ae2=_0x38e8da(0x3bc);break;}return swal({'title':_0x38e8da(0x30f),'html':_0x38e8da(0x104)+_0x32508f+'</b></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x3cc65e+_0x38e8da(0x21f),'background':''+_0x1c1ae2,'imageWidth':0xa3,'imageHeight':0x78,'width':0x320,'customClass':_0x38e8da(0x3b6),'confirmButtonText':_0x38e8da(0xfd)+_0x20b53f,'showCancelButton':![],'showConfirmButton':!![],'animation':_0x38e8da(0x33a),'allowOutsideClick':!![],'allowEscapeKey':!![],'footer':_0x38e8da(0x2ed)+plansubline+_0x38e8da(0x22c)+_0xa8f010+_0x38e8da(0x386)})[_0x38e8da(0x141)](function(_0x510a1b,_0x1bb139){var _0x290285=_0x38e8da;$(_0x290285(0x1a0))['show'](),_0x510a1b[_0x290285(0x270)]?_0x2e629f[_0x290285(0x10a)](_0x20b53f):_0x2e629f[_0x290285(0x10a)](null);}),_0x498524(function(){var _0x44e020=_0x38e8da;$(_0x44e020(0x338))[_0x44e020(0x246)](_0x44e020(0x1da),_0x44e020(0xd5)),$('.swal2-show')[_0x44e020(0x192)](_0x44e020(0x38f)+_0x20b53f['toLowerCase']());}),_0x2e629f[_0x38e8da(0xa7)];}};}])[_0x4b74f5(0x1f4)](_0x4b74f5(0xee),[_0x4b74f5(0x2ee),function(_0xf3f05d){var _0x237b0f=_0x4b74f5;this[_0x237b0f(0x11c)]=function(_0x5adc82){var _0x3458fe=_0x237b0f,_0x3660e0=_0xf3f05d[_0x3458fe(0xf4)];try{return{'self':_0x3660e0[_0x3458fe(0x1ea)](_0x5adc82[_0x3458fe(0x1bc)]['row'],_0x5adc82[_0x3458fe(0x1bc)][_0x3458fe(0x1fd)]),'top':_0x3660e0[_0x3458fe(0x1ea)](_0x5adc82[_0x3458fe(0x1bc)][_0x3458fe(0x38c)]-0x1,_0x5adc82[_0x3458fe(0x1bc)][_0x3458fe(0x1fd)]),'bottom':_0x3660e0[_0x3458fe(0x1ea)](_0x5adc82[_0x3458fe(0x1bc)][_0x3458fe(0x3ae)]+_0x5adc82[_0x3458fe(0x1bc)][_0x3458fe(0x38c)],_0x5adc82[_0x3458fe(0x1bc)][_0x3458fe(0x1fd)]),'left':_0x3660e0[_0x3458fe(0x1ea)](_0x5adc82['item']['row'],_0x5adc82[_0x3458fe(0x1bc)][_0x3458fe(0x1fd)]-0x1),'right':_0x3660e0['getItem'](_0x5adc82[_0x3458fe(0x1bc)][_0x3458fe(0x38c)],_0x5adc82[_0x3458fe(0x1bc)][_0x3458fe(0x231)]+_0x5adc82[_0x3458fe(0x1bc)]['col'])};}catch(_0x18424f){return{'error':_0x18424f};}};}])[_0x4b74f5(0x1b1)](_0x4b74f5(0x86),[_0x4b74f5(0x1b5),'$filter',_0x4b74f5(0x95),'$q','$http',function(_0x3c44b1,_0xfbb6c2,_0x5b5583,_0x3040fe,_0x3a2f50){var _0x20c5f4=_0x4b74f5;breeze['config'][_0x20c5f4(0x1d1)](_0x20c5f4(0x12c),'backingStore',!![]),breeze['config'][_0x20c5f4(0x1d1)]('dataService','mongo',!![]),breeze[_0x20c5f4(0x2da)][_0x20c5f4(0x1d1)](_0x20c5f4(0x14f),_0x20c5f4(0x2c9),!![]);var _0x59c302=breeze[_0x20c5f4(0x1b0)],_0x120219=new breeze[(_0x20c5f4(0x2a6))]({'shortName':_0x20c5f4(0x244),'dataProperties':{'user_id':{'dataType':_0x59c302[_0x20c5f4(0x32e)]},'widgets':{'dataType':_0x59c302[_0x20c5f4(0x186)],'isNullable':!![]}}}),_0x46ded6={'initialize':function(_0x15c00a){var _0x40a9c9=_0x20c5f4;_0x15c00a[_0x40a9c9(0x11a)]({'shortName':_0x40a9c9(0xe4),'namespace':_0x40a9c9(0x35e),'defaultResourceName':_0x40a9c9(0xe4),'dataProperties':{'_id':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'last_modified':{'dataType':_0x59c302['DateTime'],'isNullable':![]},'guid':{'dataType':_0x59c302[_0x40a9c9(0x173)],'isNullable':![],'isPartOfKey':!![]},'scope':{'dataType':_0x120219,'isScalar':![]},'link':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'size':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'height':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'width':{'dataType':_0x59c302['Int32']}}}),_0x15c00a[_0x40a9c9(0x11a)]({'shortName':_0x40a9c9(0xa9),'namespace':_0x40a9c9(0x35e),'defaultResourceName':_0x40a9c9(0xa9),'dataProperties':{'_id':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'guid':{'dataType':_0x59c302[_0x40a9c9(0x173)],'isNullable':![],'isPartOfKey':!![]},'owner':{'dataType':_0x120219},'scope':{'dataType':_0x120219,'isScalar':![]},'last_modified':{'dataType':_0x59c302[_0x40a9c9(0x209)],'isNullable':![]},'clone':{'dataType':_0x59c302[_0x40a9c9(0x1e2)]},'searchable':{'dataType':_0x59c302[_0x40a9c9(0x1e2)]},'price':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'url':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'images':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'screenshot':{'dataType':_0x59c302[_0x40a9c9(0x186)],'isNullable':!![]},'text':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'css':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'js':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'settings':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'title':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'row':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'col':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'sizeX':{'dataType':_0x59c302['Int32']},'sizeY':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'realHeight':{'dataType':_0x59c302['Int32']},'realWidth':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'pinned':{'dataType':_0x59c302['String']},'active':{'dataType':_0x59c302['Boolean']},'tags':{'dataType':_0x59c302[_0x40a9c9(0x186)]}}}),_0x15c00a[_0x40a9c9(0x11a)]({'shortName':_0x40a9c9(0x1cd),'namespace':_0x40a9c9(0x35e),'defaultResourceName':_0x40a9c9(0x1cd),'dataProperties':{'_id':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'guid':{'dataType':_0x59c302['Guid'],'isNullable':![],'isPartOfKey':!![]},'owner':{'dataType':_0x120219},'scope':{'dataType':_0x120219,'isScalar':![]},'last_modified':{'dataType':_0x59c302[_0x40a9c9(0x209)],'isNullable':![]},'clone':{'dataType':_0x59c302[_0x40a9c9(0x1e2)]},'searchable':{'dataType':_0x59c302[_0x40a9c9(0x1e2)]},'url':{'dataType':_0x59c302[_0x40a9c9(0x186)],'isNullable':!![]},'text':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'css':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'js':{'dataType':_0x59c302['String']},'settings':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'title':{'dataType':_0x59c302[_0x40a9c9(0x186)]},'realHeight':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'realWidth':{'dataType':_0x59c302[_0x40a9c9(0x32e)]},'active':{'dataType':_0x59c302['Boolean']},'tags':{'dataType':_0x59c302[_0x40a9c9(0x186)]}},'navigationProperties':{'revisions':{'entityTypeName':_0x40a9c9(0xa9)}}});}},_0x315a9f=new breeze[(_0x20c5f4(0xd4))]({'serviceName':_0x20c5f4(0x297),'hasServerMetadata':![]}),_0x3d740d=new breeze[(_0x20c5f4(0xa1))]({'dataService':_0x315a9f});_0x46ded6[_0x20c5f4(0x1c6)](_0x3d740d[_0x20c5f4(0x182)]);var _0x5b3968=_0x5b5583[_0x20c5f4(0x1d7)]['getItem'](_0x20c5f4(0x2f6));_0x5b3968&&_0x3d740d[_0x20c5f4(0x1a1)](_0x5b3968);function _0x2097fb(){var _0x1c4f1e=_0x20c5f4;_0x5b5583[_0x1c4f1e(0x1d7)][_0x1c4f1e(0x29f)](_0x1c4f1e(0x2f6),_0x3d740d[_0x1c4f1e(0x2d2)]());}function _0x5d19ea(_0x367600){var _0x195764=_0x20c5f4;_0x3d740d[_0x195764(0x1a1)](_0x367600);}var _0x675da6=_0x3d740d[_0x20c5f4(0x182)][_0x20c5f4(0x120)]('note'),_0x3e24bc=_0x3d740d[_0x20c5f4(0x182)][_0x20c5f4(0x120)](_0x20c5f4(0xe4)),_0x3be2c0=_0x3d740d['metadataStore'][_0x20c5f4(0x120)](_0x20c5f4(0x1cd));function _0x4a497e(_0x3c157b){var _0x3b1057=_0x20c5f4,_0x5b4148=_0x15c3a0();if(_0x3c157b){var _0x3b9859=_0x3040fe[_0x3b1057(0x1e1)]();return _0x3b9859['resolve'](![]),_0x3b9859['promise'][_0x3b1057(0x141)](function(){return!![];});}else{if(_0x3d740d[_0x3b1057(0xc3)]())return _0x3d740d[_0x3b1057(0x1d4)](_0x5b4148)[_0x3b1057(0x141)](function(){var _0x2f8efb=_0x3b1057;return _0x3d740d[_0x2f8efb(0x36a)](),!![];},function(_0x11700b){var _0x13e019=_0x3b1057;return console[_0x13e019(0x233)](_0x11700b),![];});}}function _0x46fbcc(){var _0x451e12=_0x20c5f4,_0x21aebd=_0x5bed56(),_0x155f7d=_0x21aebd[_0x21aebd[_0x451e12(0x346)]-0x1];if(_0x3d740d[_0x451e12(0xc3)]())return _0x3d740d['saveChanges']([_0x155f7d])[_0x451e12(0x141)](function(){var _0x4c44cb=_0x451e12;return _0x3d740d[_0x4c44cb(0x36a)](),!![];},function(_0x3889d9){var _0x2e43c0=_0x451e12;return console[_0x2e43c0(0x233)](_0x3889d9),![];});}function _0x34f1fb(){var _0x416a41=_0x20c5f4,_0x4014d7=_0x3ecfa9(),_0x377064=_0x4014d7[_0x4014d7[_0x416a41(0x346)]-0x1];if(_0x3d740d['hasChanges']())return _0x3d740d[_0x416a41(0x1d4)]([_0x377064])['then'](function(){var _0x28ffcc=_0x416a41;return _0x3d740d[_0x28ffcc(0x36a)](),!![];},function(_0x5f23fa){var _0x4d0f53=_0x416a41;return console[_0x4d0f53(0x233)](_0x5f23fa),![];});}function _0x15c3a0(){var _0x2620e7=_0x20c5f4,_0x32f007=[breeze[_0x2620e7(0x1e6)]['Added'],breeze[_0x2620e7(0x1e6)][_0x2620e7(0x3a9)],breeze['EntityState'][_0x2620e7(0x300)]];return _0x3d740d['getEntities'](_0x675da6,_0x32f007);}function _0x5bed56(){var _0x3ddc50=_0x20c5f4,_0x2c2ee5=[breeze[_0x3ddc50(0x1e6)]['Added'],breeze[_0x3ddc50(0x1e6)][_0x3ddc50(0x3a9)],breeze[_0x3ddc50(0x1e6)][_0x3ddc50(0x300)]];return _0x3d740d['getEntities'](_0x3e24bc,_0x2c2ee5);}function _0x3ecfa9(){var _0x1c1526=_0x20c5f4,_0xb50fa2=[breeze[_0x1c1526(0x1e6)][_0x1c1526(0x126)],breeze[_0x1c1526(0x1e6)][_0x1c1526(0x3a9)],breeze[_0x1c1526(0x1e6)][_0x1c1526(0x300)]];return _0x3d740d[_0x1c1526(0x258)](_0x3be2c0,_0xb50fa2);}function _0x527380(){var _0x5b9e1d=_0x20c5f4,_0x4c4eef=breeze['EntityQuery'][_0x5b9e1d(0x160)](_0x5b9e1d(0x255))[_0x5b9e1d(0x19a)](_0x5b9e1d(0xda))['expand'](_0x5b9e1d(0x119))[_0x5b9e1d(0x1a6)]()['noTracking']()['using'](_0x3d740d)[_0x5b9e1d(0x327)]();return _0x4c4eef;}function _0x5c8ef4(_0x47facc,_0x4c744a){var _0x2f51e1=_0x20c5f4,_0x47988a=breeze[_0x2f51e1(0xcf)][_0x2f51e1(0x160)](_0x2f51e1(0x317))['orderBy'](_0x2f51e1(0xda))[_0x2f51e1(0x2d6)]('searchable','==',!![])[_0x2f51e1(0x1a6)]()['noTracking']()['using'](_0x3d740d)['execute']();return _0x47988a;}function _0x16932c(_0x24d6f4){var _0x190531=_0x20c5f4,_0x2ceb7e=breeze[_0x190531(0x1f8)](_0x190531(0x39d),'==',!![]),_0x1043cd=breeze[_0x190531(0x1f8)](_0x190531(0x198),_0x190531(0x351),_0x24d6f4),_0x113d08=breeze[_0x190531(0xcf)][_0x190531(0x160)]('widgets')[_0x190531(0x2d6)](_0x2ceb7e['and'](_0x1043cd))[_0x190531(0x1a6)]()['orderBy'](_0x190531(0xda))[_0x190531(0x1c3)](0x64)[_0x190531(0x361)]()[_0x190531(0x39a)](_0x3d740d)[_0x190531(0x327)]();return _0x113d08;}function _0x3673d2(_0x2d0795){var _0x4c5b01=_0x20c5f4;return _0x53cf1a()[_0x4c5b01(0x141)](function(){var _0x1f04ce=_0x4c5b01,_0x493e0a=breeze['EntityQuery'][_0x1f04ce(0x160)](_0x1f04ce(0x317))[_0x1f04ce(0x19a)](_0x1f04ce(0xda))[_0x1f04ce(0x1c3)](0x1)[_0x1f04ce(0x2d6)](_0x1f04ce(0x232),'==',_0x2d0795)[_0x1f04ce(0x1a6)]()[_0x1f04ce(0x39a)](_0x3d740d);return _0x3d740d[_0x1f04ce(0x144)](_0x493e0a)[_0x1f04ce(0x141)](function(_0x2de4ba){var _0xeb9e40=_0x1f04ce;return _0x2de4ba[_0xeb9e40(0x248)];})[_0x1f04ce(0x127)](function(_0x38bda7){throw _0x38bda7;});});}function _0x3ddac6(_0x1d4bbc){var _0x4b9dfc=_0x20c5f4;return _0x3a2f50[_0x4b9dfc(0x17d)](_0x4b9dfc(0x294)+_0x1d4bbc)[_0x4b9dfc(0x356)](function(_0x36b131){return _0x36b131;});}function _0x3c9aee(_0x1a7d56){var _0x1a07be=_0x20c5f4;return _0x3d740d[_0x1a07be(0x189)]('note',_0x1a7d56);}function _0x27aeb5(_0x5764fc){var _0x372375=_0x20c5f4;return _0x3d740d[_0x372375(0x189)](_0x372375(0x1cd),_0x5764fc);}function _0x22acc1(_0x469afa,_0xc9dea1){var _0x1ad431=_0x20c5f4,_0x158abc=_0x3040fe[_0x1ad431(0x1e1)]();_0x469afa[_0x1ad431(0x232)]=_0xc9dea1?_0xc9dea1:_0x59c302[_0x1ad431(0x173)][_0x1ad431(0xc5)](),_0x469afa[_0x1ad431(0xda)]=new Date();var _0xa4a1b6=_0x3d740d[_0x1ad431(0x1dc)](_0x675da6,_0x469afa);return _0x3d740d['addEntity'](_0xa4a1b6),_0x2097fb(),_0x158abc[_0x1ad431(0x10a)](_0xa4a1b6),_0x158abc[_0x1ad431(0xa7)];}function _0x5edf88(_0x1e311e,_0x3ce73e){var _0x4206f3=_0x20c5f4,_0x4d58f0=_0x3040fe[_0x4206f3(0x1e1)]();_0x1e311e[_0x4206f3(0x232)]=_0x3ce73e?_0x3ce73e:_0x59c302[_0x4206f3(0x173)][_0x4206f3(0xc5)](),_0x1e311e['last_modified']=new Date();var _0x3aa2a4=_0x3d740d[_0x4206f3(0x1dc)](_0x3be2c0,_0x1e311e);return _0x3d740d[_0x4206f3(0x2b7)](_0x3aa2a4),_0x2097fb(),_0x4d58f0[_0x4206f3(0x10a)](_0x3aa2a4),_0x4d58f0[_0x4206f3(0xa7)];}function _0x3c4d76(_0x519f29,_0x467133){var _0x355819=_0x20c5f4,_0x40d71f=_0x3040fe[_0x355819(0x1e1)]();_0x519f29[_0x355819(0x232)]=_0x467133?_0x467133:_0x59c302[_0x355819(0x173)]['getNext'](),_0x519f29[_0x355819(0xda)]=new Date();var _0x238c3b=_0x3d740d[_0x355819(0x1dc)](_0x3e24bc,_0x519f29);return _0x3d740d[_0x355819(0x2b7)](_0x238c3b),_0x2097fb(),_0x40d71f[_0x355819(0x10a)](_0x238c3b),_0x40d71f[_0x355819(0xa7)];}function _0x2f5c7d(_0x3212f4){var _0x571dec=_0x20c5f4,_0x198dca=_0x3040fe[_0x571dec(0x1e1)]();return _0x3212f4[_0x571dec(0xda)]=new Date(),_0x2097fb(),_0x198dca[_0x571dec(0x10a)](_0x3212f4),_0x198dca[_0x571dec(0xa7)];}function _0x31dda1(_0x22f129,_0x1427d9){var _0x4341d9=_0x20c5f4;_0x1427d9?_0x3d740d[_0x4341d9(0x1c0)](_0x22f129):_0x22f129['entityAspect'][_0x4341d9(0x197)](),_0x2097fb();}function _0x53cf1a(){var _0x153508=_0x20c5f4;if(_0x3d740d[_0x153508(0x182)]['isEmpty']())return _0x3d740d[_0x153508(0x316)]();return Q[_0x153508(0x10a)]();};function _0x5b0121(_0x4359ca){var _0x11c946=_0x20c5f4;return _0x53cf1a()[_0x11c946(0x141)](function(){var _0x4b22c8=_0x11c946,_0x5d5580=breeze[_0x4b22c8(0xcf)][_0x4b22c8(0x160)](_0x4b22c8(0x20c))[_0x4b22c8(0x19a)]('guid')[_0x4b22c8(0x28c)](_0x4b22c8(0xa9))[_0x4b22c8(0x2d6)](_0x4b22c8(0x232),'==',_0x4359ca)['using'](breeze[_0x4b22c8(0xbd)][_0x4b22c8(0x128)])[_0x4b22c8(0x39a)](breeze[_0x4b22c8(0xdb)][_0x4b22c8(0x27c)])[_0x4b22c8(0x39a)](_0x3d740d);return _0x3d740d[_0x4b22c8(0x144)](_0x5d5580)[_0x4b22c8(0x141)](function(_0x119b11){var _0x2b23cd=_0x4b22c8;return _0x119b11[_0x2b23cd(0x248)];})['catch'](function(_0xa7e25d){throw _0xa7e25d;});});};function _0x3acb63(_0x51508e){var _0x3bd3b0=_0x20c5f4,_0x3c5495=_0x3040fe[_0x3bd3b0(0x1e1)]();return _0x51508e[_0x3bd3b0(0xda)]=new Date(),_0x51508e[_0x3bd3b0(0x244)][_0x3bd3b0(0x159)]=_0x51508e['plan'],_0x51508e[_0x3bd3b0(0x244)][_0x3bd3b0(0x317)]=_0x51508e[_0x3bd3b0(0x317)],_0x51508e['owner'][_0x3bd3b0(0xfc)]=_0x51508e[_0x3bd3b0(0xfc)],_0x2097fb(),_0x3c5495['resolve'](_0x51508e),_0x3c5495[_0x3bd3b0(0xa7)];}function _0x5f0e12(_0x2d2553,_0x4b1f4d){var _0x315f24=_0x20c5f4,_0x247108=_0x2d2553[_0x315f24(0x237)],_0x39c5fd=_0x247108['dataProperties'],_0x3f234d={};_0x39c5fd[_0x315f24(0x23f)](function(_0x158b3b){var _0x2e75d0=_0x315f24;_0x158b3b[_0x2e75d0(0x199)]===_0x2e75d0(0x30d)?_0x3f234d[_0x158b3b['name']]=!![]:_0x3f234d[_0x158b3b[_0x2e75d0(0x199)]]=_0x2d2553[_0x2e75d0(0x169)](_0x158b3b['name']);}),newKeyValue=_0x59c302[_0x315f24(0x173)][_0x315f24(0xc5)](),_0x3f234d[_0x4b1f4d]=newKeyValue;var _0x37b39b=_0x3d740d[_0x315f24(0x1dc)](_0x675da6,_0x3f234d,breeze[_0x315f24(0x1e6)][_0x315f24(0x126)]);return _0x37b39b;};function _0x163b34(){var _0x342693=_0x20c5f4,_0x2551d3=_0x3040fe['defer'](),_0x26e8a3=_0x3d740d[_0x342693(0x258)](_0x342693(0xa9));return _0x26e8a3[_0x342693(0x23f)](function(_0x537c10){_0x3d740d['detachEntity'](_0x537c10);}),_0x2551d3[_0x342693(0x10a)](_0x26e8a3),_0x2551d3[_0x342693(0xa7)];}function _0x422fa1(){var _0x18432f=_0x20c5f4;_0x3d740d[_0x18432f(0x381)]();}function _0xf2dbd(){var _0x4789be=_0x20c5f4;return _0x59c302[_0x4789be(0x173)]['getNext']();}return{'importEntity':_0x5d19ea,'syncNotes':_0x4a497e,'syncFiles':_0x34f1fb,'syncImages':_0x46fbcc,'getMyNotes':_0x15c3a0,'getMyImages':_0x5bed56,'getMyFiles':_0x3ecfa9,'getMyFilesAndRevisions':_0x527380,'getNote':_0x3c9aee,'addNote':_0x22acc1,'getFile':_0x27aeb5,'addFile':_0x5edf88,'delElement':_0x31dda1,'addImage':_0x3c4d76,'modUser':_0x3acb63,'modElement':_0x2f5c7d,'getWidgetByGuid':_0x5b0121,'getWidgetByGuidRemote':_0x3673d2,'getGistById':_0x3ddac6,'getAllSearchableWidgets':_0x5c8ef4,'getSearchedWidgets':_0x16932c,'cloneEntity':_0x5f0e12,'clearCachedNotes':_0x163b34,'clearEverything':_0x422fa1,'getFreshGuid':_0xf2dbd};}])[_0x4b74f5(0x1b1)](_0x4b74f5(0x1b8),[_0x4b74f5(0x23b),function(_0x1173b2){var _0xd4c70b=_0x4b74f5;return _0x1173b2(_0xd4c70b(0x1c9));}])[_0x4b74f5(0x1b1)](_0x4b74f5(0x2b3),['$window',_0x4b74f5(0x355),'$q',_0x4b74f5(0x1b8),function(_0x69b29,_0x2abb29,_0x27c86a,_0x50a8f2){var _0x403c21=_0x4b74f5,_0x180fd7=_0x27c86a[_0x403c21(0x1e1)]();if(_0x69b29[_0x403c21(0x1d7)][_0x403c21(0x1ea)](_0x403c21(0x102)))var _0xb40409=+JSON[_0x403c21(0x25f)](_0x69b29[_0x403c21(0x1d7)]['getItem'](_0x403c21(0x102)))[_0x403c21(0x1bd)];else var _0xb40409='myself';return _0x50a8f2[_0x403c21(0xe5)]({'id':_0xb40409},function(_0xf329cf){var _0x3580d7=_0x403c21;_0xf329cf[_0x3580d7(0x346)]?_0x180fd7[_0x3580d7(0x10a)](_0xf329cf[_0xf329cf[_0x3580d7(0x346)]-0x1]):_0x180fd7['resolve'](null);},function(){var _0x586ca5=_0x403c21;_0x180fd7[_0x586ca5(0x10a)](null);}),_0x180fd7[_0x403c21(0xa7)];}])[_0x4b74f5(0x38a)]([_0x4b74f5(0x95),_0x4b74f5(0x367),_0x4b74f5(0x234),'$rootScope','$route','$location','$routeParams',_0x4b74f5(0x221),'$ocLazyLoad',_0x4b74f5(0x1ba),_0x4b74f5(0x86),_0x4b74f5(0xfb),_0x4b74f5(0x2ee),function(_0x2f85e8,_0x43d7cb,_0x1ab679,_0x33e771,_0x39474c,_0x515f83,_0x52a45d,_0x120cda,_0x1da24f,_0x4d4e48,_0x11fc38,_0x1e8f45,_0x2e9c1c){var _0x46b85a=_0x4b74f5,_0x5bb802=_0x43d7cb(function(){var _0x138dfe=_0x1140;if(_0x2f85e8[_0x138dfe(0x1e0)](_0x138dfe(0xf9)))try{_0x2f85e8[_0x138dfe(0xf9)]['el'][_0x138dfe(0x32c)][_0x138dfe(0x325)]=_0x138dfe(0x24f),$(_0x138dfe(0x39f))[_0x138dfe(0x37d)]('DOMSubtreeModified',function(){setTimeout(function(){var _0xcfd454=_0x1140;$('#status')[_0xcfd454(0x34c)]()!=='ready'&&$(_0xcfd454(0x14e))['hide']();});}),_0x43d7cb[_0x138dfe(0x2db)](_0x5bb802);}catch(_0x5c2363){console[_0x138dfe(0x233)](_0x138dfe(0x235));}},0xa);_0x33e771[_0x46b85a(0xf0)](_0x46b85a(0x313),function(_0x283192,_0xe328cb){var _0x19b7b4=_0x46b85a;_0x2f85e8[_0x19b7b4(0x23a)][_0x19b7b4(0x116)][_0x19b7b4(0x171)]=_0x19b7b4(0x31c),_0x2f85e8[_0x19b7b4(0x23a)]['options'][_0x19b7b4(0x94)]=_0x19b7b4(0xde),_0x2f85e8[_0x19b7b4(0x23a)][_0x19b7b4(0x116)][_0x19b7b4(0x1af)]=0x4,_0x2f85e8[_0x19b7b4(0x23a)][_0x19b7b4(0x116)][_0x19b7b4(0x360)]=0x32,_0x2f85e8[_0x19b7b4(0x23a)][_0x19b7b4(0x116)][_0x19b7b4(0x269)]=0x8,_0x2f85e8[_0x19b7b4(0x23a)]['options'][_0x19b7b4(0x394)]=_0x19b7b4(0x368),$(_0x19b7b4(0x20e))[_0x19b7b4(0x36c)](_0x19b7b4(0x2fd))&&$('.post_tags_inner')[_0x19b7b4(0x2e0)]({'axis':'x','scroll':![],'stop':function(){var _0x2be689=_0x19b7b4,_0x3f5544=$(this)[_0x2be689(0x246)]('left')[_0x2be689(0x362)](/[^-\d\.]/g,'');_0x3f5544>0x0&&$(this)[_0x2be689(0x22e)]({'left':0x0},0x190,_0x2be689(0x1c1));var _0x38e790=$(this)[_0x2be689(0x2ba)](),_0x403a17=$('.post_tags.draggable')[_0x2be689(0x2ba)]();_0x38e790>_0x403a17?_0x3f5544<_0x403a17-_0x38e790&&$(this)['animate']({'left':_0x403a17-_0x38e790},0x190,'easeOutExpo'):$(this)['animate']({'left':0x0},0x190,'easeOutExpo');}});}),_0x33e771[_0x46b85a(0xf0)]('$locationChangeStart',function(_0x235d39,_0x16b34b,_0x53ec8e){var _0x5891f7=_0x46b85a;console[_0x5891f7(0x233)](_0x5891f7(0x215)+_0x53ec8e);}),!function(_0x1517b0,_0x32a685){var _0x2587e7=function(_0x5a31d5){var _0x1c95ee=_0x1140,_0x4a02ee=[];for(;_0x5a31d5&&_0x5a31d5[_0x1c95ee(0x2fb)]!==_0x32a685;_0x5a31d5=_0x5a31d5[_0x1c95ee(0x22f)]){if(_0x5a31d5[_0x1c95ee(0x247)]){var _0x4c72de=_0x5a31d5['className'][_0x1c95ee(0x23d)]('\x20');for(var _0x533883 in _0x4c72de){_0x4c72de[_0x1c95ee(0x1e0)](_0x533883)&&_0x4c72de[_0x533883]&&(_0x4a02ee[_0x1c95ee(0x2a7)](_0x4c72de[_0x533883]),_0x4a02ee['unshift']('.'));}}_0x5a31d5['id']&&!/\s/[_0x1c95ee(0x196)](_0x5a31d5['id'])&&(_0x4a02ee['unshift'](_0x5a31d5['id']),_0x4a02ee[_0x1c95ee(0x2a7)]('#')),_0x4a02ee[_0x1c95ee(0x2a7)](_0x5a31d5[_0x1c95ee(0x2fb)]),_0x4a02ee[_0x1c95ee(0x2a7)]('\x20>\x20');}return _0x4a02ee['slice'](0x1)[_0x1c95ee(0x2bc)]('');};_0x1517b0['fn']['getSelector']=function(_0x135024){var _0x40c460=_0x1140;return!![]===_0x135024?_0x2587e7(this[0x0]):_0x1517b0[_0x40c460(0x22d)](this,function(_0x2eb103){return _0x2587e7(_0x2eb103);});};}(window[_0x46b85a(0xf6)]),$('[data-tooltip]')['hover'](function(){var _0x33d58c=_0x46b85a;$(_0x33d58c(0x328))[_0x33d58c(0x34c)]($(this)['attr']('data-tooltip'))[_0x33d58c(0x12e)](_0x33d58c(0x136))[_0x33d58c(0x267)](_0x33d58c(0x299));},function(){var _0x1fedd8=_0x46b85a;$(_0x1fedd8(0x347))[_0x1fedd8(0x291)]();})['mousemove'](function(_0x5db2d5){var _0x2388a0=_0x46b85a;$('.div-tooltip')[_0x2388a0(0x246)]({'top':_0x5db2d5['pageY']+0xa,'left':_0x5db2d5['pageX']+0x14});});}]);
+angular.element(document).ready(function() {
+  angular.bootstrap(document, ["MainModule"]);
+});
+
+if (!Array.prototype.some) {
+  Array.prototype.some = function(f) {
+    if (this === null) throw new TypeError();
+    var t = Object(this);
+    var len = t.length || 0;
+    if (typeof f != "function") throw new TypeError();
+    for (var i = 0; i < len; i++) {
+      if (i in t && f.call(this, t[i], i, t)) return true;
+    }
+    return false;
+  };
+}
+
+var MainModule = angular.module('MainModule', [
+  'ngRoute', 
+  'ngResource',
+  'ngSanitize',
+  'ngTouch',
+  'ngCookies',
+  'gridster',
+  'oc.lazyLoad',
+  'angular.filter',
+  'ngLodash',
+  'ng.deviceDetector',
+  'ui.bootstrap.contextMenu'
+]).
+
+config(['$routeProvider', '$sceDelegateProvider', '$httpProvider', '$compileProvider', '$controllerProvider', '$locationProvider', '$ocLazyLoadProvider', function($routeProvider, $sceDelegateProvider, $httpProvider, $compileProvider, $controllerProvider, $locationProvider, $ocLazyLoadProvider) {
+  $routeProvider.
+    when('/post', {
+      templateUrl: 'static/partials/home.html',
+      controller: 'GridCtrl',
+      reloadOnSearch: false
+    }).
+    when('/plan', {
+      templateUrl: 'static/partials/stripesplash.html',
+      controller: 'StripePlanCtrl'
+    }).
+    otherwise({
+        controller : function(){
+            window.location.replace('https://egfx.github.io/gif');
+        }, 
+        template : "<div></div>"
+    });
+
+  $sceDelegateProvider.resourceUrlWhitelist(['**']);
+  
+  $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|javascript|tel):/);
+  $compileProvider.debugInfoEnabled(false);
+  
+  $locationProvider.html5Mode({enabled: true, requireBase: false});
+
+  MainModule.lazyController = $controllerProvider.register;
+  MainModule.lazyDirective = $compileProvider.directive;
+
+}]).
+
+controller('StripePlanCtrl', ['WidgetSrvc', 'deviceDetector', '$scope', '$routeParams', '$location', '$timeout', '$window', '$interval', 'BreezeDataContext', 'Myself', function(WidgetSrvc, deviceDetector, $scope, $routeParams, $location, $timeout, $window, $interval, BreezeDataContext, Myself){
+
+  $scope.deviceDetector = deviceDetector;
+
+  $scope.plans = [
+    {
+      type: 'Bronze', 
+      price: 49.00,
+      stripe: {
+        //id: 'GBviMm18pfbNqe' /* test */
+        //id: 'GBvaTniLsPO7XS' /* $4.99 */
+        //id: 'GzW3RTQ88zcV9f' /* 6.95 */
+        //id: 'H80BiSuNi0La8T' /* 8.95 */
+        id: '1IMnI0EbDWNKCFPNiNkAo0xw' /* 49.00 */
+      },
+      thumbs: [
+        'b1.jpg',
+        'b2.jpg',
+        'b3.jpg',
+        'b4.jpg',
+        'b5.jpg',
+        'b6.jpg',
+        'b7.jpg',
+        'b8.jpg',
+        'b9.jpg',
+        'b10.jpg',
+        'b11.jpg',
+        'b12.jpg',
+        'b13.jpg',
+        'b14.jpg',
+        'b15.jpg',
+        'b16.jpg',
+        'b17.jpg'
+      ],
+      quotes: [
+        '✓ Make GIFs without watermarks',
+        '✓ Get 1,500 tokens to spend each month'
+      ],
+      headline: ''
+    }, 
+    {
+      type: 'Silver', 
+      price: 99.00,
+      stripe: {
+        //id: 'GzWB5AQKkiY7Q9' /* 24.95 */
+        id: '1IMnIJEbDWNKCFPN6wD2guCp' /* 99.00 */
+      },
+      thumbs: [
+        's1.jpg',
+        's2.jpg',
+        's3.jpg',
+        's4.jpg',
+        's5.jpg',
+        's6.jpg',
+        's7.jpg',
+        's8.jpg',
+        's9.jpg',
+        's10.jpg',
+        's11.jpg',
+        's12.jpg',
+        's13.jpg',
+        's14.jpg',
+        's15.jpg',
+        's16.jpg',
+      ],
+      quotes: [
+          '✓ Make GIFs without watermarks',
+          '✓ Spend tokens in the GifShop™',
+          '✓ Get 75,000 tokens to spend each month'
+      ],
+      headline: ''
+    }, 
+    {
+      type: 'Gold', 
+      price: 299.00,
+      stripe: {
+        //id: 'H8f76vmTXeHr41' /* 99.95 */
+        id: '1IMnIYEbDWNKCFPN0Uri9Osr' /* 299.00 */
+      },
+      thumbs: [
+        'g1.jpg',
+        'g2.jpg',
+        'g3.jpg',
+        'g4.jpg',
+        'g5.jpg',
+        'g6.jpg',
+        'g7.jpg',
+        'g8.jpg',
+        'g9.jpg',
+        'g10.jpg',
+        'g11.jpg',
+        'g12.jpg',
+        'g13.jpg',
+        'g14.jpg',
+        'g15.jpg'
+      ],
+      quotes: [
+          '✓ Make GIFs without watermarks',
+          '✓ Spend tokens in the GifShop™',
+          '✓ Introducing LimeText™ IDE for coders',
+          '✓ Get 250,000 tokens to spend each month'
+      ],
+      headline: ''
+    },
+    {
+      type: 'Goldplus',
+      price: 399.00,
+      stripe: {
+        //id: 'GaDby7ukz94bRb' /* 99.99 */
+        id: '1IMyGBEbDWNKCFPNJ8Jkg7Ql' /* 399.00 */
+      },
+      thumbs: [
+        'g1.jpg',
+        'g2.jpg',
+        'g3.jpg',
+        'g4.jpg',
+        'g5.jpg',
+        'g6.jpg',
+        'g7.jpg',
+        'g8.jpg',
+        'g9.jpg',
+        'g10.jpg',
+        'g11.jpg',
+      ],
+      quotes: [
+          '✓ Make GIFs without watermarks',
+          '✓ Spend tokens in the GifShop™',
+          '✓ Introducing LimeText™ IDE for coders',
+          '✓ Get Unlimited tokens to spend each month'
+      ],
+      headline: ''
+    },
+  ];
+
+  var typeParam = $routeParams.type.toLowerCase();
+  $scope.currentPlan = $scope.plans[$scope.plans.findIndex(x => x.type.toLowerCase() == typeParam)];
+  var nextPlanIndex = $scope.plans.findIndex(x => x.type.toLowerCase() == typeParam);
+  nextPlanIndex = nextPlanIndex + 1;
+  $scope.nextPlan = $scope.plans[nextPlanIndex];
+
+  /* ------- Set up Stripe Elements to use in checkout form ------- */
+
+  $scope.orderData = {
+    items: [{plan: 'price_'+$scope.currentPlan.stripe.id, price: $scope.currentPlan.price, quantity: 1}],
+    currency: "usd"
+  };
+  
+  var stripe = Stripe('pk_live_xcLmEp02dMgFWZxIs2Wy2WGu');
+  //var stripe = Stripe('pk_test_pkLIRMEaA3vLt3fVbraOVSGf');
+  var elements = stripe.elements();
+  var style = {
+    base: {
+      color: "#32325d",
+      fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+      fontSmoothing: "antialiased",
+      fontSize: "16px",
+      "::placeholder": {
+        color: "#aab7c4"
+      }
+    },
+    invalid: {
+      color: "#fa755a",
+      iconColor: "#fa755a"
+    }
+  };
+
+  $scope.card = elements.create("card", { style: style });
+  $scope.card.mount("#card-element");
+  
+  $scope.updatePlan = function(){
+    $timeout(function(){
+      delete $scope.featuredLabel;
+      $location.search({type: $scope.nextPlan.type});
+    },650);
+  }
+
+  $scope.getRandomThumbA = $scope.currentPlan.thumbs[Math.floor(Math.random()*$scope.currentPlan.thumbs.length)];
+  $scope.getRandomThumbB = $scope.currentPlan.thumbs[Math.floor(Math.random()*$scope.currentPlan.thumbs.length)];
+  $scope.getRandomThumbC = $scope.currentPlan.thumbs[Math.floor(Math.random()*$scope.currentPlan.thumbs.length)];
+
+    //$scope.featuredLabel = $scope.currentPlan.quotes[$scope.currentPlan.quotes.length-1];
+    $scope.featuredLabel = $scope.currentPlan.headline;
+
+    switch($scope.currentPlan.type){
+      case 'Goldplus':
+        $scope.featuredLabel = '(Unlimited tokens / Unlimited minutes)';
+      break;
+      case 'Gold':
+        $scope.featuredLabel = '(250,000 tokens / 8,300 minutes)';
+      break;
+      case 'Silver':
+        $scope.featuredLabel = '(75,000 tokens / 2,500 minutes)';
+      break;
+      case 'Bronze':
+        $scope.featuredLabel = '(1,500 tokens / 60 minutes)';
+      break;
+      default:
+        $scope.featuredLabel = '(0 tokens / 0 minutes)';
+      break;
+    }
+
+    var openDetailsTimer,closeDetailsTimer;
+
+    $scope.openDetails = function(e, tags, pad){    
+      openDetailsTimer = $timeout(function(){
+        angular.forEach(tags, function(tag){
+          $(tag).find('.content').stop().animate({
+            height: $('.hover-div').find('.content')[0].scrollHeight + pad
+          }, 200);
+        });
+      }, 500);
+    };
+
+    $scope.closeDetails = function(e, tags){
+      $timeout.cancel(openDetailsTimer);
+      closeDetailsTimer = $timeout(function(){
+        angular.forEach(tags, function(tag){
+          $(tag).find('.content').stop().animate({
+            height: '0px'
+          }, 200);
+        });
+      }, 500);
+    };
+
+    $scope.showError = function(errorMsgText){
+      var errorMsg = document.querySelector(".sr-field-error");
+      errorMsg.textContent = errorMsgText;
+      setTimeout(function() {
+        errorMsg.textContent = "";
+      }, 4000);
+    }
+
+    $scope.orderComplete = function(clientSecret){
+      stripe.retrievePaymentIntent(clientSecret).then(function(result) {
+        var paymentIntent = result.paymentIntent;
+        var paymentIntentJson = JSON.stringify(paymentIntent, null, 2);
+
+        switch(paymentIntent.amount){
+          case 895:
+            $window.localStorage.setItem('tk', 1500);
+            $window.localStorage.setItem('_plan', 'bronze');
+              break;
+          case 2495:
+            $window.localStorage.setItem('tk', 75000);
+            $window.localStorage.setItem('_plan', 'silver');
+              break;
+          case 9995:
+            $window.localStorage.setItem('tk', 250000);
+            $window.localStorage.setItem('_plan', 'gold');
+              break;
+          case 9999:
+            $window.localStorage.setItem('tk', 999999999);
+            $window.localStorage.setItem('_plan', 'goldplus');
+              break;
+          default:
+            $window.localStorage.setItem('tk', 10);
+            $window.localStorage.setItem('_plan', 'default');
+              break;
+        }
+        $window.location.pathname = '/post';
+      });
+    }
+
+    $scope.handleAction = function(clientSecret){
+      stripe.handleCardAction(clientSecret).then(function(data) {
+        if (data.error) {
+          $scope.showError("Your card was not authenticated, please try again");
+        } else if (data.paymentIntent.status === "requires_confirmation") {
+          WidgetSrvc.post("pay", JSON.stringify({paymentIntentId: data.paymentIntent.id}))
+            .then(function(json) {
+              if (json.error) {
+                $scope.showError(json.error);
+              } else {
+                $scope.orderComplete(clientSecret);
+              }
+          })
+        }
+      });
+    }
+
+    $scope.goPay = function(){
+
+      var cardholderName = document.querySelector("#name").value;
+      var data = {
+        billing_details: {}
+      };
+
+      if (cardholderName) {
+        data["billing_details"]["name"] = cardholderName;
+      }
+
+      // Initiate the payment. handleCardPayment will display a modal
+      stripe
+        .createPaymentMethod("card", $scope.card, data)
+        .then(function(result) {
+          if (result.error) {
+            $scope.showError(result.error.message);
+          } else {
+            $scope.orderData.paymentMethodId = result.paymentMethod.id;
+            return WidgetSrvc.post("pay", JSON.stringify($scope.orderData));
+          }
+        })
+        .then(function(paymentData) {
+          paymentData = paymentData.data;
+          console.log(paymentData);
+          if (paymentData.requiresAction) {
+            // Request authentication
+            $scope.handleAction(paymentData.clientSecret);
+          } else if (paymentData.error) {
+            $scope.showError(paymentData.error);
+          } else {
+            $scope.orderComplete(paymentData.clientSecret);
+          }
+        });
+      $window.onbeforeunload = function (e) {
+        $window.location.replace('https://gif.com.ai/');
+      };
+    }
+}]).
+
+controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeout', '$interval', '$filter', '$window', '$document', '$routeParams', '$httpParamSerializer', '$location', '$sce', '$ocLazyLoad', '$http', '$injector', 'BreezeDataContext', 'WidgetSrvc', 'lodash', 'deviceDetector', 'Myself', function($q,$rootScope,$scope,$compile,$log,$timeout,$interval,$filter,$window,$document,$routeParams,$httpParamSerializer,$location,$sce,$ocLazyLoad,$http,$injector,BreezeDataContext,WidgetSrvc,lodash,deviceDetector,Myself) {
+       
+      //BreezeDataContext.clearEverything();
+       
+      $scope.myself = {
+        loading: true
+      };
+      Myself.then(function(myself) {
+        $scope.myself = myself;
+        //console.log($scope.myself);
+      });
+
+      $scope.deviceDetector = deviceDetector;
+
+      $scope.goToUrl = function(url){
+        $window.location.replace(url);
+      }
+
+      $scope.signup = function(){
+
+        $scope.anonUserData = {
+          username: Date.now(),
+          password: 'freebirds'
+        }
+        WidgetSrvc.post('adduser/local', JSON.stringify($scope.anonUserData)).then(function(ret){
+          if(!$window.localStorage.getItem('tk')){
+            $scope.tokenAmount = 100;
+          } else {
+            $scope.tokenAmount = 100 + $window.localStorage.getItem('tk');  
+          }
+          $window.localStorage.setItem('tk', $window.localStorage.getItem('tk'));
+          $window.location.href = 'https://2fb.me/https://gif.com.ai';
+        })
+      }
+
+      $window.isPost = $scope.ispost = ($location.path() == '/post') ? true : false;
+      //$window.isMoment = $scope.ismoment = ($routeParams.moment) ? true : false;
+      //$window.channel = $scope.channel = $routeParams.channel;
+
+      if($window.localStorage.getItem('import') && $window.localStorage.getItem('import') !== 'undefined'){
+        angular.forEach(
+          $filter('unique')(JSON.parse($window.localStorage.getItem('import')), 'url'),
+            function(file){
+              BreezeDataContext.addFile(file).then(function(){
+                $window.localStorage.removeItem('import');
+                $scope.imports = BreezeDataContext.getMyFiles();
+              })
+            }
+        )
+        $window.localStorage.removeItem('import');
+      } else {
+        $window.localStorage.removeItem('import');
+      }
+
+      if($window.localStorage.getItem('tk')){
+        $scope.tokenAmount = WidgetSrvc.kFormatter(parseInt($window.localStorage.getItem('tk')));
+      }
+      
+      if(!$window.localStorage.getItem('tk')){
+        $scope.tokenAmount = 100;
+        $window.localStorage.setItem('tk', $scope.tokenAmount);
+      } else {
+        $scope.tokenAmount = WidgetSrvc.kFormatter(parseInt($window.localStorage.getItem('tk')));
+      }
+      
+      $scope.isHost = $routeParams.host;
+
+      $scope.referrer = document.referrer;
+
+      $rootScope.$on('gifRecordDone', function(){
+        $scope.tokenAmount = $window.localStorage.getItem('tk');
+      });
+
+      $scope.trash = [];
+
+      $scope.castType = 'cast_connected';
+
+      $scope.notes = [];
+
+      $scope.loginType = ['facebook', 'google', 'custom'];
+
+      $scope.ids = [];
+
+      $scope.tags = [];
+
+      if($routeParams.files){
+        var fileBucket = $routeParams.files.split(',');
+
+        var file1 = new Image();
+        file1.onload = function(){  
+          BreezeDataContext.addFile({
+            realHeight: fe1.height,
+            realWidth: fe1.width,
+            html: `<img src="${self.file.url}" />`,
+            css: '',
+            settings: '',
+            url: self.file.url
+          }).then(function(){
+            $scope.imports = BreezeDataContext.getMyFiles();
+          });
+        }
+
+        file1.src = urlFile[i];
+      }
+
+      $scope.selectedElements = [];
+
+      $scope.stateMode = $routeParams.mode;
+
+      /*$scope.$watch('selectScreen', function(oldValue, newValue){
+        if(oldValue == true){
+          $('.gifcomai_footer').hide();
+        } else {
+          $('.gifcomai_footer').show();
+        }
+      });*/
+
+      $scope.importer = function(){
+        var currentnotes = BreezeDataContext.getMyNotes();
+        for (let i = currentnotes.length - 1; i >= 0; i--){
+          BreezeDataContext.delElement(currentnotes[i]);
+        };
+        $scope.imports = BreezeDataContext.getMyFiles();
+      }
+
+      $scope.initExplore = function(){
+        var closeCtrl = document.getElementById('btn-search-close'),
+          searchContainer = document.querySelector('#myExplore .search'),
+          inputSearch = searchContainer.querySelector('#myExplore .search__input');
+
+        function initExplore() {
+          initExploreEvents(); 
+        }
+
+        function initExploreEvents() {
+          inputSearch.addEventListener('focus', openSearch);
+          inputSearch.addEventListener('focusout', closeSearch);
+          closeCtrl.addEventListener('click', closeSearch);
+          document.addEventListener('keyup', function(ev) {
+            // escape key.
+            if( ev.keyCode == 27 ) {
+              closeSearch();
+            }
+          });
+        }
+
+        function openSearch() {
+          $('.horizontal-scroll-wrapper').addClass('transgray');
+          searchContainer.classList.add('search--open');
+          inputSearch.focus();
+        }
+
+        function closeSearch() {
+          $('.horizontal-scroll-wrapper').removeClass('transgray');
+          searchContainer.classList.remove('search--open');
+          inputSearch.blur();
+          if($scope.checkInputValue != $('#search-input').val()){
+            $scope.explore($('#search-input').val());
+            $scope.checkInputValue = $('#search-input').val();
+          }
+        }
+
+        if($('.horizontal-scroll-wrapper').hasClass('transgray')){
+          closeSearch();
+        } else {
+          openSearch();
+        }
+
+        initExplore();
+      }
+
+      $scope.exploreImport = function(index){
+        BreezeDataContext.addFile({
+            realHeight: $('.explore_gif').get(index).height,
+            realWidth: $('.explore_gif').get(index).width,
+            html: $($('.explore_gif').get(index)).prop('outerHTML'),
+            css: '',
+            settings: '',
+            url: $($('.explore_gif').get(index)).prop('src')
+        }).then(function(){
+            $scope.imports = BreezeDataContext.getMyFiles();
+          });
+      }
+
+      $scope.explore = function(value = 'click'){
+        var displayIt = displayIt || 0;
+        $scope.exploreArr = [];
+        $('#myExplore').fadeTo(1250, 1);
+        $http.get('https://gifcities.archive.org/api/v1/gifsearch', {params: {q: value }}).then(function(response){
+          $scope.exploreArr = response.data;
+        });
+      }
+
+      $scope.loadMoreLimit = 10; // initial value for limit
+      $scope.loadMore = function (last, inview) {
+        if (last && inview) {
+          $scope.loadMoreLimit += 10
+        }
+      }
+
+      /*$scope.panelMod = [];
+
+      $scope.getFileDate = function(i){
+        $scope.panelMod[i] = $filter('date')($scope.imports[i]['last_modified'], 'medium');
+      }*/
+      
+      $scope.setSelectScreenImport = function(i, ev, toggle){
+        var portBucket = [];
+        if(toggle) {
+          $scope.selectedElements.push($scope.imports[i]);
+        } else {
+          $scope.selectedElements.forEach(function(imp){
+            portBucket.push(imp.url);
+          });
+          var matchIdx = $.inArray($(ev.target).attr('src'), portBucket);
+          $scope.selectedElements.splice(matchIdx, 1);
+        }
+        if($scope.selectedElements.length){
+          $scope.showPlus = true;
+        } else {
+          $scope.showPlus = false;
+        }
+      }
+
+      /*$scope.sendImportedToWebtop = function(){
+        WidgetSrvc.form('https://gif.com.ai/post/', {'clips': JSON.stringify($scope.selectedElements)});
+      }
+
+      $scope.$watch('uploadedFile', function(oldValue, newValue){
+        if(oldValue != 'undefined'){
+          var reader = new FileReader();
+          reader.onload = function(){
+            var dataURL = reader.result;
+            fe3.src = dataURL;
+          };
+          var fileEncryptedData = reader.readAsDataURL(oldValue);
+          var fe3 = new Image();
+          fe3.onload = function(){
+             WidgetSrvc.storeBase64Imgur(fe3.src, fe3.width, fe3.height).then(function(payload){
+              //console.log(payload);
+                var pldata = payload;
+                WidgetSrvc.addImport({
+                    realHeight: pldata.height,
+                    realWidth: pldata.width,
+                    html: `<img src="${pldata.link}" />`,
+                    css: '',
+                    settings: '',
+                    url: pldata.link
+                });
+                $timeout(function(){
+                  $scope.imports = $filter('unique')(JSON.parse($window.localStorage.getItem('import')), 'url');
+                  //$scope.selectScreen = true;
+                });
+             });
+          };
+          fe3.src = fileEncryptedData;
+        }
+      });*/
+
+      $scope.loadDrop = function(){
+        $("body").filedrop({
+          dragOver: function(allowed) {
+            $scope.filedrop = true;
+            if(allowed){
+              $scope.dropAllowed = true;
+              $timeout(function(){  
+                $('#dropzone').addClass('dropzone').css('background-color', 'rgba(0,0,0,.9)');
+                $('#droptarget').css({'border': '2px dashed #3aa8ff', 'display': 'flex'});
+              },250);
+            } else {
+              $scope.dropAllowed = false;
+              $timeout(function(){
+                $('#dropzone').addClass('dropzone').css('background-color', 'rgba(0,0,0,.9)');                  
+                $('#droptarget').css({'border': '2px dashed #ea1612', 'display': 'flex'});
+              },250);
+            }
+          },
+          dragLeave: function() {
+            $timeout(function(){
+              $('#dropzone').removeClass('dropzone').css('background-color', '');
+              $('#droptarget').css({'border': '', 'display': 'none'});
+              $scope.filedrop = false;
+            },2500);
+          },
+          callback: function(fileEncryptedData, eventData, source){
+
+            $scope.selectScreen = true;
+
+            var self = this;
+
+            $('#dropzone').removeClass('dropzone').css('background-color', '');
+            $('#droptarget').css('border', '');
+            $timeout(function(){
+              $scope.filedrop = false;
+            },500);
+
+            if(source == 'dragurl') {
+
+              console.log(self.file);
+
+              var fe1 = new Image();
+
+              fe1.onload = function() {
+                BreezeDataContext.addFile({
+                    realHeight: fe1.height,
+                    realWidth: fe1.width,
+                    html: `<img src="${self.file.url}" />`,
+                    css: '',
+                    settings: '',
+                    url: self.file.url
+                  }).then(function(){
+                    $scope.imports = BreezeDataContext.getMyFiles();
+                    //$scope.selectScreen = true;
+                  });
+              }
+
+              fe1.src = self.file.url;
+            
+            } else if(source == 'file' || source == 'paste') {
+
+              var fe2 = new Image(); 
+
+                fe2.onload = function(){
+                   WidgetSrvc.storeBase64Imgur(fe2.src, fe2.width, fe2.height).then(function(payload){
+                      var pldata = payload;
+                      BreezeDataContext.addFile({
+                          realHeight: pldata.height,
+                          realWidth: pldata.width,
+                          html: `<img src="${pldata.link}" />`,
+                          css: '',
+                          settings: '',
+                          url: pldata.link
+                      }).then(function(){
+                        $scope.imports = BreezeDataContext.getMyFiles();
+                        //$scope.selectScreen = true;
+                      });
+                   });
+                };
+
+                fe2.src = fileEncryptedData;
+            }
+          }
+        });
+      }
+
+      $scope.$watch('imports', function(){
+        if($scope.imports.length) {
+          $scope.selectScreen = true;
+        }
+      });
+
+      $scope.handlePaste = function(event){
+        $timeout(function(){
+          var pasteInputUrl = event.target.value;
+          WidgetSrvc.getMetaFromUrl(pasteInputUrl).then(function(imgMeta){
+            BreezeDataContext.addFile({
+              realHeight: imgMeta.height,
+              realWidth: imgMeta.width,
+              html: `<img src="${pasteInputUrl}" />`,
+              css: '',
+              settings: '',
+              url: pasteInputUrl
+            }).then(function(){
+              event.target.value = '';
+              //$scope.imports = $filter('unique')(JSON.parse($window.localStorage.getItem('import')), 'url');
+              $scope.imports = BreezeDataContext.getMyFiles();
+              $scope.selectScreen = true;
+            });
+          });
+        });
+      }
+
+      $scope.removeSelectScreenItem = function(idx){
+        swal({
+            title: "Remove",
+            text: "Are you sure you want to delete this?",
+            type: "warning",
+            showCancelButton: true,
+            animation: "slide-from-left",
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            allowEscapeKey: false,
+            allowOutsideClick: false
+          }).then(function(isConfirm){
+            if(isConfirm.value){
+              BreezeDataContext.delElement($scope.imports[idx]);
+              BreezeDataContext.syncFiles().then(function(){
+                $timeout(function(){
+                  $scope.imports = BreezeDataContext.getMyFiles();
+                });
+              });
+            } else {
+              return false;
+            }
+        });
+      }
+
+      $scope.showTutorial = false;
+      $scope.showTutorial2 = !Boolean($window.localStorage.getItem('tutorial'));
+
+      $scope.tutorial = function(){
+        $window.localStorage.setItem('tutorial', true);
+      }
+      
+      var accesstype = $location.$$path.substr($location.$$path.lastIndexOf('/') + 1);
+      $scope.accesspoint = {type: accesstype, path: '/' + accesstype};
+      
+      if($routeParams.col)
+        $scope.col = $routeParams.col;
+
+      $scope.col = ($scope.col) ? $scope.col : 12;
+
+      $scope.addWidget = function(widget){
+        if(widget){
+          
+          if(!widget.hasOwnProperty('guid')){
+            return BreezeDataContext.addNote(widget);
+          }
+        }
+      };
+
+      /*$rootScope.$on('togglePointer', function(event, val){  
+        $scope.switchAlternate = val;
+
+      });*/
+
+      $scope.reload = function(){
+        $window.location.reload();
+      }
+
+      $scope.renderWidgets = function(widgets){
+        var deferred = $q.defer();
+        $scope.notes = (widgets) ? widgets : BreezeDataContext.getMyNotes();
+        deferred.resolve($scope.notes);
+        return deferred.promise;
+      }
+
+      $scope.addRender = function(preset, is, cb){  
+        var deferred = $q.defer();
+        deferred.resolve($scope.addWidget(preset).then(function(wData){
+          $scope.renderWidgets().then(function(){
+            if(cb && typeof cb === "function") {
+              cb(wData);
+            }
+          });
+        }));
+        $scope.apps = [];
+        return deferred.promise;
+      }
+
+      $scope.gridsterOpts = {
+            columns: $scope.col, 
+            pushing: true,
+            floating: true,
+            width: 'auto',
+            colWidth: 'auto',
+            rowHeight: 'match', 
+            margins: [10, 10],
+            isMobile: false,
+            minColumns: 1,
+            minRows: 1,
+            maxRows: 100,
+            defaultSizeX: 2,
+            defaultSizeY: 2,
+            mobileBreakPoint: 600,
+            mobileModeEnabled: false,
+            avoid_overlapped_widgets: true,
+            resizable: {
+               enabled: false,
+               //handles: ['e', 's', 'w', 'se', 'sw'],
+               //handles: ($window.isPost) ? 'all' : 'none',
+               handles: 'none',
+               start: function(event, uiWidget, $element) {
+               },
+               resize: function(event, uiWidget, $element) {
+                  $scope.$broadcast('busy', true);
+               },
+               stop: function(event, uiWidget, $element) {
+                var index = $element.index();
+                var itm = $scope.notes[index];
+                var data = {
+                  'sizeX': itm.sizeX,
+                  'sizeY': itm.sizeY,
+                  'realWidth': uiWidget.size.width,
+                  'realHeight': uiWidget.size.height
+                };
+                $scope.save('resize', data, index);
+               }
+            },
+            draggable: {
+               enabled: true,
+               start: function(event, uiWidget, $element) {
+                 // add class 'drag-active' to body
+                 classie.add( document.body, 'drag-active' );
+                 // clear timeout: dropAreaTimeout (toggle drop area)
+                 $timeout.cancel( $scope.dropAreaTimeout );
+                 // show dropArea
+                 classie.add( document.getElementById( 'drop-area' ), 'show' );
+                 $scope.dropped = false;
+                 $scope.$broadcast('grid.start', $element);
+               },
+               drag: function(event, uiWidget, $element) {
+                  $scope.currentElementIndex = $element.index();
+                  //$scope.showBottomTools = true;
+                  $scope.$broadcast('busy', true);
+               },
+               stop: function(event, uiWidget, $element) {
+                  //$scope.showBottomTools = false;
+                  if($element.hasClass('stitched')){
+                    var GridsterCtrl = angular.element('.gm-gridster').controller('gridster');
+                    var gridsterItems = angular.element('.gm-gridster').find('*[gridster-item]');
+                    gridsterItems.each(function (index, node) {
+                      var itemCtrl = angular.element(node).controller('gridsterItem');
+                      var mainCtrl = angular.element(node).controller('gridster');
+                      GridsterCtrl.autoSetItemPosition(itemCtrl);
+                    });
+                  }
+                  var index = $scope.currentElementIndex;
+                  var itm = $scope.notes[index];
+                    var data = {
+                      'row': itm.row,
+                      'col': itm.col
+                    };
+
+                      var afterDropFn = function() {
+                        // hide dropArea
+                        classie.remove( document.getElementById( 'drop-area' ), 'show' );
+                        // remove class 'drag-active' from body
+                        classie.remove( document.body, 'drag-active' );
+                      };
+
+                      if( !$scope.dropped ) {
+                        afterDropFn();
+                      }
+                      else {
+                        // after some time hide drop area and remove class 'drag-active' from body
+                        $timeout.cancel( $scope.dropAreaTimeout );
+                        $scope.dropAreaTimeout = $timeout( afterDropFn, 400 );
+                      }
+
+                      $scope.$broadcast('grid.stop', $element);
+               }
+            }
+      }
+
+          $scope.userplan = $window.localStorage.getItem('_plan');
+
+          $scope.bottomToolButtons = ['code'];
+
+          $scope.initDroppable = function(type, evt) {
+            $scope.dropped = true;
+                // show checkmark inside the droppabe element
+                classie.add( evt.target, 'drop-feedback' );
+                //classie.add( evt.target.firstChild, 'drop-feedback' );
+                $timeout.cancel( $scope.checkmarkTimeout );
+                $scope.checkmarkTimeout = $timeout( function() { 
+                  classie.remove( evt.target, 'drop-feedback' );
+                  evt.stopPropagation();
+                }, 800 );
+
+            if($window.localStorage.getItem('tk') > 0){
+              switch(type) {
+                case 'trash':
+                  $rootScope.$broadcast('deleteMe', {'item': $scope.notes[$scope.currentElementIndex], 'index': $scope.currentElementIndex, 'confirm': true});
+                break;
+                case 'code':
+                  $window.localStorage.setItem('LimeTextTarget', $scope.notes[$scope.currentElementIndex]['guid']);
+                  $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
+                break;
+                default:
+                  console.log(type);
+                break;
+              }
+            } else {
+              $scope.payTokens('gold');
+            }
+
+            return false;
+          }
+
+      $scope.pushpin = function(item, event){
+        if(event){
+          event.stopPropagation();
+            jQuery('.morphsearch-close').trigger('click');
+        }
+        if($window.localStorage.getItem('pinned')){
+          var pins = $window.localStorage.getItem('pinned').split(',').concat([item]).filter(Boolean);
+          pins = lodash.uniq(pins);
+          $window.localStorage.setItem('pinned', pins.join(','));
+        } else {
+          $window.localStorage.setItem('pinned', item);
+        }
+        BreezeDataContext.getWidgetByGuidRemote(item).then(function(widget){
+          WidgetSrvc.parseSettings(widget[0]).then(function(data){
+            if(!data){
+              return false;
+            }
+            $scope.pinned.push({
+              'guid': item,
+              'images': data.thumbnail,
+              'title': data.title
+            });
+          });
+        });
+      }
+
+      $scope.stringify = function(data){
+        return JSON.stringify(data);
+      }
+
+      $scope.pinned = [];
+
+      if(typeof $window.localStorage.getItem('pinned') === 'string'){
+        var prelocal = $window.localStorage.getItem('pinned').split(',');
+        angular.forEach(prelocal, function(guid){
+          $scope.pushpin(guid);
+        });
+      }
+
+      $scope.save = function(type,data,idx){
+        switch(type){
+          case 'html':
+            $scope.notes[idx]['text'] = data;
+          break;
+          case 'css':
+            $scope.notes[idx]['css'] = data;
+          break;
+          case 'js':
+            $scope.notes[idx]['js'] = data;
+          break;
+          case 'settings':
+            $scope.notes[idx]['settings'] = data;
+          case 'resize':
+            $scope.notes[idx]['sizeX'] = data.sizeX;
+            $scope.notes[idx]['sizeY'] = data.sizeY;
+            $scope.notes[idx]['realWidth'] = data.realWidth;
+            $scope.notes[idx]['realHeight'] = data.realHeight;
+          break;
+          // case 'move':
+          //   $scope.notes[idx]['row'] = data.row;
+          //   $scope.notes[idx]['col'] = data.col;
+          // break;
+          case 'pinned':
+            $scope.notes[idx].pinned = data.pinned;
+          break;
+          case 'all':
+            $scope.notes[idx]['text'] = data.text;
+            $scope.notes[idx]['css'] = data.css;
+            $scope.notes[idx]['js'] = data.js;
+            $scope.notes[idx]['settings'] = data.settings;
+            $scope.notes[idx]['sizeX'] = data.sizeX;
+            $scope.notes[idx]['sizeY'] = data.sizeY;
+            $scope.notes[idx]['realWidth'] = data.realWidth;
+            $scope.notes[idx]['realHeight'] = data.realHeight;
+            $scope.notes[idx]['row'] = data.row;
+            $scope.notes[idx]['col'] = data.col;
+            $scope.notes[idx]['url'] = data.url;
+            $scope.notes[idx]['active'] = data.active;
+            $scope.notes[idx]['tags'] = data.tags;
+            $scope.notes[idx]['owner'] = data.owner;
+          break;
+          case 'gist':
+            $scope.notes[idx]['text'] = data.text;
+            $scope.notes[idx]['css'] = data.css;
+            $scope.notes[idx]['js'] = data.js;
+          break;
+        }
+
+        if($scope.notes[idx]['active']){
+          angular.copy($scope.notes[idx], BreezeDataContext.getFile($scope.notes[idx]['guid']))
+          //angular.copy($scope.notes[idx], $scope.imports[$scope.fileWidgetIndex]);
+        }
+
+        return $q.all([
+          BreezeDataContext.modElement($scope.notes[idx]),
+          BreezeDataContext.modElement($scope.notes[idx]['guid'])
+        ]);
+      
+      };
+
+      $scope.settings = function(){
+        $scope.showSettings = true;
+      }
+
+      $scope.getBackgroundPosition = function(){
+        var pos = [
+          'top left','top right','top center',
+          'center left', 'center right',
+          'bottom left', 'bottom center', 'bottom right'
+        ];
+        return pos[Math.floor(Math.random()*pos.length)];
+      }
+
+      // gif.com.ai store background grpahics system
+        /* start gif shop */
+      $scope.$watch('gifshop', function(){
+          if($scope.gifshop){
+            var cloudsBg = $interval(function(){
+                angular.element('.clouds').css('background-position',$scope.getBackgroundPosition());
+            },18000);
+          } else {
+            $interval.cancel(cloudsBg);
+            if($scope.notes.length){
+              $scope.payTokens('silver');
+            }
+          }
+      });
+
+    $scope.compileGalleryItem = function(item){
+
+      $scope.sold = [];
+          
+      angular.forEach($scope.pinned, function(pin){
+        $scope.sold.push(pin.guid);  
+      });
+
+      $('#cards').fadeOut('slow', function() {
+          $('#cards').fadeIn('slow');
+      });
+
+      var isSold = $scope.sold.includes(item.guid);
+
+      $scope.app = {
+        'title': item.title,
+        'images': item.images,
+        'price': item.price,
+        'guid': item.guid,
+        'sold': isSold
+      }
+    }
+
+    /*BreezeDataContext.getAllGifShopWidgets().then(function(widgets){
+        
+        Array.prototype.swapItems = function(a, b){
+            this[a] = this.splice(b, 1, this[a])[0];
+            return this;
+        }
+
+        Array.prototype.move = function(from, to) {
+            this.splice(to, 0, this.splice(from, 1)[0]);
+        };
+
+        Array.prototype.insert = function ( index, item ) {
+            this.splice( index, 0, item );
+        };
+        
+        $scope.wdgts = widgets.results;
+  
+        
+        var gallery_index = -1;
+
+        function galleryNext(wait){
+          gallery_index = (gallery_index + 1) % $scope.wdgts.length;
+          $scope.currentGalleryItem = $scope.wdgts[gallery_index];
+          $scope.compileGalleryItem($scope.currentGalleryItem);
+        }
+
+        galleryNext();
+        
+        timer = $interval(galleryNext, 12000);
+
+        $scope.buyWidget = function(widget){
+          if(parseInt($window.localStorage.getItem('tk')) > widget.price){
+            $window.localStorage.setItem('tk', parseInt($window.localStorage.getItem('tk')) - widget.price);
+            $scope.tokenAmount = $window.localStorage.getItem('tk');
+            $scope.pushpin(widget.guid);
+          } else {
+            $scope.payTokens();
+          }
+        }
+        
+    });
+
+    $scope.addWebtopClone = function(){
+      var promises = [];
+      $scope.selectedElements.forEach(function(element, index){
+        angular.extend(element,
+          {
+            text: (() => element.text ? element.text : `<img src="${element.url}"/>`)(),
+            active: true
+          }
+        )
+        promises.push($scope.addWidget(element));
+      });
+      $q.all(promises).finally(function(){
+        console.log('cloned elements to webtop for editing...');
+      });
+    }*/
+
+        $scope.addLimeText = function(guid){
+          $scope.gifCanvasSwitch = false;
+          //const fileWidget = BreezeDataContext.getMyFiles().find( ({ id }) => id === guid );
+          //var fileWidget = BreezeDataContext.getMyFiles()[index];
+          //var fileWidget = BreezeDataContext.getMyFiles().findIndex(x => x.guid == guid);
+          var finalNote = BreezeDataContext.getFile(guid);
+          //var foundNote = BreezeDataContext.getMyNotes().findIndex(x => x.guid == guid);
+          //var finalNote = (foundNote > 0) ? BreezeDataContext.getNote(guid) : BreezeDataContext.getFile(guid);
+          //console.log(finalNote.text);
+          //console.log(fileWidget);
+          console.log(finalNote);
+
+            angular.extend(finalNote, 
+              {
+                text: (() => finalNote.text ? finalNote.text : `<img src="${finalNote.url}"/>`)(),
+                css: (() => finalNote.css ? finalNote.css : ``)(),
+                js: (() => finalNote.js ? finalNote.js : ``)(),
+                settings: (() => finalNote.settings ? finalNote.settings : `{}`)(),
+                active: true
+              }
+            )
+
+            if(!$scope.notes.length){
+              $scope.addWidget(finalNote).then(function(result){
+                $scope.renderWidgets().then(function(notes){
+                  $scope.currentElementIndex = notes.length-1;
+                  $window.localStorage.setItem('LimeTextTarget', notes[$scope.currentElementIndex]['guid']);
+                  //console.log(result);
+                  //console.log(finalNote.guid);
+                  //$window.localStorage.setItem('LimeTextTarget', finalNote.guid);
+                  $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
+                });
+              });
+            } else if($window.localStorage.getIem('LimeTextTarget')) {
+              $scope.renderWidgets().then(function(notes){
+                $scope.currentElementIndex = notes.length-1;
+                $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
+              })
+            }
+          /*if(foundNote > 0){
+            //var fileWidget = BreezeDataContext.getFile(guid);
+            //var noteWidget = BreezeDataContext.getNote(guid);
+            //if(fileWidget){
+              //var tempImage = fileWidget.url;
+            //} else {
+              //var tempImage = foundNote.url;
+            //}
+            console.log(foundNote);
+            if(foundNote.length){
+              angular.extend(fileWidget, 
+                {
+                  text: (() => foundNote.hasOwnProperty(text) ? foundNote.text : ``)(),
+                  css: (() => foundNote.hasOwnProperty(css) ? foundNote.css : ``)(),
+                  js: (() => foundNote.hasOwnProperty(js) ? foundNote.js : ``)(),
+                  settings: (() => foundNote.hasOwnProperty(settings) ? foundNote.settings : `{}`)(),
+                  //url: (() => foundNote.hasOwnProperty(url) ? foundNote.url : fileWidget.url)(),
+                  active: true
+                }
+              )
+            } else {
+              angular.extend(fileWidget, {
+                text: `<img src="${fileWidget.url}"/>`
+              })
+            }
+            $scope.addWidget(fileWidget).then(function(result){
+              $scope.gifCanvasSwitch = false;
+              $scope.renderWidgets().then(function(notes){
+                $scope.currentElementIndex = notes.length-1;
+                $window.localStorage.setItem('LimeTextTarget', notes[$scope.currentElementIndex]['guid']);
+                //$window.localStorage.setItem('LimeTextTarget', guid);
+                $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
+              });
+            });
+          } else {
+            $scope.gifCanvasSwitch = false;
+            $scope.renderWidgets().then(function(notes){
+                //$scope.currentElementIndex = notes.length-1;
+                //$window.localStorage.setItem('LimeTextTarget', notes[$scope.currentElementIndex]['guid']);
+                $window.localStorage.setItem('LimeTextTarget', guid);
+                $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
+              });
+          }*/
+        }
+
+        $scope.menuOptions = [
+          {
+              text: 'Edit in LimeText™',
+              click: function (itemScope, event) {
+                $scope.addLimeText($(event.target).data('guid'));
+              },
+              hasBottomDivider: true
+          },
+          {
+              text: 'Move to front',
+              click: function (itemScope, event) {
+                var $zTarget = $(event.target);
+                $zTarget.zIndex(2);
+                $zTarget.siblings().zIndex(1);
+              },
+              hasTopDivider: true
+          },
+          {
+              text: 'Move to back',
+              click: function (itemScope, event) {
+                var $zTarget = $(event.target);
+                $zTarget.zIndex(1);
+                $zTarget.siblings().zIndex(2);
+              }
+          }
+        ];
+
+        $scope.payTokens = function(type, ev){
+          if(ev){
+            ev.stopPropagation();
+          }
+          WidgetSrvc.payTokens(type).then(function(path){
+            if(path){
+              var url = `https://gif.com.ai/plan?type=${type}`;
+              $window.location.href = url;
+            }
+          });
+        }
+
+        /* end gif shop */
+
+      // end gif.com.ai addons
+
+      $scope.addImage = function(image){
+        if(image){
+          BreezeDataContext.addImage({
+            link: image.link,
+            size: image.size,
+            height: image.height,
+            width: image.width,
+            title: image.title
+          }).then(function(img){
+                BreezeDataContext.syncImages().then(function(data){
+                  var url = 'http://imgur.com/' + image.id;
+                  console.log(url);
+                  $window.location.href = url;
+                });
+              });
+        }
+      }
+
+      $scope.execWidget = function(newWidget){
+        try {
+          eval($sce.trustAsJs(newWidget.js).toString());
+        } catch(e){
+          console.log('error below...');
+          console.log(e);    
+        }
+      };
+
+      $scope.deleteWidget = function(widget, idx){
+        widget['index'] = idx;
+        WidgetSrvc.removeCss(idx);
+        BreezeDataContext.getWidgetByGuid(widget.guid).then(function(data){
+          BreezeDataContext.delElement(data[0]);
+          $scope.save('all', widget, idx);
+        });
+      };
+
+      $scope.googleAnalytics = function(...analytics){
+        ga(analytics);
+      }
+      
+      $scope.bouncetype = 'zerogravity';
+      $scope.doEvent = true;
+
+      $scope.removeFromSearch = function(idx){
+        swal({
+          title: 'Remove?',
+          text: 'This widget will be removed from the bar immediately',   
+          type: 'warning',
+          showCancelButton: true,
+          allowOutsideClick: true
+        }).then(function(isConfirm){
+          if(isConfirm){
+            $scope.pinned.splice(idx, 1);
+            var newpins = '';
+            angular.forEach($scope.pinned, function(pin){
+              newpins += pin.guid + ',';
+            });
+            $window.localStorage.setItem('pinned', newpins);
+          } else {
+            return false;
+          }
+        }).done();
+      }
+
+      $scope.getDataUri = function (targetUrl, callback) {
+          var xhr = new XMLHttpRequest();
+              xhr.onload = function () {
+                  var reader = new FileReader();
+                  reader.onloadend = function () {
+                      callback(reader.result);
+                  };
+                  reader.readAsDataURL(xhr.response);
+              };
+          try {
+              $window.atob(targetUrl.replace(/^data:image\/(png|jpg|gif);base64,/, ""));
+              callback(targetUrl);
+          } catch(e) {
+              var proxyUrl = 'https://cors.bridged.cc/';
+              //var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+              //var proxyUrl = 'https://secret-ocean-49799.herokuapp.com/';
+              //var proxyUrl = 'https://api.codetabs.com/v1/proxy/';
+              xhr.open('GET', proxyUrl + targetUrl);
+              xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+              xhr.responseType = 'blob';
+              xhr.send();
+          }
+      };
+
+      /* Gif Canvas Controls */
+      $scope.addCanvasSelectors = function($selector, index, notes){
+        var tempGuid = notes ? $scope.notes[index]['guid'] : $scope.selectedElements[index]['guid'];
+        return $selector
+          .draggable({
+            containment: "parent",
+            zIndex: 999999
+          })
+          .css({'position':'absolute','z-index':'1', 'margin':'0','padding':'0'})
+          .dblclick(function(event, ui){
+            $scope.resizeIt(event, ui)
+          })
+          //.mousewheel((event, ui) => $scope.changeLayers(event))
+          .attr(
+            {
+              'context-menu': 'menuOptions', 
+              'data-guid': tempGuid
+            }
+          );
+      }
+
+      $scope.resizeIt = function(event, ui) {
+
+        //let resizeTimer;
+
+        $timeout(function(){
+          $('.ui-wrapper').zIndex(9999999999);
+        });
+
+        $(event.target)
+          .resizable({
+            aspectRatio: true,
+            handles: 'se',
+            stop: function() {
+              $(event.target).resizable('destroy');
+            }
+        })
+        .on('click', function(event, ui){
+          $(event.target).resizable("destroy");
+        });
+      }
+
+      $scope.$watch(
+          function () {
+              return $window.fixFreeze
+          }, function(n,o){
+            if($window.fixFreeze === true){
+              $timeout(function() {
+                angular.element('#exitBtn').triggerHandler('click');
+                swal({
+                    title: "Bad Piece!",
+                    text: "Right-click on the element to remove it from the canvas.",
+                    type: "error",
+                    showCancelButton: false,
+                    allowOutsideClick: true,
+                    animation: "slide-from-top",
+                    allowEscapeKey: true,
+                    confirmButtonText: "Thanks"
+                  }).then(function(isConfirm){
+                    if(isConfirm){
+                      $window.fixFreeze = false;
+                    } else {
+                      return;
+                    }
+                  });
+              }, 0);
+            }
+          }
+      );
+      /*  End Gif Canvas Controls */
+
+      $scope.$on('delete', function(scope){
+        var target = scope.targetScope;
+        $scope.guids = WidgetSrvc.getGuids($scope.notes);
+        target.$destroy();
+        target.deleteWidget(target.notes[target.$index], target.$index);
+        WidgetSrvc.delete(target.notes, target.$index);
+      });
+
+      $scope.$on('grid.start', function(){
+        $('.gifcomai_footer').hide();
+      });
+
+      $scope.$on('grid.stop', function(){
+        $('.gifcomai_footer').fadeIn(600);
+      });
+
+      $rootScope.$on('addOneByGuid', function(event, data){
+        BreezeDataContext.getWidgetByGuidRemote(data).then(function(widget){
+          $scope.addWidget(widget[0]).then(function(result){
+            $scope.renderWidgets();
+          });
+        });
+      });
+
+      $rootScope.$on('addOneByGistId', function(event, payloadA){
+        BreezeDataContext.getGistById(payloadA).then(function(payloadB){
+          let data = payloadB['data'];
+          let widget = {
+            'text': data.files["main.html"].content,
+            'css': data.files["main.css"].content,
+            'js': data.files["main.js"].content,
+            'settings': data.files["settings.json"].content,
+            'sizeX': 1,
+            'sizeY': 1,
+            'row': 1,
+            'col': 1,
+            'searchable': true,
+            'price': 0,
+            'active': false
+          };
+          $scope.addWidget(widget).then(function(result){
+            $scope.renderWidgets().then(function(notes){
+              $scope.execWidget(notes[notes.length-1]);
+            });
+          });
+        });
+      });
+
+      $scope.getSearched = function(input){
+        BreezeDataContext.getSearchedWidgets(input).then(function(widgets){
+          $scope.apps = widgets;
+          var results = $scope.apps.results;
+          var promise = $q.all([]);
+          angular.forEach(results, function(item){
+            promise = promise.then(function (data) {
+                return $timeout(function () {
+                  WidgetSrvc.parseSettings(item).then(function(data){
+                    console.log('running parse settings');
+                    if(!data){
+                      return false;
+                    }
+                    if(data.hasOwnProperty('thumbnail'))
+                      angular.extend(item, {'images': data.thumbnail});
+                    if(data.hasOwnProperty('title'))
+                      angular.extend(item, {'title': data.title});
+                  });
+                });
+            });
+          });
+
+          promise.finally(function () {
+            console.log('parse settings chain finished!');
+          });
+
+        });
+      };
+
+      $timeout(function(){
+        jQuery('#demo-menu-top-right, .btm-controls').addClass('fadeout');
+      }, 4000);
+
+
+    if($routeParams.add){
+       
+        var sids = $routeParams.add.split(',');
+        $rootScope.$broadcast('addOneByGuid', sids[0]);
+      
+    }
+
+}]).
+
+directive('search', ['$compile', '$timeout', 'BreezeDataContext', 'WidgetSrvc', function($compile, $timeout, BreezeDataContext, WidgetSrvc){
+  return {
+    restrict: 'E',
+    transclude: false,
+    scope: true,
+    compile: function(element, attributes){
+      return {
+        pre: function(scope, element, attributes, controller, transcludeFn){
+          WidgetSrvc.execSearch();
+        },
+        post: function(scope, element, attributes, controller, transcludeFn){
+          scope.$watch('search', function(val, oldVal){
+            if(val)
+              scope.getSearched(val);
+          });
+        }
+      }
+    },
+    link: function(scope, $element){
+      // nothing to see here
+    }
+  }
+}]).
+
+directive('editor', ['$compile', '$rootScope', '$window', '$document', '$filter', '$sce', '$timeout', '$ocLazyLoad', '$cacheFactory', 'WidgetSrvc', function($compile, $rootScope, $window, $document, $filter, $sce, $timeout, $ocLazyLoad, $cacheFactory, WidgetSrvc) {
+  return {
+    restrict:  'A',
+    replace: false,
+    transclude: true,
+    scope: true,
+    controller: function(){},
+    require: '^gridster',
+    link: function($scope, $element, attr, ctrl){
+
+      $scope.$on('destroy', function(){
+        $scope.delete();
+      });
+
+      WidgetSrvc.parseSettings($scope.notes[$scope.$index]).then(function(data){
+          if(!data){
+            return false;
+          }
+          if(data.hasOwnProperty('thumbnail')){
+            $scope.notes[$scope.$index].images = data.thumbnail;
+          }
+          if(data.hasOwnProperty('include')){
+            for (var i = data.include.length - 1; i >= 0; i--) {
+                $rootScope.$broadcast('addOneByGuid', data.include[i]);
+            };
+          }
+          if(data.hasOwnProperty('title')){
+             $scope.notes[$scope.$index].title = data.title;
+          }
+          if(data.hasOwnProperty('sizeX')){
+            $scope.notes[$scope.$index].sizeX = data.sizeX;
+          }
+          if(data.hasOwnProperty('sizeY')){
+             $scope.notes[$scope.$index].sizeY = data.sizeY;
+          }
+          if(data.hasOwnProperty('price')){
+             $scope.notes[$scope.$index].price = data.price;
+          }
+          if(data.hasOwnProperty('inactive')){
+            if(data.inactive){
+              $rootScope.$broadcast('deleteMe', {'item': $scope.notes[$scope.$index], 'index': $scope.$index, 'confirm': false});
+            }
+          }
+      });
+
+      var tmp;
+      tmp = 'preview.html';
+
+      var colNum = ctrl.pixelsToColumns($scope.notes[$scope.$index].realWidth, 'ceil');
+      var rowNum = ctrl.pixelsToRows($scope.notes[$scope.$index].realHeight, 'ceil');
+      $scope.notes[$scope.$index].sizeX = colNum;
+      $scope.notes[$scope.$index].sizeY = rowNum;
+      
+      $scope.mode = 'widget';
+      $scope.renderMode = 'widget';
+      WidgetSrvc.appendCss($sce.trustAsCss($scope.notes[$scope.$index].css), $scope.$index);
+      $scope.trustedHtml = $sce.trustAsHtml($scope.notes[$scope.$index].text);
+      
+      $scope.tmp = 'preview.html';
+
+      WidgetSrvc.gridster = ctrl;
+      WidgetSrvc.setScope($scope);
+
+      $scope.busy = false;
+      $scope.scopes = [];
+
+      var widget = angular.element('<div class="widget-wrap">' +
+        '<div class="wframe"><div ng-include src="::tmp"></div></div>');
+
+      $element.append(widget);
+      $compile(widget)($scope);
+
+      angular.element('.forkme').hide();
+
+      $scope.guid = $scope.item.guid;
+
+      var clone = false;
+
+      var gridBtns = $element.find('.gridBtns');
+
+      gridBtns.hide();
+
+      $scope.$on('busy', function(e,d){
+        $scope.busy = d;
+      });
+
+      $scope.move = function(e){
+        gridBtns.hide();
+      }
+
+      $scope.deleteMe = function(itm, idx, confirm, callback){
+        /*if($scope.switchAlternate){
+          return false;
+        }*/
+        if(confirm){
+          swal({
+            title: "Remove",
+            text: "Are you sure you want to delete this?",
+            type: "warning",
+            showCancelButton: true,
+            animation: "slide-from-left",
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            allowEscapeKey: false,
+            allowOutsideClick: false
+          }).then(function(isConfirm){
+            if(isConfirm.value){
+              $scope.deleteMeNow(itm, idx, callback);
+            } else {
+              return false;
+            }
+          });
+        } else {
+          $scope.deleteMeNow(itm, idx, callback);
+        }
+      }
+
+      $scope.deleteMeNow = function(itm, idx, callback){
+        $scope.deleteWidget(itm, idx);
+        $scope.$emit('delete', $scope);
+        if(callback){
+          callback();
+        }
+      }
+
+      $rootScope.$on('deleteMe', function(evt, opt){
+        if($scope.$index == opt.index) {
+          $scope.deleteMe(opt.item, opt.index, opt.confirm);
+        }
+      });
+
+      $rootScope.$on('exec', function(){
+        if(typeof $scope.notes[$scope.$index] != 'undefined'){
+          if($element.hasClass('edit')){
+            $element.removeClass('edit');
+          } else {
+            $scope.mode = 'widget';
+            $scope.tmp = 'preview.html';
+          }
+        }
+      });
+    }
+  }
+}]).
+
+directive('gridControls', ['$timeout', function($timeout){
+  return {
+    restrict: "A",
+    link: function(scope, elem, attrs){
+      
+      // graph drag handler movement cursor
+
+          var isDragging = false;
+            elem
+            .mousedown(function(evt) {
+              if(!$('.rotatingblock').hasClass('clicked'))
+                $('.rotatingblock').toggleClass('clicked');
+              if(evt.target != evt.currentTarget){
+                evt.stopPropagation();
+                return;
+              }
+                
+            })
+            .mouseup(function() {
+                var wasDragging = isDragging;
+                isDragging = false;
+                $('.rotatingblock').toggleClass('clicked');
+            });
+            $(document).mousemove(function(event){
+              // origin lines
+              var posX = event.pageX;
+              var posY = event.pageY;
+              $('.block').css({
+                'top': posY - $('.horizontalstripe').height()/2 -8,
+                'left': posX -  $('.verticalstripe').width()/2 -8
+              });
+              $('.horizontalstripe').css('top', posY - $('.horizontalstripe').height()/2);
+              $('.verticalstripe').css('left', posX - $('.verticalstripe').width()/2);
+            });
+      }
+  }
+}]).
+
+directive('ngRightClick', ['$parse', function($parse) {
+    return function(scope, element, attrs) {
+        var fn = $parse(attrs.ngRightClick);
+        element.bind('contextmenu', function(event) {
+            scope.$apply(function() {
+                event.preventDefault();
+                fn(scope, {$event:event});
+            });
+        });
+    };
+}]).
+
+directive('ngMobileClick', [function () {
+    return function (scope, elem, attrs) {
+       
+        elem.bind('touchend mouseup', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          scope.$apply(attrs['ngMobileClick'])
+        });
+    }
+}]).
+
+directive('compileTemplate', ['$compile', '$parse', function($compile, $parse){
+    return {
+        link: function(scope, element, attr){
+            var parsed = $parse(attr.ngBindHtml);
+            function getStringValue() { return (parsed(scope) || '').toString(); }
+
+            scope.$watch(getStringValue, function() {
+                $compile(element, null, -9999)(scope);
+            }, true);
+
+        }
+    }
+}]).
+
+directive('backgroundMover', ['$timeout', function($timeout){
+  return {
+    restrict: "A",
+    link: function(scope, elem, attrs){
+      // graph drag handler
+          var isDragging = false;
+            elem
+            .mousedown(function(evt) {
+              if(evt.target != evt.currentTarget){
+                evt.stopPropagation();
+                return;
+              }
+                elem.mousemove(function(evt) {
+                    isDragging = true;
+                    elem.css({backgroundPosition: evt.pageX + 'px ' + evt.pageY + 'px' });
+                });
+            })
+            .mouseup(function() {
+                var wasDragging = isDragging;
+                isDragging = false;
+                $(elem).unbind("mousemove");
+            });
+    }
+  }
+}]).
+
+directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$interval', '$compile', 'giftop', 'deviceDetector', 'BreezeDataContext', function($q, $window, $http, $rootScope, $timeout, $interval, $compile, giftop, deviceDetector, BreezeDataContext){
+  return {
+    restrict: 'A',
+    scope: true,
+    link: function(scope, elem, attrs){
+
+      scope.setCnvBg = function() {
+        $('#gifcanvas').removeClass('watermark');
+      }
+
+      scope.resetGifCanvas = function(cb) {
+        $('img#config,img#play,img#stop').hide();
+        $('img#record').show().addClass('enabled').removeClass('disabled').on('click', () => $('#exitBtn').hide());
+        $('#status').text('ready');
+              cb();
+      }
+
+      scope.getGifAsCanvas = function(uri, imgtag){
+        return new Promise((resolve, reject) => {
+          var supergif = new SuperGif({ gif: imgtag });
+          supergif.load(function(){
+            var gifCanvasEl = $(supergif.get_canvas()).addClass('anic');
+            resolve(gifCanvasEl);
+          });
+        });
+      }
+
+      scope.isLast = {
+        check: false,
+        it: 0
+      }
+
+      scope.makeGifCanvas = function(obj, last){
+          return new Promise((resolve, reject) => {
+              var tag = obj.data.get(0);
+              if(obj.type == 'image'){
+                  scope.getDataUri(tag.src, function (base64) {
+                      // base64 availlable here
+                      var img = new Image;
+                      img.crossOrigin = "Anonymous";
+                      var canvas = document.createElement("canvas"),
+                          ctx = canvas.getContext("2d"),
+                          src =  base64;
+
+                      img.src = src;
+                      // make sure the load event fires for cached images too
+                      if ( img.complete || img.complete === undefined ) {
+                          img.src = src;
+                      }
+                      img.onload = function() {
+                          canvas.width = img.width;
+                          canvas.height = img.height;
+                          ctx.drawImage( img, 0, 0 );
+                          tag.src = img.src;
+                          giftop.getBase64FromUrl(src)
+                              .then(result => {
+
+                                  //// TODO: Continue integrating gify js to count frames in individual gifs
+                                  //var gifInfo = gify.getInfo(Uint8Array.from(atob(result), c => c.charCodeAt(0)));
+                                  
+                                  if(giftop.base64MimeType(result.img) == 'image/gif'){
+                                      t1 = performance.now();
+                                      console.log("Call took " + (t1 - t0) + " milliseconds.");
+                                      resolve({'data':result,'type':'gif'});
+                                  } else {
+                                      resolve({'data':result,'type':'default'});
+                                  }
+                              })
+                                  .catch(err => console.error(err));
+                      }
+                  });
+              }
+          })
+      }
+
+
+      scope.share = function(img){
+        swal({
+          title: "Gif Title",
+          text: "when your ready click done",
+          input: "text",
+          showCancelButton: false,
+          allowOutsideClick: false,
+          animation: "slide-from-bottom",
+          inputPlaceholder: "enter title here",
+          allowEscapeKey: false,
+          confirmButtonText: "Done"
+        }).then(function(result){
+          $('#record').removeClass('enabled').addClass('disabled');
+          $('#status').text('finalizing');
+          $.ajax({
+              url: 'https://api.imgur.com/3/upload.json',
+              type: 'POST',
+              headers: {
+                  Authorization: 'Client-ID 797f0be369944e6'
+              },
+              data: {
+                  type: 'base64',
+                  name: 'qk.gif',
+                  title: result.value,
+                  description: 'Source: ' + deviceDetector.browser + ' using https:\/\/gif.com.ai',
+                  image: img
+              },
+              dataType: 'json'
+          }).success(function(data) {
+              scope.addImage(data.data);
+          }).error(function() {
+              scope.resetGifCanvas(() => alert('Your gif is too heavy! Try again with a smaller canvas area.'));
+          });
+        });
+      }
+
+      scope.compileToCanvas = function(media, guid){
+        $compile($('#gifcanvas')
+          //.html($(scope.gifIds.join(','))
+          .append(media)
+          //.html(media)
+          .contents()
+          .css({'max-width':'100%', 'max-height':'100%'})
+          //.children()
+          .draggable({
+            containment: 'parent',
+            stop: ( event, ui) => {
+              if(!scope.tokenAmount){
+                if(Math.random() < 0.15) {
+                  scope.payTokens('bronze');
+                }
+                $(event.target).addClass('ui-state-disabled'); 
+              }
+            }
+        })
+        .dblclick((event, ui) => scope.resizeIt(event, ui))
+        .attr({'context-menu': 'menuOptions', 'data-guid': guid || $(this).attr('data-guid')})
+        .zIndex(1)
+        )(scope);
+        $('a').click(function() { return false; }); // disable pointer-events on anchor tags in canvas
+        if(!$('#anigif_wrapper').hasClass('anigif_wrapper') && !$window.gifctrl){
+          $('#anigif_wrapper').addClass('anigif_wrapper').attr('style', '');
+          $window.gifctrl = $('#anigif_wrapper').detach();
+          $('#gifheadline').before($window.gifctrl);
+        } else {
+          $('#gifheadline').before($window.gifctrl);
+        }
+      }
+
+      scope.parseGifGfx = function(gifMedia, resolve){
+          if(!gifMedia.length){
+              gifMedia = $([]);
+            }
+            var promiseB = $q.all(gifMedia);
+            var srcData;
+            t0 = performance.now();
+            if(gifMedia.length){
+              scope.hideCanvasOverlay = false;
+              angular.forEach(gifMedia, function(data, i, more){
+                //data = $(data).clone();
+                var videoSource = function(){
+                    var theHref = $(data).attr('src') || '';
+                    if($(data).is('video') && theHref.length){
+                        return $(data);
+                    } else {
+                        var source = $(data).find('> source');
+                        var newSrc = source.attr('src');
+                        $(data).attr('src', newSrc);
+                        return $(data);
+                    }
+                }
+
+                srcData = $(data).is('video') ?
+                    {
+                        type: 'video',
+                        data: videoSource()
+                    } :
+                    {
+                        type: 'image',
+                        data: $(data)
+                    };
+                promiseB = scope.makeGifCanvas(srcData).then(function(file){
+                    scope.isLast.it++;
+                    scope.isLast.check = (scope.isLast.it == more.length);
+                    if(file.type == 'gif'){
+                        return scope.getGifAsCanvas(file.data, $(data).get(0)).then(function(dta){
+                          $(dta).closest('.jsgif').replaceWith(function() {
+                            var newCanvas = $(dta).closest('.anic');
+                            //nawCanvas = scope.addCanvasSelectors(newCanvas.parent());
+                            nawCanvas = scope.addCanvasSelectors(newCanvas, i);
+                            return $(newCanvas, this);
+                          });
+                          console.log($(dta).outerHTML);
+                          $compile($(dta))(scope);
+                            if(scope.isLast.check){
+                              scope.$apply(function(){
+                                scope.hideCanvasOverlay = true;
+                                $('#anigif_wrapper,#gifheadline').css('display','block');
+                              });
+                            }
+                        })
+                    } else {
+                        if(scope.isLast.check){
+                          scope.$apply(function(){
+                                scope.hideCanvasOverlay = true;
+                                $('#anigif_wrapper,#gifheadline').css('display','block');
+                              });
+                        }
+                    }
+                });
+              });
+
+              promiseB.then(function(file) {
+                console.log('parsing gif finished! Moving on...');
+                BreezeDataContext.modElement({
+                  guid: file.guid,
+                  text: $(dta).outerHTML,
+                  url: file.url
+                });
+                if(scope.isLast.check || !media.length){
+                    scope.hideCanvasOverlay = true;
+                    $('#anigif_wrapper,#gifheadline').css('display','block');
+                }
+              });
+              
+            }
+
+            resolve(gifMedia);
+      }
+
+      /* end on scope functions */
+
+      scope.startIt = function(){
+        console.log({"startit": scope.notes});
+        if(!scope.notes.length){
+          var allHTMLArr = scope.selectedElements.map(x => `<img src="${x.url}" data-guid="${x.guid}" />`).join('');
+          scope.parseGifGfx($($.parseHTML(allHTMLArr)).find('img, video').prevObject, function(gifMedia){
+            scope.compileToCanvas($(gifMedia));
+          });
+        } else {
+          //scope.compileToCanvas($.parseHTML(scope.notes.map(x => `${x.text}`).join('')));
+          var allHTMLArr = scope.notes.map(x => `${x.text}`).join('');
+          console.log(allHTMLArr);
+          //var $note = $('<div></div>');
+          scope.parseGifGfx($($.parseHTML(allHTMLArr)), function(gifMedia){
+            Array.from(gifMedia).forEach(function(tag, index, arr){
+              if(tag.tagName != undefined){
+                scope.compileToCanvas($(tag), $window.localStorage.getItem('LimeTextTarget'));
+              }
+              if(index === arr.length - 1){
+                $timeout(function(){
+                  scope.hideCanvasOverlay = true;
+                }, 3500);
+              }
+            });
+            //gifMedia
+            //console.log($(gifMedia));
+            //scope.compileToCanvas($(gifMedia));
+            //$(gifMedia).appendTo($note);
+            //var $note = $('<div></div>').append($(gifMedia));
+            //console.log($(allHTMLArr));
+            //$(allHTMLArr).each(function(gifMediaEl){
+              //$(gifMediaEl).appendTo($note);
+            //});
+            //console.log($(gifMedia).append($.parseHTML(allHTMLArr)));
+            //scope.compileToCanvas($(gifMedia).append($.parseHTML(allHTMLArr)));
+            //scope.compileToCanvas($(gifMedia).append(allHTMLArr));
+          });
+          //console.log({"gifMedia": $(gifMedia)});
+          //console.log($note);
+          //scope.compileToCanvas($note);
+        }
+      }
+
+        //$($.parseHTML(scope.mediaHTML)).find('img, video').forEach(funtion(item, index){
+          //$(item).replaceWith(scope.gifMedia[index]);
+        //});
+        //.prevObject;
+  
+
+      //if(scope.gifIds){
+        //console.log(scope.gifMedia);
+
+      if(scope.tokenAmount) {
+        scope.setCnvBg();
+      }
+      
+      var recInterval;
+      $rootScope.$on('anigif', function(eventdata, status){
+        if(status == 'start'){
+          $('#exitBtn').hide();
+          $('img.crosshair').hide();
+          $('img#record').hide();
+          $('img#stop').show();
+          $('#mainbox > *').position().left - 2 + "px";
+          $('#mainbox > *').position().top + 2 + "px";
+          //// re-introduce if making gif recording a paid service --->
+          recInterval = $interval(function(){
+            if($window.localStorage.getItem('tk') > 0){
+              $window.localStorage.setItem('tk', parseInt($window.localStorage.getItem('tk')) - 1);
+              scope.tokenAmount = $window.localStorage.getIem('tk');
+            }
+          },1000);
+        }
+        //if(status == 'done' && LS.getData() > 0){
+        if(status == 'done'){
+          $('#exitBtn').show();
+          $interval.cancel(recInterval);
+          recInterval = undefined;
+          $rootScope.$broadcast('gifRecordDone');
+          giftop.getBase64FromUrl($window.anigif.img)
+            .then(result => {
+                if(!result.size.valid) {
+                  scope.resetGifCanvas(() => alert('Your gif is too large! Please try again...'));
+                } else {
+                  scope.share(result.img.replace(/^data:image\/(png|jpg|gif);base64,/, ""))
+                }
+             })
+            .catch(err => console.error(err));
+        }
+      });
+
+      $window.addEventListener('message', function(event) {
+        console.log(event.data);
+        // We only accept messages from ourselves
+        if (event.source != $window)
+          return;
+        if (event.data.type && (event.data.type == 'anirecord')) {
+          switch(event.data.key) {
+            case "start":
+              $rootScope.$broadcast('anigif', 'start');
+                break;
+            case "stop":
+              $rootScope.$broadcast('anigif', 'done');
+                break;
+            default:
+              return;
+                break;
+          }
+        }
+      }, false);
+
+      scope.resetGifCanvas(() => { 
+        scope.startIt();
+        console.log('gif controls ready...')
+      });
+
+      scope.$watch('gifCanvasSwitch', function(oldValue, newValue){
+        BreezeDataContext.clearCachedNotes().then(function(){
+          scope.notes = [];
+          if(scope.selectScreen){
+            scope.startIt();
+          }
+        });
+      });
+
+    } // end link
+  } //end return
+}]).
+
+directive('watermark', ['WidgetSrvc', function(WidgetSrvc){
+  return {
+    restrict:  'A',
+    replace: false,
+    transclude: false,
+    scope: true,
+    link: function($scope, $element, attr, ctrl){
+      var setBackground = function() {
+
+        var marktext = "gif.com.ai";
+        var svgstring = '<svg id="diagtext" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><pattern id="marktext" patternUnits="userSpaceOnUse" width="150" height="125"><text y="30" fill="white" font-size="24" id="name" font-family="Comic Sans MS,cursive" opacity="0.175" class="textStyle">' + marktext + '</text></pattern>      <pattern id="combo" xlink:href="#marktext" patternTransform="rotate(-15)" /></defs><rect width="100%" height="100%" fill="url(#combo)" /></svg>';
+
+        var customform = document.getElementsByClassName("watermark");
+        var i;
+        for (i = 0; i < customform.length; i++) {
+          customform[i].style.backgroundImage = "url('data:image/svg+xml;base64,"+window.btoa(svgstring)+"')";
+        }    
+      }
+      setBackground();
+    }
+  }
+}]).
+
+directive('file', ['$q', function($q) {
+    return {
+        require:"ngModel",
+        restrict: 'A',
+        link: function($scope, el, attrs, ngModel){
+            el.bind('change', function(event){
+                var files = event.target.files;
+                var file = files[0];
+
+                ngModel.$setViewValue(file);
+                $scope.$apply();
+            });
+        }
+    };
+}]).
+
+factory('giftop', ['$q', function($q){
+  async function getBase64FromUrl(file) {
+    var res = await fetch(file);
+    var blob = await res.blob();
+
+    return new Promise((resolve, reject) => {
+      var reader  = new FileReader();
+      reader.addEventListener("load", function () {
+          resolve({
+            img: reader.result,
+            size: {
+              byte: blob.size,
+              valid: blob.size < 10000000
+            } 
+          });
+      }, false);
+
+      reader.onerror = () => {
+        return reject(this);
+      };
+      reader.readAsDataURL(blob);
+    })
+  };
+  function base64MimeType(encoded) {
+    var result = null;
+
+    if (typeof encoded !== 'string') {
+      return result;
+    }
+
+    var mime = encoded.match(/data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+).*,.*/);
+
+    if (mime && mime.length) {
+      result = mime[1];
+    }
+
+    return result;
+  };
+  function createVideoTag(source){
+    var videlem = document.createElement("video");
+    /// ... some setup like poster image, size, position etc. goes here...
+    /// now, add sources:
+    var sourceMP4 = document.createElement("source"); 
+    sourceMP4.type = "video/mp4";
+    sourceMP4.src = source;
+    videlem.appendChild(sourceMP4);
+    //// same approach add ogg/ogv and webm sources
+    return videlem;
+  }
+
+  function resetCursor(selector){
+      selector.css('cursor', 'default').unbind('click');        
+  }
+
+  return {
+    getBase64FromUrl: getBase64FromUrl,
+    base64MimeType: base64MimeType,
+    createVideoTag: createVideoTag,
+    //isCanvasBlank: isCanvasBlank,
+    resetCursor: resetCursor
+  };
+
+}]).
+
+factory('WidgetSrvc', ['$q', '$window', '$timeout', '$rootScope', '$http', '$filter', '$ocLazyLoad', function($q, $window, $timeout, $rootScope, $http, $filter, $ocLazyLoad) {
+    return {
+        post: function(type, send){
+          var deferred = $q.defer();
+          deferred.resolve($http.post(type, send));
+          return deferred.promise;
+        },
+        form: function(path, params, method){
+            method = method || "post"; // Set method to post by default if n`ot specified.
+
+            // The rest of this code assumes you are not using a library.
+            // It can be made less wordy if you use one.
+            var form = document.createElement("form");
+            form.setAttribute("method", method);
+            form.setAttribute("action", path);
+            form.setAttribute("target", "_self");
+
+            for(var key in params) {
+                if(params.hasOwnProperty(key)) {
+                    var hiddenField = document.createElement("input");
+                    hiddenField.setAttribute("type", "hidden");
+                    hiddenField.setAttribute("name", key);
+                    hiddenField.setAttribute("value", params[key]);
+
+                    form.appendChild(hiddenField);
+                 }
+            }
+
+            document.body.appendChild(form);
+            form.submit();
+        },
+        duplicate: function(orig, copy, index){
+          if(orig){
+            //this.holder(orig, 'duplicated');
+            orig.push(copy[index]);
+          }
+        },
+        mirror: function(orig, copy, index){
+          if(copy){
+            for (var i = orig.length - 1; i >= 0; i--) {
+              orig[i].widget = copy[index].widget;
+            };
+          }
+        },
+        delete: function(obj, index){
+          var deferred = $q.defer();
+          if(obj){
+            //this.holder(obj, 'deleted');
+            deferred.resolve(obj.splice(index, 1));
+            return deferred.promise;
+          }
+        },
+        appendCss: function(css, idx){
+          if(css && !document.getElementById('widgetcss' + idx)){
+            css = css,
+            head = document.head || document.getElementsByTagName('head')[0],
+            style = document.createElement('style');
+            style.type = 'text/css';
+            style.id = 'widgetcss' + idx;
+            if (style.styleSheet){
+              style.styleSheet.cssText = css;
+            } else {
+              style.appendChild(document.createTextNode(css));
+            }
+
+            head.appendChild(style);
+          } else if(css){
+            document.getElementById('widgetcss' + idx).textContent = css;
+          }
+        },
+        removeCss: function(idx){
+          angular.element('#widgetcss'+idx).remove();
+        },
+        /*reloadStylesheets: function(){
+          var queryString = '?reload=' + new Date().getTime();
+          $('link[rel="stylesheet"]').each(function () {
+              this.href = this.href.replace(/\?.*|$/, queryString);
+          });
+        },*/
+        execSearch: function(){
+            var morphSearch = document.getElementById( 'morphsearch' ),
+              input = morphSearch.querySelector( 'input.morphsearch-input' ),
+              ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
+              isOpen = isAnimating = false,
+              toggleSearch = function(evt) {
+                if( evt.type.toLowerCase() === 'focus' && isOpen ) return false;
+
+                if( isOpen ) {
+                  classie.remove( morphSearch, 'open' );
+
+                  if( input.value !== '' ) {
+                      classie.add( morphSearch, 'hideInput' );
+                      $timeout(function() {
+                        classie.remove( morphSearch, 'hideInput' );
+                        input.value = '';
+                      });
+                  }
+                  
+                  input.blur();
+                }
+                else {
+                  classie.add( morphSearch, 'open' );
+                }
+                isOpen = !isOpen;
+              };
+
+            input.addEventListener( 'focus', toggleSearch );
+            ctrlClose.addEventListener( 'click', toggleSearch );
+        },
+        make: function(objs){
+
+          var clone = true;
+          var c = [];
+
+          angular.forEach(objs, function(ent){
+            var es = ent.entityAspect.entityState;
+            if(clone && (!es.isDeleted()) || $scope.found){
+              c.push(ent);
+            } else if(!clone && !es.isDeleted() && !ent.clone){
+              c.push(ent);
+            }
+          });
+
+          return c;
+
+        },
+        selectElementContents: function(el) {
+          var range = document.createRange();
+          range.selectNodeContents(el);
+          var sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+        },
+        setEditorLineNumber: function(line){
+          this.editorLineNumber = line;
+        },
+        getEditorLineNumber: function(){
+          return this.editorLineNumber;
+        },
+        gridster: null,
+        getScope: function(scope){
+          return this.scope;
+        },
+        setScope: function(scope){
+          this.scope = scope;
+        },
+        parseSettings: function(note){
+          var deferred = $q.defer();
+          try {
+            
+            var settings = (new Function("return " + note.settings))();
+            deferred.resolve(settings);
+
+          } catch(e){
+            console.log(e, 'cannot parse settings!');
+          }
+          return deferred.promise;
+        },
+        broadcasting: null,
+        getGuids: function(notes){
+          arr = [];
+          for (var i = notes.length - 1; i >= 0; i--) {
+            arr.push(notes[i]['guid']);
+          };
+          return arr;
+        },
+        getAttrIndex: function(array, attr, value){
+          for(var i = 0; i < array.length; i++) {
+              if(array[i].hasOwnProperty(attr) && array[i][attr] === value) {
+                  return i;
+              }
+          }
+          return -1;
+        },
+        getEvents: function(){
+          return Object.getOwnPropertyNames(document)
+            .concat(Object.getOwnPropertyNames(Object.getPrototypeOf(Object.getPrototypeOf(document))))
+            .concat(Object.getOwnPropertyNames(Object.getPrototypeOf(window)))
+            .filter(function(i){return !i.indexOf('on')&&(document[i]==null||typeof document[i]=='function');})
+            .filter(function(elem, pos, self){return self.indexOf(elem) == pos;})
+        },
+        genRandomId: function(N){
+          Array(N).join().split(',').map(function(s) { return s.charAt(Math.floor(Math.random() * s.length)); }).join('');
+        },
+        isJson: function(str){
+          try {
+              JSON.parse(str);
+          } catch (e) {
+              return false;
+          }
+          return true;
+        },
+        chunk: function chunk(arr, chunkSize) {
+          var R = [];
+          for (var i=0,len=arr.length; i<len; i+=chunkSize)
+            R.push(arr.slice(i,i+chunkSize));
+          return R;
+        },
+        /*clipboard: async function(text){
+              if (window.clipboardData && window.clipboardData.setData) {
+                  // IE specific code path to prevent textarea being shown while dialog is visible.
+                  return clipboardData.setData("Text", text); 
+
+              } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+                  var textarea = document.createElement("textarea");
+                  textarea.textContent = text;
+                  textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
+                  document.body.appendChild(textarea);
+                  textarea.select();
+                  try {
+                      return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+                  } catch (ex) {
+                      console.warn("Copy to clipboard failed.", ex);
+                      return false;
+                  } finally {
+                      document.body.removeChild(textarea);
+                  }
+              }
+        },*/
+        storeBase64Imgur: function(fed, width, height){
+
+          var deferred = $q.defer();
+
+          var rawdata = fed.replace(/^data:image\/(png|jpg|gif|jpeg|svg);base64,/, "");
+          var filetype = fed.substring(fed.indexOf(":")+1, fed.indexOf(";")).split('/')[1];
+
+          $.ajax({
+              url: 'https://api.imgur.com/3/upload.json',
+              type: 'POST',
+              headers: {
+                  Authorization: 'Client-ID 797f0be369944e6'
+              },
+              data: {
+                  type: 'base64',
+                  name: 'base.' + filetype,
+                  title: '',
+                  description: 'Source: https:\/\/gif.com.ai',
+                  image: rawdata
+              },
+              dataType: 'json'
+          }).success(function(data) {
+            data = arguments[0].data;
+            deferred.resolve({
+              'link': data.link,
+              'width': data.width,
+              'height': data.height
+            });
+          }).error(function(error) {
+            console.log(error);
+          });
+          return deferred.promise;
+        },
+        getMetaFromUrl: function(url){
+          let deferred = $q.defer();
+          let img = new Image();
+          img.onload = function(){
+            let newObj = (({height, width}) => ({height, width}))(this);
+            console.log(newObj);
+            deferred.resolve(newObj);  
+          };
+          img.src = url;
+          return deferred.promise;
+        },
+        video2gif: function(width, height, videos){
+          var deferred = $q.defer();
+          gifshot.createGIF({
+              gifWidth: width,
+              gifHeight: height,
+              video: videos, // array of video files
+              interval: 0.1,
+              numFrames: 10,
+              frameDuration: 1,
+              fontWeight: 'normal',
+              fontSize: '16px',
+              fontFamily: 'sans-serif',
+              fontColor: '#ffffff',
+              textAlign: 'center',
+              textBaseline: 'bottom',
+              sampleInterval: 10,
+              numWorkers: 2
+          }, function (obj) {
+              deferred.resolve({
+                gif: obj.image
+              });
+          });
+          return deferred.promise;
+        },
+        charCount: function(str){
+          return Array.from(str).reduce((counts, char) => {
+            counts[char] = (counts[char] || 0) + 1
+            return counts
+          }, Object.create(null))
+        },
+        kFormatter: function(num) {
+            return num > 999 ? (num/1000).toFixed(1) + 'k' : num
+        },
+        /*getClipboardContents: async function() {
+          var deferred = $q.defer();
+          try {
+            const clipboardItems = await navigator.clipboard.read();
+            for (const clipboardItem of clipboardItems) {
+              for (const type of clipboardItem.types) {
+                const blobUrl = await clipboardItem.getType(type);
+                var reader = new FileReader();
+                reader.readAsDataURL(blobUrl); 
+                reader.onloadend = function() {
+                  var base64data = reader.result;
+                  deferred.resolve(base64data);
+                }
+                //const blobUrl = await URL.createObjectURL(blob);
+              }
+            }
+          } catch (err) {
+            console.log('Unable to paste image from the clipboard. Try again.')
+            //console.error(err.name, err.message);
+          }
+          return deferred.promise;
+        },*/
+        addAttr: function(scope, el, attrName, attrValue) {
+          el.replaceWith($compile(el.clone().attr(attrName, attrValue))(scope));
+        },
+        payTokens: function(type){
+
+          var deferred = $q.defer();
+
+          let activeTmpl, activeModalBg, planprice, planheadline, planbtn, stripePlan = {key: '', id: ''};
+
+          $('.gifshopBtn').hide();
+
+          switch(type){
+            case 'bronze':
+              activeTmpl = `
+                <div class="ribbon ribbon-top-right bronze-bg"><span>Bronze</span></div>
+                <table id="pricetable" class="table-fill" style="width: 100%;">
+                    <thead>
+                      <tr>
+                        <th class="text-left">Feature</th>
+                        <th class="text-center">Benefit</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-hover bronze-theme">
+                      <tr>
+                        <td class="text-left">No Watermarks</td>
+                        <td class="text-left">✓ Make GIFs without watermarks</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">1.5k tokens</td>
+                        <td class="text-left">✓ Get 1,500 tokens to spend</td>
+                      </tr>
+                    </tbody>
+                </table>
+              `;
+              planprice = '$49.00';
+              planheadline = 'Bronze boost includes 60 minutes of recording time';
+              plansubline = '~ $0.03 / second';
+              planbtn = 'Bronze';
+              activeModalBg = 'url("static/images/payment-modal-background-bronze.jpg")';
+                break;
+            case 'silver':  
+              activeTmpl = `
+                <div class="ribbon ribbon-top-right silver-bg"><span>Silver</span></div>
+                <table id="pricetable" class="table-fill" style="width: 100%;">
+                    <thead>
+                      <tr>
+                        <th class="text-left">Feature</th>
+                        <th class="text-center">Benefit</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-hover silver-theme">
+                      <tr>
+                        <td class="text-left">No Watermarks</td>
+                        <td class="text-left">✓ Make GIFs without watermarks</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">GifShop™</td>
+                        <td class="text-left">✓ Get access to custom apps in the GifShop™</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">75k tokens</td>
+                        <td class="text-left">✓ Get 75,000 tokens to spend</td>
+                      </tr>
+                    </tbody>
+                </table>
+              `;
+              planprice = '$99.00';
+              planheadline = 'Silver boost includes up to 2,500 minutes of recording time';
+              plansubline = '~ $0.01 / second';
+              planbtn = 'Silver';
+              activeModalBg = 'url("static/images/payment-modal-background-silver.jpg")';
+              //stripePlan['key'] = 'pk_test_pkLIRMEaA3vLt3fVbraOVSGf';
+              //stripePlan['id'] = 'GDQCqYhSTvI7u1';
+                break;
+            case 'gold':
+              activeTmpl = `
+                <div class="ribbon ribbon-top-right gold-bg"><span>Gold</span></div>
+                <table id="pricetable" class="table-fill" style="width: 100%;">
+                    <thead>
+                      <tr>
+                        <th class="text-left">Feature</th>
+                        <th class="text-center">Benefit</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-hover gold-theme">
+                      <tr>
+                        <td class="text-left">No Watermarks</td>
+                        <td class="text-left">✓ Make GIFs without watermarks</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">GifShop™ access</td>
+                        <td class="text-left">✓ Get access to custom apps in the GifShop™</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">LimeText™ IDE</td>
+                        <td class="text-left">✓ Introducing LimeText™ IDE for coders</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left">250k tokens</td>
+                        <td class="text-left">✓ Get 250,000 tokens to spend</td>
+                      </tr>
+                    </tbody>
+                </table>
+              `;
+              planprice = '$299.00';
+              planheadline = 'Gold boost includes up to 8,300 minutes of recording time';
+              plansubline = '~ $0.01 / second';
+              planbtn = 'Gold';
+              activeModalBg = 'url("static/images/payment-modal-background-gold.jpg")';
+                break;
+          }
+
+          swal({
+              title: 'GET MORE GIF',
+              html: `
+                <p><b style='color:#222;'>${planheadline}</b></p>
+                ${activeTmpl}
+              `,
+              //text: 'Silver Pack includes 250 minutes of recording time.',
+              //imageUrl: 'https://i.imgur.com/oxVfOni.gif',
+              background: `${activeModalBg}`,
+              imageWidth: 163,
+              imageHeight: 120,
+              width: 800,
+              customClass: 'swal-max',
+              confirmButtonText: `Get ${planbtn}`,
+              showCancelButton: false,
+              showConfirmButton: true,
+              animation: "slide-from-bottom",
+              allowOutsideClick: true,
+              allowEscapeKey: true,
+              footer: 
+                `<b style="color: darkslategrey;font-size: large;">${plansubline}</b>
+                 <div style="flex-basis: 100%;height: 0;"></div>
+                 <span>${planprice} / Month</span>`
+            }).then(function(isConfirm, item){
+              $('.gifshopBtn').show();
+              if(isConfirm.value){
+                deferred.resolve(planbtn);
+                //deferred.resolve(settings);
+              
+              } else {
+                //return false;
+                deferred.resolve(null);
+              }
+          });
+          
+          $timeout(function(){
+            $('.swal2-footer').css('flex-wrap', 'wrap');
+            $('.swal2-show').addClass(`plan-modal-border-${planbtn.toLowerCase()}`);
+            //$('.swal2-confirm').attr({id: `checkout-button-price_${stripePlan.id}`, role:'link'});
+          });
+                        
+          return deferred.promise;
+
+        }
+    };
+}]).
+
+service('Engine', ['WidgetSrvc', function(WidgetSrvc){
+
+  this.$influence = function($scope) {
+      var self = WidgetSrvc.gridster;
+          try {
+            return {
+              'self': self.getItem($scope.item.row, $scope.item.col),
+              'top': self.getItem($scope.item.row-1, $scope.item.col),
+              'bottom': self.getItem(($scope.item.sizeY + $scope.item.row), $scope.item.col),
+              'left': self.getItem($scope.item.row, ($scope.item.col-1)),
+              'right': self.getItem($scope.item.row, ($scope.item.sizeX + $scope.item.col))
+            };
+          } catch(e){
+            return {'error': e};
+          }
+  };
+}]).
+
+factory('BreezeDataContext', ['$rootScope', '$filter', '$window', '$q', '$http', function($rootScope, $filter, $window, $q, $http) {
+
+  breeze.config.initializeAdapterInstance("modelLibrary", "backingStore", true);
+  breeze.config.initializeAdapterInstance("dataService", "mongo", true);
+  breeze.config.initializeAdapterInstance("ajax", "angular", true);
+
+  var DT = breeze.DataType;
+
+  var ownerType = new breeze.ComplexType({
+    shortName: 'owner',
+    dataProperties: {
+      user_id: {
+        dataType: DT.Int32
+      },
+      widgets: {
+        dataType: DT.String,
+        isNullable: true
+      }
+    }
+  });
+
+  var BreezeModel = {
+    initialize: function(metadataStore) {
+      metadataStore.addEntityType({
+        shortName: 'image',
+        namespace: 'gridme',
+        defaultResourceName: 'image',
+        dataProperties: {
+          _id: {
+            dataType: DT.Int32
+          },
+          last_modified: {
+            dataType: DT.DateTime,
+            isNullable: false
+          },
+          guid: {
+            dataType: DT.Guid,
+            isNullable: false,
+            isPartOfKey: true
+          },
+          scope: {
+            dataType: ownerType,
+            isScalar: false
+          },
+          link: {
+            dataType: DT.String
+          },
+          size: {
+            dataType: DT.Int32
+          },
+          height: {
+            dataType: DT.Int32
+          },
+          width: {
+            dataType: DT.Int32
+          }
+        }
+      });
+      metadataStore.addEntityType({
+        shortName: 'note',
+        namespace: 'gridme',
+        defaultResourceName: 'note',
+        dataProperties: {
+          _id: {
+            dataType: DT.Int32
+          },
+          guid: {
+            dataType: DT.Guid,
+            isNullable: false,
+            isPartOfKey: true
+          },
+          owner: {
+            dataType: ownerType
+          },
+          scope: {
+            dataType: ownerType,
+            isScalar: false
+          },
+          last_modified: {
+            dataType: DT.DateTime,
+            isNullable: false
+          },
+          clone: {
+            dataType: DT.Boolean
+          },
+          searchable: {
+            dataType: DT.Boolean
+          },
+          price: {
+            dataType: DT.Int32
+          },
+          url: {
+            dataType: DT.String
+          },
+          images: {
+            dataType: DT.String
+          },
+          screenshot: {
+            dataType: DT.String,
+            isNullable: true
+          },
+          text: {
+            dataType: DT.String
+          },
+          css: {
+            dataType: DT.String
+          },
+          js: {
+            dataType: DT.String
+          },
+          settings: {
+            dataType: DT.String
+          },
+          title: {
+            dataType: DT.String
+          },
+          row: {
+            dataType: DT.Int32
+          },
+          col: {
+            dataType: DT.Int32
+          },
+          sizeX: {
+            dataType: DT.Int32
+          },
+          sizeY: {
+            dataType: DT.Int32
+          },
+          realHeight: {
+            dataType: DT.Int32
+          },
+          realWidth: {
+            dataType: DT.Int32
+          },
+          pinned: {
+            dataType: DT.String
+          },
+          active: {
+            dataType: DT.Boolean
+          },
+          tags: {
+            dataType: DT.String
+          }
+        }
+      });
+      metadataStore.addEntityType({
+        shortName: 'file',
+        namespace: 'gridme',
+        defaultResourceName: 'file',
+        dataProperties: {
+          _id: {
+            dataType: DT.Int32
+          },
+          guid: {
+            dataType: DT.Guid,
+            isNullable: false,
+            isPartOfKey: true
+          },
+          owner: {
+            dataType: ownerType
+          },
+          scope: {
+            dataType: ownerType,
+            isScalar: false
+          },
+          last_modified: {
+            dataType: DT.DateTime,
+            isNullable: false
+          },
+          clone: {
+            dataType: DT.Boolean
+          },
+          searchable: {
+            dataType: DT.Boolean
+          },
+          url: {
+            dataType: DT.String,
+            isNullable: true
+          },
+          text: {
+            dataType: DT.String
+          },
+          css: {
+            dataType: DT.String
+          },
+          js: {
+            dataType: DT.String
+          },
+          settings: {
+            dataType: DT.String
+          },
+          title: {
+            dataType: DT.String
+          },
+          realHeight: {
+            dataType: DT.Int32
+          },
+          realWidth: {
+            dataType: DT.Int32
+          },
+          active: {
+            dataType: DT.Boolean
+          },
+          tags: {
+            dataType: DT.String
+          }
+        },
+        navigationProperties: {
+          revisions: { entityTypeName: 'note' }
+        }
+      });
+    }
+  };
+
+  var ds = new breeze.DataService({
+    serviceName: 'breeze',
+    hasServerMetadata: false
+  });
+
+  var manager = new breeze.EntityManager({
+    dataService: ds
+  });
+
+  BreezeModel.initialize(manager.metadataStore);
+
+  var savedEntities = $window.localStorage.getItem('breezeSavedEntities');
+  if (savedEntities) {
+    manager.importEntities(savedEntities);
+  }
+
+  function saveEntitiesLocally() {
+    $window.localStorage.setItem('breezeSavedEntities', manager.exportEntities());
+  }
+
+  function importEntity(data){
+    manager.importEntities(data);
+  }
+
+  var noteType = manager.metadataStore.getEntityType('note');
+  var imgType = manager.metadataStore.getEntityType('image');
+  var fileType = manager.metadataStore.getEntityType('file');
+
+  function syncNotes(cont) {
+    
+    //var noteEntities = getAddedNotes();
+    var noteEntities = getMyNotes();
+    
+    if(cont){
+      var deferred = $q.defer();
+      deferred.resolve(false);
+      return deferred.promise.then(function(){
+        return true;
+      });
+    } else if(manager.hasChanges()) {
+      return manager.saveChanges(noteEntities).then(function() {
+        manager.acceptChanges();
+        return true;
+      }, function(e) {
+        console.log(e);
+        return false;
+      });
+    }
+  }
+
+  function syncImages() {
+
+    var imageEntities = getMyImages();
+    var lastEntity = imageEntities[imageEntities.length-1];
+
+    if(manager.hasChanges()) {
+      return manager.saveChanges([lastEntity]).then(function() {
+        manager.acceptChanges();
+        return true;
+      }, function(e) {
+        console.log(e);
+        return false;
+      });
+    }
+  }
+
+  function syncFiles() {
+
+    var fileEntities = getMyFiles();
+    var lastEntity = fileEntities[fileEntities.length-1];
+
+    if(manager.hasChanges()) {
+      return manager.saveChanges([lastEntity]).then(function() {
+        manager.acceptChanges();
+        return true;
+      }, function(e) {
+        console.log(e);
+        return false;
+      });
+    }
+  }
+
+  function getMyNotes() {
+    var states = [breeze.EntityState.Added, breeze.EntityState.Modified, breeze.EntityState.Unchanged];
+    return manager.getEntities(noteType, states);
+  }
+
+  function getMyImages(){
+    var states = [breeze.EntityState.Added, breeze.EntityState.Modified, breeze.EntityState.Unchanged];
+    return manager.getEntities(imgType, states);
+  } 
+
+  function getMyFiles(){
+    var states = [breeze.EntityState.Added, breeze.EntityState.Modified, breeze.EntityState.Unchanged];
+    return manager.getEntities(fileType, states);
+  }
+
+  /*function getAddedNotes() {
+    var states = [breeze.EntityState.Added, breeze.EntityState.Modified, breeze.EntityState.Unchanged];
+    return manager.getEntities(noteType, states);
+  }*/
+
+  function getMyFilesAndRevisions() {
+    var promise = breeze.EntityQuery.from('files')
+      .orderBy('last_modified')
+      .expand('revisions')
+      .inlineCount()
+      .noTracking()
+      .using(manager)
+      .execute();
+    return promise;
+  }
+
+  function getAllSearchableWidgets(query, count) {
+    var promise = breeze.EntityQuery.from('widgets')
+      .orderBy('last_modified')
+      .where('searchable', '==', true)
+      .inlineCount()
+      .noTracking()
+      .using(manager)
+      .execute();
+    return promise;
+  }
+
+  /*function getAllGifShopWidgets(query, count) {
+    var promise = breeze.EntityQuery.from('widgets')
+      .orderBy('last_modified')
+      .where('price', '!=', null)
+      .inlineCount()
+      .noTracking()
+      .using(manager)
+      .execute();
+    return promise;
+  }*/
+
+  function getSearchedWidgets(query) {
+    var p1 = breeze.Predicate('searchable', '==', true);
+    var p2 = breeze.Predicate('settings', 'contains', query);
+    var promise = breeze.EntityQuery.from('widgets')
+      .where(p1.and(p2))
+      .inlineCount()
+      .orderBy('last_modified')
+      .take(100)
+      .noTracking()
+      .using(manager)
+      .execute();
+    return promise;
+  }
+
+  function getWidgetByGuidRemote(guid) {
+    return _fetchMetadata().then(function(){
+      var query = breeze.EntityQuery
+        .from('widgets')
+        .orderBy('last_modified')
+        .take(1)
+        .where('guid', '==', guid)
+        .inlineCount()
+        .using(manager);
+      return manager.executeQuery(query)
+        .then(function(data){
+          return data.results;
+        })
+        .catch(function(error){
+          throw error;
+        });
+    });
+  }
+
+  function getGistById(id) {
+    return $http.get('https://api.github.com/gists/' + id).success(function(results){
+      return results;
+    });
+  }
+
+  function getNote(guid) {
+    return manager.getEntityByKey('note', guid);
+  }
+
+  function getFile(guid) {
+    return manager.getEntityByKey('file', guid);
+  }
+
+  function addNote(obj, guid) {
+    var deferred = $q.defer();
+    obj.guid = (guid) ? guid : DT.Guid.getNext();
+    obj.last_modified = new Date();
+    //obj.active = obj.active ? obj.active : true;
+    var ent = manager.createEntity(noteType, obj);
+    manager.addEntity(ent);
+    saveEntitiesLocally();
+    deferred.resolve(ent);
+    return deferred.promise;
+  }
+
+  function addFile(obj, guid) {
+    var deferred = $q.defer();
+    obj.guid = (guid) ? guid : DT.Guid.getNext();
+    obj.last_modified = new Date();
+    //obj.active = obj.active ? obj.active : true;
+    var ent = manager.createEntity(fileType, obj);
+    manager.addEntity(ent);
+    saveEntitiesLocally();
+    deferred.resolve(ent);
+    return deferred.promise;
+  }
+
+  function addImage(obj, guid){
+    var deferred = $q.defer();
+    obj.guid = (guid) ? guid : DT.Guid.getNext();
+    obj.last_modified = new Date();
+    var ent = manager.createEntity(imgType, obj);
+    manager.addEntity(ent);
+    saveEntitiesLocally();
+    deferred.resolve(ent);
+    return deferred.promise;
+  }
+
+  function modElement(ent) {
+    var deferred = $q.defer();
+    ent.last_modified = new Date();
+    saveEntitiesLocally();
+    deferred.resolve(ent);
+    return deferred.promise;
+  }
+
+  function delElement(ent, detach) {
+    if(detach){
+      manager.detachEntity(ent);
+    } else {
+      ent.entityAspect.setDeleted();
+    }
+    saveEntitiesLocally();
+  }
+
+  function _fetchMetadata() {
+    if (manager.metadataStore.isEmpty()) {
+        return manager.fetchMetadata();
+    }
+    return Q.resolve();
+  };
+
+  function getWidgetByGuid(guid){
+      return _fetchMetadata().then(function(){
+        var query = 
+          breeze.EntityQuery
+            .from('notes')
+            .orderBy('guid')
+            .toType('note')
+            .where('guid', '==', guid)
+            .using(breeze.MergeStrategy.OverwriteChanges)
+            .using(breeze.FetchStrategy.FromLocalCache)
+            .using(manager);
+        
+        return manager.executeQuery(query)
+        .then(function(data){
+          return data.results;
+        })
+        .catch(function(error){
+          throw error;
+        });
+      });
+  };
+
+  function modUser(ent){
+    var deferred = $q.defer();
+    ent.last_modified = new Date();
+    ent.owner.plan = ent.plan;
+    ent.owner.widgets = ent.widgets;
+    ent.owner.tokens = ent.tokens;
+    saveEntitiesLocally();
+    deferred.resolve(ent);
+    return deferred.promise;
+  }
+
+  function cloneEntity(sourceEntity, keyName) {
+     var sourceEntityType = sourceEntity.entityType;
+
+     var sourceDataProperties = sourceEntityType.dataProperties;
+     var configEntity = {};
+     sourceDataProperties.forEach(function(dp) {
+          if(dp.name === 'clone'){
+            configEntity[dp.name] = true;
+          } else {
+            configEntity[dp.name] = sourceEntity.getProperty(dp.name);
+          }
+     });
+
+     newKeyValue = DT.Guid.getNext();
+     configEntity[keyName] = newKeyValue;
+
+     var cloneEntity = manager.createEntity(noteType, configEntity, breeze.EntityState.Added);
+     return cloneEntity;
+  };
+
+
+  function clearCachedNotes() {
+    var deferred = $q.defer();
+    var cachedNotes = manager.getEntities('note');
+    cachedNotes.forEach(function (entity) { manager.detachEntity(entity); });
+    deferred.resolve(cachedNotes);
+    return deferred.promise;
+  }
+
+  function clearEverything() {
+    manager.clear();
+  }
+
+  function getFreshGuid() {
+    return DT.Guid.getNext();
+  }
+
+  return {
+    importEntity: importEntity,
+    
+    syncNotes: syncNotes,
+    syncFiles: syncFiles,
+    syncImages: syncImages,
+
+    getMyNotes: getMyNotes,
+    getMyImages: getMyImages,
+    getMyFiles: getMyFiles,
+    getMyFilesAndRevisions: getMyFilesAndRevisions,
+    //getAddedNotes: getAddedNotes,
+          
+    getNote: getNote,
+    addNote: addNote,
+
+    getFile: getFile,
+    addFile: addFile,
+
+    delElement: delElement,
+            
+    addImage: addImage,
+    
+    modUser: modUser,
+    modElement: modElement,
+    
+    getWidgetByGuid: getWidgetByGuid,
+    getWidgetByGuidRemote: getWidgetByGuidRemote,
+
+    getGistById: getGistById,
+    
+    getAllSearchableWidgets: getAllSearchableWidgets,
+    //getAllGifShopWidgets: getAllGifShopWidgets,
+    getSearchedWidgets: getSearchedWidgets,
+
+    cloneEntity: cloneEntity,
+    
+    clearCachedNotes: clearCachedNotes,
+    
+    clearEverything: clearEverything,
+    
+    getFreshGuid: getFreshGuid
+  };
+}]).
+
+factory('User',  ['$resource', function($resource) {
+  return $resource('users/:id');
+}]).
+
+factory('Myself', ['$window', '$location', '$q', 'User', function($window, $location, $q, User) {
+  var deferred = $q.defer();
+  if($window.localStorage.getItem('myChannel')){
+    var uid = +JSON.parse($window.localStorage.getItem('myChannel'))['user_id'];
+  } else {
+    var uid = 'myself';
+  }
+  User.query({
+    //id: 'myself'
+    id: uid
+  }, function(data) {
+    //if (data.length === 1) {
+    if (data.length) {
+      //deferred.resolve(data[0]);
+      deferred.resolve(data[data.length-1]);
+    } else {
+      //not logged in
+      deferred.resolve(null);
+    }
+  }, function() {
+    //no network
+    deferred.resolve(null);
+  });
+  return deferred.promise;
+}]).
+
+run(['$window', '$interval', '$document', '$rootScope', '$route', '$location', '$routeParams', '$timeout', '$ocLazyLoad', '$http', 'BreezeDataContext', 'deviceDetector', 'WidgetSrvc', function($window, $interval, $document, $rootScope, $route, $location, $routeParams, $timeout, $ocLazyLoad, $http, BreezeDataContext, deviceDetector, WidgetSrvc) {
+ 
+  //$http.defaults.headers.common.Authorization = '6b3e534b0130d1ff74f5ba3ef14d26de092e3a16'; // authorization for gist upload access
+
+  var anigifCheck = $interval(function(){
+    if($window.hasOwnProperty('anigif_bar')){
+      try{
+        $window.anigif_bar.el.style.display = 'none';
+        //$('#anigif_bar').append('<button id="script_button" disabled onclick="stopMode()" style="float:right;">Autostop OFF</button>')
+        $('#anigif_bar')
+         .bind('DOMSubtreeModified', function(){
+           setTimeout(function(){
+             if($('#status').text() !== 'ready'){
+               $('#script_button').hide();
+             }
+           });
+         });
+        $interval.cancel(anigifCheck);
+      } catch(e){
+        console.log('Still loading...');
+      }
+    }
+  },10);
+
+  $rootScope.$on('$viewContentLoaded', function(event, data) {
+
+      //document.querySelector('.speedfazer').addEventListener('transitionend', function(){
+        //$(this).hide();
+        //$('#home-splash-screen').fadeIn(0);
+      //}, false);
+
+      $window.anigif.options.selector = "#gifcanvas";
+      $window.anigif.options.quality = "High";
+      $window.anigif.options.cores = 4;
+      $window.anigif.options.onlyLastFrames = 50;
+      $window.anigif.options.framesPerSecond = 8;
+      $window.anigif.options.period = "Online";
+
+      //componentHandler.upgradeAllRegistered();
+
+      /*$timeout(function(){
+        WidgetSrvc.reloadStylesheets();
+      });*/
+
+      if($("html").hasClass("no-touch")){
+        $(".post_tags_inner").draggable({
+          axis: "x",
+          scroll: false,
+          stop: function() {
+            var __left = $(this).css("left").replace(/[^-\d\.]/g, '');
+            if (__left > 0) {
+              $(this).animate({
+                left: 0
+              }, 400, 'easeOutExpo');
+            }
+            var __width = $(this).outerWidth();
+            var __parentWidth = $(".post_tags.draggable").outerWidth();
+            if (__width > __parentWidth) {
+              if (__left < __parentWidth - __width) {
+                $(this).animate({
+                  left: __parentWidth - __width
+                }, 400, 'easeOutExpo');
+              }
+            } else {
+              $(this).animate({
+                left: 0
+              }, 400, 'easeOutExpo');
+            }
+          }
+        });
+      }
+  });
+
+  $rootScope.$on('$locationChangeStart', function (event, current, previous) {
+    console.log("Previous URL" +previous);
+  });
+
+  !(function ($, undefined) {
+        var get_selector = function (element) {
+            var pieces = [];
+            for (; element && element.tagName !== undefined; element = element.parentNode) {
+                if (element.className) {
+                    var classes = element.className.split(' ');
+                    for (var i in classes) {
+                        if (classes.hasOwnProperty(i) && classes[i]) {
+                            pieces.unshift(classes[i]);
+                            pieces.unshift('.');
+                        }
+                    }
+                }
+                if (element.id && !/\s/.test(element.id)) {
+                    pieces.unshift(element.id);
+                    pieces.unshift('#');
+                }
+                pieces.unshift(element.tagName);
+                pieces.unshift(' > ');
+            }
+            return pieces.slice(1).join('');
+        };
+        $.fn.getSelector = function (only_one) {
+            if (true === only_one) {
+                return get_selector(this[0]);
+            } else {
+                return $.map(this, function (el) {
+                    return get_selector(el);
+                });
+            }
+        };
+    })(window.jQuery);
+
+    // add data-tooltip attribute to element to make tooltips
+    $('[data-tooltip]').hover(function(){
+      $('<div class="div-tooltip"></div>').text($(this).attr('data-tooltip')).appendTo('body').fadeIn('slow');
+    }, function() { 
+      $('.div-tooltip').remove();
+    }).mousemove(function(e) {
+      $('.div-tooltip').css({ top: e.pageY + 10, left:  e.pageX + 20 })
+    });
+}]);
