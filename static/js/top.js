@@ -1925,11 +1925,6 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
 
               promiseB.then(function(file) {
                 console.log('parsing gif finished! Moving on...');
-                /*BreezeDataContext.modElement({
-                  guid: file.guid,
-                  text: $(dta).outerHTML,
-                  url: file.url
-                });*/
                 if(scope.isLast.check || !media.length){
                     scope.hideCanvasOverlay = true;
                     $('#anigif_wrapper,#gifheadline').css('display','block');
@@ -1944,17 +1939,13 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
       /* end on scope functions */
 
       scope.startIt = function(){
-        console.log({"startit": scope.notes});
         if(!scope.notes.length){
           var allHTMLArr = scope.selectedElements.map(x => `<img src="${x.url}" data-guid="${x.guid}" />`).join('');
           scope.parseGifGfx($($.parseHTML(allHTMLArr)).find('img, video').prevObject, function(gifMedia){
             scope.compileToCanvas($(gifMedia));
           });
         } else {
-          //scope.compileToCanvas($.parseHTML(scope.notes.map(x => `${x.text}`).join('')));
           var allHTMLArr = scope.notes.map(x => `${x.text}`).join('');
-          console.log(allHTMLArr);
-          //var $note = $('<div></div>');
           scope.parseGifGfx($($.parseHTML(allHTMLArr)), function(gifMedia){
             Array.from(gifMedia).forEach(function(tag, index, arr){
               if(tag.tagName != undefined){
