@@ -597,36 +597,6 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
         WidgetSrvc.form('https://gif.com.ai/post/', {'clips': JSON.stringify($scope.selectedElements)});
       }
 
-      $scope.$watch('uploadedFile', function(oldValue, newValue){
-        if(oldValue != 'undefined'){
-          var reader = new FileReader();
-          reader.onload = function(){
-            var dataURL = reader.result;
-            fe3.src = dataURL;
-          };
-          var fileEncryptedData = reader.readAsDataURL(oldValue);
-          var fe3 = new Image();
-          fe3.onload = function(){
-             WidgetSrvc.storeBase64Imgur(fe3.src, fe3.width, fe3.height).then(function(payload){
-              //console.log(payload);
-                var pldata = payload;
-                WidgetSrvc.addImport({
-                    realHeight: pldata.height,
-                    realWidth: pldata.width,
-                    html: `<img src="${pldata.link}" />`,
-                    css: '',
-                    settings: '',
-                    url: pldata.link
-                });
-                $timeout(function(){
-                  $scope.imports = $filter('unique')(JSON.parse($window.localStorage.getItem('import')), 'url');
-                });
-             });
-          };
-          fe3.src = fileEncryptedData;
-        }
-      });
-
       $scope.loadDrop = function(){
         $("body").filedrop({
           dragOver: function(allowed) {
