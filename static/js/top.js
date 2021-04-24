@@ -1146,7 +1146,7 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
               }
             )
 
-            if(!$scope.notes.length){
+            if(!BreezeDataContext.getMyNotes().length){
               $scope.addWidget(finalNote).then(function(result){
                 $scope.renderWidgets().then(function(notes){
                   $scope.currentElementIndex = notes.length-1;
@@ -2048,12 +2048,11 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
 
       scope.$watch('gifCanvasSwitch', function(oldValue, newValue){
         BreezeDataContext.clearCachedNotes().then(function(){
-          scope.notes = [];
           if(scope.selectScreen){
             scope.startIt();
           }
         });
-      }, true);
+      });
 
     } // end link
   } //end return
