@@ -1146,7 +1146,7 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
                   $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
                 });
               });
-            } else if($window.localStorage.getIem('LimeTextTarget')) {
+            } else if($window.localStorage.getItem('LimeTextTarget')) {
               $scope.renderWidgets().then(function(notes){
                 $scope.currentElementIndex = notes.length-1;
                 $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
