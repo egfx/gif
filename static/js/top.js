@@ -1966,11 +1966,11 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
 
               promiseB.then(function(file) {
                 console.log('parsing gif finished! Moving on...');
-                BreezeDataContext.modElement({
+                /*BreezeDataContext.modElement({
                   guid: file.guid,
                   text: $(dta).outerHTML,
                   url: file.url
-                });
+                });*/
                 if(scope.isLast.check || !media.length){
                     scope.hideCanvasOverlay = true;
                     $('#anigif_wrapper,#gifheadline').css('display','block');
