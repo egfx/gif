@@ -2083,7 +2083,7 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
             scope.startIt();
           }
         });
-      });
+      }, true);
 
     } // end link
   } //end return
