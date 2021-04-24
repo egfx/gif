@@ -2036,11 +2036,10 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
       });
 
       scope.$watch('gifCanvasSwitch', function(oldValue, newValue){
-        BreezeDataContext.clearCachedNotes().then(function(){
           if(scope.selectScreen){
             scope.startIt();
+            BreezeDataContext.clearCachedNotes();
           }
-        });
       });
 
     } // end link
@@ -3110,11 +3109,8 @@ factory('BreezeDataContext', ['$rootScope', '$filter', '$window', '$q', '$http',
 
 
   function clearCachedNotes() {
-    var deferred = $q.defer();
     var cachedNotes = manager.getEntities('note');
     cachedNotes.forEach(function (entity) { manager.detachEntity(entity); });
-    deferred.resolve(cachedNotes);
-    return deferred.promise;
   }
 
   function clearEverything() {
