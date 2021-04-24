@@ -1162,7 +1162,9 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
           //var finalNote = (foundNote > 0) ? BreezeDataContext.getNote(guid) : BreezeDataContext.getFile(guid);
           //console.log(finalNote.text);
           //console.log(fileWidget);
-          console.log(finalNote);
+
+          console.log("scope notes below..");
+          console.log($scope.notes);
 
             angular.extend(finalNote, 
               {
