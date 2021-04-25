@@ -1147,18 +1147,10 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
                 });
               });
             } else if($window.localStorage.getItem('LimeTextTarget')) {
-              var promise = $q.all([]);
-              angular.forEach($scope.selectedElements, function(note){
-                promise = promise.then(function(){
-                  return $scope.addWidget(note);
-                })
+              $scope.renderWidgets().then(function(notes){
+                $scope.currentElementIndex = notes.length-1;
+                $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
               })
-              promise.finally(function(){
-                $scope.renderWidgets().then(function(notes){
-                  $scope.currentElementIndex = notes.length-1;
-                  $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
-                })
-              });
             }
         }
 
@@ -1950,10 +1942,14 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
 
       scope.startIt = function(){
         if(!scope.notes.length){
-          var allHTMLArr = scope.selectedElements.map(x => `<img src="${x.url}" data-guid="${x.guid}" />`).join('');
-          scope.parseGifGfx($($.parseHTML(allHTMLArr)).find('img, video').prevObject, function(gifMedia){
-            scope.compileToCanvas($(gifMedia));
-          });
+            var allHTMLArr = scope.selectedElements.map(x => x.text.length ? `${x.text}` : `<img src="${x.url}" data-guid="${x.guid}" />`).join('');
+            scope.parseGifGfx($($.parseHTML(allHTMLArr)), function(gifMedia){
+              Array.from(gifMedia).forEach(function(tag, index, arr){
+                if(tag.tagName != undefined){
+                  scope.compileToCanvas($(tag), $window.localStorage.getItem('LimeTextTarget'));
+                }
+              });
+            });
         } else {
           var allHTMLArr = scope.notes.map(x => `${x.text}`).join('');
           scope.parseGifGfx($($.parseHTML(allHTMLArr)), function(gifMedia){
@@ -1968,7 +1964,6 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
               }
             });
           });
-
         }
       }
 
