@@ -1286,8 +1286,8 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
       };
 
       /* Gif Canvas Controls */
-      $scope.addCanvasSelectors = function($selector, index, notes){
-        var tempGuid = notes ? $scope.notes[index]['guid'] : $scope.selectedElements[index]['guid'];
+      $scope.addCanvasSelectors = function($selector, guid, notes){
+        var tempGuid = guid;
         return $selector
           .draggable({
             containment: "parent",
@@ -1900,7 +1900,9 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
                           $(dta).closest('.jsgif').replaceWith(function() {
                             var newCanvas = $(dta).closest('.anic');
                             //nawCanvas = scope.addCanvasSelectors(newCanvas.parent());
-                            nawCanvas = scope.addCanvasSelectors(newCanvas, i);
+                            nawCanvas = (scope.notes.length) ? 
+                              scope.addCanvasSelectors(newCanvas, scope.notes[0]['guid']) : 
+                              scope.addCanvasSelectors(newCanvas, scope.selectedElements[i]['guid']);
                             return $(newCanvas, this);
                           });
                           console.log($(dta).outerHTML);
