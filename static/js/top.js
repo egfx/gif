@@ -1144,7 +1144,7 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
                   $scope.currentElementIndex = notes.length-1;
                   $window.localStorage.setItem('LimeTextTarget', notes[$scope.currentElementIndex]['guid']);
                   $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
-                  var allOtherCanvasFiles = $scope.getMyFiles().filter((x) => x.guid != guid);
+                  var allOtherCanvasFiles = $scope.getMyFiles();
                   angular.forEach(allOtherCanvasFiles, function(file){
                     $scope.addWidget(file).then(function(){
                       $scope.renderWidgets();
