@@ -1942,7 +1942,7 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
 
       scope.startIt = function(){
         if(!scope.notes.length){
-            var allHTMLArr = scope.selectedElements.map(x => x.text.length ? `${x.text}` : `<img src="${x.url}" data-guid="${x.guid}" />`).join('');
+            var allHTMLArr = scope.selectedElements.map(x => x.text ? `${x.text}` : `<img src="${x.url}" data-guid="${x.guid}" />`).join('');
             scope.parseGifGfx($($.parseHTML(allHTMLArr)), function(gifMedia){
               Array.from(gifMedia).forEach(function(tag, index, arr){
                 if(tag.tagName != undefined){
