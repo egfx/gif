@@ -1902,7 +1902,7 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
                             //nawCanvas = scope.addCanvasSelectors(newCanvas.parent());
                             nawCanvas = (scope.notes.length) ? 
                               scope.addCanvasSelectors(newCanvas, scope.notes[0]['guid']) : 
-                              scope.addCanvasSelectors(newCanvas, scope.selectedElements[i]['guid']);
+                              scope.addCanvasSelectors(newCanvas, scope.selectedElements[0]['guid']);
                             return $(newCanvas, this);
                           });
                           console.log($(dta).outerHTML);
