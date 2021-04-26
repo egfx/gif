@@ -1750,7 +1750,7 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
       scope.makeGifCanvas = function(obj, last){
           return new Promise((resolve, reject) => {
               var tag = obj.data.get(0);
-              if(obj.type == 'image'){
+              if(obj.type == 'image' && tag.nodeType == 1){
                   scope.getDataUri(tag.src, function (base64) {
                       // base64 availlable here
                       var img = new Image;
