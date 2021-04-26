@@ -1146,12 +1146,12 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
                   $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
                 });
               });
-            }/* else if($window.localStorage.getItem('LimeTextTarget')) {
+            } else if($window.localStorage.getItem('LimeTextTarget')) {
               $scope.renderWidgets().then(function(notes){
                 $scope.currentElementIndex = notes.length-1;
                 $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
               })
-            }*/
+            }
         }
 
         $scope.menuOptions = [
@@ -2035,6 +2035,7 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
           if(scope.selectScreen){
             scope.startIt();
             BreezeDataContext.clearCachedNotes();
+            $window.localStorage.removeItem('LimeTextTarget');
           }
       });
 
