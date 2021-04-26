@@ -2036,7 +2036,6 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
             scope.startIt();
             BreezeDataContext.clearCachedNotes();
           }
-          $window.localStorage.removeItem('LimeTextTarget');
       });
 
     } // end link
@@ -3216,6 +3215,8 @@ run(['$window', '$interval', '$document', '$rootScope', '$route', '$location', '
   },10);
 
   $rootScope.$on('$viewContentLoaded', function(event, data) {
+
+      $window.localStorage.removeItem('LimeTextTarget');
 
       $window.anigif.options.selector = "#gifcanvas";
       $window.anigif.options.quality = "High";
