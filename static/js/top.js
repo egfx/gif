@@ -901,6 +901,7 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
                 case 'code':
                   $window.localStorage.setItem('LimeTextTarget', $scope.notes[$scope.currentElementIndex]['guid']);
                   $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
+                  $window.localStorage.removeItem('LimeTextTarget');
                 break;
                 default:
                   console.log(type);
@@ -1144,12 +1145,14 @@ controller('GridCtrl', ['$q', '$rootScope', '$scope', '$compile','$log', '$timeo
                   $scope.currentElementIndex = notes.length-1;
                   $window.localStorage.setItem('LimeTextTarget', notes[$scope.currentElementIndex]['guid']);
                   $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
+                  $window.localStorage.removeItem('LimeTextTarget');
                 });
               });
             } else if($window.localStorage.getItem('LimeTextTarget')) {
               $scope.renderWidgets().then(function(notes){
                 $scope.currentElementIndex = notes.length-1;
                 $rootScope.$broadcast('addOneByGistId', 'bfac0df8ac88916c9dfff21ca20230b6');
+                $window.localStorage.removeItem('LimeTextTarget');
               })
             }
         }
@@ -3215,8 +3218,6 @@ run(['$window', '$interval', '$document', '$rootScope', '$route', '$location', '
   },10);
 
   $rootScope.$on('$viewContentLoaded', function(event, data) {
-
-      $window.localStorage.removeItem('LimeTextTarget');
 
       $window.anigif.options.selector = "#gifcanvas";
       $window.anigif.options.quality = "High";
