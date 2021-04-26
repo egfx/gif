@@ -1927,10 +1927,8 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
 
               promiseB.then(function(file) {
                 console.log('parsing gif finished! Moving on...');
-                if(scope.isLast.check || !gifMedia.length){
-                    scope.hideCanvasOverlay = true;
-                    $('#anigif_wrapper,#gifheadline').css('display','block');
-                }
+                scope.hideCanvasOverlay = true;
+                $('#anigif_wrapper,#gifheadline').css('display','block');
               });
               
             }
