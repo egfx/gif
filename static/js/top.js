@@ -2035,8 +2035,8 @@ directive('gifcanvas', ['$q', '$window', '$http', '$rootScope', '$timeout', '$in
           if(scope.selectScreen){
             scope.startIt();
             BreezeDataContext.clearCachedNotes();
-            $window.localStorage.removeItem('LimeTextTarget');
           }
+          $window.localStorage.removeItem('LimeTextTarget');
       });
 
     } // end link
