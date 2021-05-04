@@ -3224,6 +3224,15 @@ end settings */
   z-index: 99999;
 }
 
+.fade {
+    transition: all linear 500ms;
+    opacity: 1;
+}
+
+.fade.ng-hide {
+    opacity: 0;
+}
+
 /*.gifshopBtn {
   cursor: pointer;
   position: fixed !important;
