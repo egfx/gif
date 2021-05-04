@@ -3225,7 +3225,7 @@ end settings */
 }
 
 .fade {
-    transition: all linear 500ms;
+    transition: all linear 5000ms;
     opacity: 1;
 }
 
