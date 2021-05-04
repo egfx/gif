@@ -3209,6 +3209,7 @@ end settings */
   right: 9px;
   cursor: pointer;
   position: fixed;
+  z-index: 99;
 }
 
 .gifshopBtnDisabled {
@@ -3220,6 +3221,7 @@ end settings */
   cursor: default;
   right: 9px;
   position: fixed;
+  z-index: 99;
 }
 
 .fade {
