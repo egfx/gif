@@ -3797,21 +3797,21 @@ end settings */
 }
 
 /* pricetable ribbon */
-#pricetable .ribbon {
+.ribbon {
   width: 150px;
   height: 150px;
   overflow: hidden;
   position: absolute;
 }
-#pricetable .ribbon::before,
-#pricetable .ribbon::after {
+.ribbon::before,
+.ribbon::after {
   position: absolute;
   z-index: -1;
   content: '';
   display: block;
   border: 5px solid #2980b9;
 }
-#pricetable .ribbon span {
+.ribbon span {
   position: absolute;
   display: block;
   width: 225px;
@@ -3826,96 +3826,96 @@ end settings */
 }
 
 /* top left*/
-#pricetable .ribbon-top-left {
+.ribbon-top-left {
   top: -10px;
   left: -10px;
 }
-#pricetable .ribbon-top-left::before,
-#pricetable .ribbon-top-left::after {
+.ribbon-top-left::before,
+.ribbon-top-left::after {
   border-top-color: transparent;
   border-left-color: transparent;
 }
-#pricetable .ribbon-top-left::before {
+.ribbon-top-left::before {
   top: 0;
   right: 0;
 }
-#pricetable .ribbon-top-left::after {
+.ribbon-top-left::after {
   bottom: 0;
   left: 0;
 }
-#pricetable .ribbon-top-left span {
+.ribbon-top-left span {
   right: -25px;
   top: 30px;
   transform: rotate(-45deg);
 }
 
 /* top right*/
-#pricetable .ribbon-top-right {
+.ribbon-top-right {
   top: -10px;
   right: -10px;
 }
-#pricetable .ribbon-top-right::before,
-#pricetable .ribbon-top-right::after {
+.ribbon-top-right::before,
+.ribbon-top-right::after {
   border-top-color: transparent;
   border-right-color: transparent;
 }
-#pricetable .ribbon-top-right::before {
+.ribbon-top-right::before {
   top: 0;
   left: 0;
 }
-#pricetable .ribbon-top-right::after {
+.ribbon-top-right::after {
   bottom: 0;
   right: 0;
 }
-#pricetable .ribbon-top-right span {
+.ribbon-top-right span {
   left: -25px;
   top: 30px;
   transform: rotate(45deg);
 }
 
 /* bottom left*/
-#pricetable .ribbon-bottom-left {
+.ribbon-bottom-left {
   bottom: -10px;
   left: -10px;
 }
-#pricetable .ribbon-bottom-left::before,
-#pricetable .ribbon-bottom-left::after {
+.ribbon-bottom-left::before,
+.ribbon-bottom-left::after {
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
-#pricetable .ribbon-bottom-left::before {
+.ribbon-bottom-left::before {
   bottom: 0;
   right: 0;
 }
-#pricetable .ribbon-bottom-left::after {
+.ribbon-bottom-left::after {
   top: 0;
   left: 0;
 }
-#pricetable .ribbon-bottom-left span {
+.ribbon-bottom-left span {
   right: -25px;
   bottom: 30px;
   transform: rotate(225deg);
 }
 
 /* bottom right*/
-#pricetable .ribbon-bottom-right {
+.ribbon-bottom-right {
   bottom: -10px;
   right: -10px;
 }
-#pricetable .ribbon-bottom-right::before,
-#pricetable .ribbon-bottom-right::after {
+.ribbon-bottom-right::before,
+.ribbon-bottom-right::after {
   border-bottom-color: transparent;
   border-right-color: transparent;
 }
-#pricetable .ribbon-bottom-right::before {
+.ribbon-bottom-right::before {
   bottom: 0;
   left: 0;
 }
-#pricetable .ribbon-bottom-right::after {
+.ribbon-bottom-right::after {
   top: 0;
   right: 0;
 }
-#pricetable .ribbon-bottom-right span {
+.ribbon-bottom-right span {
   left: -25px;
   bottom: 30px;
   transform: rotate(-225deg);
