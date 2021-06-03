@@ -3474,7 +3474,7 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
           <li class="slider"></li>
         </ul>
       <div class="ParallaxContainer surf-bg" id="myC">
-        <h1 style="z-index:1;color:indianred;font-size: 42pt !important;margin-bottom:100px;">ANIMATE ANYTHING
+        <h1 style="z-index:1;color:indianred;font-size: 42pt !important;margin-bottom:0px;">ANIMATE ANYTHING
           <br />
           <small class="intro" style="font-size:large !important;">Your animation intelligence engine!</small>
         </h1>
@@ -4090,8 +4090,8 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                 $("#righthalf").css('width', '75vw');
                 $("#lefthalf").css('width', '25vw').show();
               } else {
-                $("#righthalf").css('width', 75 + scrollPercent + 'vw');
-                $("#lefthalf").css({'width': 25 - scrollPercent + 'vw'});
+                $("#righthalf").css('width', scrollPercent + 'vw');
+                $("#lefthalf").css({'width': scrollPercent + 'vw'});
               }
 
               if($("#lefthalf").width() <= 50){
