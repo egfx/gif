@@ -605,7 +605,7 @@ transparent 100%);
         flex: 1 0 auto;
         position: relative;
         z-index: -1;
-        height: 100vh;
+        height: 110vh;
         justify-content: center;
         align-items: center;
         /*transform: translateZ(-1px) scale(3);*/
@@ -1830,6 +1830,39 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
           font-size: 62pt !important;
         }
       }
+      /*@media (min-height: 1200px) and (max-height: 1400px) {
+        .surf-bg {
+          padding-top:0rem !important;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 34rem !important;
+        }
+      }
+      @media (max-width: 1400px) and (min-height: 1100px) {
+        .surf-bg {
+          padding-top: 70rem;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 42rem !important;
+        }
+      }
+      @media (max-width: 1500px) and (min-height: 1000px) {
+        .surf-bg {
+          padding-top: 60rem;
+          background-position-y: -450px;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 42rem !important;
+        }
+      }
+      @media (max-width: 1500px) and (max-height: 900px){
+        .surf-bg {
+          padding-top: 18rem;
+        }
+        .surf-bg > h1 {
+          padding-bottom: 36rem !important;
+        }
+      }*/
       @media (max-width: 1200px){
         .imgur-wrapper2 .gallery {
           display: flex;
@@ -1945,6 +1978,16 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
         transform: translateY(-20px);
         cursor: pointer;
       }
+      /*.imgur-container div:hover:nth-child(odd) {
+        -webkit-box-shadow: 0px 0px 90px -39px rgba(180, 94, 94, 0.75);
+        -moz-box-shadow: 0px 0px 90px -39px (180, 94, 94, 0.75);
+        box-shadow: 0px 0px 90px -39px (180, 94, 94, 0.75);
+      }
+      .imgur-container div:hover:nth-child(even) {
+        -webkit-box-shadow: 0px 0px 90px -39px rgba(40, 101, 233, 0.75);
+        -moz-box-shadow: 0px 0px 90px -39px (40, 101, 233, 0.75);
+        box-shadow: 0px 0px 90px -39px (40, 101, 233, 0.75);
+      }*/
       .imgur-wrapper2 .long-img {
         min-width: 125px;
         height: 80%;
@@ -2008,6 +2051,18 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
         border-color: darkred;
         font-weight: bolder;
       }
+      /*#priceplans .box-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 6px;
+        background: #ebf5fc;
+        box-shadow: -2px -2px 5px white, 3px 3px 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid #c3f9f3;
+      }*/
+
+      /*#priceplans .box-container:hover {
+        box-shadow: inset -2px -2px 5px white, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+      }*/
 
       .{
         -webkit-animation: rotate-center 4s linear infinite both;
@@ -2028,6 +2083,14 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
           background-size: auto;
           overflow: hidden;
           box-shadow: inset -2px -2px 5px white, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+          /*margin: auto;
+          text-align: center;
+          border: 1px solid #cac8c8;
+          padding: 15px;
+          border-radius: 50%;
+          overflow: hidden;
+          background-color: rgba(255, 255, 255, 0.5098039215686274);
+          box-shadow: inset -2px -2px 5px white, inset 3px 3px 5px rgba(0, 0, 0, 0.1);*/
       }
 
       .fakePlanContainer .bronze {
@@ -3412,6 +3475,9 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
       ga('send', 'pageview');
 </script>
 <body>
+<div class="header desktop" id="top" 
+style="position:absolute;bottom:1.1em;width:calc(100% + 30vw);margin:0 auto;display:none;">
+  <h1>scroll down</h1><i class="fa fa-angle-down animated bounce"></i> 
 </div> <svg class="hidden">
   <symbol id="icon-arrow" viewbox="0 0 24 24">
     <title>arrow</title>
@@ -3474,12 +3540,14 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
           <li class="slider"></li>
         </ul>
       <div class="ParallaxContainer surf-bg" id="myC">
-        <h1 style="z-index:1;color:indianred;font-size: 42pt !important;margin-bottom:0px;">ANIMATE ANYTHING
+        <h1 style="z-index:1;color:indianred;font-size: 42pt !important;padding-bottom:22rem;">ANIMATE ANYTHING
           <br />
           <small class="intro" style="font-size:large !important;">Your animation intelligence engine!</small>
         </h1>
       </div>
       <div id="MainContentContainer" class="ContentContainer">
+        <div class="mobile gifcomlogo"></div>
+        <h5 class="mobile title" style="text-align:center;font-weight:bold;color:#333;">GIF.COM.AI</h5>
           <div class="container text-center py-5" id="features">
             <div class="newheadline">
               <!-- <div class="hgrid"></div> -->
@@ -3530,6 +3598,21 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
                 </div>
               </div>
           </div>
+
+<article class="mobile" id="home-splash-screen-mobile">
+            <img src="https://cdn.jsdelivr.net/gh/egfx/gif@latest/static/images/gifcomlogo.png" style="position:relative;border-radius:50%;width: 65px;box-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.16), 0 6px 20px 0 rgba(0, 225, 225, 0.19);" />
+            <h5 class="text-muted"><a href="#" style="pointer-events: none;"><span style="color:firebrick;">A</span>nimation <span style="color:firebrick;">I</span>ntelligence</a></h5>
+            <p class="hideit" style="display:inline-block;font-size: 95%;"><small class="plan-icon text-muted">($299.00)<br/><code><a class="gold" style="padding:7px;" href="https://gif.com.ai/plan?type=gold">&nbsp;Gold&nbsp;&nbsp;</a></code></small>
+                <small
+                    class="plan-icon text-semi-bold">($49.00)<br/><code class="silver"><a class="silver" style="padding:7px;" href="https://gif.com.ai/plan?type=silver"> &nbsp;&nbsp;Silver&nbsp;&nbsp; </a></code></small>
+                    <small
+                        class="plan-icon text-muted">($99.00)<br/><code><a class="bronze" style="padding:7px;" href="https://gif.com.ai/plan?type=bronze">‏‏‎Bronze‏‏‎</a></code></small>
+            </p>
+            <p class="hideit" style="clear:both;"><br/><span>Try for free!</span><br/></p>
+        </article>
+
+        <div class="ContentContainer dotted-bg flipmeV mobile" style="position:static;height:100px;background:white;background-image:url(https://cdn.jsdelivr.net/gh/egfx/gif@latest/static/images/welcome-bg.png);width:100%;background-repeat: no-repeat;">
+  </div>
         <a class="desktop" href="https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje">
           <img title="Image clipper" style="position: relative !important;display:block;margin:auto;" width="180px" src="https://cdn.jsdelivr.net/gh/egfx/gif@latest/static/images/chrome-bag-icon.png">
           <h4 style="text-align:center;text-decoration: underline;color: #415a7d;">Get on Chrome!</h4>
@@ -4008,6 +4091,9 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
       var ww = document.body.clientWidth;
       if(ww < 1024){
         window.location.replace('https://chrome.google.com/webstore/detail/gifcomai/gimjihmdjlddkkpdbkenmnfbnkkgoaje');
+      } else {
+        $('.ParallaxContainer').css('display','flex'); 
+        $('.mobile').css('display', 'none');
       }
       if (ww < 1100) {
         $('#lefthalf').css('display', 'none');
