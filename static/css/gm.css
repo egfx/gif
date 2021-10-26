@@ -515,8 +515,8 @@ li.editor {
 }*/
 
 .is-target:hover {
+  border: 10px solid black;
   clip-path: polygon(0 40px, 0 0, 40px 0, 40px 11px, calc(100% - 40px) 11px, calc(100% - 40px) 0, 100% 0, 100% 40px, calc(100% - 11px - 1px) 40px, calc(100% - 11px - 1px) calc(100% - 40px), 100% calc(100% - 40px), 100% 100%, calc(100% - 40px) 100%, calc(100% - 40px) calc(100% - 11px - 1px), 40px calc(100% - 11px - 1px), 40px 100%, 0 100%, 0 calc(100% - 40px), 11px calc(100% - 40px), 11px 40px);
-  border: 1px solid darkgrey;
 }
 
 /* Edit Mode Button Toggle - http://codepen.io/iamtyce/pen/kxrhC */
