@@ -13,7 +13,8 @@
     options = options || {};
     return this.draggable({
       cursor: options.cursor || 'move',
-      zIndex: 100,
+      zIndex: options.zindex || 100,
+      containment: options.containment || 'parent',
       drag: function(event, ui) {
         __dx = ui.position.left - ui.originalPosition.left;
         __dy = ui.position.top - ui.originalPosition.top;
