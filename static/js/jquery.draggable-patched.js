@@ -33,10 +33,11 @@
         }
       },
       stop: function(event, ui) {
-        $(this).animate({
-          left: $(this).data('oriLeft'),
-          top: $(this).data('oriTop')
-        }, 1000);
+        if (options.animate) {
+          $(this).animate({
+            left: $(this).data('oriLeft'),
+            top: $(this).data('oriTop')
+          }, 1000);
         if (options.stop) {
           options.stop(event, ui);
         }
