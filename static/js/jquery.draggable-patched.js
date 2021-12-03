@@ -38,6 +38,7 @@
             left: $(this).data('oriLeft'),
             top: $(this).data('oriTop')
           }, 1000);
+        }
         if (options.stop) {
           options.stop(event, ui);
         }
