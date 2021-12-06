@@ -15,6 +15,8 @@
       cursor: options.cursor || 'move',
       zIndex: options.zindex || 100,
       containment: options.containment || 'parent',
+      multiple: options.multiple || false,
+      cloneHelper: options.cloneHelper || false,
       drag: function(event, ui) {
         __dx = ui.position.left - ui.originalPosition.left;
         __dy = ui.position.top - ui.originalPosition.top;
