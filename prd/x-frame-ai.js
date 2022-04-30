@@ -64,7 +64,7 @@ customElements.define('x-frame-bypass', class extends HTMLIFrameElement {
 		}).catch(e => console.error('Cannot load X-Frame-Bypass:', e))
 	}
 	fetchProxy (url, options, i) {
-		const proxy = options.proxies || [
+		const proxy = [
 			'https://gifcors.herokuapp.com/'
 		]
 		return fetch(proxy[i] + url, options).then(res => {
