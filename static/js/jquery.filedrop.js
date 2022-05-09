@@ -29,7 +29,8 @@ $.fn.extend({
                 if(event.type == 'dragover'){
                   var items = event.originalEvent.dataTransfer.items;
                   var allowedTypes = ["image/jpg", "image/png", "image/gif", "image/jpeg"];
-                  if(items.length > 1 || items["0"].kind != "file" || items["0"].type == "" || allowedTypes.indexOf(items["0"].type) == -1){
+                  console.log(items)
+                  if(items["0"].kind != "file" || items["0"].type == "" || allowedTypes.indexOf(items["0"].type) == -1){
                     options.dragOver(false);
                   } else {
                     options.dragOver(true);
@@ -50,7 +51,7 @@ $.fn.extend({
                   var fileName = fileUrl.split('/').pop();
                   var fileType = fileName.split('.').pop();
                   options.file = {url: fileUrl, name: fileName, extension: fileType};
-                  options.callback('https://cors-anywhere.herokuapp.com/'+options.file.url, event.target, 'dragurl')
+                  options.callback('https://gifcors.herokuapp.com/'+options.file.url, event.target, 'dragurl')
                 }
 
                 // Get all files that are dropped
