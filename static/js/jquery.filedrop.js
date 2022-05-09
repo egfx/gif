@@ -29,7 +29,6 @@ $.fn.extend({
                 if(event.type == 'dragover'){
                   var items = event.originalEvent.dataTransfer.items;
                   var allowedTypes = ["image/jpg", "image/png", "image/gif", "image/jpeg"];
-                  console.log(items)
                   if(items["0"].kind != "file" || items["0"].type == "" || allowedTypes.indexOf(items["0"].type) == -1){
                     options.dragOver(false);
                   } else {
@@ -56,6 +55,7 @@ $.fn.extend({
 
                 // Get all files that are dropped
                 files = event.originalEvent.target.files || event.originalEvent.dataTransfer.files
+                console.log('files:', files)
 
                 // Convert uploaded file to data URL and pass trought callback
                 if (options.callback) {
