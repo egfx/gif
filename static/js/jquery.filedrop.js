@@ -55,7 +55,6 @@ $.fn.extend({
 
                 // Get all files that are dropped
                 files = event.originalEvent.target.files || event.originalEvent.dataTransfer.files
-                console.log('files:', files)
 
                 // Convert uploaded file to data URL and pass trought callback
                 if (options.callback) {
@@ -64,7 +63,7 @@ $.fn.extend({
                         reader.onload = function (event) {
                           options.callback(event.target.result, event.target, 'file')
                         }
-                        reader.readAsDataURL(files[0])
+                        reader.readAsDataURL(files[i])
                     }
                 }
                 return false
