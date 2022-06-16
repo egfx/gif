@@ -3033,17 +3033,17 @@ end settings */
 .btm-left:after {
     content: '?';
     position: absolute;
-    right: -18px;
-    top: -1em;
-    font-size: 11px;
+    right: -1rem;
+    top: -1rem;
+    font-size: 2rem;
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     font-weight: 600;
     text-align: center;
-    line-height: 32px;
+    line-height: 3.5rem;
     background: #ff4081;
     color: white;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
