@@ -3031,7 +3031,7 @@ end settings */
 }
 
 .btm-left:after {
-    content: '?';
+    content: attr(data-badge);
     position: absolute;
     right: -1rem;
     top: -1rem;
