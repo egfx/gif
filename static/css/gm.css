@@ -3033,8 +3033,8 @@ end settings */
 .btm-left:after {
     content: attr(data-badge);
     position: absolute;
-    right: -1rem;
-    top: -1rem;
+    right: -1.5rem;
+    top: -1.5rem;
     font-size: 2rem;
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     font-weight: 600;
