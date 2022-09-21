@@ -31,7 +31,7 @@ angular.module('infinite-scroll', []).value('THROTTLE_MILLISECONDS', null).direc
           }
         };
         offsetTop = function(elem) {
-          if (!elem.getBoundingClientRect || elem.css('none')) {
+          if (!elem.getBoundingClientRect) {
             return;
           }
           return elem.getBoundingClientRect().top + pageYOffset(elem);
