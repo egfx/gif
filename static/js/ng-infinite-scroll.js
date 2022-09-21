@@ -31,15 +31,15 @@ angular.module('infinite-scroll', []).value('THROTTLE_MILLISECONDS', null).direc
           }
         };
         offsetTop = function(elem) {
-          if (!elem[0].getBoundingClientRect || elem.css('none')) {
+          if (!elem.getBoundingClientRect || elem.css('none')) {
             return;
           }
-          return elem[0].getBoundingClientRect().top + pageYOffset(elem);
+          return elem.getBoundingClientRect().top + pageYOffset(elem);
         };
         pageYOffset = function(elem) {
           elem = elem[0] || elem;
           if (isNaN(window.pageYOffset)) {
-            return elem.document.documentElement.scrollTop;
+            return document.documentElement.scrollTop;
           } else {
             return elem.ownerDocument.defaultView.pageYOffset;
           }
@@ -58,7 +58,7 @@ angular.module('infinite-scroll', []).value('THROTTLE_MILLISECONDS', null).direc
             elementBottom = offsetTop(elem) - containerTopOffset + height(elem);
           }
           if (useDocumentBottom) {
-            elementBottom = height((elem[0].ownerDocument || elem[0].document).documentElement);
+            elementBottom = height((elem.ownerDocument || document).documentElement);
           }
           remaining = elementBottom - containerBottom;
           shouldScroll = remaining <= height(container) * scrollDistance + 1;
