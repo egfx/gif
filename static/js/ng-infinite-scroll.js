@@ -12,7 +12,7 @@ angular.module('infinite-scroll', []).value('THROTTLE_MILLISECONDS', null).direc
       },
       link: function(scope, elem, attrs) {
         var changeContainer, checkInterval, checkWhenEnabled, container, handleInfiniteScrollContainer, handleInfiniteScrollDisabled, handleInfiniteScrollDistance, handleInfiniteScrollUseDocumentBottom, handler, height, immediateCheck, offsetTop, pageYOffset, scrollDistance, scrollEnabled, throttle, unregisterEventListener, useDocumentBottom, windowElement;
-        windowElement = document.scrollingElement;
+        windowElement = angular.element(document.scrollingElement);
         scrollDistance = null;
         scrollEnabled = null;
         checkWhenEnabled = null;
