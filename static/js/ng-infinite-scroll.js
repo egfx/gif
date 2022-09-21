@@ -12,7 +12,7 @@ angular.module('infinite-scroll', []).value('THROTTLE_MILLISECONDS', null).direc
       },
       link: function(scope, elem, attrs) {
         var changeContainer, checkInterval, checkWhenEnabled, container, handleInfiniteScrollContainer, handleInfiniteScrollDisabled, handleInfiniteScrollDistance, handleInfiniteScrollUseDocumentBottom, handler, height, immediateCheck, offsetTop, pageYOffset, scrollDistance, scrollEnabled, throttle, unregisterEventListener, useDocumentBottom, windowElement;
-        windowElement = angular.element(document.scrollingElement);
+        windowElement = elem.document.scrollingElement;
         scrollDistance = null;
         scrollEnabled = null;
         checkWhenEnabled = null;
@@ -46,7 +46,7 @@ angular.module('infinite-scroll', []).value('THROTTLE_MILLISECONDS', null).direc
         handler = function() {
           var containerBottom, containerTopOffset, elementBottom, remaining, shouldScroll;
           if (container === windowElement) {
-            containerBottom = height(container) + pageYOffset(container[0].document.documentElement);
+            containerBottom = height(container) + pageYOffset(elem[0].document.documentElement);
             elementBottom = offsetTop(elem) + height(elem);
           } else {
             containerBottom = height(container);
