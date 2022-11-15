@@ -3995,6 +3995,15 @@ end settings */
 }
 
 /* scroller pagination js */
+
+@font-face {
+  font-family: 'arrowicons';
+  src: url("https://cdn.jsdelivr.net/gh/codrops/SliderPagination@master/font/arrowicons.eot");
+  src: url("https://cdn.jsdelivr.net/gh/codrops/SliderPagination@master/font/arrowicons.eot?#iefix") format('embedded-opentype'), url("https://cdn.jsdelivr.net/gh/codrops/SliderPagination@master/font/arrowicons.woff") format('woff'), url("https://cdn.jsdelivr.net/gh/codrops/SliderPagination@master/font/arrowicons.ttf") format('truetype'), url("https://cdn.jsdelivr.net/gh/codrops/SliderPagination@master/font/arrowicons.svg#arrowicons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .sp-slider-wrapper {
   box-sizing: content-box;
   -webkit-box-sizing: content-box;
