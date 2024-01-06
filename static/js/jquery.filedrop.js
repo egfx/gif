@@ -50,7 +50,7 @@ $.fn.extend({
                   var fileName = fileUrl.split('/').pop();
                   var fileType = fileName.split('.').pop();
                   options.file = {url: fileUrl, name: fileName, extension: fileType};
-                  options.callback('https://gifcors.herokuapp.com/'+options.file.url, event.target, 'dragurl')
+                  options.callback('https://cors.gif.com.ai/'+options.file.url, event.target, 'dragurl')
                 }
 
                 // Get all files that are dropped
