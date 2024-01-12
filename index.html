@@ -1724,40 +1724,40 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
         background-image: linear-gradient(#fff, transparent, #fff);
         width: 100%;
       }
-
+      
       .imgur-wrapper2 * {
         box-sizing: border-box;
       }
-
+      
       .imgur-wrapper2 .gallery {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center; /* Center align gallery strips */
         width: 100%;
         overflow: hidden;
         max-width: 1400px;
         min-width: max-content;
-        /*max-width: 1000px;*/
         margin: auto;
         padding-left: 40px;
       }
+      
       .gallery__strip {
         min-height: 100vh;
       }
+      
       .gallery__strip__wrapper {
         flex: 0 0 100%;
         justify-content: flex-end;
-        /*background: #222;*/
-        /*border-right: 2px solid #333;
-        border-left: 2px solid #333;*/
-
         position: relative;
+        margin-bottom: 10px; /* Reduced vertical spacing */
       }
-
+      
       @media (min-width: 500px) {
         .gallery__strip__wrapper {
           flex: 0 0 50%;
         }
       }
+      
       @media (min-width: 950px) {
         .imgur-wrapper2 .gallery {
           height: 100vh;
