@@ -3911,34 +3911,38 @@ end settings */
   width: 100%;
   height: auto;
 }
+
 .panel-overlay-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: right;
+  padding: 5px;
+  font-size: 16px;
 }
-.panel-overlay-bottom {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
+
+.close {
+  border: none;
+  background: none;
+  color: inherit;
   font-size: 20px;
-  padding: 20px;
-  text-align: right;
+  cursor: pointer;
 }
-.panel-container:hover .panel-overlay {
-  opacity: 1;
+
+.mdl-button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.glyphicon-tags {
+  color: red;
 }
 
 .panel-overlay svg {
