@@ -3920,7 +3920,7 @@ end settings */
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(255 255 255 / 75%);
   color: #f1f1f1;
   padding: 5px;
   font-size: 16px;
