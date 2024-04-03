@@ -3140,6 +3140,11 @@ end settings */
   user-select: none !important;
 }
 
+.anigif_settings {
+  position: absolute !important;
+  bottom: 50px !important;
+}
+
 #gifheadline, .labelmark {
   user-select: none;
 }
