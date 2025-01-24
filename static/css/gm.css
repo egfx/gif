@@ -3713,15 +3713,15 @@ end settings */
     );
 }
 
-.sticker .bronze-bg {
+.sticker:not(.silver-bg .gold-bg) {
   background: '#CD7F32'
 }
 
-.sticker .silver-bg {
+.sticker:not(.bronze-bg .gold-bg) {
   background: 'silver'
 }
 
-.sticker .gold-bg {
+.sticker:not(.bronze-bg .silver-bg) {
   background: 'gold'
 }
 
