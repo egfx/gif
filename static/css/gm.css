@@ -3697,7 +3697,6 @@ end settings */
     font-size: 1.5em;
     font-weight: bold;
     color: #fff;
-    background: #8B0000; /* Dark red similar to your image */
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -3712,6 +3711,18 @@ end settings */
         21% 91%, 32% 57%, 2% 35%, 
         39% 35%
     );
+}
+
+.sticker.bronze-bg {
+  background: '#CD7F32'
+}
+
+.sticker.silver-bg {
+  background: 'silver'
+}
+
+.sticker.gold-bg {
+  background: 'gold'
 }
 
 .sticker span {
