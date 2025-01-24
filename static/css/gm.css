@@ -3713,16 +3713,19 @@ end settings */
     );
 }
 
-.sticker:not(.silver-bg .gold-bg) {
-  background: '#CD7F32'
+/* Bronze background */
+.sticker:not(.silver-bg, .gold-bg) {
+    background: #CD7F32;
 }
 
-.sticker:not(.bronze-bg .gold-bg) {
-  background: 'silver'
+/* Silver background */
+.sticker:not(.bronze-bg, .gold-bg) {
+    background: silver;
 }
 
-.sticker:not(.bronze-bg .silver-bg) {
-  background: 'gold'
+/* Gold background */
+.sticker:not(.bronze-bg, .silver-bg) {
+    background: gold;
 }
 
 .sticker span {
