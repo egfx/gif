@@ -3693,15 +3693,33 @@ end settings */
     position: absolute;
     top: 20px;
     left: 20px;
-    padding: 10px 20px;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background: #8B0000; /* Dark red similar to your image */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 
+        68% 57%, 79% 91%, 50% 70%, 
+        21% 91%, 32% 57%, 2% 35%, 
+        39% 35%
+    );
+}
+
+.sticker span {
+    display: block;
     font-size: 1.2em;
     font-weight: bold;
     color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
 }
-
 .sticker-top-left {
     position: absolute;
     top: 10px;
