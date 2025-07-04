@@ -3377,9 +3377,7 @@ hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
   object-fit: cover;
   display: block;
 }
-</style>
-<style>
-  .hidden-plan { display: none !important; }
+.hidden-plan { display: none !important; }
 </style>
 <script async src="//s.imgur.com/min/embed.js"></script>
 <script defer>
@@ -3842,4 +3840,19 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
     </div>
   </div>
   </main>
+  <script async src="//s.imgur.com/min/embed.js"></script>
+  <script>
+    function processAllImgurEmbeds() {
+      if(window.imgurEmbed && window.imgurEmbed.createIframe) {
+        window.imgurEmbed.createIframe();
+      } else {
+        setTimeout(processAllImgurEmbeds, 50);
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", processAllImgurEmbeds);
+    } else {
+      processAllImgurEmbeds();
+    }
+  </script>
 </body>
