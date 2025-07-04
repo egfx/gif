@@ -3437,6 +3437,25 @@ document.addEventListener('DOMContentLoaded', function() {
   adjustSplit();
 });
 </script>
+<script async src="//s.imgur.com/min/embed.js"></script>
+<script>
+  // Wait for DOM and embed.js, then repeatedly try to render all blockquotes
+  function tryRenderAllImgur() {
+    if (window.imgurEmbed && window.imgurEmbed.createIframe) {
+      window.imgurEmbed.createIframe();
+      // Try again after a short delay in case some blockquotes still aren't visible
+      setTimeout(() => window.imgurEmbed.createIframe(), 400);
+      setTimeout(() => window.imgurEmbed.createIframe(), 1500);
+    } else {
+      setTimeout(tryRenderAllImgur, 50);
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", tryRenderAllImgur);
+  } else {
+    tryRenderAllImgur();
+  }
+</script>
 <body>
 <div class="header desktop" id="top" 
 style="position:absolute;bottom:1.1em;width:calc(100% + 30vw);margin:0 auto;display:none;">
