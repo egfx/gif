@@ -3847,19 +3847,53 @@ d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0
     </div>
   </div>
   </main>
-  <script async src="//s.imgur.com/min/embed.js"></script>
   <script>
-    function processAllImgurEmbeds() {
-      if(window.imgurEmbed && window.imgurEmbed.createIframe) {
+    (function() {
+      // Only run once
+      if (window._imgurEmbedReady) return;
+      window._imgurEmbedReady = true;
+
+      function hydrateImgur() {
+        // If embed.js isn't loaded, load it first
+        if (!window.imgurEmbed || !window.imgurEmbed.createIframe) {
+          if (!document.getElementById('_imgur_embedjs')) {
+            var s = document.createElement('script');
+            s.src = 'https://s.imgur.com/min/embed.js';
+            s.id = '_imgur_embedjs';
+            s.async = true;
+            document.body.appendChild(s);
+          }
+          setTimeout(hydrateImgur, 100); // Try again in a moment
+          return;
+        }
+        // Try multiple times in case of layout shifts
         window.imgurEmbed.createIframe();
-      } else {
-        setTimeout(processAllImgurEmbeds, 50);
+        setTimeout(() => window.imgurEmbed.createIframe(), 500);
+        setTimeout(() => window.imgurEmbed.createIframe(), 1200);
+        setTimeout(() => window.imgurEmbed.createIframe(), 3000);
       }
-    }
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", processAllImgurEmbeds);
-    } else {
-      processAllImgurEmbeds();
-    }
+
+      // Observe when .gallery comes into view
+      var gallery = document.querySelector('.imgur-wrapper2 .gallery');
+      if ('IntersectionObserver' in window && gallery) {
+        var hydrated = false;
+        var io = new IntersectionObserver(function(entries, obs) {
+          if (entries[0].isIntersecting && !hydrated) {
+            hydrated = true;
+            hydrateImgur();
+            obs.disconnect();
+            // Optionally, keep listening for later panels:
+            window.addEventListener('scroll', hydrateImgur, {passive:true});
+          }
+        }, {rootMargin: '200px'});
+        io.observe(gallery);
+      } else {
+        // Fallback: just run on DOMContentLoaded
+        if (document.readyState === "loading")
+          document.addEventListener('DOMContentLoaded', hydrateImgur);
+        else
+          hydrateImgur();
+      }
+    })();
   </script>
 </body>
