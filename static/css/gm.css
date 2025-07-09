@@ -3865,6 +3865,10 @@ end settings */
   bottom: 30px;
   transform: rotate(-225deg);
 }
+.light-blue-bg-span{
+  background: radial-gradient(#aed8e7, #add8e5);
+}
+
 .silver-bg span{
   background: silver !important;
 }
